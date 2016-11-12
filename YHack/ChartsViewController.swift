@@ -28,14 +28,15 @@ class ChartsViewController: UIViewController, ChartViewDelegate
         self.view.addSubview(activityview)
         activityview.snp.makeConstraints { (make) -> Void in
             make.center.equalTo(self.view)
-            make.width.equalTo(100)
-            make.height.equalTo(100)
+            make.width.equalTo(40)
+            make.height.equalTo(40)
         }
         activityview.color = UIColor.black
         activityview.startAnimating()
         print(activityview.animating)
         var firstRequest = "", secondrequest = ""
-        switch fromIndex {
+        switch fromIndex
+        {
         case 0:
             
             firstRequest = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_code%3D\(promocode)%20AND%20%7B!join%20from%3Did%20to%3Dparticipant_id%20fromIndex%3Dparticipant%7Dgender%3AM&wt=json"
@@ -44,6 +45,10 @@ class ChartsViewController: UIViewController, ChartViewDelegate
         case 1:
              firstRequest = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_code%3D\(promocode)%20AND%20%7B!join%20from%3Did%20to%3Dparticipant_id%20fromIndex%3Dparticipant%7Dmarital_status%3AS&wt=json"
             secondrequest = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_code%3D\(promocode)%20AND%20%7B!join%20from%3Did%20to%3Dparticipant_id%20fromIndex%3Dparticipant%7Dmarital_status%3AM&wt=json"
+            
+        case 2:
+            firstRequest = "https://v3v10.vitechinc.com/solr/participant/select?indent=on&q=dob%3A[1990-02-01T00%3A00%3A00Z%20TO%202016-03-01T00%3A00%3A00Z]%20AND%20%7B!join%20from%3Dparticipant_id%20to%3Did%20fromIndex%3Dpolicy_info%7Dinsurance_product%3AAccident&wt=json"
+            secondrequest = ""
         default: break
             
         }

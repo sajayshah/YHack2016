@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		701B7D8F1DD771A900F71C27 /* tableviewcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701B7D8E1DD771A900F71C27 /* tableviewcell.swift */; };
 		701B7D931DD7720600F71C27 /* secondTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701B7D921DD7720600F71C27 /* secondTableViewCells.swift */; };
+		EC2C8E711DD7906B00156185 /* QueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C8E701DD7906B00156185 /* QueryViewController.swift */; };
 		ECDB9E771DD70D04006F8326 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDB9E761DD70D04006F8326 /* AppDelegate.swift */; };
 		ECDB9E7C1DD70D04006F8326 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECDB9E7A1DD70D04006F8326 /* Main.storyboard */; };
 		ECDB9E7E1DD70D04006F8326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECDB9E7D1DD70D04006F8326 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		701B7D8E1DD771A900F71C27 /* tableviewcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableviewcell.swift; sourceTree = "<group>"; };
 		701B7D921DD7720600F71C27 /* secondTableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondTableViewCells.swift; sourceTree = "<group>"; };
 		9897423C67BA504141AE944A /* Pods-YHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHack/Pods-YHack.debug.xcconfig"; sourceTree = "<group>"; };
+		EC2C8E701DD7906B00156185 /* QueryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryViewController.swift; sourceTree = "<group>"; };
 		ECDB9E731DD70D04006F8326 /* YHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDB9E761DD70D04006F8326 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECDB9E7B1DD70D04006F8326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				ECDB9E761DD70D04006F8326 /* AppDelegate.swift */,
 				ECDB9E881DD70D17006F8326 /* ChartsViewController.swift */,
+				EC2C8E701DD7906B00156185 /* QueryViewController.swift */,
 				ECDB9E891DD70D17006F8326 /* FirstTableViewController.swift */,
 				ECDB9E8A1DD70D17006F8326 /* SecondViewController.swift */,
 				ECDB9E7A1DD70D04006F8326 /* Main.storyboard */,
@@ -234,6 +237,7 @@
 			files = (
 				ECDB9E8C1DD70D17006F8326 /* FirstTableViewController.swift in Sources */,
 				ECDB9E8B1DD70D17006F8326 /* ChartsViewController.swift in Sources */,
+				EC2C8E711DD7906B00156185 /* QueryViewController.swift in Sources */,
 				701B7D8F1DD771A900F71C27 /* tableviewcell.swift in Sources */,
 				ECDB9E8D1DD70D17006F8326 /* SecondViewController.swift in Sources */,
 				ECDB9E771DD70D04006F8326 /* AppDelegate.swift in Sources */,

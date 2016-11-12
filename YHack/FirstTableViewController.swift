@@ -13,7 +13,7 @@ import Charts
 class FirstViewController: UITableViewController
 {
     //
-    let relations: [String] = ["Promocode vs Gender", "Promocode vs Marital Status"]
+    let relations: [String] = ["Promocode vs Gender", "Promocode vs Marital Status", "Promocode vs Age Range"]
 
     override func viewDidLoad()
     {
@@ -29,22 +29,7 @@ class FirstViewController: UITableViewController
         cell.textLabel?.text = relations[indexPath.row]
         cell.textLabel?.font = UIFont(name:"Avenir", size:22)
         cell.backgroundColor = indexPath.row % 2 == 0 ? UIColor(red: 0.0, green: 0.0, blue: 1.0, alpha: 1.0) : UIColor.blue
-        
-       // let color = UIColor.blue.withAlphaComponent(indexPath.row % 2 == 0 ? 1.0 : 0.7)
-        
-//        switch dataPassed {
-//            
-//        case "1":
-//            self.view.backgroundColor = UIColor(red: 0.3529, green: 0.7608, blue: 0.8471, alpha: 1.0)
-//            cell.textLabel?.textColor = UIColor.white
-//        case "2":
-//            self.view.backgroundColor = UIColor(red: 0.9882, green: 0.5804, blue: 0.0078, alpha: 1.0)
-//            cell.textLabel?.textColor = UIColor.white
-//            
-//        default: break
-//        }
-//        
-//        cell.backgroundColor = color
+
         return cell
     }
     
