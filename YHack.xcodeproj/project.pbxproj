@@ -14,9 +14,13 @@
 		ECDB9E8B1DD70D17006F8326 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDB9E881DD70D17006F8326 /* ChartsViewController.swift */; };
 		ECDB9E8C1DD70D17006F8326 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDB9E891DD70D17006F8326 /* FirstTableViewController.swift */; };
 		ECDB9E8D1DD70D17006F8326 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDB9E8A1DD70D17006F8326 /* SecondViewController.swift */; };
+		F1B8215890E841753643CBD0 /* Pods_YHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5BEB6C019DC011D6C6E5D7 /* Pods_YHack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F5BEB6C019DC011D6C6E5D7 /* Pods_YHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		289709B7DA34B3F679A4E004 /* Pods-YHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHack/Pods-YHack.release.xcconfig"; sourceTree = "<group>"; };
+		9897423C67BA504141AE944A /* Pods-YHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHack/Pods-YHack.debug.xcconfig"; sourceTree = "<group>"; };
 		ECDB9E731DD70D04006F8326 /* YHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDB9E761DD70D04006F8326 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECDB9E7B1DD70D04006F8326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B8215890E841753643CBD0 /* Pods_YHack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		449470E8C72F99066497816E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F5BEB6C019DC011D6C6E5D7 /* Pods_YHack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C803859E6C15F3835F548B38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9897423C67BA504141AE944A /* Pods-YHack.debug.xcconfig */,
+				289709B7DA34B3F679A4E004 /* Pods-YHack.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ECDB9E6A1DD70D04006F8326 = {
 			isa = PBXGroup;
 			children = (
 				ECDB9E751DD70D04006F8326 /* YHack */,
 				ECDB9E741DD70D04006F8326 /* Products */,
+				C803859E6C15F3835F548B38 /* Pods */,
+				449470E8C72F99066497816E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECDB9E851DD70D04006F8326 /* Build configuration list for PBXNativeTarget "YHack" */;
 			buildPhases = (
+				B21DBE7790031C58EF5C38DB /* [CP] Check Pods Manifest.lock */,
 				ECDB9E6F1DD70D04006F8326 /* Sources */,
 				ECDB9E701DD70D04006F8326 /* Frameworks */,
 				ECDB9E711DD70D04006F8326 /* Resources */,
+				516183E625D120F2BF196E2B /* [CP] Embed Pods Frameworks */,
+				D5EF4F666687F2A346D0401A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,6 +164,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		516183E625D120F2BF196E2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YHack/Pods-YHack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B21DBE7790031C58EF5C38DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D5EF4F666687F2A346D0401A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YHack/Pods-YHack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ECDB9E6F1DD70D04006F8326 /* Sources */ = {
@@ -267,6 +342,7 @@
 		};
 		ECDB9E861DD70D04006F8326 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9897423C67BA504141AE944A /* Pods-YHack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H27J42LAW5;
@@ -280,6 +356,7 @@
 		};
 		ECDB9E871DD70D04006F8326 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 289709B7DA34B3F679A4E004 /* Pods-YHack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H27J42LAW5;

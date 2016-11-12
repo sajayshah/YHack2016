@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C5YHack19firstViewController", ""]
 provides-dynamic-lookup:
-- "numberOfSections"
-- "relations"
-- "tableView"
-- "tableView"
 - "viewDidLoad"
+- "tableView"
+- "tableView"
+- "relations"
+- "numberOfSections"
 depends-top-level:
-- "UITableViewController"
-- "IndexPath"
-- "UITableViewCell"
 - "AssignmentPrecedence"
-- "String"
-- "StringLiteralType"
 - "UITableView"
 - "firstViewController"
+- "String"
 - "Int"
+- "UITableViewCell"
+- "StringLiteralType"
+- "IndexPath"
+- "UITableViewController"
 depends-member:
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
 - ["Ps9AnyObject", "init"]
@@ -95,6 +95,27 @@ depends-member:
 - !private ["Ps10Comparable", "_DisabledRangeIndex"]
 - ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "row"]
+- !private ["P7SnapKit24ConstraintConstantTarget", "IntegerLiteralType"]
+- !private ["P7SnapKit24ConstraintConstantTarget", "Stride"]
+- !private ["P7SnapKit24ConstraintConstantTarget", "_DisabledRangeIndex"]
+- !private ["P7SnapKit21ConstraintInsetTarget", "IntegerLiteralType"]
+- !private ["P7SnapKit21ConstraintInsetTarget", "Stride"]
+- !private ["P7SnapKit21ConstraintInsetTarget", "_DisabledRangeIndex"]
+- !private ["P7SnapKit26ConstraintMultiplierTarget", "IntegerLiteralType"]
+- !private ["P7SnapKit26ConstraintMultiplierTarget", "Stride"]
+- !private ["P7SnapKit26ConstraintMultiplierTarget", "_DisabledRangeIndex"]
+- !private ["P7SnapKit22ConstraintOffsetTarget", "IntegerLiteralType"]
+- !private ["P7SnapKit22ConstraintOffsetTarget", "Stride"]
+- !private ["P7SnapKit22ConstraintOffsetTarget", "_DisabledRangeIndex"]
+- !private ["P7SnapKit24ConstraintPriorityTarget", "IntegerLiteralType"]
+- !private ["P7SnapKit24ConstraintPriorityTarget", "Stride"]
+- !private ["P7SnapKit24ConstraintPriorityTarget", "_DisabledRangeIndex"]
+- !private ["P7SnapKit25ConstraintRelatableTarget", "IntegerLiteralType"]
+- !private ["P7SnapKit25ConstraintRelatableTarget", "Stride"]
+- !private ["P7SnapKit25ConstraintRelatableTarget", "_DisabledRangeIndex"]
+- !private ["P7SnapKit25ConstraintRelatableTarget", "dequeueReusableCell"]
+- !private ["P7SnapKit25ConstraintRelatableTarget", "text"]
+- !private ["P7SnapKit25ConstraintRelatableTarget", "textLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
@@ -221,6 +242,10 @@ depends-member:
 - !private ["Ps17IntegerArithmetic", "Stride"]
 - !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps16IteratorProtocol", "Element"]
+- !private ["P10SwiftyJSON17JSONSubscriptType", "IntegerLiteralType"]
+- !private ["P10SwiftyJSON17JSONSubscriptType", "Stride"]
+- !private ["P10SwiftyJSON17JSONSubscriptType", "_DisabledRangeIndex"]
+- ["P10SwiftyJSON17JSONSubscriptType", "init"]
 - ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "IntegerLiteralType"]
 - !private ["Ps10MirrorPath", "Stride"]
@@ -469,6 +494,7 @@ depends-member:
 - ["CSo16UIViewController", "relations"]
 - ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "viewDidLoad"]
+- ["P9Alamofire14URLConvertible", "init"]
 - !private ["Ps14_ArrayProtocol", "Index"]
 - !private ["Ps14_ArrayProtocol", "IndexDistance"]
 - !private ["Ps14_ArrayProtocol", "SubSequence"]
@@ -550,6 +576,12 @@ depends-nominal:
 - "Ps7CVarArg"
 - !private "Ps10Collection"
 - "Ps10Comparable"
+- !private "P7SnapKit24ConstraintConstantTarget"
+- !private "P7SnapKit21ConstraintInsetTarget"
+- !private "P7SnapKit26ConstraintMultiplierTarget"
+- !private "P7SnapKit22ConstraintOffsetTarget"
+- !private "P7SnapKit24ConstraintPriorityTarget"
+- !private "P7SnapKit25ConstraintRelatableTarget"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
@@ -572,6 +604,7 @@ depends-nominal:
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"
+- "P10SwiftyJSON17JSONSubscriptType"
 - "Ps25LosslessStringConvertible"
 - "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
@@ -625,6 +658,7 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
+- "P9Alamofire14URLConvertible"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps24_DestructorSafeContainer"
@@ -654,4 +688,49 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Modules/Charts.swiftmodule/x86_64.swiftmodule"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-Swift.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-umbrella.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Modules/module.modulemap"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework/Modules/SnapKit.swiftmodule/x86_64.swiftmodule"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework/Headers/SnapKit-Swift.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework/Headers/SnapKit-umbrella.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework/Modules/module.modulemap"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/x86_64.swiftmodule"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/module.modulemap"
 interface-hash: "7168c59a8d554336f15051f60108415b"

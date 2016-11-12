@@ -44,17 +44,27 @@ class SecondTableViewController: UITableViewController {
             print("JSON: \(json)")
             let numfound = json["response"]["numFound"].int!
             print("numFound: \(numfound)")
-            self.total = numfound
+            self.numMen = numfound
         })
         
-        let menString = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_code%3\(promocodes[indexPath.row])%20AND%20%7B!join%20from%3Did%20to%3Dparticipant_id%20fromIndex%3Dparticipant%7Dgender%3AM&wt=json"
+        let menString = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_code%3DFREESPOUSE%20AND%20%7B!join%20from%3Did%20to%3Dparticipant_id%20fromIndex%3Dparticipant%7Dgender%3AF&wt=json"
         
         Alamofire.request(menString).responseJSON(completionHandler: {response in
             let json = JSON(response.result.value!)
-            self.numMen = json["response"]["numFound"].int!
-            self.numWomen = self.total - self.numMen
+            self.numWomen = json["response"]["numFound"].int!
+            print(self.numMen)
+            print(self.numWomen)
         })
         
+        let chartVC = ChartsViewController()
+        chartVC.data = [numMen, numWomen]
+        self.navigationController?.pushViewController(chartVC, animated: true)
     }
-
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let destination = segue.destination
+//        {
+//            
+//        }
+//    }
 }

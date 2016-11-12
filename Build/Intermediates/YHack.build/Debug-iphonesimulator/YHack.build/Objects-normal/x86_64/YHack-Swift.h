@@ -116,6 +116,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import Charts;
+@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -135,13 +137,57 @@ SWIFT_CLASS("_TtC5YHack11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class PieChartView;
+@class ChartViewBase;
+@class ChartDataEntry;
+@class ChartHighlight;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC5YHack14ViewController")
-@interface ViewController : UIViewController
+SWIFT_CLASS("_TtC5YHack20ChartsViewController")
+@interface ChartsViewController : UIViewController <ChartViewDelegate>
+@property (nonatomic, strong) PieChartView * _Nonnull pieChartview;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull data;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)setDataCountWithCount:(NSInteger)count range:(double)range;
+- (void)chartValueSelected:(ChartViewBase * _Nonnull)chartView entry:(ChartDataEntry * _Nonnull)entry highlight:(ChartHighlight * _Nonnull)highlight;
+- (void)setupWithPieChartView:(PieChartView * _Nonnull)chartView;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+@class UITableViewCell;
+@class UIButton;
+@class UIPickerView;
+
+SWIFT_CLASS("_TtC5YHack25SecondTableViewController")
+@interface SecondTableViewController : UITableViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified button;
+@property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified picker;
+@property (nonatomic) NSInteger total;
+@property (nonatomic) NSInteger numMen;
+@property (nonatomic) NSInteger numWomen;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull promocodes;
+- (void)viewDidLoad;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5YHack19firstViewController")
+@interface firstViewController : UITableViewController
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull relations;
+- (void)viewDidLoad;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
