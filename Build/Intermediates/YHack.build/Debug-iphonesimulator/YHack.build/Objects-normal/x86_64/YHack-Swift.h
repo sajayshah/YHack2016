@@ -146,6 +146,7 @@ SWIFT_CLASS("_TtC5YHack20ChartsViewController")
 @property (nonatomic, weak) IBOutlet PieChartView * _Null_unspecified pieChartView;
 @property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull data;
 @property (nonatomic, copy) NSString * _Nonnull promocode;
+@property (nonatomic) NSInteger fromIndex;
 - (void)viewDidLoad;
 - (void)setChartWithDataPoints:(NSArray<NSNumber *> * _Nonnull)dataPoints values:(NSArray<NSNumber *> * _Nonnull)values;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -155,6 +156,22 @@ SWIFT_CLASS("_TtC5YHack20ChartsViewController")
 @class UITableView;
 @class UITableViewCell;
 @class UIStoryboardSegue;
+
+SWIFT_CLASS("_TtC5YHack19FirstViewController")
+@interface FirstViewController : UITableViewController
+@property (nonatomic, copy) NSString * _Null_unspecified dataPassed;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull relations;
+- (void)viewDidLoad;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView willDisplayCell:(UITableViewCell * _Nonnull)cell forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIButton;
 @class UIPickerView;
 
@@ -162,6 +179,7 @@ SWIFT_CLASS("_TtC5YHack25SecondTableViewController")
 @interface SecondTableViewController : UITableViewController
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified button;
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified picker;
+@property (nonatomic) NSInteger fromIndex;
 @property (nonatomic) NSInteger total;
 @property (nonatomic) NSInteger numMen;
 @property (nonatomic) NSInteger numWomen;
@@ -171,19 +189,6 @@ SWIFT_CLASS("_TtC5YHack25SecondTableViewController")
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC5YHack19firstViewController")
-@interface firstViewController : UITableViewController
-@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull relations;
-- (void)viewDidLoad;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

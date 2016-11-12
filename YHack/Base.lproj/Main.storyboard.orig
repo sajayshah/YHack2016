@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="khT-Bl-WJN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="Hg6-t4-vm6">
+            <objects>
+                <tableViewController id="Tq7-aP-lRQ" customClass="FirstViewController" customModule="YHack" customModuleProvider="target" sceneMemberID="viewController">
+<<<<<<< HEAD
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="21a-GN-kpH">
+=======
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="21a-GN-kpH">
+>>>>>>> fbb5f93973aaf25de6b589c0f0e62c60bcfa5363
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="tableviewcell" id="xHI-dY-RaI" customClass="tableviewcell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xHI-dY-RaI" id="yGO-RM-35L">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Axz-e8-Fne" kind="show" identifier="toSecondVC" id="5on-Br-wnx"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Tq7-aP-lRQ" id="Icj-bb-kLs"/>
+                            <outlet property="delegate" destination="Tq7-aP-lRQ" id="3Tz-jF-Mdi"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="XT8-ML-yZ7"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I7D-jv-wiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="174.96251874062969"/>
+        </scene>
+        <!--Second Table View Controller-->
+        <scene sceneID="nob-At-5Ne">
+            <objects>
+                <tableViewController id="Axz-e8-Fne" customClass="SecondTableViewController" customModule="YHack" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="h8D-hT-WSU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="secondTableViewCells" id="ude-af-gGt" customClass="secondTableViewCells">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ude-af-gGt" id="sMl-2I-Y0q">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Axz-e8-Fne" id="BdE-hr-n6A"/>
+                            <outlet property="delegate" destination="Axz-e8-Fne" id="2wn-Yz-oUE"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="dyL-FJ-doc" kind="show" identifier="showChart" id="1TL-jF-4Qb"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j5W-Tj-lfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1884" y="179"/>
+        </scene>
+        <!--Charts View Controller-->
+        <scene sceneID="uTc-bc-QtF">
+            <objects>
+                <viewController storyboardIdentifier="chartsVC" id="dyL-FJ-doc" customClass="ChartsViewController" customModule="YHack" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="glD-Tt-UTP"/>
+                        <viewControllerLayoutGuide type="bottom" id="9fI-BQ-k0z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wwo-se-rea">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sv1-st-bRA" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="145" width="375" height="377"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Sv1-st-bRA" secondAttribute="trailing" id="5xa-wb-gWi"/>
+                            <constraint firstItem="Sv1-st-bRA" firstAttribute="leading" secondItem="wwo-se-rea" secondAttribute="leading" id="LcY-uF-6s2"/>
+                            <constraint firstItem="Sv1-st-bRA" firstAttribute="centerY" secondItem="wwo-se-rea" secondAttribute="centerY" id="t4I-NU-haS"/>
+                            <constraint firstItem="Sv1-st-bRA" firstAttribute="top" secondItem="glD-Tt-UTP" secondAttribute="bottom" constant="81" id="wDq-dH-o7L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pieChartView" destination="Sv1-st-bRA" id="UwZ-IC-cC4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gdf-HI-bU3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2633" y="179"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vFB-2u-zpR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="khT-Bl-WJN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="glQ-9W-gry">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tq7-aP-lRQ" kind="relationship" relationship="rootViewController" id="Y8k-h8-TGe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qe8-Fx-0zj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264.80000000000001" y="174.96251874062969"/>
+        </scene>
+    </scenes>
+</document>
