@@ -55,12 +55,18 @@ class FirstViewController: UITableViewController
         return relations.count
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 2 { self.performSegue(withIdentifier: "toBarGraph", sender: self) }
+        else { self.performSegue(withIdentifier: "toSecondVC", sender: self) }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toSecondVC"
         {
             let destinationVC = segue.destination as! SecondTableViewController
             destinationVC.fromIndex = (self.tableView.indexPathForSelectedRow?.row)!
         }
+        
     }
 }
 

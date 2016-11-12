@@ -7,31 +7,31 @@ provides-nominal:
 provides-member:
 - ["C6Charts14ChartDataEntry", ""]
 provides-dynamic-lookup:
-- "isEqual"
 - "copyWithZone"
-- "description"
 - "x"
+- "isEqual"
+- "description"
 depends-top-level:
-- "String"
-- !private "==="
-- "CastingPrecedence"
-- "=="
-- "AssignmentPrecedence"
-- "Bool"
-- !private "DBL_EPSILON"
-- !private "-"
-- !private ">"
-- !private "&&"
 - "NSZone"
-- !private "fabs"
-- !private "BooleanLiteralType"
+- !private "-"
+- "CastingPrecedence"
+- !private "==="
+- "=="
+- "Bool"
+- !private "&&"
+- "AnyObject"
+- "AssignmentPrecedence"
+- !private ">"
+- "ChartDataEntryBase"
 - !private "!=="
 - "ChartDataEntry"
-- "Double"
 - !private "!"
-- "AnyObject"
+- !private "BooleanLiteralType"
+- "Double"
+- !private "fabs"
 - !private "StringLiteralType"
-- "ChartDataEntryBase"
+- !private "DBL_EPSILON"
+- "String"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - ["Ps16AbsoluteValuable", "init"]
@@ -339,8 +339,8 @@ depends-nominal:
 - "Ps21_ObjectiveCBridgeable"
 - "Ps11_Strideable"
 depends-dynamic-lookup:
-- !private "isEqual"
 - !private "x"
+- !private "isEqual"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Users/atharvavaidya/Developer/YHack/Pods/Target Support Files/Charts/Charts-umbrella.h"

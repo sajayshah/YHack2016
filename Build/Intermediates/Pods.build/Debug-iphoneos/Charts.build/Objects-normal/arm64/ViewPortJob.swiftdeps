@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C6Charts11ViewPortJob", ""]
 provides-dynamic-lookup:
-- "point"
-- "doJob"
 - "xValue"
 - "viewPortHandler"
+- "doJob"
+- "point"
 - "view"
-- "transformer"
 - "yValue"
+- "transformer"
 depends-top-level:
 - "AssignmentPrecedence"
 - "NSObject"
-- "CGPoint"
 - "Double"
+- "CGPoint"
 - "ViewPortHandler"
-- "ChartViewBase"
 - "ViewPortJob"
-- "Transformer"
 - !private "StringLiteralType"
+- "ChartViewBase"
+- "Transformer"
 depends-member:
 - ["Ps9AnyObject", "CGPoint"]
 - ["Ps9AnyObject", "doJob"]

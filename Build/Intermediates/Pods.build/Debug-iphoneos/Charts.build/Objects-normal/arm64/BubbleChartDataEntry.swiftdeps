@@ -9,15 +9,15 @@ provides-dynamic-lookup:
 - "size"
 - "copyWithZone"
 depends-top-level:
-- "NSZone"
 - "ChartDataEntry"
 - !private "StringLiteralType"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- "BubbleChartDataEntry"
+- "NSZone"
 - "Double"
-- "CGFloat"
 - "AnyObject"
+- "CGFloat"
+- "BubbleChartDataEntry"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]

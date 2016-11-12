@@ -16,12 +16,12 @@ depends-top-level:
 - "AnyObject"
 - "BooleanLiteralType"
 - "Bool"
-- "NSZone"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
+- "NSZone"
 - "RealmBarLineScatterCandleBubbleDataSet"
-- "ILineScatterCandleRadarChartDataSet"
 - "RealmLineScatterCandleRadarDataSet"
+- "ILineScatterCandleRadarChartDataSet"
 depends-member:
 - ["Ps9AnyObject", "copyWithZone"]
 - ["Ps9AnyObject", "deinit"]

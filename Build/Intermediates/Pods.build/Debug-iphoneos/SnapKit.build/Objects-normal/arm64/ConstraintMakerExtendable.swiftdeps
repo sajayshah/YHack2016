@@ -7,9 +7,9 @@ provides-member:
 - ["C7SnapKit25ConstraintMakerExtendable", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "+="
 - "ConstraintMakerRelatable"
 - "ConstraintMakerExtendable"
-- !private "+="
 depends-member:
 - !private ["Ps9AnyObject", "attributes"]
 - ["Ps9AnyObject", "baseline"]

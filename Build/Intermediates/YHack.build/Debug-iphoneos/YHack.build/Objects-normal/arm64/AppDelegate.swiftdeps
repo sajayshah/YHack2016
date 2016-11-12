@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C5YHack11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillEnterForeground"
-- "window"
 - "applicationWillTerminate"
 - "applicationWillResignActive"
-- "applicationDidBecomeActive"
 - "applicationDidEnterBackground"
 - "application"
+- "applicationWillEnterForeground"
+- "window"
+- "applicationDidBecomeActive"
 depends-top-level:
-- !private "BooleanLiteralType"
 - "UIApplication"
-- "UIResponder"
-- "UIApplicationDelegate"
 - "UIWindow"
-- "UIApplicationLaunchOptionsKey"
+- "UIApplicationDelegate"
+- "UIResponder"
 - "AppDelegate"
+- "UIApplicationLaunchOptionsKey"
 - "Bool"
+- !private "BooleanLiteralType"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
@@ -304,4 +304,8 @@ depends-external:
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Modules/module.modulemap"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/NVActivityIndicatorView/NVActivityIndicatorView.framework/Modules/NVActivityIndicatorView.swiftmodule/arm64.swiftmodule"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers/NVActivityIndicatorView-Swift.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers/NVActivityIndicatorView-umbrella.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/NVActivityIndicatorView/NVActivityIndicatorView.framework/Modules/module.modulemap"
 interface-hash: "7e85a999868267b7cde0941f4dd635ac"

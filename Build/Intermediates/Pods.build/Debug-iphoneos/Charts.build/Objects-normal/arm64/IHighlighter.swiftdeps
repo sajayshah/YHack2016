@@ -8,9 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 - "getHighlight"
 depends-top-level:
+- "NSObjectProtocol"
 - "CGFloat"
 - "Highlight"
-- "NSObjectProtocol"
 - "IHighlighter"
 depends-member:
 - ["P6Charts12IHighlighter", "CGFloat"]

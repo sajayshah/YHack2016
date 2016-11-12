@@ -9,19 +9,19 @@ provides-dynamic-lookup:
 - "highlightColor"
 - "highlightLineDashLengths"
 - "highlightLineWidth"
-- "copyWithZone"
 - "highlightLineDashPhase"
+- "copyWithZone"
 depends-top-level:
-- "RealmBarLineScatterCandleBubbleDataSet"
+- "IBarLineScatterCandleBubbleChartDataSet"
 - "AnyObject"
-- "AssignmentPrecedence"
-- "NSZone"
-- "CastingPrecedence"
 - "NSUIColor"
 - "/"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "NSZone"
+- "RealmBarLineScatterCandleBubbleDataSet"
 - "RealmBaseDataSet"
 - "CGFloat"
-- "IBarLineScatterCandleBubbleChartDataSet"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]

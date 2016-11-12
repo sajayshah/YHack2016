@@ -15,19 +15,19 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "Float"
-- "CGPoint"
 - !private "ConstraintConfig"
-- "ConstraintConstantTarget"
+- "NSLayoutAttribute"
 - "CGSize"
+- !private "UInt"
 - !private "=="
 - !private "-"
 - "CastingPrecedence"
 - !private "+"
+- "CGPoint"
 - !private "Int"
 - "ConstraintInsets"
 - "CGFloat"
-- "NSLayoutAttribute"
-- !private "UInt"
+- "ConstraintConstantTarget"
 - !private "Double"
 - "TernaryPrecedence"
 depends-member:

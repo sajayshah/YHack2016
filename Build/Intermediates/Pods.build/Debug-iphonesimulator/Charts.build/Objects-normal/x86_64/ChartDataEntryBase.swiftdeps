@@ -7,30 +7,30 @@ provides-nominal:
 provides-member:
 - ["C6Charts18ChartDataEntryBase", ""]
 provides-dynamic-lookup:
-- "data"
-- "y"
 - "description"
 - "isEqual"
+- "y"
+- "data"
 depends-top-level:
 - !private "BooleanLiteralType"
-- "NSObject"
-- !private "StringLiteralType"
-- "ChartDataEntryBase"
-- "String"
 - "Double"
-- "Bool"
+- !private "&&"
+- !private "!"
+- !private "StringLiteralType"
+- "NSObject"
 - "=="
 - "AssignmentPrecedence"
-- !private "!"
 - "CastingPrecedence"
-- !private ">"
-- !private "&&"
+- "ChartDataEntryBase"
 - "AnyObject"
-- !private "!=="
+- !private "DBL_EPSILON"
+- !private "-"
+- "String"
 - !private "==="
 - !private "fabs"
-- !private "-"
-- !private "DBL_EPSILON"
+- "Bool"
+- !private ">"
+- !private "!=="
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - ["Ps16AbsoluteValuable", "init"]
@@ -297,10 +297,10 @@ depends-nominal:
 - "Vs26_OptionalNilComparisonType"
 - "Ps11_Strideable"
 depends-dynamic-lookup:
-- !private "data"
+- !private "isEqual"
 - !private "y"
 - !private "isKind"
-- !private "isEqual"
+- !private "data"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Users/atharvavaidya/Developer/YHack/Pods/Target Support Files/Charts/Charts-umbrella.h"

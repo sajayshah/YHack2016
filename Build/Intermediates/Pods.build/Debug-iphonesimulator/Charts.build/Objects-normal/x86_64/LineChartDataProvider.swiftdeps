@@ -9,9 +9,9 @@ provides-dynamic-lookup:
 - "getAxis"
 - "lineData"
 depends-top-level:
+- "LineChartDataProvider"
 - "LineChartData"
 - "BarLineScatterCandleBubbleChartDataProvider"
-- "LineChartDataProvider"
 - "YAxis"
 depends-member:
 - ["Ps9AnyObject", "AxisDependency"]

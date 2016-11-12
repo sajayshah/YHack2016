@@ -7,11 +7,11 @@ provides-member:
 - ["V7SnapKit26ConstraintLayoutSupportDSL", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "ConstraintDSL"
 - "AnyObject"
 - "ConstraintItem"
-- "AssignmentPrecedence"
+- "ConstraintDSL"
 - "ConstraintLayoutSupport"
+- "AssignmentPrecedence"
 - !private "ConstraintAttributes"
 - "ConstraintLayoutSupportDSL"
 depends-member:

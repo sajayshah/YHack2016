@@ -7,31 +7,31 @@ provides-nominal:
 provides-member:
 - ["C6Charts14ChartDataEntry", ""]
 provides-dynamic-lookup:
-- "isEqual"
 - "description"
+- "isEqual"
 - "x"
 - "copyWithZone"
 depends-top-level:
-- "Bool"
-- !private "!"
+- "AnyObject"
+- "ChartDataEntry"
 - !private "BooleanLiteralType"
 - "Double"
-- !private "-"
-- "AnyObject"
-- "String"
+- !private "!"
 - "NSZone"
-- !private "StringLiteralType"
 - "ChartDataEntryBase"
+- !private "StringLiteralType"
 - "=="
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- !private "fabs"
-- "ChartDataEntry"
-- !private "!=="
-- !private "&&"
-- !private ">"
 - !private "DBL_EPSILON"
+- "String"
+- !private "-"
+- !private "fabs"
+- "Bool"
+- !private ">"
+- !private "&&"
 - !private "==="
+- !private "!=="
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - ["Ps16AbsoluteValuable", "init"]

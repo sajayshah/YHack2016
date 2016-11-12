@@ -9,15 +9,15 @@ provides-member:
 - ["P23NVActivityIndicatorView27NVActivityIndicatorViewable", "stopAnimating"]
 provides-dynamic-lookup:
 depends-top-level:
+- "UIViewController"
+- "UIColor"
+- "CGSize"
+- !private "NVActivityIndicatorPresenter"
 - "String"
 - "NVActivityIndicatorType"
-- "UIViewController"
 - "Int"
-- "UIColor"
-- "NVActivityIndicatorViewable"
 - "CGFloat"
-- !private "NVActivityIndicatorPresenter"
-- "CGSize"
+- "NVActivityIndicatorViewable"
 - !private "ActivityData"
 depends-member:
 - ["C23NVActivityIndicatorView12ActivityData", "deinit"]

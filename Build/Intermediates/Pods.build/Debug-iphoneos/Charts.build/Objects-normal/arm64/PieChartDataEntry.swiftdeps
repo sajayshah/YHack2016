@@ -11,16 +11,16 @@ provides-dynamic-lookup:
 - "x"
 - "label"
 depends-top-level:
-- "CastingPrecedence"
-- "PieChartDataEntry"
-- "AssignmentPrecedence"
-- "String"
 - !private "print"
+- "String"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- "NSZone"
+- "ChartDataEntry"
 - "Double"
 - "AnyObject"
 - !private "StringLiteralType"
-- "NSZone"
-- "ChartDataEntry"
+- "PieChartDataEntry"
 depends-member:
 - ["Ps9AnyObject", "copyWithZone"]
 - ["Ps9AnyObject", "deinit"]

@@ -10,10 +10,10 @@ depends-top-level:
 - !private "/"
 - "ConstraintMakerEditable"
 - "ConstraintOffsetTarget"
+- "ConstraintMakerPriortizable"
 - "AssignmentPrecedence"
 - "ConstraintMultiplierTarget"
 - "ConstraintInsetTarget"
-- "ConstraintMakerPriortizable"
 depends-member:
 - !private ["Ps9AnyObject", "constant"]
 - !private ["Ps9AnyObject", "description"]

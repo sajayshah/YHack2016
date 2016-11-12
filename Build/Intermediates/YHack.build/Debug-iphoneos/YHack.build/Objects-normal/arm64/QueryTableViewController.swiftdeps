@@ -1,0 +1,410 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "QueryTableViewController"
+provides-nominal:
+- "C5YHack24QueryTableViewController"
+provides-member:
+- ["C5YHack24QueryTableViewController", ""]
+provides-dynamic-lookup:
+- "donePressed"
+- "minTextfield"
+- "maxTextField"
+- "viewDidLoad"
+depends-top-level:
+- "QueryTableViewController"
+- !private "BooleanLiteralType"
+- "UITextField"
+- "UITableViewController"
+- !private "BarGraphViewController"
+- "UIBarButtonItem"
+- !private "=="
+- !private "&&"
+depends-member:
+- !private ["Ps9AnyObject", "BarGraphViewController"]
+- ["Ps9AnyObject", "donePressed"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "maxTextField"]
+- ["Ps9AnyObject", "minTextfield"]
+- !private ["Ps9AnyObject", "navigationController"]
+- !private ["Ps9AnyObject", "pushViewController"]
+- !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- ["C5YHack22BarGraphViewController", "deinit"]
+- !private ["C5YHack22BarGraphViewController", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["Ps7CVarArg", "BarGraphViewController"]
+- ["Ps7CVarArg", "donePressed"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "maxTextField"]
+- ["Ps7CVarArg", "minTextfield"]
+- !private ["Ps7CVarArg", "navigationController"]
+- !private ["Ps7CVarArg", "pushViewController"]
+- !private ["Ps7CVarArg", "text"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["P6Charts17ChartViewDelegate", "init"]
+- !private ["P7SnapKit25ConstraintRelatableTarget", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "BarGraphViewController"]
+- ["Ps28CustomDebugStringConvertible", "donePressed"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "maxTextField"]
+- ["Ps28CustomDebugStringConvertible", "minTextfield"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "pushViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "BarGraphViewController"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "donePressed"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "maxTextField"]
+- ["Ps23CustomStringConvertible", "minTextfield"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
+- !private ["Ps23CustomStringConvertible", "pushViewController"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "BarGraphViewController"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "donePressed"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "maxTextField"]
+- ["Ps9Equatable", "minTextfield"]
+- !private ["Ps9Equatable", "navigationController"]
+- !private ["Ps9Equatable", "pushViewController"]
+- !private ["Ps9Equatable", "text"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "BarGraphViewController"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "donePressed"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "maxTextField"]
+- ["Ps8Hashable", "minTextfield"]
+- !private ["Ps8Hashable", "navigationController"]
+- !private ["Ps8Hashable", "pushViewController"]
+- !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "BarGraphViewController"]
+- ["PSo8NSCoding", "donePressed"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "maxTextField"]
+- ["PSo8NSCoding", "minTextfield"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "pushViewController"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "BarGraphViewController"]
+- ["PSo26NSExtensionRequestHandling", "donePressed"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "maxTextField"]
+- ["PSo26NSExtensionRequestHandling", "minTextfield"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo8NSObject", "BarGraphViewController"]
+- ["CSo8NSObject", "UIBarButtonItem"]
+- ["CSo8NSObject", "UITextField"]
+- ["CSo8NSObject", "donePressed"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "maxTextField"]
+- ["CSo8NSObject", "minTextfield"]
+- !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "pushViewController"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "BarGraphViewController"]
+- ["PSo16NSObjectProtocol", "donePressed"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "maxTextField"]
+- ["PSo16NSObjectProtocol", "minTextfield"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "pushViewController"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- !private ["C5YHack24QueryTableViewController", "BarGraphViewController"]
+- ["C5YHack24QueryTableViewController", "UIBarButtonItem"]
+- ["C5YHack24QueryTableViewController", "UITextField"]
+- ["C5YHack24QueryTableViewController", "deinit"]
+- ["C5YHack24QueryTableViewController", "donePressed"]
+- ["C5YHack24QueryTableViewController", "init"]
+- ["C5YHack24QueryTableViewController", "maxTextField"]
+- ["C5YHack24QueryTableViewController", "minTextfield"]
+- !private ["C5YHack24QueryTableViewController", "navigationController"]
+- ["C5YHack24QueryTableViewController", "viewDidLoad"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "BarGraphViewController"]
+- ["PSo21UIAppearanceContainer", "donePressed"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "maxTextField"]
+- ["PSo21UIAppearanceContainer", "minTextfield"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "pushViewController"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "BarGraphViewController"]
+- ["PSo18UIContentContainer", "donePressed"]
+- !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "maxTextField"]
+- ["PSo18UIContentContainer", "minTextfield"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "pushViewController"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["CSo9UIControl", "text"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "BarGraphViewController"]
+- ["PSo18UIFocusEnvironment", "donePressed"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "maxTextField"]
+- ["PSo18UIFocusEnvironment", "minTextfield"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "pushViewController"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["PSo10UIKeyInput", "text"]
+- ["CSo22UINavigationController", "deinit"]
+- !private ["CSo22UINavigationController", "pushViewController"]
+- !private ["CSo11UIResponder", "BarGraphViewController"]
+- ["CSo11UIResponder", "UIBarButtonItem"]
+- ["CSo11UIResponder", "UITextField"]
+- ["CSo11UIResponder", "donePressed"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "maxTextField"]
+- ["CSo11UIResponder", "minTextfield"]
+- !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "pushViewController"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "BarGraphViewController"]
+- ["PSo30UIResponderStandardEditActions", "donePressed"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "maxTextField"]
+- ["PSo30UIResponderStandardEditActions", "minTextfield"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationController"]
+- !private ["PSo30UIResponderStandardEditActions", "pushViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo20UIScrollViewDelegate", "BarGraphViewController"]
+- ["PSo20UIScrollViewDelegate", "donePressed"]
+- !private ["PSo20UIScrollViewDelegate", "init"]
+- ["PSo20UIScrollViewDelegate", "maxTextField"]
+- ["PSo20UIScrollViewDelegate", "minTextfield"]
+- !private ["PSo20UIScrollViewDelegate", "navigationController"]
+- ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- ["PSo20UIScrollViewDelegate", ""]
+- !private ["PSo16UIStateRestoring", "BarGraphViewController"]
+- ["PSo16UIStateRestoring", "donePressed"]
+- !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "maxTextField"]
+- ["PSo16UIStateRestoring", "minTextfield"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "pushViewController"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo21UITableViewController", "BarGraphViewController"]
+- ["CSo21UITableViewController", "UIBarButtonItem"]
+- ["CSo21UITableViewController", "UITextField"]
+- ["CSo21UITableViewController", "deinit"]
+- ["CSo21UITableViewController", "donePressed"]
+- ["CSo21UITableViewController", "init"]
+- ["CSo21UITableViewController", "maxTextField"]
+- ["CSo21UITableViewController", "minTextfield"]
+- !private ["CSo21UITableViewController", "navigationController"]
+- ["CSo21UITableViewController", "viewDidLoad"]
+- ["CSo21UITableViewController", ""]
+- !private ["PSo21UITableViewDataSource", "BarGraphViewController"]
+- ["PSo21UITableViewDataSource", "donePressed"]
+- !private ["PSo21UITableViewDataSource", "init"]
+- ["PSo21UITableViewDataSource", "maxTextField"]
+- ["PSo21UITableViewDataSource", "minTextfield"]
+- !private ["PSo21UITableViewDataSource", "navigationController"]
+- ["PSo21UITableViewDataSource", "viewDidLoad"]
+- ["PSo21UITableViewDataSource", ""]
+- !private ["PSo19UITableViewDelegate", "BarGraphViewController"]
+- ["PSo19UITableViewDelegate", "donePressed"]
+- !private ["PSo19UITableViewDelegate", "init"]
+- ["PSo19UITableViewDelegate", "maxTextField"]
+- ["PSo19UITableViewDelegate", "minTextfield"]
+- !private ["PSo19UITableViewDelegate", "navigationController"]
+- ["PSo19UITableViewDelegate", "viewDidLoad"]
+- ["PSo19UITableViewDelegate", ""]
+- ["OSC16UITableViewStyle", "deinit"]
+- !private ["CSo11UITextField", "text"]
+- !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "text"]
+- !private ["PSo18UITraitEnvironment", "BarGraphViewController"]
+- ["PSo18UITraitEnvironment", "donePressed"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "maxTextField"]
+- ["PSo18UITraitEnvironment", "minTextfield"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "pushViewController"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo16UIViewController", "BarGraphViewController"]
+- ["CSo16UIViewController", "UIBarButtonItem"]
+- ["CSo16UIViewController", "UITextField"]
+- ["CSo16UIViewController", "donePressed"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "maxTextField"]
+- ["CSo16UIViewController", "minTextfield"]
+- !private ["CSo16UIViewController", "navigationController"]
+- !private ["CSo16UIViewController", "pushViewController"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "BarGraphViewController"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "donePressed"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "maxTextField"]
+- ["Ps9_Hashable", "minTextfield"]
+- !private ["Ps9_Hashable", "navigationController"]
+- !private ["Ps9_Hashable", "pushViewController"]
+- !private ["Ps9_Hashable", "text"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+depends-nominal:
+- "Ps9AnyObject"
+- "C5YHack22BarGraphViewController"
+- "Sb"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- !private "P6Charts17ChartViewDelegate"
+- !private "P7SnapKit25ConstraintRelatableTarget"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps8Hashable"
+- "SQ"
+- !private "Ps25LosslessStringConvertible"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- "C5YHack24QueryTableViewController"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "PSo10UIKeyInput"
+- "CSo22UINavigationController"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- "CSo21UITableViewController"
+- "PSo21UITableViewDataSource"
+- "PSo19UITableViewDelegate"
+- "OSC16UITableViewStyle"
+- !private "CSo11UITextField"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Charts/Charts.framework/Modules/Charts.swiftmodule/arm64.swiftmodule"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Charts/Charts.framework/Headers/Charts-Swift.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Charts/Charts.framework/Headers/Charts-umbrella.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Charts/Charts.framework/Modules/module.modulemap"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/SnapKit/SnapKit.framework/Modules/SnapKit.swiftmodule/arm64.swiftmodule"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/SnapKit/SnapKit.framework/Headers/SnapKit-Swift.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/SnapKit/SnapKit.framework/Headers/SnapKit-umbrella.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/SnapKit/SnapKit.framework/Modules/module.modulemap"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/arm64.swiftmodule"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Modules/module.modulemap"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/NVActivityIndicatorView/NVActivityIndicatorView.framework/Modules/NVActivityIndicatorView.swiftmodule/arm64.swiftmodule"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers/NVActivityIndicatorView-Swift.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers/NVActivityIndicatorView-umbrella.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/NVActivityIndicatorView/NVActivityIndicatorView.framework/Modules/module.modulemap"
+interface-hash: "25f1d4784c5a7703eaa431027dc90191"

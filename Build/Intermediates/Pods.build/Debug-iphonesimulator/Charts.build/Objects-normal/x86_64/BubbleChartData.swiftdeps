@@ -9,12 +9,12 @@ provides-dynamic-lookup:
 - "setHighlightCircleWidth"
 depends-top-level:
 - "IChartDataSet"
+- "BarLineScatterCandleBubbleChartData"
 - "BubbleChartData"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- !private "IBubbleChartDataSet"
 - "CGFloat"
-- "BarLineScatterCandleBubbleChartData"
+- !private "IBubbleChartDataSet"
 depends-member:
 - !private ["Ps9AnyObject", "_dataSets"]
 - ["Ps9AnyObject", "init"]

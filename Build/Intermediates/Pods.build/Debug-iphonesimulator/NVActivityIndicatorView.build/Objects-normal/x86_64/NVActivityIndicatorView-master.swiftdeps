@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
 options: "1af8013a93e087c4905f9b2a348876c5"
-build_time: [532287326, 617869000]
+build_time: [532293595, 888481000]
 inputs:
   "/Users/atharvavaidya/Developer/YHack/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationAudioEqualizer.swift": [532287319, 0]
   "/Users/atharvavaidya/Developer/YHack/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallBeat.swift": [532287319, 0]

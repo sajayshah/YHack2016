@@ -8,24 +8,24 @@ provides-member:
 provides-dynamic-lookup:
 - "getHighlights"
 depends-top-level:
-- "CombinedChartDataProvider"
-- !private "!"
+- !private "BarChartData"
 - !private "..<"
 - "Double"
-- !private "&&"
 - "Highlight"
+- "CombinedHighlighter"
+- !private "!"
 - !private "StringLiteralType"
 - "ChartHighlighter"
+- "BarHighlighter"
 - "BarChartDataProvider"
 - !private "=="
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- !private "BarChartData"
-- "CombinedHighlighter"
+- "CombinedChartDataProvider"
 - !private "!="
 - "CGFloat"
-- "BarHighlighter"
 - "TernaryPrecedence"
+- !private "&&"
 depends-member:
 - !private ["Ps9AnyObject", "BarHighlighter"]
 - !private ["Ps9AnyObject", "Highlight"]

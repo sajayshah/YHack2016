@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
 options: "ac3e13dbd5d1da23785df8c6341948ee"
-build_time: [532287329, 757401000]
+build_time: [532293616, 883152000]
 inputs:
   "/Users/atharvavaidya/Developer/YHack/Pods/Charts/Source/Charts/Jobs/AnimatedMoveViewJob.swift": [532255679, 0]
   "/Users/atharvavaidya/Developer/YHack/Pods/Charts/Source/Charts/Jobs/AnimatedViewPortJob.swift": [532255679, 0]

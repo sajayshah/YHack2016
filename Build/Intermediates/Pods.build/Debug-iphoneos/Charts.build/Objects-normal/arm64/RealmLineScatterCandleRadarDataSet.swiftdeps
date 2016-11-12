@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C6Charts34RealmLineScatterCandleRadarDataSet", ""]
 provides-dynamic-lookup:
+- "drawVerticalHighlightIndicatorEnabled"
 - "drawHorizontalHighlightIndicatorEnabled"
 - "copyWithZone"
 - "isHorizontalHighlightIndicatorEnabled"
 - "isVerticalHighlightIndicatorEnabled"
 - "setDrawHighlightIndicators"
-- "drawVerticalHighlightIndicatorEnabled"
 depends-top-level:
-- "RealmBarLineScatterCandleBubbleDataSet"
 - "BooleanLiteralType"
-- "ILineScatterCandleRadarChartDataSet"
-- "Bool"
 - "RealmLineScatterCandleRadarDataSet"
+- "RealmBarLineScatterCandleBubbleDataSet"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- "NSZone"
+- "ILineScatterCandleRadarChartDataSet"
 - "AnyObject"
+- "NSZone"
+- "Bool"
 depends-member:
 - ["Ps9AnyObject", "copyWithZone"]
 - ["Ps9AnyObject", "deinit"]

@@ -8,9 +8,9 @@ provides-member:
 - ["V7SnapKit16ConstraintConfig", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UIUserInterfaceLayoutDirection"
 - "ConstraintConfig"
 - "ConstraintInterfaceLayoutDirection"
+- "UIUserInterfaceLayoutDirection"
 depends-member:
 - ["V7SnapKit16ConstraintConfig", "ConstraintInterfaceLayoutDirection"]
 - ["V7SnapKit16ConstraintConfig", "init"]

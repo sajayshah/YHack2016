@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["P6Charts22ILineRadarChartDataSet", ""]
 provides-dynamic-lookup:
-- "fill"
-- "fillColor"
-- "drawFilledEnabled"
-- "fillAlpha"
 - "lineWidth"
 - "isDrawFilledEnabled"
+- "fillColor"
+- "fillAlpha"
+- "drawFilledEnabled"
+- "fill"
 depends-top-level:
-- "Bool"
-- "ILineRadarChartDataSet"
-- "NSUIColor"
-- "Fill"
-- "CGFloat"
 - "ILineScatterCandleRadarChartDataSet"
+- "ILineRadarChartDataSet"
+- "Fill"
+- "Bool"
+- "NSUIColor"
+- "CGFloat"
 depends-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "Bool"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "CGFloat"]

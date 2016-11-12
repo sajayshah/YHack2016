@@ -39,8 +39,8 @@ provides-dynamic-lookup:
 - "snp_removeConstraints"
 depends-top-level:
 - "ConstraintViewDSL"
-- "ConstraintItem"
 - "ConstraintMaker"
+- "ConstraintItem"
 - "Void"
 - "ConstraintView"
 - "Constraint"

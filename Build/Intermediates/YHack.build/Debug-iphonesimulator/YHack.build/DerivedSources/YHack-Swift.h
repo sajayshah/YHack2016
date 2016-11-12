@@ -138,9 +138,27 @@ SWIFT_CLASS("_TtC5YHack11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class PieChartView;
+@class BarChartView;
+@class ChartViewBase;
+@class ChartDataEntry;
+@class ChartHighlight;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC5YHack22BarGraphViewController")
+@interface BarGraphViewController : UIViewController <ChartViewDelegate>
+@property (nonatomic, strong) BarChartView * _Null_unspecified barChartView;
+@property (nonatomic) NSInteger minAge;
+@property (nonatomic) NSInteger maxAge;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull numberofPeopleSignedUp;
+- (void)viewDidLoad;
+- (void)setChartWithData:(NSArray<NSNumber *> * _Nonnull)data values:(NSArray<NSNumber *> * _Nonnull)values;
+- (void)chartValueSelectedWithChartView:(ChartViewBase * _Nonnull)chartView entry:(ChartDataEntry * _Nonnull)entry dataSetIndex:(NSInteger)dataSetIndex highlight:(ChartHighlight * _Nonnull)highlight;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class PieChartView;
 
 SWIFT_CLASS("_TtC5YHack20ChartsViewController")
 @interface ChartsViewController : UIViewController <ChartViewDelegate>
@@ -166,15 +184,22 @@ SWIFT_CLASS("_TtC5YHack19FirstViewController")
 - (void)tableView:(UITableView * _Nonnull)tableView willDisplayCell:(UITableViewCell * _Nonnull)cell forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIBarButtonItem;
+@class UITextField;
 
 SWIFT_CLASS("_TtC5YHack24QueryTableViewController")
 @interface QueryTableViewController : UITableViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified minTextfield;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified maxTextField;
+- (IBAction)donePressed:(UIBarButtonItem * _Nonnull)sender;
+- (void)viewDidLoad;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

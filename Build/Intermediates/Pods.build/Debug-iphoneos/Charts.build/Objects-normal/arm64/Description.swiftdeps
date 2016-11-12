@@ -11,15 +11,15 @@ provides-dynamic-lookup:
 - "textAlign"
 - "textColor"
 depends-top-level:
-- "AssignmentPrecedence"
-- "ComponentBase"
-- "NSTextAlignment"
-- "NSUIFont"
-- "CGPoint"
 - "String"
 - "NSUIColor"
+- "AssignmentPrecedence"
 - "Description"
+- "CGPoint"
+- "NSUIFont"
 - "StringLiteralType"
+- "ComponentBase"
+- "NSTextAlignment"
 depends-member:
 - ["Ps9AnyObject", "NSTextAlignment"]
 - ["Ps9AnyObject", "NSUIColor"]
