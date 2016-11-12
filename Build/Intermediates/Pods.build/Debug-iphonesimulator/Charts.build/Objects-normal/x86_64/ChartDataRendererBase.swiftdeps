@@ -15,22 +15,22 @@ provides-dynamic-lookup:
 - "drawData"
 depends-top-level:
 - !private "Int"
+- "ChartDataProvider"
 - !private "BooleanLiteralType"
 - !private "StringLiteralType"
 - "Highlight"
-- "Animator"
 - "ViewPortHandler"
+- "Animator"
 - "AssignmentPrecedence"
-- "DataRenderer"
-- !private "*"
 - !private "fatalError"
+- !private "*"
 - !private "??"
-- !private "CGFloat"
 - "CGContext"
+- "DataRenderer"
+- !private "CGFloat"
 - !private "<"
 - "Renderer"
 - "Bool"
-- "ChartDataProvider"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]

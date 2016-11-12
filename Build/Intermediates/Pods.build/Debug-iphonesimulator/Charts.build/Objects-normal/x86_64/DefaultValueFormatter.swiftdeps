@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C6Charts21DefaultValueFormatter", ""]
 provides-dynamic-lookup:
-- "formatter"
-- "stringForValue"
-- "with"
-- "block"
 - "hasAutoDecimals"
+- "with"
+- "stringForValue"
+- "block"
+- "formatter"
 depends-top-level:
-- "Int"
-- "IValueFormatter"
-- "NSObject"
+- "Double"
+- "Bool"
+- "ViewPortHandler"
+- "NumberFormatter"
 - "BooleanLiteralType"
 - !private "??"
 - !private "StringLiteralType"
-- "Bool"
-- "NumberFormatter"
-- "AssignmentPrecedence"
-- "ChartDataEntry"
-- "DefaultValueFormatter"
+- "Int"
 - "String"
-- !private "NSNumber"
-- "Double"
+- "DefaultValueFormatter"
 - !private "!="
-- "ViewPortHandler"
+- "AssignmentPrecedence"
+- "NSObject"
+- "ChartDataEntry"
+- "IValueFormatter"
+- !private "NSNumber"
 depends-member:
 - !private ["Ps9AnyObject", "DefaultValueFormatter"]
 - !private ["Ps9AnyObject", "NSNumber"]

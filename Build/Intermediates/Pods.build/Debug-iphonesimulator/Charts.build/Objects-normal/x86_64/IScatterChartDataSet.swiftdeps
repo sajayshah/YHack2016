@@ -11,11 +11,11 @@ provides-dynamic-lookup:
 - "scatterShapeHoleRadius"
 - "shapeRenderer"
 depends-top-level:
-- "NSUIColor"
+- "IShapeRenderer"
 - "ILineScatterCandleRadarChartDataSet"
 - "IScatterChartDataSet"
-- "IShapeRenderer"
 - "CGFloat"
+- "NSUIColor"
 depends-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "CGFloat"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "IShapeRenderer"]

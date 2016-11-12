@@ -10,10 +10,10 @@ provides-dynamic-lookup:
 - "value"
 depends-top-level:
 - "NSZone"
+- "AnyObject"
 - !private "StringLiteralType"
 - "RadarChartDataEntry"
 - "ChartDataEntry"
-- "AnyObject"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
 - "Double"

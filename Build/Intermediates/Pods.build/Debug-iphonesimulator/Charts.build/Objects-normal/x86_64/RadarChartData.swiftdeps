@@ -7,23 +7,23 @@ provides-member:
 - ["C6Charts14RadarChartData", ""]
 provides-dynamic-lookup:
 - "highlightColor"
+- "highlightLineDashPhase"
+- "labels"
+- "entryForHighlight"
 - "highlightLineDashLengths"
 - "highlightLineWidth"
-- "labels"
-- "highlightLineDashPhase"
-- "entryForHighlight"
 depends-top-level:
 - "NSUIColor"
-- "String"
-- "Highlight"
-- "ChartDataEntry"
-- "AssignmentPrecedence"
-- !private "Int"
 - "/"
-- "IChartDataSet"
-- "CGFloat"
 - "RadarChartData"
 - "ChartData"
+- "String"
+- !private "Int"
+- "Highlight"
+- "AssignmentPrecedence"
+- "IChartDataSet"
+- "CGFloat"
+- "ChartDataEntry"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]

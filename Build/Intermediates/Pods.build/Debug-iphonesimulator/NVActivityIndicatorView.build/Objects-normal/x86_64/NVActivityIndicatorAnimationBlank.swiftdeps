@@ -1,0 +1,44 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NVActivityIndicatorAnimationBlank"
+provides-nominal:
+- "C23NVActivityIndicatorView33NVActivityIndicatorAnimationBlank"
+provides-member:
+- ["C23NVActivityIndicatorView33NVActivityIndicatorAnimationBlank", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "NVActivityIndicatorAnimationDelegate"
+- "NVActivityIndicatorAnimationBlank"
+- "UIColor"
+- "CALayer"
+- "CGSize"
+depends-member:
+- ["Ps9AnyObject", "setUpAnimation"]
+- ["Ps9AnyObject", ""]
+- ["C23NVActivityIndicatorView33NVActivityIndicatorAnimationBlank", "CALayer"]
+- ["C23NVActivityIndicatorView33NVActivityIndicatorAnimationBlank", "CGSize"]
+- ["C23NVActivityIndicatorView33NVActivityIndicatorAnimationBlank", "UIColor"]
+- ["C23NVActivityIndicatorView33NVActivityIndicatorAnimationBlank", "deinit"]
+- ["C23NVActivityIndicatorView33NVActivityIndicatorAnimationBlank", "init"]
+- ["C23NVActivityIndicatorView33NVActivityIndicatorAnimationBlank", "setUpAnimation"]
+- ["P23NVActivityIndicatorView36NVActivityIndicatorAnimationDelegate", "setUpAnimation"]
+- ["P23NVActivityIndicatorView36NVActivityIndicatorAnimationDelegate", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "C23NVActivityIndicatorView33NVActivityIndicatorAnimationBlank"
+- "P23NVActivityIndicatorView36NVActivityIndicatorAnimationDelegate"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/atharvavaidya/Developer/YHack/Pods/Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-umbrella.h"
+- "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphonesimulator/NVActivityIndicatorView.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "4b5b5ee3ccfb26b6a7e5c8b5e4573c8d"
