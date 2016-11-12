@@ -12,6 +12,7 @@ import Charts
 //#00C9FF, 92FE9D
 class FirstViewController: UITableViewController
 {
+    //@IBOutlet weak var detailButton: UIButton!
     //
     let relations: [String] = ["Promocode vs Gender", "Promocode vs Marital Status", "Promocode vs Age Range"]
 
@@ -27,16 +28,14 @@ class FirstViewController: UITableViewController
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableviewcell")!
         
         cell.textLabel?.text = relations[indexPath.row]
-        cell.textLabel?.font = UIFont(name:"Helvetica", size:22)
-        cell.textLabel?.textColor = UIColor.purple
+        cell.textLabel?.font = UIFont(name:"Helvetica-Medium", size:24)
+        cell.textLabel?.textColor = UIColor(red:0.00, green:0.85, blue:0.45, alpha:1.00)
         cell.textLabel?.textAlignment = NSTextAlignment.center
-        cell.backgroundColor = UIColor(red: 207.0 / 255.0, green: 238.0 / 255.0, blue: 241.0 / 255.0, alpha: 1.0)
-
-        // cell.backgroundColor = indexPath.row % 2 == 0 ? UIColor(red: 0.0, green: 0.0, blue: 1.0, alpha: 1.0) : UIColor.blue
-              
+        cell.backgroundColor = UIColor(red:0.18, green:0.80, blue:0.44, alpha:1.0)
+       // detailButton.tag = indexPath.row
+        //detailButton.addTarget(self, action: Selector(("buttonClicked:")), for: UIControlEvents.touchUpInside)
         return cell
     }
-    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140.0
     }
@@ -75,5 +74,9 @@ class FirstViewController: UITableViewController
         }
         
     }
+    @IBAction func detailButtonTapped(_ sender: UIButton) {
+        _ = sender.tag
+    }
+    
 }
 
