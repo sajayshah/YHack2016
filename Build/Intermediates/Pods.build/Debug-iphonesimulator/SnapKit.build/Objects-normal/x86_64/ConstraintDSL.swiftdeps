@@ -38,17 +38,17 @@ provides-member:
 - ["P7SnapKit23ConstraintAttributesDSL", "centerWithinMargins"]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- !private "ConstraintAttributes"
-- !private "objc_setAssociatedObject"
-- "AnyObject"
 - !private "objc_getAssociatedObject"
-- "CastingPrecedence"
-- "UInt8"
-- !private "labelKey"
-- "ConstraintAttributesDSL"
 - "ConstraintItem"
+- !private "labelKey"
+- "UInt8"
+- "AnyObject"
+- "ConstraintAttributesDSL"
 - "ConstraintDSL"
+- "CastingPrecedence"
+- !private "ConstraintAttributes"
+- "String"
+- !private "objc_setAssociatedObject"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["V7SnapKit20ConstraintAttributes", "bottom"]

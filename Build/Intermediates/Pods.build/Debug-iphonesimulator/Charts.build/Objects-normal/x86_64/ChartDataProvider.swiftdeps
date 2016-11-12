@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["P6Charts17ChartDataProvider", ""]
 provides-dynamic-lookup:
+- "chartXMax"
+- "chartXMin"
+- "data"
+- "centerOffsets"
 - "maxHighlightDistance"
+- "chartYMax"
 - "chartYMin"
 - "xRange"
 - "maxVisibleCount"
-- "chartXMin"
-- "data"
-- "chartXMax"
-- "chartYMax"
-- "centerOffsets"
 depends-top-level:
+- "Double"
 - "Int"
 - "CGPoint"
+- "CGFloat"
 - "ChartDataProvider"
 - "ChartData"
-- "Double"
-- "CGFloat"
 depends-member:
 - ["P6Charts17ChartDataProvider", "CGFloat"]
 - ["P6Charts17ChartDataProvider", "CGPoint"]

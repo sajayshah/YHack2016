@@ -9,6 +9,7 @@ target 'YHack' do
   pod 'Charts/Realm'
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'NVActivityIndicatorView'
 
   # Pods for YHack
 

@@ -7,11 +7,11 @@ provides-member:
 - ["O7SnapKit18ConstraintRelation", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Int"
+- "=="
 - "ConstraintRelation"
 - !private "~="
-- "=="
 - "NSLayoutRelation"
+- "Int"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

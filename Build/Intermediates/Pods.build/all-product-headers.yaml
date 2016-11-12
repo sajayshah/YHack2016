@@ -58,6 +58,33 @@
     },
     {
       'type': 'directory',
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "NVActivityIndicatorView-Swift.h",
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers/NVActivityIndicatorView-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "NVActivityIndicatorView-umbrella.h",
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Pods/Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/NVActivityIndicatorView/NVActivityIndicatorView.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphonesimulator/NVActivityIndicatorView.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Pods_YHack.framework/Headers",
       'contents': [
         {

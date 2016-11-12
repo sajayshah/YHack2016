@@ -118,6 +118,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import UIKit;
 @import Charts;
 @import Foundation;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -159,7 +160,6 @@ SWIFT_CLASS("_TtC5YHack20ChartsViewController")
 
 SWIFT_CLASS("_TtC5YHack19FirstViewController")
 @interface FirstViewController : UITableViewController
-@property (nonatomic, copy) NSString * _Null_unspecified dataPassed;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull relations;
 - (void)viewDidLoad;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -187,6 +187,8 @@ SWIFT_CLASS("_TtC5YHack25SecondTableViewController")
 - (void)viewDidLoad;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView willDisplayCell:(UITableViewCell * _Nonnull)cell forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;

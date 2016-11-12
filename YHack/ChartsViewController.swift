@@ -11,6 +11,7 @@ import Charts
 import SnapKit
 import Alamofire
 import SwiftyJSON
+import NVActivityIndicatorView
 
 class ChartsViewController: UIViewController, ChartViewDelegate
 {
@@ -22,6 +23,17 @@ class ChartsViewController: UIViewController, ChartViewDelegate
     {
         super.viewDidLoad()
         //WARNING:- Unexpected query data
+        pieChartView.noDataText = ""
+        let activityview = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        self.view.addSubview(activityview)
+        activityview.snp.makeConstraints { (make) -> Void in
+            make.center.equalTo(self.view)
+            make.width.equalTo(100)
+            make.height.equalTo(100)
+        }
+        activityview.color = UIColor.black
+        activityview.startAnimating()
+        print(activityview.animating)
         var firstRequest = "", secondrequest = ""
         switch fromIndex {
         case 0:
@@ -37,12 +49,14 @@ class ChartsViewController: UIViewController, ChartViewDelegate
         }
         
         Alamofire.request(firstRequest).responseJSON(completionHandler: {response in
-            
             let json = JSON(response.result.value!)
             print("JSON: \(json)")
             let numfound = json["response"]["numFound"].int!
             print("numFound1: \(numfound)")
             self.data[0] = numfound
+            activityview.stopAnimating()
+            activityview.snp.removeConstraints()
+            activityview.removeFromSuperview()
         })
         
         Alamofire.request(secondrequest).responseJSON(completionHandler: {response in
@@ -52,7 +66,9 @@ class ChartsViewController: UIViewController, ChartViewDelegate
             print("numFound2: \(numFemales)")
             self.data[1] = numFemales
             self.setChart(dataPoints: Array(0..<self.data.count), values: self.data.map({Double($0)}))
-            
+            activityview.stopAnimating()
+            activityview.snp.removeConstraints()
+            activityview.removeFromSuperview()
         })
         
     }
@@ -73,6 +89,5 @@ class ChartsViewController: UIViewController, ChartViewDelegate
         
         
         pieChartDataSet.colors = ChartColorTemplates.colorful()
-        
     }
 }

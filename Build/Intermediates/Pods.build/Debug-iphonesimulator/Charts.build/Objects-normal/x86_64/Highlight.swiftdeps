@@ -7,24 +7,25 @@ provides-nominal:
 provides-member:
 - ["C6Charts9Highlight", ""]
 provides-dynamic-lookup:
+- "x"
 - "axis"
+- "drawY"
+- "isEqual"
+- "description"
+- "drawX"
 - "dataIndex"
 - "yPx"
 - "stackIndex"
-- "x"
-- "y"
 - "xPx"
-- "description"
-- "drawX"
+- "y"
 - "isStacked"
-- "drawY"
 - "dataSetIndex"
 - "setDraw"
 - "setDraw"
-- "isEqual"
 depends-top-level:
-- !private "==="
+- !private "AnyObject"
 - "Double"
+- "CGPoint"
 - !private "BooleanLiteralType"
 - "YAxis"
 - "Int"
@@ -34,14 +35,13 @@ depends-top-level:
 - !private "!"
 - "=="
 - "AssignmentPrecedence"
-- !private ">="
+- "NSObject"
 - "CastingPrecedence"
-- "CGPoint"
+- !private ">="
 - !private "!="
 - "CGFloat"
 - "Bool"
-- !private "AnyObject"
-- "NSObject"
+- !private "==="
 depends-member:
 - ["Ps16AbsoluteValuable", "nan"]
 - ["Ps9AnyObject", "AxisDependency"]
@@ -535,10 +535,10 @@ depends-nominal:
 - "Ps14_SignedInteger"
 - "Ps11_Strideable"
 depends-dynamic-lookup:
-- !private "isKind"
+- !private "x"
 - !private "dataIndex"
 - !private "stackIndex"
-- !private "x"
+- !private "isKind"
 - !private "y"
 - !private "dataSetIndex"
 depends-external:

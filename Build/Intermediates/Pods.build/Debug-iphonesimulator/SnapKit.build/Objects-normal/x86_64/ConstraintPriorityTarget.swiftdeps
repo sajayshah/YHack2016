@@ -17,12 +17,12 @@ provides-member:
 - ["V12CoreGraphics7CGFloat", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UInt"
-- "CGFloat"
-- "Float"
-- "ConstraintPriorityTarget"
 - "Int"
 - "Double"
+- "Float"
+- "UInt"
+- "CGFloat"
+- "ConstraintPriorityTarget"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Float"]
 - ["Ps16AbsoluteValuable", "constraintPriorityTargetValue"]
