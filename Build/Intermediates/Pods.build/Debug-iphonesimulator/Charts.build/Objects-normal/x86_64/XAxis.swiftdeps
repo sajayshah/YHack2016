@@ -8,27 +8,27 @@ provides-member:
 - ["C6Charts5XAxis", ""]
 - ["OC6Charts5XAxis13LabelPosition", ""]
 provides-dynamic-lookup:
+- "labelRotatedWidth"
 - "wordWrapEnabled"
 - "labelHeight"
-- "labelRotatedHeight"
 - "avoidFirstLastClippingEnabled"
-- "isAvoidFirstLastClippingEnabled"
 - "isWordWrapEnabled"
+- "isAvoidFirstLastClippingEnabled"
+- "labelRotatedHeight"
 - "wordWrapWidthPercent"
 - "labelPosition"
 - "labelRotationAngle"
 - "labelWidth"
-- "labelRotatedWidth"
 depends-top-level:
 - "BooleanLiteralType"
+- "AxisBase"
+- "Int"
+- "Bool"
 - !private "~="
 - "=="
 - "AssignmentPrecedence"
-- "Bool"
 - "XAxis"
-- "Int"
 - "CGFloat"
-- "AxisBase"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]

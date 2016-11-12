@@ -27,17 +27,17 @@ provides-member:
 - ["CSo6UIView", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CGPoint"
-- "ConstraintView"
+- "CGFloat"
 - "ConstraintItem"
-- "UInt"
+- "CGPoint"
 - "ConstraintRelatableTarget"
-- "ConstraintInsets"
 - "Float"
 - "Double"
-- "CGFloat"
 - "CGSize"
+- "ConstraintView"
+- "UInt"
 - "Int"
+- "ConstraintInsets"
 depends-member:
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - ["VSC7CGPoint", "deinit"]

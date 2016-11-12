@@ -37,34 +37,17 @@ class SecondTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        let totalString = "http://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_code%3D\(promocodes[indexPath.row])%20AND%20%7B!join%20from%3Did%20to%3Dparticipant_id%20fromIndex%3Dparticipant%7Dgender%3AM&wt=json"
-        Alamofire.request(totalString).responseJSON(completionHandler: {response in
-            
-            let json = JSON(response.result.value!)
-            print("JSON: \(json)")
-            let numfound = json["response"]["numFound"].int!
-            print("numFound: \(numfound)")
-            self.numMen = numfound
-        })
-        
-        let menString = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_code%3DFREESPOUSE%20AND%20%7B!join%20from%3Did%20to%3Dparticipant_id%20fromIndex%3Dparticipant%7Dgender%3AF&wt=json"
-        
-        Alamofire.request(menString).responseJSON(completionHandler: {response in
-            let json = JSON(response.result.value!)
-            self.numWomen = json["response"]["numFound"].int!
-            print(self.numMen)
-            print(self.numWomen)
-        })
-        
         let chartVC = ChartsViewController()
-        chartVC.data = [numMen, numWomen]
-        self.navigationController?.pushViewController(chartVC, animated: true)
+        chartVC.data = [self.numMen, self.numWomen]
+        self.performSegue(withIdentifier: "showChart", sender: self)
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let destination = segue.destination
-//        {
-//            
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "showChart"
+        {
+            let destinationVC = segue.destination as! ChartsViewController
+            destinationVC.data = [numMen, numWomen]
+        }
+    }
 }

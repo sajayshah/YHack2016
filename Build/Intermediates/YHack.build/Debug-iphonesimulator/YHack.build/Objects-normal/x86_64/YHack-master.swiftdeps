@@ -1,8 +1,8 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
 options: "8d6e8e1e9daf926c570130d70d34bf18"
-build_time: [532276135, 92793000]
+build_time: [532279184, 17331000]
 inputs:
   "/Users/atharvavaidya/Developer/YHack/YHack/FirstTableViewController.swift": [532244137, 0]
-  "/Users/atharvavaidya/Developer/YHack/YHack/ChartsViewController.swift": [532276134, 0]
-  "/Users/atharvavaidya/Developer/YHack/YHack/SecondViewController.swift": [532273654, 0]
+  "/Users/atharvavaidya/Developer/YHack/YHack/ChartsViewController.swift": [532279183, 0]
+  "/Users/atharvavaidya/Developer/YHack/YHack/SecondViewController.swift": [532278246, 0]
   "/Users/atharvavaidya/Developer/YHack/YHack/AppDelegate.swift": [532255236, 0]

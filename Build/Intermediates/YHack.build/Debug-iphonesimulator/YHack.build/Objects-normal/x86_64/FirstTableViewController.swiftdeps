@@ -12,14 +12,14 @@ provides-dynamic-lookup:
 - "relations"
 - "numberOfSections"
 depends-top-level:
-- "AssignmentPrecedence"
-- "UITableView"
 - "firstViewController"
-- "String"
-- "Int"
-- "UITableViewCell"
-- "StringLiteralType"
 - "IndexPath"
+- "UITableView"
+- "AssignmentPrecedence"
+- "String"
+- "UITableViewCell"
+- "Int"
+- "StringLiteralType"
 - "UITableViewController"
 depends-member:
 - !private ["Ps9AnyObject", "dequeueReusableCell"]

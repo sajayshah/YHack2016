@@ -9,77 +9,58 @@
 import UIKit
 import Charts
 import SnapKit
+import Alamofire
+import SwiftyJSON
 
 class ChartsViewController: UIViewController, ChartViewDelegate
 {
-    var pieChartview: PieChartView = PieChartView()
+    @IBOutlet weak var pieChartView: PieChartView!
     var data: [Int] = [Int]()
+    var promocode: String = ""
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
-        self.view.addSubview(pieChartview)
-        pieChartview.snp.makeConstraints({ (make) -> Void in
-            let superview = self.view!
-            make.trailing.equalTo(superview)
-            make.leading.equalTo(superview)
-            make.height.equalTo(superview).dividedBy(2)
-            make.centerY.equalTo(superview)
+        self.setChart(dataPoints: [0, 1], values: [1587.0, 16827.0])
+        
+        let totalString = "http://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_code%3D\(promocode)%20AND%20%7B!join%20from%3Did%20to%3Dparticipant_id%20fromIndex%3Dparticipant%7Dgender%3AM&wt=json"
+        Alamofire.request(totalString).responseJSON(completionHandler: {response in
+            
+            let json = JSON(response.result.value!)
+            print("JSON: \(json)")
+            let numfound = json["response"]["numFound"].int!
+            print("numFound: \(numfound)")
+            self.data[0] = numfound
         })
         
-        self.pieChartview.delegate = self
-        //self.setup(pieChartView: self.pieChartview)
+        let menString = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_code%3D\(promocode)%20AND%20%7B!join%20from%3Did%20to%3Dparticipant_id%20fromIndex%3Dparticipant%7Dgender%3AF&wt=json"
+        
+        Alamofire.request(menString).responseJSON(completionHandler: {response in
+            let json = JSON(response.result.value!)
+            self.data[1] = json["response"]["numFound"].int!
+            print(self.data[1])
+        })
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    func setChart(dataPoints: [Int], values: [Double]) {
         
-        let chartdataentrys = data.map({ PieChartDataEntry(value: Double($0)) })
-        let dataset = PieChartDataSet(values: chartdataentrys, label: "Gender")
-        dataset.colors = [.blue, .black]
-        let dataP = PieChartData(dataSet: dataset)
+        var dataEntries: [PieChartDataEntry] = []
         
-        pieChartview.data = dataP
+        print("x: \(dataPoints), y: \(values)")
         
-    }
-    
-    func setDataCount(count: Int, range: Double)
-    {
-//        let mult = range
-//        let values: [PieChartDataEntry] = [PieChartDataEntry]()
-//        value =
-    }
-    
-    func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight)
-    {
-        print("Entry: \(entry) highlighted")
-    }
-    
-    func setup(pieChartView chartView: PieChartView)
-    {
-        chartView.usePercentValuesEnabled = true
-        chartView.drawSlicesUnderHoleEnabled = false
-        chartView.holeRadiusPercent = 0.58
+        for i in 0..<dataPoints.count
+        {
+            let dataEntry = PieChartDataEntry(value: values[i])
+            dataEntries.append(dataEntry)
+        }
         
-        chartView.transparentCircleRadiusPercent = 0.61;
-        chartView.chartDescription?.enabled = false
-        chartView.setExtraOffsets(left: 5, top: 10, right: 5, bottom: 5)
+        print(dataEntries)
         
-        chartView.drawCenterTextEnabled = true;
+        let pieChartDataSet = PieChartDataSet(values: dataEntries, label: "Units Sold")
+        let pieChartData = PieChartData(dataSet: pieChartDataSet)
+        pieChartView.data = pieChartData
         
-        chartView.drawHoleEnabled = true;
-        chartView.rotationAngle = 0.0;
-        chartView.rotationEnabled = true;
-        chartView.highlightPerTapEnabled = true;
         
-        let l: Legend = chartView.legend;
-        l.horizontalAlignment = .right;
-        l.verticalAlignment = .top;
-        l.orientation = .vertical;
-        l.drawInside = false;
-        l.xEntrySpace = 7.0;
-        l.yEntrySpace = 0.0;
-        l.yOffset = 0.0;
-
+        pieChartDataSet.colors = ChartColorTemplates.colorful()
+        
     }
 }
