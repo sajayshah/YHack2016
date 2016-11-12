@@ -10,11 +10,11 @@ import UIKit
 import Charts
 
 //#00C9FF, 92FE9D
-class firstViewController: UITableViewController
+class FirstViewController: UITableViewController
 {
     var dataPassed:String!
     //
-    let relations: [String] = ["Promocode vs Gender"]
+    let relations: [String] = ["Promocode vs Gender", "Promocode vs Marital Status"]
 
     override func viewDidLoad()
     {
@@ -29,26 +29,22 @@ class firstViewController: UITableViewController
         
         cell.textLabel?.text = relations[indexPath.row]
         
-        let color = UIColor.blue.withAlphaComponent(indexPath.row % 2 == 0 ? 1.0 : 0.7)
+       // let color = UIColor.blue.withAlphaComponent(indexPath.row % 2 == 0 ? 1.0 : 0.7)
         
-        switch dataPassed {
-            
-        case "1":
-            self.view.backgroundColor = UIColor(red: 0.3529, green: 0.7608, blue: 0.8471, alpha: 1.0)
-            cell.textLabel?.textColor = UIColor.white
-        case "2":
-            self.view.backgroundColor = UIColor(red: 0.9882, green: 0.5804, blue: 0.0078, alpha: 1.0)
-            cell.textLabel?.textColor = UIColor.white
-            
-        default: break
-        }
-        
-        cell.backgroundColor = color
+//        switch dataPassed {
+//            
+//        case "1":
+//            self.view.backgroundColor = UIColor(red: 0.3529, green: 0.7608, blue: 0.8471, alpha: 1.0)
+//            cell.textLabel?.textColor = UIColor.white
+//        case "2":
+//            self.view.backgroundColor = UIColor(red: 0.9882, green: 0.5804, blue: 0.0078, alpha: 1.0)
+//            cell.textLabel?.textColor = UIColor.white
+//            
+//        default: break
+//        }
+//        
+//        cell.backgroundColor = color
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140.0
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -67,8 +63,15 @@ class firstViewController: UITableViewController
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return relations.count
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSecondVC"
+        {
+            let destinationVC = segue.destination as! SecondTableViewController
+            destinationVC.fromIndex = (self.tableView.indexPathForSelectedRow?.row)!
+        }
+    }
 }
 

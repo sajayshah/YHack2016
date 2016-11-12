@@ -1,0 +1,21 @@
+version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
+options: "90418d3aaf64f2835406aec7aa6e3f39"
+build_time: [532283495, 627208000]
+inputs:
+  "/Users/atharvavaidya/Developer/YHack/Pods/Alamofire/Source/AFError.swift": [532255679, 0]
+  "/Users/atharvavaidya/Developer/YHack/Pods/Alamofire/Source/Alamofire.swift": [532255679, 0]
+  "/Users/atharvavaidya/Developer/YHack/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift": [532255679, 0]
+  "/Users/atharvavaidya/Developer/YHack/Pods/Alamofire/Source/MultipartFormData.swift": [532255679, 0]
+  "/Users/atharvavaidya/Developer/YHack/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [532255679, 0]
+  "/Users/atharvavaidya/Developer/YHack/Pods/Alamofire/Source/Notifications.swift": [532255679, 0]
+  "/Users/atharvavaidya/Developer/YHack/Pods/Alamofire/Source/ParameterEncoding.swift": [532255679, 0]
+  "/Users/atharvavaidya/Developer/YHack/Pods/Alamofire/Source/Request.swift": [532255679, 0]
+  "/Users/atharvavaidya/Developer/YHack/Pods/Alamofire/Source/Response.swift": [532255679, 0]
+  "/Users/atharvavaidya/Developer/YHack/Pods/Alamofire/Source/ResponseSerialization.swift": [532255679, 0]
+  "/Users/atharvavaidya/Developer/YHack/Pods/Alamofire/Source/Result.swift": [532255679, 0]
+  "/Users/atharvavaidya/Developer/YHack/Pods/Alamofire/Source/ServerTrustPolicy.swift": [532255679, 0]
+  "/Users/atharvavaidya/Developer/YHack/Pods/Alamofire/Source/SessionDelegate.swift": [532255679, 0]
+  "/Users/atharvavaidya/Developer/YHack/Pods/Alamofire/Source/SessionManager.swift": [532255679, 0]
+  "/Users/atharvavaidya/Developer/YHack/Pods/Alamofire/Source/TaskDelegate.swift": [532255679, 0]
+  "/Users/atharvavaidya/Developer/YHack/Pods/Alamofire/Source/Timeline.swift": [532255679, 0]
+  "/Users/atharvavaidya/Developer/YHack/Pods/Alamofire/Source/Validation.swift": [532255679, 0]

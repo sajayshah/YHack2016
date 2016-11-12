@@ -15,6 +15,7 @@ class SecondTableViewController: UITableViewController {
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var picker: UIPickerView!
     
+    var fromIndex: Int = 0
     var total = 0
     var numMen = 0, numWomen = 0
     
@@ -47,7 +48,8 @@ class SecondTableViewController: UITableViewController {
         if segue.identifier == "showChart"
         {
             let destinationVC = segue.destination as! ChartsViewController
-            destinationVC.data = [numMen, numWomen]
+            destinationVC.fromIndex = fromIndex
+            destinationVC.promocode = promocodes[(self.tableView.indexPathForSelectedRow?.row)!]
         }
     }
 }

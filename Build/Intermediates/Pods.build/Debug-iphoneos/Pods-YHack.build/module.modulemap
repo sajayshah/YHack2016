@@ -1,0 +1,6 @@
+framework module Pods_YHack {
+  umbrella header "Pods-YHack-umbrella.h"
+
+  export *
+  module * { export * }
+}

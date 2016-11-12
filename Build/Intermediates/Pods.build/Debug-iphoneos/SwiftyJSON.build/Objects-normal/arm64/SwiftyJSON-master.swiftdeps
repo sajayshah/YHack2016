@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
+options: "393be6a2556f2114d7a55926e229f2de"
+build_time: [532283493, 5630000]
+inputs:
+  "/Users/atharvavaidya/Developer/YHack/Pods/SwiftyJSON/Source/SwiftyJSON.swift": [532255764, 0]
