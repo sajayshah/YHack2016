@@ -7,11 +7,11 @@ provides-member:
 - ["C7SnapKit26ConstraintMakerFinalizable", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Constraint"
 - "ConstraintMakerFinalizable"
-- "ConstraintDescription"
 - "String"
 - "AssignmentPrecedence"
+- "Constraint"
+- "ConstraintDescription"
 depends-member:
 - !private ["Ps9AnyObject", "constraint"]
 - !private ["Ps9AnyObject", "description"]

@@ -8,9 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 - "setHighlightCircleWidth"
 depends-top-level:
-- "BubbleChartData"
 - "IChartDataSet"
 - "BarLineScatterCandleBubbleChartData"
+- "BubbleChartData"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
 - "CGFloat"

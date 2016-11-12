@@ -138,27 +138,23 @@ SWIFT_CLASS("_TtC5YHack11AppDelegate")
 @end
 
 @class PieChartView;
-@class ChartViewBase;
-@class ChartDataEntry;
-@class ChartHighlight;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC5YHack20ChartsViewController")
 @interface ChartsViewController : UIViewController <ChartViewDelegate>
-@property (nonatomic, strong) PieChartView * _Nonnull pieChartview;
+@property (nonatomic, weak) IBOutlet PieChartView * _Null_unspecified pieChartView;
 @property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull data;
+@property (nonatomic, copy) NSString * _Nonnull promocode;
 - (void)viewDidLoad;
-- (void)viewWillAppear:(BOOL)animated;
-- (void)setDataCountWithCount:(NSInteger)count range:(double)range;
-- (void)chartValueSelected:(ChartViewBase * _Nonnull)chartView entry:(ChartDataEntry * _Nonnull)entry highlight:(ChartHighlight * _Nonnull)highlight;
-- (void)setupWithPieChartView:(PieChartView * _Nonnull)chartView;
+- (void)setChartWithDataPoints:(NSArray<NSNumber *> * _Nonnull)dataPoints values:(NSArray<NSNumber *> * _Nonnull)values;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UITableView;
 @class UITableViewCell;
+@class UIStoryboardSegue;
 @class UIButton;
 @class UIPickerView;
 
@@ -174,6 +170,7 @@ SWIFT_CLASS("_TtC5YHack25SecondTableViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

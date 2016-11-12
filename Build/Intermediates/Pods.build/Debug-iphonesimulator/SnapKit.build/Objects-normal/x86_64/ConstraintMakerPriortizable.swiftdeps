@@ -7,10 +7,10 @@ provides-member:
 - ["C7SnapKit27ConstraintMakerPriortizable", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "ConstraintMakerFinalizable"
 - "ConstraintPriorityTarget"
-- "AssignmentPrecedence"
+- "ConstraintMakerFinalizable"
 - "ConstraintMakerPriortizable"
+- "AssignmentPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "description"]
 - !private ["Ps9AnyObject", "init"]

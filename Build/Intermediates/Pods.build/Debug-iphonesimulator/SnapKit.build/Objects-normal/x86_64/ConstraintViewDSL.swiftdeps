@@ -8,20 +8,20 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "ConstraintView"
-- "Void"
+- !private "objc_setAssociatedObject"
+- !private "constraintsKey"
+- "Float"
+- "NSHashTable"
+- "ConstraintViewDSL"
+- "AssignmentPrecedence"
 - !private "CastingPrecedence"
 - "ConstraintMaker"
-- "AssignmentPrecedence"
-- !private "objc_setAssociatedObject"
-- "ConstraintViewDSL"
-- "AnyObject"
-- "UInt8"
-- !private "constraintsKey"
-- "NSHashTable"
-- !private "objc_getAssociatedObject"
-- "Float"
-- "Constraint"
 - "ConstraintAttributesDSL"
+- !private "objc_getAssociatedObject"
+- "AnyObject"
+- "Void"
+- "Constraint"
+- "UInt8"
 depends-member:
 - !private ["Ps9AnyObject", "add"]
 - !private ["Ps9AnyObject", "allObjects"]

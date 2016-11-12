@@ -9,19 +9,19 @@ provides-dynamic-lookup:
 - "isHorizontalHighlightIndicatorEnabled"
 - "drawHorizontalHighlightIndicatorEnabled"
 - "drawVerticalHighlightIndicatorEnabled"
+- "setDrawHighlightIndicators"
 - "copyWithZone"
 - "isVerticalHighlightIndicatorEnabled"
-- "setDrawHighlightIndicators"
 depends-top-level:
-- "AnyObject"
-- "RealmLineScatterCandleRadarDataSet"
 - "BooleanLiteralType"
+- "RealmLineScatterCandleRadarDataSet"
 - "NSZone"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- "ILineScatterCandleRadarChartDataSet"
-- "Bool"
+- "AnyObject"
 - "RealmBarLineScatterCandleBubbleDataSet"
+- "Bool"
+- "ILineScatterCandleRadarChartDataSet"
 depends-member:
 - ["Ps9AnyObject", "copyWithZone"]
 - ["Ps9AnyObject", "deinit"]

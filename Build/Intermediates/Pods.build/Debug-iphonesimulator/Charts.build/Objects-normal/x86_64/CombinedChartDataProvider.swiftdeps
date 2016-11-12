@@ -9,12 +9,12 @@ provides-dynamic-lookup:
 - "combinedData"
 depends-top-level:
 - "BarChartDataProvider"
+- "CandleChartDataProvider"
 - "ScatterChartDataProvider"
 - "CombinedChartData"
-- "BubbleChartDataProvider"
 - "CombinedChartDataProvider"
 - "LineChartDataProvider"
-- "CandleChartDataProvider"
+- "BubbleChartDataProvider"
 depends-member:
 - ["P6Charts20BarChartDataProvider", "CombinedChartData"]
 - ["P6Charts20BarChartDataProvider", "combinedData"]

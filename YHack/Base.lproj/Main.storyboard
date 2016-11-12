@@ -64,18 +64,46 @@
                             <outlet property="delegate" destination="Axz-e8-Fne" id="2wn-Yz-oUE"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="dyL-FJ-doc" kind="show" identifier="showChart" id="1TL-jF-4Qb"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5W-Tj-lfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1868" y="179.46026986506749"/>
+            <point key="canvasLocation" x="1884" y="179"/>
         </scene>
         <!--Charts View Controller-->
-        <scene sceneID="pKS-cC-t1N">
+        <scene sceneID="uTc-bc-QtF">
             <objects>
-                <viewController id="ouk-aX-fKN" customClass="ChartsViewController" customModule="YHack" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WTf-xq-gBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="chartsVC" id="dyL-FJ-doc" customClass="ChartsViewController" customModule="YHack" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="glD-Tt-UTP"/>
+                        <viewControllerLayoutGuide type="bottom" id="9fI-BQ-k0z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wwo-se-rea">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sv1-st-bRA" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="145" width="375" height="377"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Sv1-st-bRA" secondAttribute="trailing" id="5xa-wb-gWi"/>
+                            <constraint firstItem="Sv1-st-bRA" firstAttribute="leading" secondItem="wwo-se-rea" secondAttribute="leading" id="LcY-uF-6s2"/>
+                            <constraint firstItem="Sv1-st-bRA" firstAttribute="centerY" secondItem="wwo-se-rea" secondAttribute="centerY" id="t4I-NU-haS"/>
+                            <constraint firstItem="Sv1-st-bRA" firstAttribute="top" secondItem="glD-Tt-UTP" secondAttribute="bottom" constant="81" id="wDq-dH-o7L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pieChartView" destination="Sv1-st-bRA" id="UwZ-IC-cC4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gdf-HI-bU3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2592.8000000000002" y="179.46026986506749"/>
+            <point key="canvasLocation" x="2633" y="179"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vFB-2u-zpR">

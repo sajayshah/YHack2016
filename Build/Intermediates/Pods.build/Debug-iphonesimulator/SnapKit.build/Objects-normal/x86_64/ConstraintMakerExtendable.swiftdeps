@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "ConstraintMakerRelatable"
-- "ConstraintMakerExtendable"
 - !private "+="
+- "ConstraintMakerExtendable"
 depends-member:
 - !private ["Ps9AnyObject", "attributes"]
 - ["Ps9AnyObject", "baseline"]

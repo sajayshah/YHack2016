@@ -9,14 +9,14 @@ provides-dynamic-lookup:
 - "copyWithZone"
 - "value"
 depends-top-level:
-- "RadarChartDataEntry"
 - "NSZone"
+- !private "StringLiteralType"
+- "RadarChartDataEntry"
 - "ChartDataEntry"
 - "AnyObject"
-- "Double"
-- "CastingPrecedence"
 - "AssignmentPrecedence"
-- !private "StringLiteralType"
+- "CastingPrecedence"
+- "Double"
 depends-member:
 - ["Ps9AnyObject", "copyWithZone"]
 - ["Ps9AnyObject", "deinit"]
