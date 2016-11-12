@@ -45,8 +45,6 @@ class ChartsViewController: UIViewController, ChartViewDelegate
         
         var dataEntries: [PieChartDataEntry] = []
         
-        print("x: \(dataPoints), y: \(values)")
-        
         for i in 0..<dataPoints.count
         {
             let dataEntry = PieChartDataEntry(value: values[i])
