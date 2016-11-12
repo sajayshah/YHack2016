@@ -27,35 +27,25 @@ class FirstViewController: UITableViewController
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableviewcell")!
         
         cell.textLabel?.text = relations[indexPath.row]
-        cell.textLabel?.font = UIFont(name:"Avenir", size:22)
-        cell.backgroundColor = indexPath.row % 2 == 0 ? UIColor(red: 0.0, green: 0.0, blue: 1.0, alpha: 1.0) : UIColor.blue
-        
-       // let color = UIColor.blue.withAlphaComponent(indexPath.row % 2 == 0 ? 1.0 : 0.7)
-        
-//        switch dataPassed {
-//            
-//        case "1":
-//            self.view.backgroundColor = UIColor(red: 0.3529, green: 0.7608, blue: 0.8471, alpha: 1.0)
-//            cell.textLabel?.textColor = UIColor.white
-//        case "2":
-//            self.view.backgroundColor = UIColor(red: 0.9882, green: 0.5804, blue: 0.0078, alpha: 1.0)
-//            cell.textLabel?.textColor = UIColor.white
-//            
-//        default: break
-//        }
-//        
-//        cell.backgroundColor = color
+        cell.textLabel?.font = UIFont(name:"Helvetica", size:22)
+        cell.textLabel?.textColor = UIColor.purple
+        cell.textLabel?.textAlignment = NSTextAlignment.center
+        cell.backgroundColor = UIColor(red: 207.0 / 255.0, green: 238.0 / 255.0, blue: 241.0 / 255.0, alpha: 1.0)
+
+        // cell.backgroundColor = indexPath.row % 2 == 0 ? UIColor(red: 0.0, green: 0.0, blue: 1.0, alpha: 1.0) : UIColor.blue
+              
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 140.0
+    }
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.backgroundColor = cell.contentView.backgroundColor;
+        cell.backgroundColor = UIColor(red: 207.0 / 255.0, green: 238.0 / 255.0, blue: 241.0 / 255.0, alpha: 1.0)
         let whiteRoundedView : UIView = UIView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: self.view.frame.size.width, height: 120)))
         whiteRoundedView.layer.backgroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 1.0, 1.0])
         whiteRoundedView.layer.masksToBounds = false
         whiteRoundedView.layer.cornerRadius = 10.0
-        whiteRoundedView.layer.shadowOffset = CGSize(width: -1, height: -1)
-        whiteRoundedView.layer.shadowOpacity = 0.2
         
         cell.contentView.addSubview(whiteRoundedView)
         cell.contentView.sendSubview(toBack: whiteRoundedView)
