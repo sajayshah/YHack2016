@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		701B7D8F1DD771A900F71C27 /* tableviewcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701B7D8E1DD771A900F71C27 /* tableviewcell.swift */; };
+		701B7D931DD7720600F71C27 /* secondTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701B7D921DD7720600F71C27 /* secondTableViewCells.swift */; };
 		ECDB9E771DD70D04006F8326 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDB9E761DD70D04006F8326 /* AppDelegate.swift */; };
 		ECDB9E7C1DD70D04006F8326 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECDB9E7A1DD70D04006F8326 /* Main.storyboard */; };
 		ECDB9E7E1DD70D04006F8326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECDB9E7D1DD70D04006F8326 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		0F5BEB6C019DC011D6C6E5D7 /* Pods_YHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		289709B7DA34B3F679A4E004 /* Pods-YHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHack/Pods-YHack.release.xcconfig"; sourceTree = "<group>"; };
+		701B7D8E1DD771A900F71C27 /* tableviewcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableviewcell.swift; sourceTree = "<group>"; };
+		701B7D921DD7720600F71C27 /* secondTableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondTableViewCells.swift; sourceTree = "<group>"; };
 		9897423C67BA504141AE944A /* Pods-YHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHack/Pods-YHack.debug.xcconfig"; sourceTree = "<group>"; };
 		ECDB9E731DD70D04006F8326 /* YHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDB9E761DD70D04006F8326 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,15 @@
 				0F5BEB6C019DC011D6C6E5D7 /* Pods_YHack.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		701B7D8D1DD76E6E00F71C27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				701B7D8E1DD771A900F71C27 /* tableviewcell.swift */,
+				701B7D921DD7720600F71C27 /* secondTableViewCells.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		C803859E6C15F3835F548B38 /* Pods */ = {
@@ -90,6 +103,7 @@
 				ECDB9E7D1DD70D04006F8326 /* Assets.xcassets */,
 				ECDB9E7F1DD70D04006F8326 /* LaunchScreen.storyboard */,
 				ECDB9E821DD70D04006F8326 /* Info.plist */,
+				701B7D8D1DD76E6E00F71C27 /* Model */,
 			);
 			path = YHack;
 			sourceTree = "<group>";
@@ -220,8 +234,10 @@
 			files = (
 				ECDB9E8C1DD70D17006F8326 /* FirstTableViewController.swift in Sources */,
 				ECDB9E8B1DD70D17006F8326 /* ChartsViewController.swift in Sources */,
+				701B7D8F1DD771A900F71C27 /* tableviewcell.swift in Sources */,
 				ECDB9E8D1DD70D17006F8326 /* SecondViewController.swift in Sources */,
 				ECDB9E771DD70D04006F8326 /* AppDelegate.swift in Sources */,
+				701B7D931DD7720600F71C27 /* secondTableViewCells.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
