@@ -13,7 +13,7 @@ import Charts
 class FirstViewController: UITableViewController
 {
     //
-    let relations: [String] = ["Promocode vs Gender", "Promocode vs Marital Status", "Promocode vs Age Range"]
+    let relations: [String] = ["Promocode vs Gender", "Promocode vs Marital Status"]
 
     override func viewDidLoad()
     {
@@ -41,13 +41,11 @@ class FirstViewController: UITableViewController
         return 140.0
     }
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.backgroundColor = cell.contentView.backgroundColor;
+        cell.backgroundColor = UIColor(red: 207.0 / 255.0, green: 238.0 / 255.0, blue: 241.0 / 255.0, alpha: 1.0)
         let whiteRoundedView : UIView = UIView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: self.view.frame.size.width, height: 120)))
         whiteRoundedView.layer.backgroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 1.0, 1.0])
         whiteRoundedView.layer.masksToBounds = false
         whiteRoundedView.layer.cornerRadius = 10.0
-        whiteRoundedView.layer.shadowOffset = CGSize(width: -1, height: -1)
-        whiteRoundedView.layer.shadowOpacity = 0.2
         
         cell.contentView.addSubview(whiteRoundedView)
         cell.contentView.sendSubview(toBack: whiteRoundedView)
@@ -62,18 +60,12 @@ class FirstViewController: UITableViewController
         return relations.count
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 2 { self.performSegue(withIdentifier: "toBarGraph", sender: self) }
-        else { self.performSegue(withIdentifier: "toSecondVC", sender: self) }
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toSecondVC"
         {
             let destinationVC = segue.destination as! SecondTableViewController
             destinationVC.fromIndex = (self.tableView.indexPathForSelectedRow?.row)!
         }
-        
     }
 }
 

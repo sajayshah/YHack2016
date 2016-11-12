@@ -13,7 +13,7 @@ import Charts
 class FirstViewController: UITableViewController
 {
     //
-    let relations: [String] = ["Promocode vs Gender", "Promocode vs Marital Status", "Promocode vs Age Range"]
+    let relations: [String] = ["Promocode vs Gender", "Promocode vs Marital Status"]
 
     override func viewDidLoad()
     {
@@ -27,19 +27,27 @@ class FirstViewController: UITableViewController
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableviewcell")!
         
         cell.textLabel?.text = relations[indexPath.row]
-        cell.textLabel?.font = UIFont(name:"Helvetica", size:22)
-        cell.textLabel?.textColor = UIColor.purple
-        cell.textLabel?.textAlignment = NSTextAlignment.center
-        cell.backgroundColor = UIColor(red: 207.0 / 255.0, green: 238.0 / 255.0, blue: 241.0 / 255.0, alpha: 1.0)
-
-        // cell.backgroundColor = indexPath.row % 2 == 0 ? UIColor(red: 0.0, green: 0.0, blue: 1.0, alpha: 1.0) : UIColor.blue
-              
+        cell.textLabel?.font = UIFont(name:"Avenir", size:22)
+        cell.backgroundColor = indexPath.row % 2 == 0 ? UIColor(red: 0.0, green: 0.0, blue: 1.0, alpha: 1.0) : UIColor.blue
+        
+       // let color = UIColor.blue.withAlphaComponent(indexPath.row % 2 == 0 ? 1.0 : 0.7)
+        
+//        switch dataPassed {
+//            
+//        case "1":
+//            self.view.backgroundColor = UIColor(red: 0.3529, green: 0.7608, blue: 0.8471, alpha: 1.0)
+//            cell.textLabel?.textColor = UIColor.white
+//        case "2":
+//            self.view.backgroundColor = UIColor(red: 0.9882, green: 0.5804, blue: 0.0078, alpha: 1.0)
+//            cell.textLabel?.textColor = UIColor.white
+//            
+//        default: break
+//        }
+//        
+//        cell.backgroundColor = color
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140.0
-    }
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = cell.contentView.backgroundColor;
         let whiteRoundedView : UIView = UIView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: self.view.frame.size.width, height: 120)))
@@ -62,18 +70,12 @@ class FirstViewController: UITableViewController
         return relations.count
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 2 { self.performSegue(withIdentifier: "toBarGraph", sender: self) }
-        else { self.performSegue(withIdentifier: "toSecondVC", sender: self) }
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toSecondVC"
         {
             let destinationVC = segue.destination as! SecondTableViewController
             destinationVC.fromIndex = (self.tableView.indexPathForSelectedRow?.row)!
         }
-        
     }
 }
 

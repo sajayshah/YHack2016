@@ -27,19 +27,12 @@ class FirstViewController: UITableViewController
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableviewcell")!
         
         cell.textLabel?.text = relations[indexPath.row]
-        cell.textLabel?.font = UIFont(name:"Helvetica", size:22)
-        cell.textLabel?.textColor = UIColor.purple
-        cell.textLabel?.textAlignment = NSTextAlignment.center
-        cell.backgroundColor = UIColor(red: 207.0 / 255.0, green: 238.0 / 255.0, blue: 241.0 / 255.0, alpha: 1.0)
+        cell.textLabel?.font = UIFont(name:"Avenir", size:22)
+        cell.backgroundColor = indexPath.row % 2 == 0 ? UIColor(red: 0.0, green: 0.0, blue: 1.0, alpha: 1.0) : UIColor.blue
 
-        // cell.backgroundColor = indexPath.row % 2 == 0 ? UIColor(red: 0.0, green: 0.0, blue: 1.0, alpha: 1.0) : UIColor.blue
-              
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140.0
-    }
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = cell.contentView.backgroundColor;
         let whiteRoundedView : UIView = UIView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: self.view.frame.size.width, height: 120)))
