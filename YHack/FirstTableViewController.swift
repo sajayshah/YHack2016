@@ -14,7 +14,7 @@ class FirstViewController: UITableViewController
 {
     //@IBOutlet weak var detailButton: UIButton!
     //
-    let relations: [String] = ["Promocode vs Gender", "Promocode vs Marital Status", "Age and Promo Code vs Insurance Coverage", "Season vs Insurance Product", "Age vs. Insurance Product"]
+    let relations: [String] = ["Promocode vs Gender", "Promocode vs Marital Status", "Age vs Insurance Coverage", "Season vs Insurance Product", "Age vs. Insurance Product"]
 
     override func viewDidLoad()
     {
