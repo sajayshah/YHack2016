@@ -14,7 +14,7 @@ class FirstViewController: UITableViewController
 {
     //@IBOutlet weak var detailButton: UIButton!
     //
-    let relations: [String] = ["Promocode vs Gender", "Promocode vs Marital Status", "Age vs Insurance Coverage", "Season vs Insurance Product", "Age vs. Insurance Product", "General Comparisons"]
+    let relations: [String] = ["Promocode vs Gender", "Promocode vs Marital Status", "Age vs Insurance Coverage", "Season vs Insurance Product", "Age vs. Insurance Product", "Promocode vs US State"]
 
     override func viewDidLoad()
     {
@@ -52,7 +52,6 @@ class FirstViewController: UITableViewController
         
         cell.contentView.addSubview(whiteRoundedView)
         cell.contentView.sendSubview(toBack: whiteRoundedView)
-        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

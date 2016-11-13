@@ -65,9 +65,18 @@ class SecondTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        let chartVC = ChartsViewController()
-        chartVC.data = [self.numMen, self.numWomen]
-        self.performSegue(withIdentifier: "showChart", sender: self)
+        if fromIndex == 5
+        {
+            let usmapVC = USMapviewController()
+            usmapVC.promocode = promocodes[indexPath.row]
+            self.navigationController?.pushViewController(usmapVC, animated: true)
+        }
+        else
+        {
+            let chartVC = ChartsViewController()
+            chartVC.data = [self.numMen, self.numWomen]
+            self.performSegue(withIdentifier: "showChart", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)

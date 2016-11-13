@@ -6,37 +6,39 @@ provides-nominal:
 provides-member:
 - ["C5YHack22BarGraphViewController", ""]
 provides-dynamic-lookup:
-- "minAge"
+- "fromIndex"
 - "barChartView"
 - "numberofPeopleSignedUp"
-- "chartValueSelected"
-- "viewDidLoad"
-- "setChart"
 - "maxAge"
+- "viewDidLoad"
+- "minAge"
+- "chartValueSelected"
+- "setChart"
 depends-top-level:
-- !private "Alamofire"
-- "ChartViewBase"
-- "ChartViewDelegate"
-- "Int"
-- "ChartDataEntry"
+- !private "JSON"
 - "BarChartView"
 - "Highlight"
-- "AssignmentPrecedence"
-- !private "ChartColorTemplates"
-- !private "..<"
-- !private "-"
-- "BarGraphViewController"
-- !private "JSON"
-- !private "Void"
-- !private "Array"
-- !private "BarChartData"
-- !private "Double"
-- !private "BarChartDataSet"
-- !private "print"
-- !private "+"
-- "UIViewController"
-- !private "BarChartDataEntry"
 - "StringLiteralType"
+- !private "BarChartDataSet"
+- !private "ChartColorTemplates"
+- "ChartDataEntry"
+- "BarGraphViewController"
+- !private "Void"
+- "ChartViewBase"
+- "Int"
+- !private "+"
+- !private "print"
+- "UIViewController"
+- !private "-"
+- !private "Array"
+- !private "Alamofire"
+- !private "..<"
+- !private "BarChartData"
+- "AssignmentPrecedence"
+- !private "~="
+- !private "BarChartDataEntry"
+- "ChartViewDelegate"
+- !private "Double"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["P6Charts16AnimatorDelegate", "backgroundColor"]
@@ -70,6 +72,7 @@ depends-member:
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "equalTo"]
 - !private ["Ps9AnyObject", "frame"]
+- ["Ps9AnyObject", "fromIndex"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "inset"]
 - !private ["Ps9AnyObject", "leading"]
@@ -145,6 +148,7 @@ depends-member:
 - ["C5YHack22BarGraphViewController", "chartValueNothingSelected"]
 - ["C5YHack22BarGraphViewController", "chartValueSelected"]
 - ["C5YHack22BarGraphViewController", "deinit"]
+- ["C5YHack22BarGraphViewController", "fromIndex"]
 - ["C5YHack22BarGraphViewController", "init"]
 - ["C5YHack22BarGraphViewController", "maxAge"]
 - ["C5YHack22BarGraphViewController", "minAge"]
@@ -203,7 +207,7 @@ depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["Sb", "deinit"]
+- ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "addSubview"]
 - !private ["PSo15CALayerDelegate", "backgroundColor"]
 - !private ["PSo15CALayerDelegate", "chartDescription"]
@@ -248,6 +252,7 @@ depends-member:
 - !private ["Ps7CVarArg", "data"]
 - !private ["Ps7CVarArg", "delegate"]
 - !private ["Ps7CVarArg", "frame"]
+- ["Ps7CVarArg", "fromIndex"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "material"]
 - ["Ps7CVarArg", "maxAge"]
@@ -302,6 +307,7 @@ depends-member:
 - ["P6Charts17ChartViewDelegate", "chartTranslated"]
 - ["P6Charts17ChartViewDelegate", "chartValueNothingSelected"]
 - ["P6Charts17ChartViewDelegate", "chartValueSelected"]
+- !private ["P6Charts17ChartViewDelegate", "fromIndex"]
 - !private ["P6Charts17ChartViewDelegate", "maxAge"]
 - !private ["P6Charts17ChartViewDelegate", "minAge"]
 - !private ["P6Charts17ChartViewDelegate", "navigationController"]
@@ -382,6 +388,7 @@ depends-member:
 - !private ["P7SnapKit25ConstraintRelatableTarget", "snp"]
 - ["V7SnapKit17ConstraintViewDSL", "deinit"]
 - !private ["V7SnapKit17ConstraintViewDSL", "makeConstraints"]
+- !private ["Vs20CountableClosedRange", "deinit"]
 - !private ["Vs14CountableRange", "Iterator"]
 - !private ["Vs14CountableRange", "_Element"]
 - ["Vs14CountableRange", "deinit"]
@@ -415,6 +422,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "data"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
+- ["Ps28CustomDebugStringConvertible", "fromIndex"]
 - !private ["Ps28CustomDebugStringConvertible", "height"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "int"]
@@ -495,6 +503,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "data"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "frame"]
+- ["Ps23CustomStringConvertible", "fromIndex"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "int"]
 - !private ["Ps23CustomStringConvertible", "isSuccess"]
@@ -570,6 +579,7 @@ depends-member:
 - !private ["Ps9Equatable", "data"]
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "frame"]
+- ["Ps9Equatable", "fromIndex"]
 - !private ["Ps9Equatable", "height"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "int"]
@@ -691,6 +701,7 @@ depends-member:
 - !private ["Ps8Hashable", "data"]
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "frame"]
+- ["Ps8Hashable", "fromIndex"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "material"]
 - ["Ps8Hashable", "maxAge"]
@@ -818,6 +829,7 @@ depends-member:
 - !private ["PSo8NSCoding", "data"]
 - !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "frame"]
+- ["PSo8NSCoding", "fromIndex"]
 - !private ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "maxAge"]
 - ["PSo8NSCoding", "minAge"]
@@ -849,6 +861,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "chartTranslated"]
 - ["PSo26NSExtensionRequestHandling", "chartValueNothingSelected"]
 - ["PSo26NSExtensionRequestHandling", "chartValueSelected"]
+- ["PSo26NSExtensionRequestHandling", "fromIndex"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "maxAge"]
 - ["PSo26NSExtensionRequestHandling", "minAge"]
@@ -887,6 +900,7 @@ depends-member:
 - !private ["CSo8NSObject", "data"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "fromIndex"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "material"]
 - ["CSo8NSObject", "maxAge"]
@@ -925,6 +939,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "data"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "frame"]
+- ["PSo16NSObjectProtocol", "fromIndex"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "material"]
 - ["PSo16NSObjectProtocol", "maxAge"]
@@ -1088,6 +1103,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "data"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
+- ["PSo21UIAppearanceContainer", "fromIndex"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "maxAge"]
 - ["PSo21UIAppearanceContainer", "minAge"]
@@ -1118,6 +1134,7 @@ depends-member:
 - ["PSo18UIContentContainer", "chartTranslated"]
 - ["PSo18UIContentContainer", "chartValueNothingSelected"]
 - ["PSo18UIContentContainer", "chartValueSelected"]
+- ["PSo18UIContentContainer", "fromIndex"]
 - !private ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "maxAge"]
 - ["PSo18UIContentContainer", "minAge"]
@@ -1168,6 +1185,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "data"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
+- ["PSo18UIFocusEnvironment", "fromIndex"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "maxAge"]
 - ["PSo18UIFocusEnvironment", "minAge"]
@@ -1226,6 +1244,7 @@ depends-member:
 - !private ["CSo11UIResponder", "data"]
 - !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "frame"]
+- ["CSo11UIResponder", "fromIndex"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "maxAge"]
 - ["CSo11UIResponder", "minAge"]
@@ -1259,6 +1278,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "data"]
 - !private ["PSo30UIResponderStandardEditActions", "delegate"]
 - !private ["PSo30UIResponderStandardEditActions", "frame"]
+- ["PSo30UIResponderStandardEditActions", "fromIndex"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "maxAge"]
 - ["PSo30UIResponderStandardEditActions", "minAge"]
@@ -1287,6 +1307,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "chartTranslated"]
 - ["PSo16UIStateRestoring", "chartValueNothingSelected"]
 - ["PSo16UIStateRestoring", "chartValueSelected"]
+- ["PSo16UIStateRestoring", "fromIndex"]
 - !private ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "maxAge"]
 - ["PSo16UIStateRestoring", "minAge"]
@@ -1319,6 +1340,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "data"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "frame"]
+- ["PSo18UITraitEnvironment", "fromIndex"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "maxAge"]
 - ["PSo18UITraitEnvironment", "minAge"]
@@ -1361,6 +1383,7 @@ depends-member:
 - ["CSo16UIViewController", "chartValueNothingSelected"]
 - ["CSo16UIViewController", "chartValueSelected"]
 - ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "fromIndex"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "maxAge"]
 - ["CSo16UIViewController", "minAge"]
@@ -1448,6 +1471,7 @@ depends-member:
 - !private ["Ps9_Hashable", "data"]
 - !private ["Ps9_Hashable", "delegate"]
 - !private ["Ps9_Hashable", "frame"]
+- ["Ps9_Hashable", "fromIndex"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "material"]
 - ["Ps9_Hashable", "maxAge"]
@@ -1490,6 +1514,7 @@ depends-member:
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "white"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps14_SignedInteger", "IntegerLiteralType"]
 - !private ["Ps14_SignedInteger", "Stride"]
 - !private ["Ps14_SignedInteger", "_DisabledRangeIndex"]
@@ -1517,7 +1542,7 @@ depends-nominal:
 - !private "Vs18BidirectionalSlice"
 - !private "Ps19BinaryFloatingPoint"
 - !private "Ps17BitwiseOperations"
-- !private "Sb"
+- "Sb"
 - !private "PSo15CALayerDelegate"
 - !private "V12CoreGraphics7CGFloat"
 - !private "VSC6CGRect"
@@ -1550,6 +1575,7 @@ depends-nominal:
 - !private "P7SnapKit24ConstraintPriorityTarget"
 - !private "P7SnapKit25ConstraintRelatableTarget"
 - "V7SnapKit17ConstraintViewDSL"
+- !private "Vs20CountableClosedRange"
 - "Vs14CountableRange"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
@@ -1676,6 +1702,7 @@ depends-nominal:
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
 - "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
 depends-dynamic-lookup:
@@ -1745,4 +1772,4 @@ depends-external:
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/FSInteractiveMap/FSInteractiveMap.framework/Headers/FSInteractiveMapView.h"
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/FSInteractiveMap/FSInteractiveMap.framework/Headers/FSInteractiveMap-umbrella.h"
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/FSInteractiveMap/FSInteractiveMap.framework/Modules/module.modulemap"
-interface-hash: "ae1203b76b98a19c9f5cd83d4018c04c"
+interface-hash: "ad958af305a28a3473b51012924dc9fc"

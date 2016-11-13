@@ -7,29 +7,31 @@ provides-member:
 - ["C5YHack24QueryTableViewController", ""]
 provides-dynamic-lookup:
 - "viewDidLoad"
-- "minTextfield"
-- "maxTextField"
-- "tableView"
 - "donePressed"
+- "minTextfield"
+- "tableView"
+- "fromIndex"
+- "maxTextField"
 depends-top-level:
 - !private "UIEdgeInsetsMake"
-- !private "BooleanLiteralType"
-- "UIBarButtonItem"
-- !private "||"
-- "UITableViewController"
-- !private "=="
-- "QueryTableViewController"
-- "AssignmentPrecedence"
 - "UITextField"
+- !private "=="
+- "AssignmentPrecedence"
+- "QueryTableViewController"
+- "UITableViewController"
+- "UIBarButtonItem"
+- !private "BooleanLiteralType"
 - !private "BarGraphViewController"
 - "UITableView"
 - "Int"
+- !private "||"
 depends-member:
 - !private ["Ps9AnyObject", "BarGraphViewController"]
 - !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "UIEdgeInsetsMake"]
 - !private ["Ps9AnyObject", "contentInset"]
 - ["Ps9AnyObject", "donePressed"]
+- ["Ps9AnyObject", "fromIndex"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "maxAge"]
 - ["Ps9AnyObject", "maxTextField"]
@@ -42,6 +44,7 @@ depends-member:
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
 - ["C5YHack22BarGraphViewController", "deinit"]
+- !private ["C5YHack22BarGraphViewController", "fromIndex"]
 - !private ["C5YHack22BarGraphViewController", "init"]
 - !private ["C5YHack22BarGraphViewController", "maxAge"]
 - !private ["C5YHack22BarGraphViewController", "minAge"]
@@ -56,6 +59,7 @@ depends-member:
 - !private ["Ps7CVarArg", "UIEdgeInsetsMake"]
 - !private ["Ps7CVarArg", "contentInset"]
 - ["Ps7CVarArg", "donePressed"]
+- ["Ps7CVarArg", "fromIndex"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "maxAge"]
 - ["Ps7CVarArg", "maxTextField"]
@@ -67,6 +71,7 @@ depends-member:
 - !private ["Ps7CVarArg", "text"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
+- !private ["P6Charts17ChartViewDelegate", "fromIndex"]
 - !private ["P6Charts17ChartViewDelegate", "init"]
 - !private ["P6Charts17ChartViewDelegate", "maxAge"]
 - !private ["P6Charts17ChartViewDelegate", "minAge"]
@@ -84,6 +89,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIEdgeInsetsMake"]
 - !private ["Ps28CustomDebugStringConvertible", "contentInset"]
 - ["Ps28CustomDebugStringConvertible", "donePressed"]
+- ["Ps28CustomDebugStringConvertible", "fromIndex"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "maxAge"]
 - ["Ps28CustomDebugStringConvertible", "maxTextField"]
@@ -105,6 +111,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "contentInset"]
 - ["Ps23CustomStringConvertible", "donePressed"]
+- ["Ps23CustomStringConvertible", "fromIndex"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "maxAge"]
 - ["Ps23CustomStringConvertible", "maxTextField"]
@@ -122,6 +129,7 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "contentInset"]
 - ["Ps9Equatable", "donePressed"]
+- ["Ps9Equatable", "fromIndex"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "maxAge"]
 - ["Ps9Equatable", "maxTextField"]
@@ -141,6 +149,7 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "contentInset"]
 - ["Ps8Hashable", "donePressed"]
+- ["Ps8Hashable", "fromIndex"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "maxAge"]
 - ["Ps8Hashable", "maxTextField"]
@@ -166,6 +175,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIEdgeInsetsMake"]
 - !private ["PSo8NSCoding", "contentInset"]
 - ["PSo8NSCoding", "donePressed"]
+- ["PSo8NSCoding", "fromIndex"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "maxAge"]
 - ["PSo8NSCoding", "maxTextField"]
@@ -181,6 +191,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "Int"]
 - !private ["PSo26NSExtensionRequestHandling", "UIEdgeInsetsMake"]
 - ["PSo26NSExtensionRequestHandling", "donePressed"]
+- ["PSo26NSExtensionRequestHandling", "fromIndex"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "maxAge"]
 - ["PSo26NSExtensionRequestHandling", "maxTextField"]
@@ -199,6 +210,7 @@ depends-member:
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "contentInset"]
 - ["CSo8NSObject", "donePressed"]
+- ["CSo8NSObject", "fromIndex"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "maxAge"]
 - ["CSo8NSObject", "maxTextField"]
@@ -214,6 +226,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIEdgeInsetsMake"]
 - !private ["PSo16NSObjectProtocol", "contentInset"]
 - ["PSo16NSObjectProtocol", "donePressed"]
+- ["PSo16NSObjectProtocol", "fromIndex"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "maxAge"]
 - ["PSo16NSObjectProtocol", "maxTextField"]
@@ -234,6 +247,7 @@ depends-member:
 - ["C5YHack24QueryTableViewController", "UITextField"]
 - ["C5YHack24QueryTableViewController", "deinit"]
 - ["C5YHack24QueryTableViewController", "donePressed"]
+- ["C5YHack24QueryTableViewController", "fromIndex"]
 - ["C5YHack24QueryTableViewController", "init"]
 - ["C5YHack24QueryTableViewController", "maxTextField"]
 - ["C5YHack24QueryTableViewController", "minTextfield"]
@@ -253,6 +267,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIEdgeInsetsMake"]
 - !private ["PSo21UIAppearanceContainer", "contentInset"]
 - ["PSo21UIAppearanceContainer", "donePressed"]
+- ["PSo21UIAppearanceContainer", "fromIndex"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "maxAge"]
 - ["PSo21UIAppearanceContainer", "maxTextField"]
@@ -268,6 +283,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "Int"]
 - !private ["PSo18UIContentContainer", "UIEdgeInsetsMake"]
 - ["PSo18UIContentContainer", "donePressed"]
+- ["PSo18UIContentContainer", "fromIndex"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "maxAge"]
 - ["PSo18UIContentContainer", "maxTextField"]
@@ -290,6 +306,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIEdgeInsetsMake"]
 - !private ["PSo18UIFocusEnvironment", "contentInset"]
 - ["PSo18UIFocusEnvironment", "donePressed"]
+- ["PSo18UIFocusEnvironment", "fromIndex"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "maxAge"]
 - ["PSo18UIFocusEnvironment", "maxTextField"]
@@ -314,6 +331,7 @@ depends-member:
 - ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "contentInset"]
 - ["CSo11UIResponder", "donePressed"]
+- ["CSo11UIResponder", "fromIndex"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "maxAge"]
 - ["CSo11UIResponder", "maxTextField"]
@@ -329,6 +347,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIEdgeInsetsMake"]
 - !private ["PSo30UIResponderStandardEditActions", "contentInset"]
 - ["PSo30UIResponderStandardEditActions", "donePressed"]
+- ["PSo30UIResponderStandardEditActions", "fromIndex"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "maxAge"]
 - ["PSo30UIResponderStandardEditActions", "maxTextField"]
@@ -345,6 +364,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "Int"]
 - !private ["PSo20UIScrollViewDelegate", "UIEdgeInsetsMake"]
 - ["PSo20UIScrollViewDelegate", "donePressed"]
+- ["PSo20UIScrollViewDelegate", "fromIndex"]
 - !private ["PSo20UIScrollViewDelegate", "init"]
 - ["PSo20UIScrollViewDelegate", "maxTextField"]
 - ["PSo20UIScrollViewDelegate", "minTextfield"]
@@ -356,6 +376,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "Int"]
 - !private ["PSo16UIStateRestoring", "UIEdgeInsetsMake"]
 - ["PSo16UIStateRestoring", "donePressed"]
+- ["PSo16UIStateRestoring", "fromIndex"]
 - !private ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "maxAge"]
 - ["PSo16UIStateRestoring", "maxTextField"]
@@ -375,6 +396,7 @@ depends-member:
 - ["CSo21UITableViewController", "UITextField"]
 - ["CSo21UITableViewController", "deinit"]
 - ["CSo21UITableViewController", "donePressed"]
+- ["CSo21UITableViewController", "fromIndex"]
 - ["CSo21UITableViewController", "init"]
 - ["CSo21UITableViewController", "maxTextField"]
 - ["CSo21UITableViewController", "minTextfield"]
@@ -386,6 +408,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "Int"]
 - !private ["PSo21UITableViewDataSource", "UIEdgeInsetsMake"]
 - ["PSo21UITableViewDataSource", "donePressed"]
+- ["PSo21UITableViewDataSource", "fromIndex"]
 - !private ["PSo21UITableViewDataSource", "init"]
 - ["PSo21UITableViewDataSource", "maxTextField"]
 - ["PSo21UITableViewDataSource", "minTextfield"]
@@ -397,6 +420,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "Int"]
 - !private ["PSo19UITableViewDelegate", "UIEdgeInsetsMake"]
 - ["PSo19UITableViewDelegate", "donePressed"]
+- ["PSo19UITableViewDelegate", "fromIndex"]
 - !private ["PSo19UITableViewDelegate", "init"]
 - ["PSo19UITableViewDelegate", "maxTextField"]
 - ["PSo19UITableViewDelegate", "minTextfield"]
@@ -413,6 +437,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIEdgeInsetsMake"]
 - !private ["PSo18UITraitEnvironment", "contentInset"]
 - ["PSo18UITraitEnvironment", "donePressed"]
+- ["PSo18UITraitEnvironment", "fromIndex"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "maxAge"]
 - ["PSo18UITraitEnvironment", "maxTextField"]
@@ -433,6 +458,7 @@ depends-member:
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITextField"]
 - ["CSo16UIViewController", "donePressed"]
+- ["CSo16UIViewController", "fromIndex"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "maxAge"]
 - ["CSo16UIViewController", "maxTextField"]
@@ -452,6 +478,7 @@ depends-member:
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "contentInset"]
 - ["Ps9_Hashable", "donePressed"]
+- ["Ps9_Hashable", "fromIndex"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "maxAge"]
 - ["Ps9_Hashable", "maxTextField"]
@@ -620,4 +647,4 @@ depends-external:
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/FSInteractiveMap/FSInteractiveMap.framework/Headers/FSInteractiveMapView.h"
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/FSInteractiveMap/FSInteractiveMap.framework/Headers/FSInteractiveMap-umbrella.h"
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/FSInteractiveMap/FSInteractiveMap.framework/Modules/module.modulemap"
-interface-hash: "179ef048dc76b1e60eafe5edfdb4e2f5"
+interface-hash: "22327f271aeb87571621ae25071c9a44"

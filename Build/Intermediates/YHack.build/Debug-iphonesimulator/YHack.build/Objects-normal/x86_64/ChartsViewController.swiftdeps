@@ -6,52 +6,49 @@ provides-nominal:
 provides-member:
 - ["C5YHack20ChartsViewController", ""]
 provides-dynamic-lookup:
-- "getSeasonData"
-- "activityview"
 - "viewDidLoad"
-- "fromIndex"
-- "data"
-- "getDataFor50States"
+- "activityview"
 - "pieChartView"
+- "setChart"
+- "setChart"
+- "data"
 - "genericdictionaryUsedToSaveJSONData"
+- "getSeasonData"
 - "promocode"
-- "setChart"
-- "setChart"
 - "insuranceProduct"
+- "fromIndex"
 depends-top-level:
 - "UIViewController"
-- !private "print"
-- !private "..<"
-- !private "PieChartDataEntry"
-- !private "<"
-- !private "Void"
-- "ChartsViewController"
-- !private "Array"
-- "StringLiteralType"
-- !private "UIColor"
-- !private "PieChartDataSet"
-- !private "+"
-- "UnicodeScalarType"
-- "AssignmentPrecedence"
 - "Int"
-- "NVActivityIndicatorView"
-- !private "=="
-- !private "~="
-- "PieChartView"
+- "CGRect"
+- !private "PieChartData"
 - !private "JSON"
-- !private "fatalError"
-- !private "Bundle"
+- "UnicodeScalarType"
+- !private "~="
+- "AssignmentPrecedence"
+- !private "=="
+- !private "+"
+- !private "PieChartDataSet"
+- !private "..<"
+- !private "Void"
+- "TernaryPrecedence"
 - "ChartViewDelegate"
 - !private "Alamofire"
-- !private "ChartColorTemplates"
+- !private "<"
+- !private "print"
+- !private "fatalError"
+- !private "UIColor"
 - "Double"
-- !private "!="
-- "CGRect"
-- "TernaryPrecedence"
 - !private "..."
-- !private "PieChartData"
-- !private "DateFormatter"
+- !private "Array"
+- "NVActivityIndicatorView"
+- "PieChartView"
 - "String"
+- !private "DateFormatter"
+- !private "ChartColorTemplates"
+- "StringLiteralType"
+- !private "PieChartDataEntry"
+- "ChartsViewController"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -59,7 +56,6 @@ depends-member:
 - !private ["P6Charts16AnimatorDelegate", "noDataText"]
 - !private ["Ps9AnyObject", "Alamofire"]
 - !private ["Ps9AnyObject", "Array"]
-- !private ["Ps9AnyObject", "Bundle"]
 - ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "ChartColorTemplates"]
 - !private ["Ps9AnyObject", "DateFormatter"]
@@ -91,12 +87,10 @@ depends-member:
 - !private ["Ps9AnyObject", "fatalError"]
 - ["Ps9AnyObject", "fromIndex"]
 - ["Ps9AnyObject", "genericdictionaryUsedToSaveJSONData"]
-- ["Ps9AnyObject", "getDataFor50States"]
 - ["Ps9AnyObject", "getSeasonData"]
 - !private ["Ps9AnyObject", "height"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "insuranceProduct"]
-- !private ["Ps9AnyObject", "main"]
 - !private ["Ps9AnyObject", "noDataText"]
 - !private ["Ps9AnyObject", "pastel"]
 - ["Ps9AnyObject", "pieChartView"]
@@ -108,7 +102,6 @@ depends-member:
 - !private ["Ps9AnyObject", "snp"]
 - !private ["Ps9AnyObject", "startAnimating"]
 - !private ["Ps9AnyObject", "stopAnimating"]
-- !private ["Ps9AnyObject", "url"]
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - !private ["Ps9AnyObject", "width"]
@@ -123,7 +116,6 @@ depends-member:
 - !private ["Sa", "count"]
 - ["Sa", "deinit"]
 - !private ["Sa", "enumerated"]
-- !private ["Sa", "filter"]
 - ["Sa", "init"]
 - !private ["Sa", "last"]
 - !private ["Sa", "map"]
@@ -143,7 +135,6 @@ depends-member:
 - !private ["Ps23BidirectionalCollection", "components"]
 - !private ["Ps23BidirectionalCollection", "count"]
 - !private ["Ps23BidirectionalCollection", "enumerated"]
-- !private ["Ps23BidirectionalCollection", "filter"]
 - ["Ps23BidirectionalCollection", "init"]
 - !private ["Ps23BidirectionalCollection", "last"]
 - !private ["Ps23BidirectionalCollection", "map"]
@@ -159,7 +150,6 @@ depends-member:
 - !private ["Ps22BidirectionalIndexable", "components"]
 - !private ["Ps22BidirectionalIndexable", "count"]
 - !private ["Ps22BidirectionalIndexable", "enumerated"]
-- !private ["Ps22BidirectionalIndexable", "filter"]
 - ["Ps22BidirectionalIndexable", "init"]
 - !private ["Ps22BidirectionalIndexable", "last"]
 - !private ["Ps22BidirectionalIndexable", "map"]
@@ -177,9 +167,6 @@ depends-member:
 - !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
-- ["CSo6Bundle", "deinit"]
-- !private ["CSo6Bundle", "main"]
-- !private ["CSo6Bundle", "url"]
 - !private ["PSo15CALayerDelegate", "addSubview"]
 - !private ["PSo15CALayerDelegate", "animating"]
 - !private ["PSo15CALayerDelegate", "color"]
@@ -194,7 +181,6 @@ depends-member:
 - ["VSC6CGRect", "init"]
 - !private ["Ps7CVarArg", "Alamofire"]
 - !private ["Ps7CVarArg", "Array"]
-- !private ["Ps7CVarArg", "Bundle"]
 - ["Ps7CVarArg", "CGRect"]
 - !private ["Ps7CVarArg", "ChartColorTemplates"]
 - !private ["Ps7CVarArg", "DateFormatter"]
@@ -234,15 +220,12 @@ depends-member:
 - !private ["Ps7CVarArg", "dateFormat"]
 - !private ["Ps7CVarArg", "enumerated"]
 - !private ["Ps7CVarArg", "fatalError"]
-- !private ["Ps7CVarArg", "filter"]
 - ["Ps7CVarArg", "fromIndex"]
 - ["Ps7CVarArg", "genericdictionaryUsedToSaveJSONData"]
-- ["Ps7CVarArg", "getDataFor50States"]
 - ["Ps7CVarArg", "getSeasonData"]
 - ["Ps7CVarArg", "init"]
 - ["Ps7CVarArg", "insuranceProduct"]
 - !private ["Ps7CVarArg", "last"]
-- !private ["Ps7CVarArg", "main"]
 - !private ["Ps7CVarArg", "map"]
 - !private ["Ps7CVarArg", "noDataText"]
 - !private ["Ps7CVarArg", "pastel"]
@@ -256,7 +239,6 @@ depends-member:
 - !private ["Ps7CVarArg", "startAnimating"]
 - !private ["Ps7CVarArg", "stopAnimating"]
 - !private ["Ps7CVarArg", "subscript"]
-- !private ["Ps7CVarArg", "url"]
 - !private ["Ps7CVarArg", "view"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
@@ -272,7 +254,6 @@ depends-member:
 - !private ["C6Charts13ChartViewBase", "noDataText"]
 - !private ["P6Charts17ChartViewDelegate", "Alamofire"]
 - !private ["P6Charts17ChartViewDelegate", "Array"]
-- !private ["P6Charts17ChartViewDelegate", "Bundle"]
 - ["P6Charts17ChartViewDelegate", "CGRect"]
 - !private ["P6Charts17ChartViewDelegate", "ChartColorTemplates"]
 - !private ["P6Charts17ChartViewDelegate", "DateFormatter"]
@@ -294,7 +275,6 @@ depends-member:
 - !private ["P6Charts17ChartViewDelegate", "fatalError"]
 - !private ["P6Charts17ChartViewDelegate", "fromIndex"]
 - !private ["P6Charts17ChartViewDelegate", "genericdictionaryUsedToSaveJSONData"]
-- !private ["P6Charts17ChartViewDelegate", "getDataFor50States"]
 - !private ["P6Charts17ChartViewDelegate", "getSeasonData"]
 - !private ["P6Charts17ChartViewDelegate", "insuranceProduct"]
 - !private ["P6Charts17ChartViewDelegate", "pieChartView"]
@@ -305,7 +285,6 @@ depends-member:
 - ["P6Charts17ChartViewDelegate", ""]
 - !private ["C5YHack20ChartsViewController", "Alamofire"]
 - !private ["C5YHack20ChartsViewController", "Array"]
-- !private ["C5YHack20ChartsViewController", "Bundle"]
 - ["C5YHack20ChartsViewController", "CGRect"]
 - !private ["C5YHack20ChartsViewController", "ChartColorTemplates"]
 - !private ["C5YHack20ChartsViewController", "DateFormatter"]
@@ -330,7 +309,6 @@ depends-member:
 - !private ["C5YHack20ChartsViewController", "fatalError"]
 - ["C5YHack20ChartsViewController", "fromIndex"]
 - ["C5YHack20ChartsViewController", "genericdictionaryUsedToSaveJSONData"]
-- ["C5YHack20ChartsViewController", "getDataFor50States"]
 - ["C5YHack20ChartsViewController", "getSeasonData"]
 - ["C5YHack20ChartsViewController", "init"]
 - ["C5YHack20ChartsViewController", "insuranceProduct"]
@@ -354,7 +332,6 @@ depends-member:
 - !private ["Ps10Collection", "count"]
 - !private ["Ps10Collection", "dictionary"]
 - !private ["Ps10Collection", "enumerated"]
-- !private ["Ps10Collection", "filter"]
 - ["Ps10Collection", "init"]
 - !private ["Ps10Collection", "int"]
 - !private ["Ps10Collection", "last"]
@@ -424,7 +401,6 @@ depends-member:
 - ["V7SnapKit17ConstraintViewDSL", "deinit"]
 - !private ["V7SnapKit17ConstraintViewDSL", "makeConstraints"]
 - !private ["V7SnapKit17ConstraintViewDSL", "removeConstraints"]
-- !private ["Vs15ContiguousArray", "deinit"]
 - !private ["Vs20CountableClosedRange", "Iterator"]
 - ["Vs20CountableClosedRange", "deinit"]
 - !private ["Vs14CountableRange", "Iterator"]
@@ -432,7 +408,6 @@ depends-member:
 - ["Vs14CountableRange", "deinit"]
 - !private ["Ps28CustomDebugStringConvertible", "Alamofire"]
 - !private ["Ps28CustomDebugStringConvertible", "Array"]
-- !private ["Ps28CustomDebugStringConvertible", "Bundle"]
 - ["Ps28CustomDebugStringConvertible", "CGRect"]
 - !private ["Ps28CustomDebugStringConvertible", "ChartColorTemplates"]
 - !private ["Ps28CustomDebugStringConvertible", "DateFormatter"]
@@ -471,17 +446,13 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "dictionary"]
 - !private ["Ps28CustomDebugStringConvertible", "enumerated"]
 - !private ["Ps28CustomDebugStringConvertible", "fatalError"]
-- !private ["Ps28CustomDebugStringConvertible", "filter"]
 - ["Ps28CustomDebugStringConvertible", "fromIndex"]
 - ["Ps28CustomDebugStringConvertible", "genericdictionaryUsedToSaveJSONData"]
-- ["Ps28CustomDebugStringConvertible", "getDataFor50States"]
 - ["Ps28CustomDebugStringConvertible", "getSeasonData"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "insuranceProduct"]
 - !private ["Ps28CustomDebugStringConvertible", "int"]
-- !private ["Ps28CustomDebugStringConvertible", "isSuccess"]
 - !private ["Ps28CustomDebugStringConvertible", "last"]
-- !private ["Ps28CustomDebugStringConvertible", "main"]
 - !private ["Ps28CustomDebugStringConvertible", "map"]
 - !private ["Ps28CustomDebugStringConvertible", "noDataText"]
 - !private ["Ps28CustomDebugStringConvertible", "pastel"]
@@ -498,7 +469,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "stopAnimating"]
 - !private ["Ps28CustomDebugStringConvertible", "string"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
-- !private ["Ps28CustomDebugStringConvertible", "url"]
 - !private ["Ps28CustomDebugStringConvertible", "value"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
@@ -523,7 +493,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "components"]
 - !private ["Ps17CustomReflectable", "count"]
 - !private ["Ps17CustomReflectable", "enumerated"]
-- !private ["Ps17CustomReflectable", "filter"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "last"]
 - !private ["Ps17CustomReflectable", "map"]
@@ -531,7 +500,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "Alamofire"]
 - !private ["Ps23CustomStringConvertible", "Array"]
-- !private ["Ps23CustomStringConvertible", "Bundle"]
 - ["Ps23CustomStringConvertible", "CGRect"]
 - !private ["Ps23CustomStringConvertible", "ChartColorTemplates"]
 - !private ["Ps23CustomStringConvertible", "DateFormatter"]
@@ -573,17 +541,13 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "dictionary"]
 - !private ["Ps23CustomStringConvertible", "enumerated"]
 - !private ["Ps23CustomStringConvertible", "fatalError"]
-- !private ["Ps23CustomStringConvertible", "filter"]
 - ["Ps23CustomStringConvertible", "fromIndex"]
 - ["Ps23CustomStringConvertible", "genericdictionaryUsedToSaveJSONData"]
-- ["Ps23CustomStringConvertible", "getDataFor50States"]
 - ["Ps23CustomStringConvertible", "getSeasonData"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "insuranceProduct"]
 - !private ["Ps23CustomStringConvertible", "int"]
-- !private ["Ps23CustomStringConvertible", "isSuccess"]
 - !private ["Ps23CustomStringConvertible", "last"]
-- !private ["Ps23CustomStringConvertible", "main"]
 - !private ["Ps23CustomStringConvertible", "map"]
 - !private ["Ps23CustomStringConvertible", "noDataText"]
 - !private ["Ps23CustomStringConvertible", "pastel"]
@@ -600,14 +564,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "stopAnimating"]
 - !private ["Ps23CustomStringConvertible", "string"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
-- !private ["Ps23CustomStringConvertible", "url"]
 - !private ["Ps23CustomStringConvertible", "value"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
 - ["C9Alamofire11DataRequest", "deinit"]
 - !private ["C9Alamofire11DataRequest", "responseJSON"]
-- !private ["V9Alamofire12DataResponse", "data"]
 - !private ["V9Alamofire12DataResponse", "deinit"]
 - !private ["V9Alamofire12DataResponse", "result"]
 - !private ["V10Foundation4Date", "deinit"]
@@ -644,7 +606,6 @@ depends-member:
 - ["Vs18EnumeratedSequence", "deinit"]
 - !private ["Ps9Equatable", "Alamofire"]
 - !private ["Ps9Equatable", "Array"]
-- !private ["Ps9Equatable", "Bundle"]
 - ["Ps9Equatable", "CGRect"]
 - !private ["Ps9Equatable", "ChartColorTemplates"]
 - !private ["Ps9Equatable", "DateFormatter"]
@@ -684,12 +645,10 @@ depends-member:
 - !private ["Ps9Equatable", "fatalError"]
 - ["Ps9Equatable", "fromIndex"]
 - ["Ps9Equatable", "genericdictionaryUsedToSaveJSONData"]
-- ["Ps9Equatable", "getDataFor50States"]
 - ["Ps9Equatable", "getSeasonData"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "insuranceProduct"]
 - !private ["Ps9Equatable", "int"]
-- !private ["Ps9Equatable", "main"]
 - !private ["Ps9Equatable", "noDataText"]
 - !private ["Ps9Equatable", "pastel"]
 - ["Ps9Equatable", "pieChartView"]
@@ -702,7 +661,6 @@ depends-member:
 - !private ["Ps9Equatable", "stopAnimating"]
 - !private ["Ps9Equatable", "string"]
 - !private ["Ps9Equatable", "subscript"]
-- !private ["Ps9Equatable", "url"]
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
@@ -717,7 +675,6 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "count"]
 - !private ["Ps25ExpressibleByArrayLiteral", "dictionary"]
 - !private ["Ps25ExpressibleByArrayLiteral", "enumerated"]
-- !private ["Ps25ExpressibleByArrayLiteral", "filter"]
 - ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps25ExpressibleByArrayLiteral", "int"]
 - !private ["Ps25ExpressibleByArrayLiteral", "last"]
@@ -816,7 +773,6 @@ depends-member:
 - !private ["CSo9Formatter", "init"]
 - !private ["Ps8Hashable", "Alamofire"]
 - !private ["Ps8Hashable", "Array"]
-- !private ["Ps8Hashable", "Bundle"]
 - ["Ps8Hashable", "CGRect"]
 - !private ["Ps8Hashable", "ChartColorTemplates"]
 - !private ["Ps8Hashable", "DateFormatter"]
@@ -850,11 +806,9 @@ depends-member:
 - !private ["Ps8Hashable", "fatalError"]
 - ["Ps8Hashable", "fromIndex"]
 - ["Ps8Hashable", "genericdictionaryUsedToSaveJSONData"]
-- ["Ps8Hashable", "getDataFor50States"]
 - ["Ps8Hashable", "getSeasonData"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "insuranceProduct"]
-- !private ["Ps8Hashable", "main"]
 - !private ["Ps8Hashable", "noDataText"]
 - !private ["Ps8Hashable", "pastel"]
 - ["Ps8Hashable", "pieChartView"]
@@ -865,7 +819,6 @@ depends-member:
 - !private ["Ps8Hashable", "snp"]
 - !private ["Ps8Hashable", "startAnimating"]
 - !private ["Ps8Hashable", "stopAnimating"]
-- !private ["Ps8Hashable", "url"]
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
@@ -886,7 +839,6 @@ depends-member:
 - !private ["Ps9Indexable", "count"]
 - !private ["Ps9Indexable", "dictionary"]
 - !private ["Ps9Indexable", "enumerated"]
-- !private ["Ps9Indexable", "filter"]
 - ["Ps9Indexable", "init"]
 - !private ["Ps9Indexable", "int"]
 - !private ["Ps9Indexable", "last"]
@@ -906,7 +858,6 @@ depends-member:
 - !private ["Ps13IndexableBase", "count"]
 - !private ["Ps13IndexableBase", "dictionary"]
 - !private ["Ps13IndexableBase", "enumerated"]
-- !private ["Ps13IndexableBase", "filter"]
 - ["Ps13IndexableBase", "init"]
 - !private ["Ps13IndexableBase", "int"]
 - !private ["Ps13IndexableBase", "last"]
@@ -947,7 +898,6 @@ depends-member:
 - !private ["P10SwiftyJSON17JSONSubscriptType", "components"]
 - !private ["P10SwiftyJSON17JSONSubscriptType", "deinit"]
 - ["P10SwiftyJSON17JSONSubscriptType", "init"]
-- !private ["Vs15LazyFilterIndex", "deinit"]
 - !private ["Ps25LosslessStringConvertible", "Stride"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "components"]
@@ -967,7 +917,6 @@ depends-member:
 - !private ["Ps17MutableCollection", "components"]
 - !private ["Ps17MutableCollection", "count"]
 - !private ["Ps17MutableCollection", "enumerated"]
-- !private ["Ps17MutableCollection", "filter"]
 - ["Ps17MutableCollection", "init"]
 - !private ["Ps17MutableCollection", "last"]
 - !private ["Ps17MutableCollection", "map"]
@@ -982,7 +931,6 @@ depends-member:
 - !private ["Ps16MutableIndexable", "components"]
 - !private ["Ps16MutableIndexable", "count"]
 - !private ["Ps16MutableIndexable", "enumerated"]
-- !private ["Ps16MutableIndexable", "filter"]
 - ["Ps16MutableIndexable", "init"]
 - !private ["Ps16MutableIndexable", "last"]
 - !private ["Ps16MutableIndexable", "map"]
@@ -992,7 +940,6 @@ depends-member:
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "Alamofire"]
 - !private ["PSo8NSCoding", "Array"]
-- !private ["PSo8NSCoding", "Bundle"]
 - ["PSo8NSCoding", "CGRect"]
 - !private ["PSo8NSCoding", "ChartColorTemplates"]
 - !private ["PSo8NSCoding", "DateFormatter"]
@@ -1021,7 +968,6 @@ depends-member:
 - !private ["PSo8NSCoding", "fatalError"]
 - ["PSo8NSCoding", "fromIndex"]
 - ["PSo8NSCoding", "genericdictionaryUsedToSaveJSONData"]
-- ["PSo8NSCoding", "getDataFor50States"]
 - ["PSo8NSCoding", "getSeasonData"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "insuranceProduct"]
@@ -1044,7 +990,6 @@ depends-member:
 - ["PSo9NSCopying", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "Alamofire"]
 - !private ["PSo26NSExtensionRequestHandling", "Array"]
-- !private ["PSo26NSExtensionRequestHandling", "Bundle"]
 - ["PSo26NSExtensionRequestHandling", "CGRect"]
 - !private ["PSo26NSExtensionRequestHandling", "ChartColorTemplates"]
 - !private ["PSo26NSExtensionRequestHandling", "DateFormatter"]
@@ -1066,7 +1011,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "fatalError"]
 - ["PSo26NSExtensionRequestHandling", "fromIndex"]
 - ["PSo26NSExtensionRequestHandling", "genericdictionaryUsedToSaveJSONData"]
-- ["PSo26NSExtensionRequestHandling", "getDataFor50States"]
 - ["PSo26NSExtensionRequestHandling", "getSeasonData"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "insuranceProduct"]
@@ -1081,7 +1025,6 @@ depends-member:
 - ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "Alamofire"]
 - !private ["CSo8NSObject", "Array"]
-- !private ["CSo8NSObject", "Bundle"]
 - ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "ChartColorTemplates"]
 - !private ["CSo8NSObject", "DateFormatter"]
@@ -1113,11 +1056,9 @@ depends-member:
 - !private ["CSo8NSObject", "fatalError"]
 - ["CSo8NSObject", "fromIndex"]
 - ["CSo8NSObject", "genericdictionaryUsedToSaveJSONData"]
-- ["CSo8NSObject", "getDataFor50States"]
 - ["CSo8NSObject", "getSeasonData"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "insuranceProduct"]
-- !private ["CSo8NSObject", "main"]
 - !private ["CSo8NSObject", "noDataText"]
 - !private ["CSo8NSObject", "pastel"]
 - ["CSo8NSObject", "pieChartView"]
@@ -1128,12 +1069,10 @@ depends-member:
 - !private ["CSo8NSObject", "snp"]
 - !private ["CSo8NSObject", "startAnimating"]
 - !private ["CSo8NSObject", "stopAnimating"]
-- !private ["CSo8NSObject", "url"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "Alamofire"]
 - !private ["PSo16NSObjectProtocol", "Array"]
-- !private ["PSo16NSObjectProtocol", "Bundle"]
 - ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "ChartColorTemplates"]
 - !private ["PSo16NSObjectProtocol", "DateFormatter"]
@@ -1163,11 +1102,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "fatalError"]
 - ["PSo16NSObjectProtocol", "fromIndex"]
 - ["PSo16NSObjectProtocol", "genericdictionaryUsedToSaveJSONData"]
-- ["PSo16NSObjectProtocol", "getDataFor50States"]
 - ["PSo16NSObjectProtocol", "getSeasonData"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "insuranceProduct"]
-- !private ["PSo16NSObjectProtocol", "main"]
 - !private ["PSo16NSObjectProtocol", "noDataText"]
 - !private ["PSo16NSObjectProtocol", "pastel"]
 - ["PSo16NSObjectProtocol", "pieChartView"]
@@ -1178,7 +1115,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "snp"]
 - !private ["PSo16NSObjectProtocol", "startAnimating"]
 - !private ["PSo16NSObjectProtocol", "stopAnimating"]
-- !private ["PSo16NSObjectProtocol", "url"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
@@ -1221,7 +1157,6 @@ depends-member:
 - !private ["Ps22RandomAccessCollection", "components"]
 - !private ["Ps22RandomAccessCollection", "count"]
 - !private ["Ps22RandomAccessCollection", "enumerated"]
-- !private ["Ps22RandomAccessCollection", "filter"]
 - ["Ps22RandomAccessCollection", "init"]
 - !private ["Ps22RandomAccessCollection", "last"]
 - !private ["Ps22RandomAccessCollection", "map"]
@@ -1237,7 +1172,6 @@ depends-member:
 - !private ["Ps21RandomAccessIndexable", "components"]
 - !private ["Ps21RandomAccessIndexable", "count"]
 - !private ["Ps21RandomAccessIndexable", "enumerated"]
-- !private ["Ps21RandomAccessIndexable", "filter"]
 - ["Ps21RandomAccessIndexable", "init"]
 - !private ["Ps21RandomAccessIndexable", "last"]
 - !private ["Ps21RandomAccessIndexable", "map"]
@@ -1260,7 +1194,6 @@ depends-member:
 - !private ["Ps26RangeReplaceableCollection", "components"]
 - !private ["Ps26RangeReplaceableCollection", "count"]
 - !private ["Ps26RangeReplaceableCollection", "enumerated"]
-- !private ["Ps26RangeReplaceableCollection", "filter"]
 - ["Ps26RangeReplaceableCollection", "init"]
 - !private ["Ps26RangeReplaceableCollection", "last"]
 - !private ["Ps26RangeReplaceableCollection", "map"]
@@ -1275,7 +1208,6 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "components"]
 - !private ["Ps25RangeReplaceableIndexable", "count"]
 - !private ["Ps25RangeReplaceableIndexable", "enumerated"]
-- !private ["Ps25RangeReplaceableIndexable", "filter"]
 - ["Ps25RangeReplaceableIndexable", "init"]
 - !private ["Ps25RangeReplaceableIndexable", "last"]
 - !private ["Ps25RangeReplaceableIndexable", "map"]
@@ -1290,10 +1222,8 @@ depends-member:
 - !private ["Ps16RawRepresentable", "string"]
 - !private ["Ps16RawRepresentable", "subscript"]
 - !private ["C9Alamofire7Request", "responseJSON"]
-- !private ["P9Alamofire8Response", "data"]
 - !private ["P9Alamofire8Response", "result"]
 - !private ["O9Alamofire6Result", "deinit"]
-- !private ["O9Alamofire6Result", "isSuccess"]
 - !private ["O9Alamofire6Result", "value"]
 - ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Index"]
@@ -1307,7 +1237,6 @@ depends-member:
 - !private ["Ps8Sequence", "count"]
 - !private ["Ps8Sequence", "dictionary"]
 - !private ["Ps8Sequence", "enumerated"]
-- !private ["Ps8Sequence", "filter"]
 - ["Ps8Sequence", "init"]
 - !private ["Ps8Sequence", "int"]
 - !private ["Ps8Sequence", "last"]
@@ -1364,7 +1293,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "stopAnimating"]
 - !private ["PSo21UIAppearanceContainer", "Alamofire"]
 - !private ["PSo21UIAppearanceContainer", "Array"]
-- !private ["PSo21UIAppearanceContainer", "Bundle"]
 - ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "ChartColorTemplates"]
 - !private ["PSo21UIAppearanceContainer", "DateFormatter"]
@@ -1389,7 +1317,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "fatalError"]
 - ["PSo21UIAppearanceContainer", "fromIndex"]
 - ["PSo21UIAppearanceContainer", "genericdictionaryUsedToSaveJSONData"]
-- ["PSo21UIAppearanceContainer", "getDataFor50States"]
 - ["PSo21UIAppearanceContainer", "getSeasonData"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "insuranceProduct"]
@@ -1409,7 +1336,6 @@ depends-member:
 - ["CSo7UIColor", "deinit"]
 - !private ["PSo18UIContentContainer", "Alamofire"]
 - !private ["PSo18UIContentContainer", "Array"]
-- !private ["PSo18UIContentContainer", "Bundle"]
 - ["PSo18UIContentContainer", "CGRect"]
 - !private ["PSo18UIContentContainer", "ChartColorTemplates"]
 - !private ["PSo18UIContentContainer", "DateFormatter"]
@@ -1431,7 +1357,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "fatalError"]
 - ["PSo18UIContentContainer", "fromIndex"]
 - ["PSo18UIContentContainer", "genericdictionaryUsedToSaveJSONData"]
-- ["PSo18UIContentContainer", "getDataFor50States"]
 - ["PSo18UIContentContainer", "getSeasonData"]
 - !private ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "insuranceProduct"]
@@ -1464,7 +1389,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "stopAnimating"]
 - !private ["PSo18UIFocusEnvironment", "Alamofire"]
 - !private ["PSo18UIFocusEnvironment", "Array"]
-- !private ["PSo18UIFocusEnvironment", "Bundle"]
 - ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "ChartColorTemplates"]
 - !private ["PSo18UIFocusEnvironment", "DateFormatter"]
@@ -1489,7 +1413,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "fatalError"]
 - ["PSo18UIFocusEnvironment", "fromIndex"]
 - ["PSo18UIFocusEnvironment", "genericdictionaryUsedToSaveJSONData"]
-- ["PSo18UIFocusEnvironment", "getDataFor50States"]
 - ["PSo18UIFocusEnvironment", "getSeasonData"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "insuranceProduct"]
@@ -1517,7 +1440,6 @@ depends-member:
 - !private ["PSo11UIFocusItem", "stopAnimating"]
 - !private ["CSo11UIResponder", "Alamofire"]
 - !private ["CSo11UIResponder", "Array"]
-- !private ["CSo11UIResponder", "Bundle"]
 - ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "ChartColorTemplates"]
 - !private ["CSo11UIResponder", "DateFormatter"]
@@ -1544,7 +1466,6 @@ depends-member:
 - !private ["CSo11UIResponder", "fatalError"]
 - ["CSo11UIResponder", "fromIndex"]
 - ["CSo11UIResponder", "genericdictionaryUsedToSaveJSONData"]
-- ["CSo11UIResponder", "getDataFor50States"]
 - ["CSo11UIResponder", "getSeasonData"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "insuranceProduct"]
@@ -1561,7 +1482,6 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "Alamofire"]
 - !private ["PSo30UIResponderStandardEditActions", "Array"]
-- !private ["PSo30UIResponderStandardEditActions", "Bundle"]
 - ["PSo30UIResponderStandardEditActions", "CGRect"]
 - !private ["PSo30UIResponderStandardEditActions", "ChartColorTemplates"]
 - !private ["PSo30UIResponderStandardEditActions", "DateFormatter"]
@@ -1586,7 +1506,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "fatalError"]
 - ["PSo30UIResponderStandardEditActions", "fromIndex"]
 - ["PSo30UIResponderStandardEditActions", "genericdictionaryUsedToSaveJSONData"]
-- ["PSo30UIResponderStandardEditActions", "getDataFor50States"]
 - ["PSo30UIResponderStandardEditActions", "getSeasonData"]
 - ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "insuranceProduct"]
@@ -1604,7 +1523,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "Alamofire"]
 - !private ["PSo16UIStateRestoring", "Array"]
-- !private ["PSo16UIStateRestoring", "Bundle"]
 - ["PSo16UIStateRestoring", "CGRect"]
 - !private ["PSo16UIStateRestoring", "ChartColorTemplates"]
 - !private ["PSo16UIStateRestoring", "DateFormatter"]
@@ -1626,7 +1544,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "fatalError"]
 - ["PSo16UIStateRestoring", "fromIndex"]
 - ["PSo16UIStateRestoring", "genericdictionaryUsedToSaveJSONData"]
-- ["PSo16UIStateRestoring", "getDataFor50States"]
 - ["PSo16UIStateRestoring", "getSeasonData"]
 - !private ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "insuranceProduct"]
@@ -1639,7 +1556,6 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo18UITraitEnvironment", "Alamofire"]
 - !private ["PSo18UITraitEnvironment", "Array"]
-- !private ["PSo18UITraitEnvironment", "Bundle"]
 - ["PSo18UITraitEnvironment", "CGRect"]
 - !private ["PSo18UITraitEnvironment", "ChartColorTemplates"]
 - !private ["PSo18UITraitEnvironment", "DateFormatter"]
@@ -1664,7 +1580,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "fatalError"]
 - ["PSo18UITraitEnvironment", "fromIndex"]
 - ["PSo18UITraitEnvironment", "genericdictionaryUsedToSaveJSONData"]
-- ["PSo18UITraitEnvironment", "getDataFor50States"]
 - ["PSo18UITraitEnvironment", "getSeasonData"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "insuranceProduct"]
@@ -1691,7 +1606,6 @@ depends-member:
 - !private ["CSo6UIView", "stopAnimating"]
 - !private ["CSo16UIViewController", "Alamofire"]
 - !private ["CSo16UIViewController", "Array"]
-- !private ["CSo16UIViewController", "Bundle"]
 - ["CSo16UIViewController", "CGRect"]
 - !private ["CSo16UIViewController", "ChartColorTemplates"]
 - !private ["CSo16UIViewController", "DateFormatter"]
@@ -1716,7 +1630,6 @@ depends-member:
 - !private ["CSo16UIViewController", "fatalError"]
 - ["CSo16UIViewController", "fromIndex"]
 - ["CSo16UIViewController", "genericdictionaryUsedToSaveJSONData"]
-- ["CSo16UIViewController", "getDataFor50States"]
 - ["CSo16UIViewController", "getSeasonData"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "insuranceProduct"]
@@ -1732,7 +1645,6 @@ depends-member:
 - !private ["Vs6UInt32", "deinit"]
 - !private ["Vs6UInt64", "deinit"]
 - !private ["Vs5UInt8", "deinit"]
-- ["V10Foundation3URL", "deinit"]
 - !private ["P9Alamofire14URLConvertible", "components"]
 - ["P9Alamofire14URLConvertible", "init"]
 - !private ["Sc", "deinit"]
@@ -1746,7 +1658,6 @@ depends-member:
 - !private ["Ps14_ArrayProtocol", "components"]
 - !private ["Ps14_ArrayProtocol", "count"]
 - !private ["Ps14_ArrayProtocol", "enumerated"]
-- !private ["Ps14_ArrayProtocol", "filter"]
 - ["Ps14_ArrayProtocol", "init"]
 - !private ["Ps14_ArrayProtocol", "last"]
 - !private ["Ps14_ArrayProtocol", "map"]
@@ -1775,7 +1686,6 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "components"]
 - !private ["Ps24_DestructorSafeContainer", "count"]
 - !private ["Ps24_DestructorSafeContainer", "enumerated"]
-- !private ["Ps24_DestructorSafeContainer", "filter"]
 - ["Ps24_DestructorSafeContainer", "init"]
 - !private ["Ps24_DestructorSafeContainer", "last"]
 - !private ["Ps24_DestructorSafeContainer", "map"]
@@ -1800,7 +1710,6 @@ depends-member:
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "Alamofire"]
 - !private ["Ps9_Hashable", "Array"]
-- !private ["Ps9_Hashable", "Bundle"]
 - ["Ps9_Hashable", "CGRect"]
 - !private ["Ps9_Hashable", "ChartColorTemplates"]
 - !private ["Ps9_Hashable", "DateFormatter"]
@@ -1834,11 +1743,9 @@ depends-member:
 - !private ["Ps9_Hashable", "fatalError"]
 - ["Ps9_Hashable", "fromIndex"]
 - ["Ps9_Hashable", "genericdictionaryUsedToSaveJSONData"]
-- ["Ps9_Hashable", "getDataFor50States"]
 - ["Ps9_Hashable", "getSeasonData"]
 - ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "insuranceProduct"]
-- !private ["Ps9_Hashable", "main"]
 - !private ["Ps9_Hashable", "noDataText"]
 - !private ["Ps9_Hashable", "pastel"]
 - ["Ps9_Hashable", "pieChartView"]
@@ -1849,7 +1756,6 @@ depends-member:
 - !private ["Ps9_Hashable", "snp"]
 - !private ["Ps9_Hashable", "startAnimating"]
 - !private ["Ps9_Hashable", "stopAnimating"]
-- !private ["Ps9_Hashable", "url"]
 - !private ["Ps9_Hashable", "view"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
@@ -1876,7 +1782,6 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "components"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
 - !private ["Ps21_ObjectiveCBridgeable", "enumerated"]
-- !private ["Ps21_ObjectiveCBridgeable", "filter"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "last"]
 - !private ["Ps21_ObjectiveCBridgeable", "map"]
@@ -1902,7 +1807,6 @@ depends-nominal:
 - !private "Ps19BinaryFloatingPoint"
 - !private "Ps17BitwiseOperations"
 - "Sb"
-- "CSo6Bundle"
 - "PSo15CALayerDelegate"
 - "VSC6CGRect"
 - "Ps7CVarArg"
@@ -1933,7 +1837,6 @@ depends-nominal:
 - !private "P7SnapKit24ConstraintPriorityTarget"
 - "P7SnapKit25ConstraintRelatableTarget"
 - "V7SnapKit17ConstraintViewDSL"
-- !private "Vs15ContiguousArray"
 - "Vs20CountableClosedRange"
 - "Vs14CountableRange"
 - "Ps28CustomDebugStringConvertible"
@@ -1984,7 +1887,6 @@ depends-nominal:
 - !private "V10SwiftyJSON4JSON"
 - !private "O10SwiftyJSON9JSONIndex"
 - "P10SwiftyJSON17JSONSubscriptType"
-- !private "Vs15LazyFilterIndex"
 - "Ps25LosslessStringConvertible"
 - "Ps10MirrorPath"
 - "Ps17MutableCollection"
@@ -2047,7 +1949,6 @@ depends-nominal:
 - !private "Vs6UInt32"
 - !private "Vs6UInt64"
 - !private "Vs5UInt8"
-- "V10Foundation3URL"
 - "P9Alamofire14URLConvertible"
 - !private "Sc"
 - "Ps14_ArrayProtocol"
@@ -2139,4 +2040,4 @@ depends-external:
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/FSInteractiveMap/FSInteractiveMap.framework/Headers/FSInteractiveMapView.h"
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/FSInteractiveMap/FSInteractiveMap.framework/Headers/FSInteractiveMap-umbrella.h"
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/FSInteractiveMap/FSInteractiveMap.framework/Modules/module.modulemap"
-interface-hash: "c300234132c04a8759552ebaf71e0edc"
+interface-hash: "54a87f773d664b5a7e6fa67ec72c0391"

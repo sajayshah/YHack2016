@@ -15,6 +15,8 @@
 		EC2C8E711DD7906B00156185 /* QueryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C8E701DD7906B00156185 /* QueryTableViewController.swift */; };
 		EC2C8E731DD79C5E00156185 /* BarGraphviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C8E721DD79C5E00156185 /* BarGraphviewController.swift */; };
 		EC2C8E761DD7D2A700156185 /* states.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC2C8E751DD7D2A700156185 /* states.txt */; };
+		EC4E49241DD837C80054FF6D /* USMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E49231DD837C80054FF6D /* USMapViewController.swift */; };
+		EC4E49261DD83CBC0054FF6D /* usaHigh.svg in Resources */ = {isa = PBXBuildFile; fileRef = EC4E49251DD83CBC0054FF6D /* usaHigh.svg */; };
 		ECDB9E771DD70D04006F8326 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDB9E761DD70D04006F8326 /* AppDelegate.swift */; };
 		ECDB9E7C1DD70D04006F8326 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECDB9E7A1DD70D04006F8326 /* Main.storyboard */; };
 		ECDB9E7E1DD70D04006F8326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECDB9E7D1DD70D04006F8326 /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 		EC2C8E701DD7906B00156185 /* QueryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryTableViewController.swift; sourceTree = "<group>"; };
 		EC2C8E721DD79C5E00156185 /* BarGraphviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraphviewController.swift; sourceTree = "<group>"; };
 		EC2C8E751DD7D2A700156185 /* states.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = states.txt; sourceTree = "<group>"; };
+		EC4E49231DD837C80054FF6D /* USMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USMapViewController.swift; sourceTree = "<group>"; };
+		EC4E49251DD83CBC0054FF6D /* usaHigh.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = usaHigh.svg; sourceTree = "<group>"; };
 		ECDB9E731DD70D04006F8326 /* YHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDB9E761DD70D04006F8326 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECDB9E7B1DD70D04006F8326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,12 +111,14 @@
 		ECDB9E751DD70D04006F8326 /* YHack */ = {
 			isa = PBXGroup;
 			children = (
+				EC4E49251DD83CBC0054FF6D /* usaHigh.svg */,
 				701B7D941DD7D43900F71C27 /* icon.png */,
 				ECDB9E761DD70D04006F8326 /* AppDelegate.swift */,
 				ECDB9E891DD70D17006F8326 /* FirstTableViewController.swift */,
 				EC2C8E721DD79C5E00156185 /* BarGraphviewController.swift */,
 				701B7D981DD7ECB600F71C27 /* InsuranceProductTableViewController.swift */,
 				ECDB9E8A1DD70D17006F8326 /* SecondViewController.swift */,
+				EC4E49231DD837C80054FF6D /* USMapViewController.swift */,
 				ECDB9E881DD70D17006F8326 /* ChartsViewController.swift */,
 				EC2C8E701DD7906B00156185 /* QueryTableViewController.swift */,
 				EC2C8E751DD7D2A700156185 /* states.txt */,
@@ -161,7 +167,7 @@
 				TargetAttributes = {
 					ECDB9E721DD70D04006F8326 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 959P9CJ8HA;
+						DevelopmentTeam = H27J42LAW5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -189,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4E49261DD83CBC0054FF6D /* usaHigh.svg in Resources */,
 				EC2C8E761DD7D2A700156185 /* states.txt in Resources */,
 				701B7D951DD7D43900F71C27 /* icon.png in Resources */,
 				ECDB9E811DD70D04006F8326 /* LaunchScreen.storyboard in Resources */,
@@ -262,6 +269,7 @@
 				ECDB9E771DD70D04006F8326 /* AppDelegate.swift in Sources */,
 				701B7D931DD7720600F71C27 /* secondTableViewCells.swift in Sources */,
 				701B7D991DD7ECB600F71C27 /* InsuranceProductTableViewController.swift in Sources */,
+				EC4E49241DD837C80054FF6D /* USMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,7 +395,7 @@
 			baseConfigurationReference = 9897423C67BA504141AE944A /* Pods-YHack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 959P9CJ8HA;
+				DEVELOPMENT_TEAM = H27J42LAW5;
 				INFOPLIST_FILE = YHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Atharva.YHack;
@@ -401,7 +409,7 @@
 			baseConfigurationReference = 289709B7DA34B3F679A4E004 /* Pods-YHack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 959P9CJ8HA;
+				DEVELOPMENT_TEAM = H27J42LAW5;
 				INFOPLIST_FILE = YHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Atharva.YHack;
