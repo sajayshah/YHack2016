@@ -10,6 +10,8 @@
 		701B7D8F1DD771A900F71C27 /* tableviewcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701B7D8E1DD771A900F71C27 /* tableviewcell.swift */; };
 		701B7D931DD7720600F71C27 /* secondTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701B7D921DD7720600F71C27 /* secondTableViewCells.swift */; };
 		701B7D951DD7D43900F71C27 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 701B7D941DD7D43900F71C27 /* icon.png */; };
+		701B7D991DD7ECB600F71C27 /* InsuranceProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701B7D981DD7ECB600F71C27 /* InsuranceProductTableViewController.swift */; };
+		701B7D9B1DD7EE1B00F71C27 /* SeasonPieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701B7D9A1DD7EE1B00F71C27 /* SeasonPieChartViewController.swift */; };
 		EC2C8E711DD7906B00156185 /* QueryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C8E701DD7906B00156185 /* QueryTableViewController.swift */; };
 		EC2C8E731DD79C5E00156185 /* BarGraphviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C8E721DD79C5E00156185 /* BarGraphviewController.swift */; };
 		EC2C8E761DD7D2A700156185 /* states.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC2C8E751DD7D2A700156185 /* states.txt */; };
@@ -29,6 +31,8 @@
 		701B7D8E1DD771A900F71C27 /* tableviewcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableviewcell.swift; sourceTree = "<group>"; };
 		701B7D921DD7720600F71C27 /* secondTableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondTableViewCells.swift; sourceTree = "<group>"; };
 		701B7D941DD7D43900F71C27 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		701B7D981DD7ECB600F71C27 /* InsuranceProductTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsuranceProductTableViewController.swift; sourceTree = "<group>"; };
+		701B7D9A1DD7EE1B00F71C27 /* SeasonPieChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonPieChartViewController.swift; sourceTree = "<group>"; };
 		9897423C67BA504141AE944A /* Pods-YHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHack/Pods-YHack.debug.xcconfig"; sourceTree = "<group>"; };
 		EC2C8E701DD7906B00156185 /* QueryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryTableViewController.swift; sourceTree = "<group>"; };
 		EC2C8E721DD79C5E00156185 /* BarGraphviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraphviewController.swift; sourceTree = "<group>"; };
@@ -107,9 +111,11 @@
 				ECDB9E761DD70D04006F8326 /* AppDelegate.swift */,
 				ECDB9E891DD70D17006F8326 /* FirstTableViewController.swift */,
 				EC2C8E721DD79C5E00156185 /* BarGraphviewController.swift */,
+				701B7D981DD7ECB600F71C27 /* InsuranceProductTableViewController.swift */,
 				ECDB9E8A1DD70D17006F8326 /* SecondViewController.swift */,
-				EC2C8E701DD7906B00156185 /* QueryTableViewController.swift */,
+				701B7D9A1DD7EE1B00F71C27 /* SeasonPieChartViewController.swift */,
 				ECDB9E881DD70D17006F8326 /* ChartsViewController.swift */,
+				EC2C8E701DD7906B00156185 /* QueryTableViewController.swift */,
 				EC2C8E751DD7D2A700156185 /* states.txt */,
 				ECDB9E7A1DD70D04006F8326 /* Main.storyboard */,
 				ECDB9E7D1DD70D04006F8326 /* Assets.xcassets */,
@@ -253,7 +259,9 @@
 				ECDB9E8D1DD70D17006F8326 /* SecondViewController.swift in Sources */,
 				EC2C8E731DD79C5E00156185 /* BarGraphviewController.swift in Sources */,
 				ECDB9E771DD70D04006F8326 /* AppDelegate.swift in Sources */,
+				701B7D9B1DD7EE1B00F71C27 /* SeasonPieChartViewController.swift in Sources */,
 				701B7D931DD7720600F71C27 /* secondTableViewCells.swift in Sources */,
+				701B7D991DD7ECB600F71C27 /* InsuranceProductTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

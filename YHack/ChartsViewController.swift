@@ -67,7 +67,14 @@ class ChartsViewController: UIViewController, ChartViewDelegate
                     print("sorry mate it failed. \(response.data)\n\(response.result)))")
                 }
             })
+            
+        case 3:
+            firstRequest = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_code%3D\(promocode)%20AND%20%7B!join%20from%3Did%20to%3Dparticipant_id%20fromIndex%3Dparticipant%7Dmarital_status%3AS&wt=json"
+            secondrequest = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_code%3D\(promocode)%20AND%20%7B!join%20from%3Did%20to%3Dparticipant_id%20fromIndex%3Dparticipant%7Dmarital_status%3AM&wt=json"
+
+            
             return
+            
         default: break
             
         }

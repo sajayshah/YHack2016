@@ -14,7 +14,7 @@ class FirstViewController: UITableViewController
 {
     //@IBOutlet weak var detailButton: UIButton!
     //
-    let relations: [String] = ["Promocode vs Gender", "Promocode vs Marital Status", "State vs Insurance Plan vs Promocode", "Promocode vs Age Range"]
+    let relations: [String] = ["Promocode vs Gender", "Promocode vs Marital Status", "State vs Insurance Plan vs Promocode", "Promocode vs Age Range", "Season vs Insurance Product"]
 
     override func viewDidLoad()
     {
@@ -64,8 +64,9 @@ class FirstViewController: UITableViewController
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 3 { self.performSegue(withIdentifier: "toBarGraph", sender: self) }
-        else { self.performSegue(withIdentifier: "toSecondVC", sender: self) }
+        if indexPath.row == 2 { self.performSegue(withIdentifier: "toBarGraph", sender: self) }
+        else if indexPath.row == 4 { self.performSegue(withIdentifier: "toSeasonVC", sender: self)}
+        else { self.performSegue(withIdentifier: "toSecondVC", sender: self)}
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -74,7 +75,6 @@ class FirstViewController: UITableViewController
             let destinationVC = segue.destination as! SecondTableViewController
             destinationVC.fromIndex = (self.tableView.indexPathForSelectedRow?.row)!
         }
-        
     }
     @IBAction func detailButtonTapped(_ sender: UIButton) {
         _ = sender.tag
