@@ -71,7 +71,7 @@ class USMapviewController: UIViewController
                         self.map.loadMap("usaHigh", withData: self.genericDictionaryToSaveJSONData, colorAxis: [UIColor.lightGray, UIColor.darkGray])
                         self.map.clickHandler = { (string, shapelayer) in
                             print("\(string!) clicked")
-                            if(shapelayer == self.oldClickedLayer)
+                            if(self.oldClickedLayer != nil)
                             {
                                 self.oldClickedLayer?.zPosition = 0;
                                 self.oldClickedLayer?.shadowOpacity = 0;

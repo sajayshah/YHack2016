@@ -175,7 +175,8 @@ SWIFT_CLASS("_TtC5YHack20ChartsViewController")
 - (void)viewDidLoad;
 - (void)getSeasonData;
 - (void)setChartWithDataPoints:(NSArray<NSNumber *> * _Nonnull)dataPoints values:(NSArray<NSNumber *> * _Nonnull)values;
-- (void)setChartWithDates:(NSArray<NSString *> * _Nonnull)dates values:(NSArray<NSNumber *> * _Nonnull)values;
+- (void)getPlanTypes;
+- (void)setChartWithDates:(NSArray<NSString *> * _Nonnull)dates values:(NSArray<NSNumber *> * _Nonnull)values isInsurance:(BOOL)isInsurance;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -197,6 +198,24 @@ SWIFT_CLASS("_TtC5YHack19FirstViewController")
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (IBAction)detailButtonTapped:(UIButton * _Nonnull)sender;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5YHack32GeneralComparisonsViewController")
+@interface GeneralComparisonsViewController : UITableViewController
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull comparisons;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView willDisplayCell:(UITableViewCell * _Nonnull)cell forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -259,12 +278,16 @@ SWIFT_CLASS("_TtC5YHack25SecondTableViewController")
 @end
 
 @class FSInteractiveMapView;
+@class CAShapeLayer;
+@class UILabel;
 
 SWIFT_CLASS("_TtC5YHack19USMapviewController")
 @interface USMapviewController : UIViewController
 @property (nonatomic, copy) NSString * _Nonnull promocode;
 @property (nonatomic, copy) NSDictionary<NSString *, NSNumber *> * _Nonnull genericDictionaryToSaveJSONData;
 @property (nonatomic, strong) FSInteractiveMapView * _Nonnull map;
+@property (nonatomic, strong) CAShapeLayer * _Nullable oldClickedLayer;
+@property (nonatomic, strong) UILabel * _Nonnull labelForStates;
 - (void)viewDidLoad;
 - (void)getDataFor50States;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

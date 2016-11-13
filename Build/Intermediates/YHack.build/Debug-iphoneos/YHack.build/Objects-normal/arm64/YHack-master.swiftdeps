@@ -1,14 +1,15 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
 options: "d59aef9e47a34c511941aa21b48cfdf8"
-build_time: [532347348, 175785000]
+build_time: [532365632, 607618000]
 inputs:
-  "/Users/atharvavaidya/Developer/YHack/YHack/FirstTableViewController.swift": [532346241, 0]
-  "/Users/atharvavaidya/Developer/YHack/YHack/ChartsViewController.swift": [532332988, 0]
+  "/Users/atharvavaidya/Developer/YHack/YHack/FirstTableViewController.swift": [532360021, 0]
+  "/Users/atharvavaidya/Developer/YHack/YHack/ChartsViewController.swift": [532365181, 0]
+  "/Users/atharvavaidya/Developer/YHack/YHack/GeneralComparisonsViewController.swift": [532359850, 0]
   "/Users/atharvavaidya/Developer/YHack/YHack/QueryTableViewController.swift": [532334075, 0]
   "/Users/atharvavaidya/Developer/YHack/YHack/tableviewcell.swift": [532284987, 0]
-  "/Users/atharvavaidya/Developer/YHack/YHack/SecondViewController.swift": [532346320, 0]
-  "/Users/atharvavaidya/Developer/YHack/YHack/BarGraphviewController.swift": [532334075, 0]
-  "/Users/atharvavaidya/Developer/YHack/YHack/AppDelegate.swift": [532319680, 0]
+  "/Users/atharvavaidya/Developer/YHack/YHack/SecondViewController.swift": [532359922, 0]
+  "/Users/atharvavaidya/Developer/YHack/YHack/BarGraphviewController.swift": [532359850, 0]
+  "/Users/atharvavaidya/Developer/YHack/YHack/AppDelegate.swift": [532365632, 0]
   "/Users/atharvavaidya/Developer/YHack/YHack/secondTableViewCells.swift": [532284987, 0]
   "/Users/atharvavaidya/Developer/YHack/YHack/InsuranceProductTableViewController.swift": [532318994, 0]
-  "/Users/atharvavaidya/Developer/YHack/YHack/USMapViewController.swift": [532347347, 0]
+  "/Users/atharvavaidya/Developer/YHack/YHack/USMapViewController.swift": [532365632, 0]

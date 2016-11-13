@@ -1,54 +1,64 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "InsuranceTypes"
 - "ChartsViewController"
 provides-nominal:
+- "O5YHack14InsuranceTypes"
 - "C5YHack20ChartsViewController"
 provides-member:
+- ["O5YHack14InsuranceTypes", ""]
 - ["C5YHack20ChartsViewController", ""]
 provides-dynamic-lookup:
-- "fromIndex"
-- "getSeasonData"
-- "activityview"
-- "setChart"
-- "setChart"
-- "pieChartView"
 - "promocode"
-- "data"
-- "viewDidLoad"
 - "genericdictionaryUsedToSaveJSONData"
+- "viewDidLoad"
+- "setChart"
+- "setChart"
+- "getPlanTypes"
+- "data"
+- "activityview"
+- "pieChartView"
+- "getSeasonData"
+- "fromIndex"
 - "insuranceProduct"
 depends-top-level:
-- "UIViewController"
-- !private "UIColor"
-- !private "+"
 - !private "fatalError"
-- "ChartViewDelegate"
-- !private "~="
-- "AssignmentPrecedence"
-- !private "Void"
-- "Double"
-- !private "PieChartDataEntry"
-- !private "=="
-- "TernaryPrecedence"
-- "String"
-- !private "Array"
-- !private "print"
-- "Int"
-- !private "..."
-- !private "..<"
 - "PieChartView"
-- !private "ChartColorTemplates"
-- !private "<"
-- "NVActivityIndicatorView"
-- !private "PieChartDataSet"
-- !private "JSON"
-- "UnicodeScalarType"
-- !private "Alamofire"
-- "CGRect"
-- "ChartsViewController"
-- !private "PieChartData"
-- !private "DateFormatter"
 - "StringLiteralType"
+- !private "+"
+- !private "DateFormatter"
+- !private "!"
+- !private "..."
+- !private "PieChartDataSet"
+- "CGRect"
+- !private "Array"
+- "Double"
+- !private "..<"
+- !private "JSON"
+- "InsuranceTypes"
+- !private "UIColor"
+- !private "Alamofire"
+- !private "ChartColorTemplates"
+- "UIViewController"
+- "Bool"
+- !private "<"
+- "BooleanLiteralType"
+- "TernaryPrecedence"
+- "UnicodeScalarType"
+- !private "Void"
+- !private "-"
+- "ChartViewDelegate"
+- !private "Dictionary"
+- "NVActivityIndicatorView"
+- "=="
+- !private "~="
+- !private "print"
+- "AssignmentPrecedence"
+- !private "PieChartData"
+- "Int"
+- "String"
+- "ChartsViewController"
+- !private "PieChartDataEntry"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -87,6 +97,7 @@ depends-member:
 - !private ["Ps9AnyObject", "fatalError"]
 - ["Ps9AnyObject", "fromIndex"]
 - ["Ps9AnyObject", "genericdictionaryUsedToSaveJSONData"]
+- ["Ps9AnyObject", "getPlanTypes"]
 - ["Ps9AnyObject", "getSeasonData"]
 - !private ["Ps9AnyObject", "height"]
 - ["Ps9AnyObject", "init"]
@@ -165,6 +176,7 @@ depends-member:
 - !private ["Ps17BitwiseOperations", "IntegerLiteralType"]
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
+- !private ["Ps17BitwiseOperations", "hashValue"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "addSubview"]
@@ -192,6 +204,7 @@ depends-member:
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
 - ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "JSON"]
+- !private ["Ps7CVarArg", "Key"]
 - ["Ps7CVarArg", "NVActivityIndicatorView"]
 - !private ["Ps7CVarArg", "PieChartData"]
 - !private ["Ps7CVarArg", "PieChartDataEntry"]
@@ -200,6 +213,7 @@ depends-member:
 - ["Ps7CVarArg", "String"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "UIColor"]
+- !private ["Ps7CVarArg", "Value"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - ["Ps7CVarArg", "_Element"]
 - ["Ps7CVarArg", "activityview"]
@@ -222,7 +236,9 @@ depends-member:
 - !private ["Ps7CVarArg", "fatalError"]
 - ["Ps7CVarArg", "fromIndex"]
 - ["Ps7CVarArg", "genericdictionaryUsedToSaveJSONData"]
+- ["Ps7CVarArg", "getPlanTypes"]
 - ["Ps7CVarArg", "getSeasonData"]
+- !private ["Ps7CVarArg", "hashValue"]
 - ["Ps7CVarArg", "init"]
 - ["Ps7CVarArg", "insuranceProduct"]
 - !private ["Ps7CVarArg", "last"]
@@ -275,6 +291,7 @@ depends-member:
 - !private ["P6Charts17ChartViewDelegate", "fatalError"]
 - !private ["P6Charts17ChartViewDelegate", "fromIndex"]
 - !private ["P6Charts17ChartViewDelegate", "genericdictionaryUsedToSaveJSONData"]
+- !private ["P6Charts17ChartViewDelegate", "getPlanTypes"]
 - !private ["P6Charts17ChartViewDelegate", "getSeasonData"]
 - !private ["P6Charts17ChartViewDelegate", "insuranceProduct"]
 - !private ["P6Charts17ChartViewDelegate", "pieChartView"]
@@ -285,6 +302,7 @@ depends-member:
 - ["P6Charts17ChartViewDelegate", ""]
 - !private ["C5YHack20ChartsViewController", "Alamofire"]
 - !private ["C5YHack20ChartsViewController", "Array"]
+- ["C5YHack20ChartsViewController", "Bool"]
 - ["C5YHack20ChartsViewController", "CGRect"]
 - !private ["C5YHack20ChartsViewController", "ChartColorTemplates"]
 - !private ["C5YHack20ChartsViewController", "DateFormatter"]
@@ -309,6 +327,7 @@ depends-member:
 - !private ["C5YHack20ChartsViewController", "fatalError"]
 - ["C5YHack20ChartsViewController", "fromIndex"]
 - ["C5YHack20ChartsViewController", "genericdictionaryUsedToSaveJSONData"]
+- ["C5YHack20ChartsViewController", "getPlanTypes"]
 - ["C5YHack20ChartsViewController", "getSeasonData"]
 - ["C5YHack20ChartsViewController", "init"]
 - ["C5YHack20ChartsViewController", "insuranceProduct"]
@@ -318,6 +337,7 @@ depends-member:
 - ["C5YHack20ChartsViewController", "setChart"]
 - !private ["C5YHack20ChartsViewController", "view"]
 - ["C5YHack20ChartsViewController", "viewDidLoad"]
+- !private ["Vs11ClosedRange", "Iterator"]
 - !private ["Vs11ClosedRange", "deinit"]
 - !private ["Vs19ClosedRangeIterator", "Element"]
 - !private ["Ps10Collection", "Element"]
@@ -325,7 +345,9 @@ depends-member:
 - !private ["Ps10Collection", "IndexDistance"]
 - !private ["Ps10Collection", "Indices"]
 - ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "Key"]
 - !private ["Ps10Collection", "SubSequence"]
+- !private ["Ps10Collection", "Value"]
 - ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "append"]
 - !private ["Ps10Collection", "components"]
@@ -348,6 +370,7 @@ depends-member:
 - !private ["Ps10Comparable", "_Element"]
 - !private ["Ps10Comparable", "components"]
 - !private ["Ps10Comparable", "dictionary"]
+- !private ["Ps10Comparable", "hashValue"]
 - ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "int"]
 - !private ["Ps10Comparable", "string"]
@@ -357,12 +380,14 @@ depends-member:
 - !private ["P7SnapKit24ConstraintConstantTarget", "IntegerLiteralType"]
 - !private ["P7SnapKit24ConstraintConstantTarget", "Stride"]
 - !private ["P7SnapKit24ConstraintConstantTarget", "_DisabledRangeIndex"]
+- !private ["P7SnapKit24ConstraintConstantTarget", "hashValue"]
 - !private ["P7SnapKit24ConstraintConstantTarget", "init"]
 - !private ["P7SnapKit13ConstraintDSL", "makeConstraints"]
 - !private ["P7SnapKit13ConstraintDSL", "removeConstraints"]
 - !private ["P7SnapKit21ConstraintInsetTarget", "IntegerLiteralType"]
 - !private ["P7SnapKit21ConstraintInsetTarget", "Stride"]
 - !private ["P7SnapKit21ConstraintInsetTarget", "_DisabledRangeIndex"]
+- !private ["P7SnapKit21ConstraintInsetTarget", "hashValue"]
 - !private ["P7SnapKit21ConstraintInsetTarget", "init"]
 - !private ["C7SnapKit15ConstraintMaker", "center"]
 - !private ["C7SnapKit15ConstraintMaker", "deinit"]
@@ -375,14 +400,17 @@ depends-member:
 - !private ["P7SnapKit26ConstraintMultiplierTarget", "IntegerLiteralType"]
 - !private ["P7SnapKit26ConstraintMultiplierTarget", "Stride"]
 - !private ["P7SnapKit26ConstraintMultiplierTarget", "_DisabledRangeIndex"]
+- !private ["P7SnapKit26ConstraintMultiplierTarget", "hashValue"]
 - !private ["P7SnapKit26ConstraintMultiplierTarget", "init"]
 - !private ["P7SnapKit22ConstraintOffsetTarget", "IntegerLiteralType"]
 - !private ["P7SnapKit22ConstraintOffsetTarget", "Stride"]
 - !private ["P7SnapKit22ConstraintOffsetTarget", "_DisabledRangeIndex"]
+- !private ["P7SnapKit22ConstraintOffsetTarget", "hashValue"]
 - !private ["P7SnapKit22ConstraintOffsetTarget", "init"]
 - !private ["P7SnapKit24ConstraintPriorityTarget", "IntegerLiteralType"]
 - !private ["P7SnapKit24ConstraintPriorityTarget", "Stride"]
 - !private ["P7SnapKit24ConstraintPriorityTarget", "_DisabledRangeIndex"]
+- !private ["P7SnapKit24ConstraintPriorityTarget", "hashValue"]
 - !private ["P7SnapKit24ConstraintPriorityTarget", "init"]
 - !private ["P7SnapKit25ConstraintRelatableTarget", "IntegerLiteralType"]
 - !private ["P7SnapKit25ConstraintRelatableTarget", "Stride"]
@@ -392,6 +420,7 @@ depends-member:
 - !private ["P7SnapKit25ConstraintRelatableTarget", "color"]
 - !private ["P7SnapKit25ConstraintRelatableTarget", "data"]
 - !private ["P7SnapKit25ConstraintRelatableTarget", "deinit"]
+- !private ["P7SnapKit25ConstraintRelatableTarget", "hashValue"]
 - ["P7SnapKit25ConstraintRelatableTarget", "init"]
 - !private ["P7SnapKit25ConstraintRelatableTarget", "noDataText"]
 - !private ["P7SnapKit25ConstraintRelatableTarget", "removeFromSuperview"]
@@ -418,6 +447,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "Int"]
 - ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "JSON"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
 - ["Ps28CustomDebugStringConvertible", "NVActivityIndicatorView"]
 - !private ["Ps28CustomDebugStringConvertible", "PieChartData"]
 - !private ["Ps28CustomDebugStringConvertible", "PieChartDataEntry"]
@@ -426,6 +456,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "String"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
 - ["Ps28CustomDebugStringConvertible", "_Element"]
 - ["Ps28CustomDebugStringConvertible", "activityview"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
@@ -448,6 +479,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "fatalError"]
 - ["Ps28CustomDebugStringConvertible", "fromIndex"]
 - ["Ps28CustomDebugStringConvertible", "genericdictionaryUsedToSaveJSONData"]
+- ["Ps28CustomDebugStringConvertible", "getPlanTypes"]
 - ["Ps28CustomDebugStringConvertible", "getSeasonData"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "insuranceProduct"]
@@ -478,14 +510,17 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "components"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "Element"]
 - !private ["Ps17CustomReflectable", "Index"]
 - !private ["Ps17CustomReflectable", "IndexDistance"]
 - !private ["Ps17CustomReflectable", "IntegerLiteralType"]
 - ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "Key"]
 - !private ["Ps17CustomReflectable", "Stride"]
 - !private ["Ps17CustomReflectable", "SubSequence"]
+- !private ["Ps17CustomReflectable", "Value"]
 - !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
 - ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
@@ -493,6 +528,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "components"]
 - !private ["Ps17CustomReflectable", "count"]
 - !private ["Ps17CustomReflectable", "enumerated"]
+- !private ["Ps17CustomReflectable", "hashValue"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "last"]
 - !private ["Ps17CustomReflectable", "map"]
@@ -511,6 +547,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "JSON"]
+- !private ["Ps23CustomStringConvertible", "Key"]
 - ["Ps23CustomStringConvertible", "NVActivityIndicatorView"]
 - !private ["Ps23CustomStringConvertible", "PieChartData"]
 - !private ["Ps23CustomStringConvertible", "PieChartDataEntry"]
@@ -519,6 +556,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "String"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -543,7 +581,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "fatalError"]
 - ["Ps23CustomStringConvertible", "fromIndex"]
 - ["Ps23CustomStringConvertible", "genericdictionaryUsedToSaveJSONData"]
+- ["Ps23CustomStringConvertible", "getPlanTypes"]
 - ["Ps23CustomStringConvertible", "getSeasonData"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "insuranceProduct"]
 - !private ["Ps23CustomStringConvertible", "int"]
@@ -590,10 +630,13 @@ depends-member:
 - !private ["Vs10Dictionary", "Index"]
 - !private ["Vs10Dictionary", "IndexDistance"]
 - !private ["Vs10Dictionary", "Iterator"]
+- !private ["Vs10Dictionary", "Key"]
 - !private ["Vs10Dictionary", "SubSequence"]
+- !private ["Vs10Dictionary", "Value"]
 - !private ["Vs10Dictionary", "_Element"]
 - ["Vs10Dictionary", "deinit"]
 - ["Vs10Dictionary", "init"]
+- !private ["Vs10Dictionary", "map"]
 - !private ["Vs10Dictionary", "sorted"]
 - !private ["Vs10Dictionary", "subscript"]
 - !private ["Vs15DictionaryIndex", "deinit"]
@@ -620,6 +663,7 @@ depends-member:
 - !private ["Ps9Equatable", "PieChartData"]
 - !private ["Ps9Equatable", "PieChartDataEntry"]
 - !private ["Ps9Equatable", "PieChartDataSet"]
+- ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "Stride"]
 - ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "SubSequence"]
@@ -627,6 +671,7 @@ depends-member:
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_Element"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_toAnyHashable"]
 - ["Ps9Equatable", "activityview"]
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "animating"]
@@ -645,7 +690,9 @@ depends-member:
 - !private ["Ps9Equatable", "fatalError"]
 - ["Ps9Equatable", "fromIndex"]
 - ["Ps9Equatable", "genericdictionaryUsedToSaveJSONData"]
+- ["Ps9Equatable", "getPlanTypes"]
 - ["Ps9Equatable", "getSeasonData"]
+- ["Ps9Equatable", "hashValue"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "insuranceProduct"]
 - !private ["Ps9Equatable", "int"]
@@ -654,6 +701,7 @@ depends-member:
 - ["Ps9Equatable", "pieChartView"]
 - !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "promocode"]
+- ["Ps9Equatable", "rawValue"]
 - !private ["Ps9Equatable", "removeFromSuperview"]
 - ["Ps9Equatable", "setChart"]
 - !private ["Ps9Equatable", "snp"]
@@ -694,11 +742,14 @@ depends-member:
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Index"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "IndexDistance"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Iterator"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "SubSequence"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "_Element"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "dictionary"]
 - ["Ps30ExpressibleByDictionaryLiteral", "init"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "int"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "map"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "sorted"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "string"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
@@ -730,6 +781,7 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_Element"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "dictionary"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "int"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "string"]
@@ -784,11 +836,13 @@ depends-member:
 - !private ["Ps8Hashable", "PieChartData"]
 - !private ["Ps8Hashable", "PieChartDataEntry"]
 - !private ["Ps8Hashable", "PieChartDataSet"]
+- ["Ps8Hashable", "RawValue"]
 - !private ["Ps8Hashable", "Stride"]
 - ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_toAnyHashable"]
 - ["Ps8Hashable", "activityview"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "animating"]
@@ -806,7 +860,9 @@ depends-member:
 - !private ["Ps8Hashable", "fatalError"]
 - ["Ps8Hashable", "fromIndex"]
 - ["Ps8Hashable", "genericdictionaryUsedToSaveJSONData"]
+- ["Ps8Hashable", "getPlanTypes"]
 - ["Ps8Hashable", "getSeasonData"]
+- ["Ps8Hashable", "hashValue"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "insuranceProduct"]
 - !private ["Ps8Hashable", "noDataText"]
@@ -814,6 +870,7 @@ depends-member:
 - ["Ps8Hashable", "pieChartView"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "promocode"]
+- ["Ps8Hashable", "rawValue"]
 - !private ["Ps8Hashable", "removeFromSuperview"]
 - ["Ps8Hashable", "setChart"]
 - !private ["Ps8Hashable", "snp"]
@@ -832,7 +889,9 @@ depends-member:
 - !private ["Ps9Indexable", "IndexDistance"]
 - !private ["Ps9Indexable", "Indices"]
 - ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
 - ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "append"]
 - !private ["Ps9Indexable", "components"]
@@ -851,7 +910,9 @@ depends-member:
 - !private ["Ps13IndexableBase", "IndexDistance"]
 - !private ["Ps13IndexableBase", "Indices"]
 - ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "Key"]
 - !private ["Ps13IndexableBase", "SubSequence"]
+- !private ["Ps13IndexableBase", "Value"]
 - ["Ps13IndexableBase", "_Element"]
 - !private ["Ps13IndexableBase", "append"]
 - !private ["Ps13IndexableBase", "components"]
@@ -866,10 +927,21 @@ depends-member:
 - !private ["Ps13IndexableBase", "string"]
 - !private ["Ps13IndexableBase", "subscript"]
 - ["Vs16IndexingIterator", "Element"]
+- ["O5YHack14InsuranceTypes", "RawValue"]
+- ["O5YHack14InsuranceTypes", "_toAnyHashable"]
+- ["O5YHack14InsuranceTypes", "deinit"]
+- ["O5YHack14InsuranceTypes", "gold"]
+- ["O5YHack14InsuranceTypes", "hashValue"]
+- ["O5YHack14InsuranceTypes", "init"]
+- ["O5YHack14InsuranceTypes", "premium"]
+- ["O5YHack14InsuranceTypes", "rawValue"]
+- ["O5YHack14InsuranceTypes", "regular"]
+- ["O5YHack14InsuranceTypes", "silver"]
 - !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "Stride"]
 - !private ["Si", "_DisabledRangeIndex"]
 - ["Si", "deinit"]
+- !private ["Si", "hashValue"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
 - !private ["Vs5Int64", "deinit"]
@@ -877,9 +949,11 @@ depends-member:
 - !private ["Ps7Integer", "IntegerLiteralType"]
 - !private ["Ps7Integer", "Stride"]
 - !private ["Ps7Integer", "_DisabledRangeIndex"]
+- !private ["Ps7Integer", "hashValue"]
 - !private ["Ps17IntegerArithmetic", "IntegerLiteralType"]
 - !private ["Ps17IntegerArithmetic", "Stride"]
 - !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
 - ["Ps16IteratorProtocol", "Element"]
 - !private ["V10SwiftyJSON4JSON", "Index"]
 - !private ["V10SwiftyJSON4JSON", "IndexDistance"]
@@ -897,6 +971,7 @@ depends-member:
 - !private ["P10SwiftyJSON17JSONSubscriptType", "_DisabledRangeIndex"]
 - !private ["P10SwiftyJSON17JSONSubscriptType", "components"]
 - !private ["P10SwiftyJSON17JSONSubscriptType", "deinit"]
+- !private ["P10SwiftyJSON17JSONSubscriptType", "hashValue"]
 - ["P10SwiftyJSON17JSONSubscriptType", "init"]
 - !private ["Ps25LosslessStringConvertible", "Stride"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
@@ -906,6 +981,7 @@ depends-member:
 - !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
 - !private ["Ps10MirrorPath", "components"]
+- !private ["Ps10MirrorPath", "hashValue"]
 - ["Ps10MirrorPath", "init"]
 - !private ["Ps17MutableCollection", "Element"]
 - !private ["Ps17MutableCollection", "Index"]
@@ -968,6 +1044,7 @@ depends-member:
 - !private ["PSo8NSCoding", "fatalError"]
 - ["PSo8NSCoding", "fromIndex"]
 - ["PSo8NSCoding", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo8NSCoding", "getPlanTypes"]
 - ["PSo8NSCoding", "getSeasonData"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "insuranceProduct"]
@@ -1011,6 +1088,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "fatalError"]
 - ["PSo26NSExtensionRequestHandling", "fromIndex"]
 - ["PSo26NSExtensionRequestHandling", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo26NSExtensionRequestHandling", "getPlanTypes"]
 - ["PSo26NSExtensionRequestHandling", "getSeasonData"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "insuranceProduct"]
@@ -1025,6 +1103,7 @@ depends-member:
 - ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "Alamofire"]
 - !private ["CSo8NSObject", "Array"]
+- ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "ChartColorTemplates"]
 - !private ["CSo8NSObject", "DateFormatter"]
@@ -1056,6 +1135,7 @@ depends-member:
 - !private ["CSo8NSObject", "fatalError"]
 - ["CSo8NSObject", "fromIndex"]
 - ["CSo8NSObject", "genericdictionaryUsedToSaveJSONData"]
+- ["CSo8NSObject", "getPlanTypes"]
 - ["CSo8NSObject", "getSeasonData"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "insuranceProduct"]
@@ -1102,6 +1182,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "fatalError"]
 - ["PSo16NSObjectProtocol", "fromIndex"]
 - ["PSo16NSObjectProtocol", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo16NSObjectProtocol", "getPlanTypes"]
 - ["PSo16NSObjectProtocol", "getSeasonData"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "insuranceProduct"]
@@ -1214,13 +1295,18 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
 - !private ["Ps16RawRepresentable", "Index"]
 - !private ["Ps16RawRepresentable", "IndexDistance"]
+- ["Ps16RawRepresentable", "RawValue"]
 - !private ["Ps16RawRepresentable", "SubSequence"]
 - !private ["Ps16RawRepresentable", "_Element"]
+- ["Ps16RawRepresentable", "_toAnyHashable"]
 - !private ["Ps16RawRepresentable", "dictionary"]
-- !private ["Ps16RawRepresentable", "init"]
+- ["Ps16RawRepresentable", "hashValue"]
+- ["Ps16RawRepresentable", "init"]
 - !private ["Ps16RawRepresentable", "int"]
+- ["Ps16RawRepresentable", "rawValue"]
 - !private ["Ps16RawRepresentable", "string"]
 - !private ["Ps16RawRepresentable", "subscript"]
+- ["Ps16RawRepresentable", ""]
 - !private ["C9Alamofire7Request", "responseJSON"]
 - !private ["P9Alamofire8Response", "result"]
 - !private ["O9Alamofire6Result", "deinit"]
@@ -1230,7 +1316,9 @@ depends-member:
 - !private ["Ps8Sequence", "IndexDistance"]
 - !private ["Ps8Sequence", "Indices"]
 - ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "Key"]
 - !private ["Ps8Sequence", "SubSequence"]
+- !private ["Ps8Sequence", "Value"]
 - ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "components"]
@@ -1247,9 +1335,11 @@ depends-member:
 - !private ["Ps13SignedInteger", "IntegerLiteralType"]
 - !private ["Ps13SignedInteger", "Stride"]
 - !private ["Ps13SignedInteger", "_DisabledRangeIndex"]
+- !private ["Ps13SignedInteger", "hashValue"]
 - !private ["Ps12SignedNumber", "IntegerLiteralType"]
 - !private ["Ps12SignedNumber", "Stride"]
 - !private ["Ps12SignedNumber", "_DisabledRangeIndex"]
+- !private ["Ps12SignedNumber", "hashValue"]
 - !private ["Ps12SignedNumber", "init"]
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "Iterator"]
@@ -1263,6 +1353,7 @@ depends-member:
 - !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "Stride"]
 - !private ["Ps10Strideable", "_DisabledRangeIndex"]
+- !private ["Ps10Strideable", "hashValue"]
 - !private ["Ps10Strideable", "init"]
 - !private ["SS", "components"]
 - ["SS", "deinit"]
@@ -1317,6 +1408,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "fatalError"]
 - ["PSo21UIAppearanceContainer", "fromIndex"]
 - ["PSo21UIAppearanceContainer", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo21UIAppearanceContainer", "getPlanTypes"]
 - ["PSo21UIAppearanceContainer", "getSeasonData"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "insuranceProduct"]
@@ -1357,6 +1449,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "fatalError"]
 - ["PSo18UIContentContainer", "fromIndex"]
 - ["PSo18UIContentContainer", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo18UIContentContainer", "getPlanTypes"]
 - ["PSo18UIContentContainer", "getSeasonData"]
 - !private ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "insuranceProduct"]
@@ -1413,6 +1506,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "fatalError"]
 - ["PSo18UIFocusEnvironment", "fromIndex"]
 - ["PSo18UIFocusEnvironment", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo18UIFocusEnvironment", "getPlanTypes"]
 - ["PSo18UIFocusEnvironment", "getSeasonData"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "insuranceProduct"]
@@ -1440,6 +1534,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "stopAnimating"]
 - !private ["CSo11UIResponder", "Alamofire"]
 - !private ["CSo11UIResponder", "Array"]
+- ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "ChartColorTemplates"]
 - !private ["CSo11UIResponder", "DateFormatter"]
@@ -1466,6 +1561,7 @@ depends-member:
 - !private ["CSo11UIResponder", "fatalError"]
 - ["CSo11UIResponder", "fromIndex"]
 - ["CSo11UIResponder", "genericdictionaryUsedToSaveJSONData"]
+- ["CSo11UIResponder", "getPlanTypes"]
 - ["CSo11UIResponder", "getSeasonData"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "insuranceProduct"]
@@ -1506,6 +1602,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "fatalError"]
 - ["PSo30UIResponderStandardEditActions", "fromIndex"]
 - ["PSo30UIResponderStandardEditActions", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo30UIResponderStandardEditActions", "getPlanTypes"]
 - ["PSo30UIResponderStandardEditActions", "getSeasonData"]
 - ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "insuranceProduct"]
@@ -1544,6 +1641,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "fatalError"]
 - ["PSo16UIStateRestoring", "fromIndex"]
 - ["PSo16UIStateRestoring", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo16UIStateRestoring", "getPlanTypes"]
 - ["PSo16UIStateRestoring", "getSeasonData"]
 - !private ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "insuranceProduct"]
@@ -1580,6 +1678,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "fatalError"]
 - ["PSo18UITraitEnvironment", "fromIndex"]
 - ["PSo18UITraitEnvironment", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo18UITraitEnvironment", "getPlanTypes"]
 - ["PSo18UITraitEnvironment", "getSeasonData"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "insuranceProduct"]
@@ -1606,6 +1705,7 @@ depends-member:
 - !private ["CSo6UIView", "stopAnimating"]
 - !private ["CSo16UIViewController", "Alamofire"]
 - !private ["CSo16UIViewController", "Array"]
+- ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "CGRect"]
 - !private ["CSo16UIViewController", "ChartColorTemplates"]
 - !private ["CSo16UIViewController", "DateFormatter"]
@@ -1630,6 +1730,7 @@ depends-member:
 - !private ["CSo16UIViewController", "fatalError"]
 - ["CSo16UIViewController", "fromIndex"]
 - ["CSo16UIViewController", "genericdictionaryUsedToSaveJSONData"]
+- ["CSo16UIViewController", "getPlanTypes"]
 - ["CSo16UIViewController", "getSeasonData"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "insuranceProduct"]
@@ -1698,6 +1799,7 @@ depends-member:
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "components"]
 - ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
@@ -1721,11 +1823,13 @@ depends-member:
 - !private ["Ps9_Hashable", "PieChartData"]
 - !private ["Ps9_Hashable", "PieChartDataEntry"]
 - !private ["Ps9_Hashable", "PieChartDataSet"]
+- ["Ps9_Hashable", "RawValue"]
 - !private ["Ps9_Hashable", "Stride"]
 - ["Ps9_Hashable", "String"]
 - !private ["Ps9_Hashable", "UIColor"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_toAnyHashable"]
 - ["Ps9_Hashable", "activityview"]
 - !private ["Ps9_Hashable", "addSubview"]
 - !private ["Ps9_Hashable", "animating"]
@@ -1743,7 +1847,9 @@ depends-member:
 - !private ["Ps9_Hashable", "fatalError"]
 - ["Ps9_Hashable", "fromIndex"]
 - ["Ps9_Hashable", "genericdictionaryUsedToSaveJSONData"]
+- ["Ps9_Hashable", "getPlanTypes"]
 - ["Ps9_Hashable", "getSeasonData"]
+- ["Ps9_Hashable", "hashValue"]
 - ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "insuranceProduct"]
 - !private ["Ps9_Hashable", "noDataText"]
@@ -1751,6 +1857,7 @@ depends-member:
 - ["Ps9_Hashable", "pieChartView"]
 - !private ["Ps9_Hashable", "print"]
 - ["Ps9_Hashable", "promocode"]
+- ["Ps9_Hashable", "rawValue"]
 - !private ["Ps9_Hashable", "removeFromSuperview"]
 - ["Ps9_Hashable", "setChart"]
 - !private ["Ps9_Hashable", "snp"]
@@ -1762,19 +1869,24 @@ depends-member:
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
 - !private ["Ps14_Incrementable", "Stride"]
 - !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
+- !private ["Ps14_Incrementable", "hashValue"]
 - !private ["Ps8_Integer", "IntegerLiteralType"]
 - !private ["Ps8_Integer", "Stride"]
 - !private ["Ps8_Integer", "_DisabledRangeIndex"]
+- !private ["Ps8_Integer", "hashValue"]
 - !private ["Ps18_IntegerArithmetic", "IntegerLiteralType"]
 - !private ["Ps18_IntegerArithmetic", "Stride"]
 - !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
 - !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
 - ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
@@ -1782,6 +1894,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "components"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
 - !private ["Ps21_ObjectiveCBridgeable", "enumerated"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "last"]
 - !private ["Ps21_ObjectiveCBridgeable", "map"]
@@ -1791,9 +1904,11 @@ depends-member:
 - !private ["Ps14_SignedInteger", "IntegerLiteralType"]
 - !private ["Ps14_SignedInteger", "Stride"]
 - !private ["Ps14_SignedInteger", "_DisabledRangeIndex"]
+- !private ["Ps14_SignedInteger", "hashValue"]
 - !private ["Ps11_Strideable", "IntegerLiteralType"]
 - !private ["Ps11_Strideable", "Stride"]
 - !private ["Ps11_Strideable", "_DisabledRangeIndex"]
+- !private ["Ps11_Strideable", "hashValue"]
 - !private ["Ps11_Strideable", "init"]
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
@@ -1876,6 +1991,7 @@ depends-nominal:
 - "Ps9Indexable"
 - "Ps13IndexableBase"
 - "Vs16IndexingIterator"
+- "O5YHack14InsuranceTypes"
 - "Si"
 - !private "Vs5Int16"
 - !private "Vs5Int32"
@@ -1916,7 +2032,7 @@ depends-nominal:
 - !private "Vs5Range"
 - "Ps26RangeReplaceableCollection"
 - "Ps25RangeReplaceableIndexable"
-- !private "Ps16RawRepresentable"
+- "Ps16RawRepresentable"
 - !private "C9Alamofire7Request"
 - !private "P9Alamofire8Response"
 - !private "O9Alamofire6Result"
@@ -2040,4 +2156,4 @@ depends-external:
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/FSInteractiveMap/FSInteractiveMap.framework/Headers/FSInteractiveMapView.h"
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/FSInteractiveMap/FSInteractiveMap.framework/Headers/FSInteractiveMap-umbrella.h"
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/FSInteractiveMap/FSInteractiveMap.framework/Modules/module.modulemap"
-interface-hash: "54a87f773d664b5a7e6fa67ec72c0391"
+interface-hash: "76e6d43e806cfcc79795a0bdfa88ff31"
