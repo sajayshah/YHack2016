@@ -20,7 +20,9 @@ class FirstViewController: UITableViewController
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
     }
+    
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -41,7 +43,7 @@ class FirstViewController: UITableViewController
     }
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = cell.contentView.backgroundColor;
-        let whiteRoundedView : UIView = UIView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: self.view.frame.size.width, height: 120)))
+        let whiteRoundedView : UIView = UIView(frame: CGRect(origin: CGPoint(x: 10, y: 0), size: CGSize(width: self.view.frame.size.width - 20, height: 120)))
         whiteRoundedView.layer.backgroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 1.0, 1.0])
         whiteRoundedView.layer.masksToBounds = false
         whiteRoundedView.layer.cornerRadius = 10.0

@@ -93,6 +93,6 @@ class ChartsViewController: UIViewController, ChartViewDelegate
         pieChartView.data = pieChartData
         
         
-        pieChartDataSet.colors = ChartColorTemplates.colorful()
+        pieChartDataSet.colors = ChartColorTemplates.pastel()
     }
 }

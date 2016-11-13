@@ -16,7 +16,7 @@ class QueryTableViewController: UITableViewController
     
     @IBAction func donePressed(_ sender: UIBarButtonItem)
     {
-        if minTextfield.text == nil && maxTextField.text == nil { return }
+        if minTextfield.text == nil || maxTextField.text == nil { return }
         else
         {
             let vc = BarGraphViewController()
@@ -33,6 +33,7 @@ class QueryTableViewController: UITableViewController
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+                self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
     }
     
     
