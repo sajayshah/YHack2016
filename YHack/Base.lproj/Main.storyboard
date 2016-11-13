@@ -52,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="secondTableViewCells" rowHeight="90" id="ude-af-gGt">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="secondTableViewCells" rowHeight="90" id="ude-af-gGt">
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ude-af-gGt" id="sMl-2I-Y0q">
