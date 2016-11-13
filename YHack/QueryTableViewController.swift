@@ -11,6 +11,8 @@ import UIKit
 class QueryTableViewController: UITableViewController
 {
     //Min age, max age, Insurance product: Accidental or dental.
+    
+    var fromIndex = 0
     @IBOutlet weak var minTextfield: UITextField!
     @IBOutlet weak var maxTextField: UITextField!
     
@@ -20,6 +22,8 @@ class QueryTableViewController: UITableViewController
         else
         {
             let vc = BarGraphViewController()
+            vc.fromIndex = fromIndex
+            
             if let minAge = self.minTextfield.text
             {
                 vc.minAge = Int(minAge)!
@@ -39,6 +43,4 @@ class QueryTableViewController: UITableViewController
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
-    
-    
 }

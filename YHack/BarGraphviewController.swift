@@ -20,6 +20,8 @@ class BarGraphViewController: UIViewController, ChartViewDelegate
     
     var numberofPeopleSignedUp: [Int] = [Int](repeating: 0, count: 2)
     
+    var fromIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -41,7 +43,26 @@ class BarGraphViewController: UIViewController, ChartViewDelegate
         let dob1 = 2016 - minAge, dob2 = 2016 - maxAge
         print("dob1: \(dob1), dob2: \(dob2)")
         
-        let request = "https://v3v10.vitechinc.com/solr/participant/select?indent=on&q=dob%3A[\(dob2)-02-01T00%3A00%3A00Z%20TO%20\(dob1)-01-01T00%3A00%3A00Z]%20AND%20%7B!join%20from%3Dparticipant_id%20to%3Did%20fromIndex%3Dpolicy_info%7Dinsurance_product%3AAccident&wt=json"
+        var request = ""
+        var secondRequest = ""
+        
+        switch fromIndex {
+        case 2:
+            // don something
+            request = "https://v3v10.vitechinc.com/solr/participant/select?indent=on&q=dob%3A[\(dob2)-01-01T00%3A00%3A00Z%20TO%20\(dob1)-01-01T00%3A00%3A00Z]%20AND%20%7B!join%20from%3Dparticipant_id%20to%3Did%20fromIndex%3Dpolicy_info%7Dinsurance_coverage%3ASingle&wt=json"
+            secondRequest = "https://v3v10.vitechinc.com/solr/participant/select?indent=on&q=dob%3A[\(dob2)-01-01T00%3A00%3A00Z%20TO%20\(dob1)-01-01T00%3A00%3A00Z]%20AND%20%7B!join%20from%3Dparticipant_id%20to%3Did%20fromIndex%3Dpolicy_info%7Dinsurance_coverage%3AFamily&wt=json"
+            break
+        case 4:
+            // do something
+            request = "https://v3v10.vitechinc.com/solr/participant/select?indent=on&q=dob%3A[\(dob2)-01-01T00%3A00%3A00Z%20TO%20\(dob1)-01-01T00%3A00%3A00Z]%20AND%20%7B!join%20from%3Dparticipant_id%20to%3Did%20fromIndex%3Dpolicy_info%7Dinsurance_product%3AAccident&wt=json"
+            
+            secondRequest = "https://v3v10.vitechinc.com/solr/participant/select?indent=on&q=dob%3A[\(dob2)-02-01T00%3A00%3A00Z%20TO%20\(dob1)-01-01T00%3A00%3A00Z]%20AND%20%7B!join%20from%3Dparticipant_id%20to%3Did%20fromIndex%3Dpolicy_info%7Dinsurance_product%3ADental&wt=json"
+            
+        default:
+            break
+        }
+        
+
         
         Alamofire.request(request).responseJSON(completionHandler: { response in
         
@@ -59,7 +80,7 @@ class BarGraphViewController: UIViewController, ChartViewDelegate
             }
         })
         
-        let secondRequest = "https://v3v10.vitechinc.com/solr/participant/select?indent=on&q=dob%3A[\(dob2)-02-01T00%3A00%3A00Z%20TO%20\(dob1)-01-01T00%3A00%3A00Z]%20AND%20%7B!join%20from%3Dparticipant_id%20to%3Did%20fromIndex%3Dpolicy_info%7Dinsurance_product%3ADental&wt=json"
+
         
         Alamofire.request(secondRequest).responseJSON(completionHandler: { response in
         
