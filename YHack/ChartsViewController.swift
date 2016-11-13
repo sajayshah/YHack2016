@@ -19,6 +19,7 @@ class ChartsViewController: UIViewController, ChartViewDelegate
     @IBOutlet weak var pieChartView: PieChartView!
     var data: [Int] = [Int](repeating: 0, count: 2)
     var promocode: String = ""
+    var insuranceProduct: String = ""
     var fromIndex = 0
     var numberOfPeopleforStates: [String : Int] = [String : Int]()
     override func viewDidLoad()
@@ -53,6 +54,13 @@ class ChartsViewController: UIViewController, ChartViewDelegate
             secondrequest = ""
             getDataFor50States()
             return
+        case 3:
+            firstRequest = ""
+            secondrequest = ""
+            print("Calling season data")
+            getSeasonData()
+            return
+            
             
         default: break
             
@@ -80,6 +88,33 @@ class ChartsViewController: UIViewController, ChartViewDelegate
             activityview.snp.removeConstraints()
             activityview.removeFromSuperview()
         })
+        
+    }
+    
+    func getSeasonData()
+    {
+//        https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=policy_start_date:[2016-02-01T00:00:00Z%20TO%202016-03-01T00:00:00Z]AND{!join%20from=id%20to=id%20fromIndex=policy_info}insurance_product:Accident&wt=json
+        var querySeasonParameters:[String] = [
+            "2015-01-01T00:00:00Z%20TO%202015-03-31T00:00:00Z",
+            "2015-04-01T00:00:00Z%20TO%202015-06-30T00:00:00Z",
+            "2015-07-01T00:09:30Z%20TO%202015-09-30T00:00:00Z",
+            "2015-10-01T00:00:00Z%20TO%202015-12-31T00:00:00Z",
+            "2016-01-01T00:00:00Z%20TO%202015-03-31T00:00:00Z",
+            "2016-04-01T00:00:00Z%20TO%202015-06-30T00:00:00Z",
+            "2016-07-01T00:09:30Z%20TO%202015-09-30T00:00:00Z",
+            "2016-10-01T00:00:00Z%20TO%202015-12-31T00:00:00Z"]
+        
+        var request = ""
+        
+        for (index, season) in querySeasonParameters.enumerated()
+        {
+            print(season)
+            request = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=policy_start_date:\(querySeasonParameters[index])AND{!join%20from=id%20to=id%20fromIndex=policy_info}insurance_product:\(insuranceProduct)&wt=json"
+            Alamofire.request(request).validate().responseJSON(completionHandler: {response in
+                let json = JSON(response.result.value!)
+                print(json)
+            })
+        }
         
     }
     

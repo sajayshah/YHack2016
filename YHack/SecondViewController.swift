@@ -20,6 +20,7 @@ class SecondTableViewController: UITableViewController {
     var numMen = 0, numWomen = 0
     
     let promocodes: [String] = ["ACCOFF10", "FREESPOUSE", "FINCON"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

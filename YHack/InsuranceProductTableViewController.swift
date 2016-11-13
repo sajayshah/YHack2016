@@ -62,18 +62,18 @@ class InsuranceProductTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        let seasonPieVC = SeasonPieChartViewController()
-        self.performSegue(withIdentifier: "showSeasonChart", sender: self)
+        self.performSegue(withIdentifier: "showChart2", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if segue.identifier == "showSeasonChart"
+        if segue.identifier == "showChart2"
         {
-            let destinationVC = segue.destination as! SeasonPieChartViewController
+            let destinationVC = segue.destination as! ChartsViewController
             destinationVC.fromIndex = fromIndex
             destinationVC.insuranceProduct = insuranceProducts[(self.tableView.indexPathForSelectedRow?.row)!]
         }
+        
     }
 
     /*
