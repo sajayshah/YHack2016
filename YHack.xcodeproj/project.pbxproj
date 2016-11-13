@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		701B7D8F1DD771A900F71C27 /* tableviewcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701B7D8E1DD771A900F71C27 /* tableviewcell.swift */; };
 		701B7D931DD7720600F71C27 /* secondTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701B7D921DD7720600F71C27 /* secondTableViewCells.swift */; };
+		701B7D951DD7D43900F71C27 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 701B7D941DD7D43900F71C27 /* icon.png */; };
 		EC2C8E711DD7906B00156185 /* QueryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C8E701DD7906B00156185 /* QueryTableViewController.swift */; };
 		EC2C8E731DD79C5E00156185 /* BarGraphviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C8E721DD79C5E00156185 /* BarGraphviewController.swift */; };
 		EC2C8E761DD7D2A700156185 /* states.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC2C8E751DD7D2A700156185 /* states.txt */; };
@@ -27,6 +28,7 @@
 		289709B7DA34B3F679A4E004 /* Pods-YHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHack/Pods-YHack.release.xcconfig"; sourceTree = "<group>"; };
 		701B7D8E1DD771A900F71C27 /* tableviewcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableviewcell.swift; sourceTree = "<group>"; };
 		701B7D921DD7720600F71C27 /* secondTableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondTableViewCells.swift; sourceTree = "<group>"; };
+		701B7D941DD7D43900F71C27 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		9897423C67BA504141AE944A /* Pods-YHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHack/Pods-YHack.debug.xcconfig"; sourceTree = "<group>"; };
 		EC2C8E701DD7906B00156185 /* QueryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryTableViewController.swift; sourceTree = "<group>"; };
 		EC2C8E721DD79C5E00156185 /* BarGraphviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraphviewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		ECDB9E751DD70D04006F8326 /* YHack */ = {
 			isa = PBXGroup;
 			children = (
+				701B7D941DD7D43900F71C27 /* icon.png */,
 				ECDB9E761DD70D04006F8326 /* AppDelegate.swift */,
 				ECDB9E891DD70D17006F8326 /* FirstTableViewController.swift */,
 				EC2C8E721DD79C5E00156185 /* BarGraphviewController.swift */,
@@ -152,7 +155,7 @@
 				TargetAttributes = {
 					ECDB9E721DD70D04006F8326 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = H27J42LAW5;
+						DevelopmentTeam = 959P9CJ8HA;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC2C8E761DD7D2A700156185 /* states.txt in Resources */,
+				701B7D951DD7D43900F71C27 /* icon.png in Resources */,
 				ECDB9E811DD70D04006F8326 /* LaunchScreen.storyboard in Resources */,
 				ECDB9E7E1DD70D04006F8326 /* Assets.xcassets in Resources */,
 				ECDB9E7C1DD70D04006F8326 /* Main.storyboard in Resources */,
@@ -375,7 +379,7 @@
 			baseConfigurationReference = 9897423C67BA504141AE944A /* Pods-YHack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = H27J42LAW5;
+				DEVELOPMENT_TEAM = 959P9CJ8HA;
 				INFOPLIST_FILE = YHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Atharva.YHack;
@@ -389,7 +393,7 @@
 			baseConfigurationReference = 289709B7DA34B3F679A4E004 /* Pods-YHack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = H27J42LAW5;
+				DEVELOPMENT_TEAM = 959P9CJ8HA;
 				INFOPLIST_FILE = YHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Atharva.YHack;

@@ -6,49 +6,50 @@ provides-nominal:
 provides-member:
 - ["C5YHack25SecondTableViewController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
+- "numWomen"
+- "viewDidLoad"
+- "prepare"
 - "picker"
 - "numMen"
-- "viewDidLoad"
-- "numWomen"
-- "fromIndex"
 - "button"
-- "prepare"
 - "total"
+- "fromIndex"
 - "promocodes"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 depends-top-level:
-- "UIPickerView"
-- "SecondTableViewController"
-- "StringLiteralType"
-- "String"
-- !private "ChartsViewController"
-- !private "UIView"
-- !private "-"
-- !private "CGColor"
-- !private "BooleanLiteralType"
-- !private "CGColorSpaceCreateDeviceRGB"
-- !private "CGRect"
-- "UITableViewCell"
-- "UITableViewController"
-- "IndexPath"
-- "UIStoryboardSegue"
 - "CGFloat"
 - !private "UIFont"
-- !private "CGPoint"
+- "UIPickerView"
 - !private "Array"
-- "UIButton"
-- !private "NSTextAlignment"
-- !private "UIColor"
-- "Int"
+- "UITableViewCell"
+- !private "UIEdgeInsetsMake"
+- !private "CGColorSpaceCreateDeviceRGB"
 - "AssignmentPrecedence"
 - !private "=="
-- "UITableView"
-- !private "CGSize"
 - "CastingPrecedence"
+- !private "CGColor"
+- "SecondTableViewController"
+- "Int"
+- "String"
+- !private "CGPoint"
+- "UITableView"
+- "StringLiteralType"
+- !private "-"
+- !private "CGSize"
+- "IndexPath"
+- !private "CGRect"
+- "UITableViewController"
+- "UIButton"
+- !private "UIView"
+- !private "ChartsViewController"
+- !private "UIColor"
+- !private "NSTextAlignment"
+- !private "BooleanLiteralType"
+- "UIStoryboardSegue"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps9AnyObject", "CGColor"]
@@ -59,11 +60,13 @@ depends-member:
 - !private ["Ps9AnyObject", "ChartsViewController"]
 - !private ["Ps9AnyObject", "NSTextAlignment"]
 - !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UIEdgeInsetsMake"]
 - !private ["Ps9AnyObject", "UIFont"]
 - !private ["Ps9AnyObject", "UIView"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "backgroundColor"]
 - ["Ps9AnyObject", "button"]
+- !private ["Ps9AnyObject", "contentInset"]
 - !private ["Ps9AnyObject", "contentView"]
 - !private ["Ps9AnyObject", "cornerRadius"]
 - !private ["Ps9AnyObject", "data"]
@@ -85,6 +88,8 @@ depends-member:
 - !private ["Ps9AnyObject", "promocode"]
 - ["Ps9AnyObject", "promocodes"]
 - !private ["Ps9AnyObject", "sendSubview"]
+- !private ["Ps9AnyObject", "shadowOffset"]
+- !private ["Ps9AnyObject", "shadowOpacity"]
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "textAlignment"]
@@ -138,8 +143,11 @@ depends-member:
 - !private ["CSo7CALayer", "cornerRadius"]
 - ["CSo7CALayer", "deinit"]
 - !private ["CSo7CALayer", "masksToBounds"]
+- !private ["CSo7CALayer", "shadowOffset"]
+- !private ["CSo7CALayer", "shadowOpacity"]
 - !private ["PSo15CALayerDelegate", "addSubview"]
 - !private ["PSo15CALayerDelegate", "backgroundColor"]
+- !private ["PSo15CALayerDelegate", "contentInset"]
 - !private ["PSo15CALayerDelegate", "contentView"]
 - !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
 - !private ["PSo15CALayerDelegate", "font"]
@@ -155,6 +163,8 @@ depends-member:
 - !private ["PSo13CAMediaTiming", "backgroundColor"]
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
 - !private ["PSo13CAMediaTiming", "masksToBounds"]
+- !private ["PSo13CAMediaTiming", "shadowOffset"]
+- !private ["PSo13CAMediaTiming", "shadowOpacity"]
 - !private ["CSo7CGColor", "init"]
 - ["CSo12CGColorSpace", "deinit"]
 - !private ["V12CoreGraphics7CGFloat", "Stride"]
@@ -181,6 +191,7 @@ depends-member:
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "UIColor"]
+- !private ["Ps7CVarArg", "UIEdgeInsetsMake"]
 - !private ["Ps7CVarArg", "UIFont"]
 - !private ["Ps7CVarArg", "UIView"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
@@ -188,6 +199,7 @@ depends-member:
 - !private ["Ps7CVarArg", "addSubview"]
 - !private ["Ps7CVarArg", "backgroundColor"]
 - ["Ps7CVarArg", "button"]
+- !private ["Ps7CVarArg", "contentInset"]
 - !private ["Ps7CVarArg", "contentView"]
 - !private ["Ps7CVarArg", "cornerRadius"]
 - !private ["Ps7CVarArg", "count"]
@@ -210,6 +222,8 @@ depends-member:
 - !private ["Ps7CVarArg", "promocode"]
 - ["Ps7CVarArg", "promocodes"]
 - !private ["Ps7CVarArg", "sendSubview"]
+- !private ["Ps7CVarArg", "shadowOffset"]
+- !private ["Ps7CVarArg", "shadowOpacity"]
 - !private ["Ps7CVarArg", "subscript"]
 - ["Ps7CVarArg", "tableView"]
 - !private ["Ps7CVarArg", "text"]
@@ -267,6 +281,7 @@ depends-member:
 - !private ["P7SnapKit25ConstraintRelatableTarget", "_DisabledRangeIndex"]
 - !private ["P7SnapKit25ConstraintRelatableTarget", "addSubview"]
 - !private ["P7SnapKit25ConstraintRelatableTarget", "backgroundColor"]
+- !private ["P7SnapKit25ConstraintRelatableTarget", "contentInset"]
 - !private ["P7SnapKit25ConstraintRelatableTarget", "contentView"]
 - !private ["P7SnapKit25ConstraintRelatableTarget", "dequeueReusableCell"]
 - !private ["P7SnapKit25ConstraintRelatableTarget", "font"]
@@ -293,12 +308,14 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Stride"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UIEdgeInsetsMake"]
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - ["Ps28CustomDebugStringConvertible", "button"]
+- !private ["Ps28CustomDebugStringConvertible", "contentInset"]
 - !private ["Ps28CustomDebugStringConvertible", "contentView"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
@@ -322,6 +339,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "promocodes"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - !private ["Ps28CustomDebugStringConvertible", "sendSubview"]
+- !private ["Ps28CustomDebugStringConvertible", "shadowOffset"]
+- !private ["Ps28CustomDebugStringConvertible", "shadowOpacity"]
 - !private ["Ps28CustomDebugStringConvertible", "size"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
@@ -371,6 +390,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UIEdgeInsetsMake"]
 - !private ["Ps23CustomStringConvertible", "UIFont"]
 - !private ["Ps23CustomStringConvertible", "UIView"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
@@ -379,6 +399,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - ["Ps23CustomStringConvertible", "button"]
+- !private ["Ps23CustomStringConvertible", "contentInset"]
 - !private ["Ps23CustomStringConvertible", "contentView"]
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - !private ["Ps23CustomStringConvertible", "count"]
@@ -402,6 +423,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "promocodes"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - !private ["Ps23CustomStringConvertible", "sendSubview"]
+- !private ["Ps23CustomStringConvertible", "shadowOffset"]
+- !private ["Ps23CustomStringConvertible", "shadowOpacity"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
@@ -435,6 +458,7 @@ depends-member:
 - !private ["Ps9Equatable", "NSTextAlignment"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UIEdgeInsetsMake"]
 - !private ["Ps9Equatable", "UIFont"]
 - !private ["Ps9Equatable", "UIView"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
@@ -443,6 +467,7 @@ depends-member:
 - !private ["Ps9Equatable", "backgroundColor"]
 - ["Ps9Equatable", "button"]
 - !private ["Ps9Equatable", "center"]
+- !private ["Ps9Equatable", "contentInset"]
 - !private ["Ps9Equatable", "contentView"]
 - !private ["Ps9Equatable", "cornerRadius"]
 - !private ["Ps9Equatable", "data"]
@@ -465,6 +490,8 @@ depends-member:
 - ["Ps9Equatable", "promocodes"]
 - !private ["Ps9Equatable", "row"]
 - !private ["Ps9Equatable", "sendSubview"]
+- !private ["Ps9Equatable", "shadowOffset"]
+- !private ["Ps9Equatable", "shadowOpacity"]
 - !private ["Ps9Equatable", "size"]
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
@@ -493,6 +520,7 @@ depends-member:
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Sf", "deinit"]
 - !private ["Ps13FloatingPoint", "Stride"]
 - !private ["Ps8Hashable", "CGColor"]
 - !private ["Ps8Hashable", "CGColorSpaceCreateDeviceRGB"]
@@ -505,6 +533,7 @@ depends-member:
 - !private ["Ps8Hashable", "NSTextAlignment"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UIEdgeInsetsMake"]
 - !private ["Ps8Hashable", "UIFont"]
 - !private ["Ps8Hashable", "UIView"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
@@ -513,6 +542,7 @@ depends-member:
 - !private ["Ps8Hashable", "backgroundColor"]
 - ["Ps8Hashable", "button"]
 - !private ["Ps8Hashable", "center"]
+- !private ["Ps8Hashable", "contentInset"]
 - !private ["Ps8Hashable", "contentView"]
 - !private ["Ps8Hashable", "cornerRadius"]
 - !private ["Ps8Hashable", "data"]
@@ -535,6 +565,8 @@ depends-member:
 - ["Ps8Hashable", "promocodes"]
 - !private ["Ps8Hashable", "row"]
 - !private ["Ps8Hashable", "sendSubview"]
+- !private ["Ps8Hashable", "shadowOffset"]
+- !private ["Ps8Hashable", "shadowOpacity"]
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "textAlignment"]
@@ -615,11 +647,13 @@ depends-member:
 - !private ["PSo8NSCoding", "ChartsViewController"]
 - !private ["PSo8NSCoding", "NSTextAlignment"]
 - !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIEdgeInsetsMake"]
 - !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - ["PSo8NSCoding", "button"]
+- !private ["PSo8NSCoding", "contentInset"]
 - !private ["PSo8NSCoding", "contentView"]
 - !private ["PSo8NSCoding", "cornerRadius"]
 - !private ["PSo8NSCoding", "data"]
@@ -639,6 +673,8 @@ depends-member:
 - !private ["PSo8NSCoding", "promocode"]
 - ["PSo8NSCoding", "promocodes"]
 - !private ["PSo8NSCoding", "sendSubview"]
+- !private ["PSo8NSCoding", "shadowOffset"]
+- !private ["PSo8NSCoding", "shadowOpacity"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textAlignment"]
@@ -657,6 +693,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "ChartsViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "NSTextAlignment"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- !private ["PSo26NSExtensionRequestHandling", "UIEdgeInsetsMake"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - ["PSo26NSExtensionRequestHandling", "button"]
@@ -689,6 +726,7 @@ depends-member:
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIEdgeInsetsMake"]
 - !private ["CSo8NSObject", "UIFont"]
 - ["CSo8NSObject", "UIPickerView"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
@@ -698,6 +736,7 @@ depends-member:
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - ["CSo8NSObject", "button"]
+- !private ["CSo8NSObject", "contentInset"]
 - !private ["CSo8NSObject", "contentView"]
 - !private ["CSo8NSObject", "cornerRadius"]
 - !private ["CSo8NSObject", "data"]
@@ -719,6 +758,8 @@ depends-member:
 - !private ["CSo8NSObject", "promocode"]
 - ["CSo8NSObject", "promocodes"]
 - !private ["CSo8NSObject", "sendSubview"]
+- !private ["CSo8NSObject", "shadowOffset"]
+- !private ["CSo8NSObject", "shadowOpacity"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textAlignment"]
@@ -735,11 +776,13 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "ChartsViewController"]
 - !private ["PSo16NSObjectProtocol", "NSTextAlignment"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIEdgeInsetsMake"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - ["PSo16NSObjectProtocol", "button"]
+- !private ["PSo16NSObjectProtocol", "contentInset"]
 - !private ["PSo16NSObjectProtocol", "contentView"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - !private ["PSo16NSObjectProtocol", "data"]
@@ -761,6 +804,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "promocode"]
 - ["PSo16NSObjectProtocol", "promocodes"]
 - !private ["PSo16NSObjectProtocol", "sendSubview"]
+- !private ["PSo16NSObjectProtocol", "shadowOffset"]
+- !private ["PSo16NSObjectProtocol", "shadowOpacity"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textAlignment"]
@@ -830,6 +875,7 @@ depends-member:
 - ["C5YHack25SecondTableViewController", "String"]
 - ["C5YHack25SecondTableViewController", "UIButton"]
 - !private ["C5YHack25SecondTableViewController", "UIColor"]
+- !private ["C5YHack25SecondTableViewController", "UIEdgeInsetsMake"]
 - !private ["C5YHack25SecondTableViewController", "UIFont"]
 - ["C5YHack25SecondTableViewController", "UIPickerView"]
 - ["C5YHack25SecondTableViewController", "UIStoryboardSegue"]
@@ -880,6 +926,7 @@ depends-member:
 - ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "contentInset"]
 - !private ["PSo29UIAccessibilityIdentification", "contentView"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCell"]
 - !private ["PSo29UIAccessibilityIdentification", "font"]
@@ -894,6 +941,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "textLabel"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "contentInset"]
 - !private ["PSo12UIAppearance", "contentView"]
 - !private ["PSo12UIAppearance", "dequeueReusableCell"]
 - !private ["PSo12UIAppearance", "font"]
@@ -914,11 +962,13 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "ChartsViewController"]
 - !private ["PSo21UIAppearanceContainer", "NSTextAlignment"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIEdgeInsetsMake"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - ["PSo21UIAppearanceContainer", "button"]
+- !private ["PSo21UIAppearanceContainer", "contentInset"]
 - !private ["PSo21UIAppearanceContainer", "contentView"]
 - !private ["PSo21UIAppearanceContainer", "data"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
@@ -955,6 +1005,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "ChartsViewController"]
 - !private ["PSo18UIContentContainer", "NSTextAlignment"]
 - !private ["PSo18UIContentContainer", "UIColor"]
+- !private ["PSo18UIContentContainer", "UIEdgeInsetsMake"]
 - !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UIView"]
 - ["PSo18UIContentContainer", "button"]
@@ -979,6 +1030,7 @@ depends-member:
 - !private ["PSo30UIContentSizeCategoryAdjusting", "textColor"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "contentInset"]
 - !private ["PSo17UICoordinateSpace", "contentView"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
 - !private ["PSo17UICoordinateSpace", "font"]
@@ -993,6 +1045,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "textLabel"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "contentInset"]
 - !private ["PSo13UIDynamicItem", "contentView"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
 - !private ["PSo13UIDynamicItem", "font"]
@@ -1005,6 +1058,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "textAlignment"]
 - !private ["PSo13UIDynamicItem", "textColor"]
 - !private ["PSo13UIDynamicItem", "textLabel"]
+- ["VSC12UIEdgeInsets", "deinit"]
 - !private ["PSo18UIFocusEnvironment", "CGColor"]
 - !private ["PSo18UIFocusEnvironment", "CGColorSpaceCreateDeviceRGB"]
 - !private ["PSo18UIFocusEnvironment", "CGPoint"]
@@ -1013,11 +1067,13 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "ChartsViewController"]
 - !private ["PSo18UIFocusEnvironment", "NSTextAlignment"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIEdgeInsetsMake"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - ["PSo18UIFocusEnvironment", "button"]
+- !private ["PSo18UIFocusEnvironment", "contentInset"]
 - !private ["PSo18UIFocusEnvironment", "contentView"]
 - !private ["PSo18UIFocusEnvironment", "data"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
@@ -1046,6 +1102,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "addSubview"]
 - !private ["PSo11UIFocusItem", "backgroundColor"]
+- !private ["PSo11UIFocusItem", "contentInset"]
 - !private ["PSo11UIFocusItem", "contentView"]
 - !private ["PSo11UIFocusItem", "dequeueReusableCell"]
 - !private ["PSo11UIFocusItem", "font"]
@@ -1080,6 +1137,7 @@ depends-member:
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UIEdgeInsetsMake"]
 - !private ["CSo11UIResponder", "UIFont"]
 - ["CSo11UIResponder", "UIPickerView"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
@@ -1089,6 +1147,7 @@ depends-member:
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "button"]
+- !private ["CSo11UIResponder", "contentInset"]
 - !private ["CSo11UIResponder", "contentView"]
 - !private ["CSo11UIResponder", "data"]
 - !private ["CSo11UIResponder", "dequeueReusableCell"]
@@ -1122,11 +1181,13 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "ChartsViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "NSTextAlignment"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
+- !private ["PSo30UIResponderStandardEditActions", "UIEdgeInsetsMake"]
 - !private ["PSo30UIResponderStandardEditActions", "UIFont"]
 - !private ["PSo30UIResponderStandardEditActions", "UIView"]
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
 - ["PSo30UIResponderStandardEditActions", "button"]
+- !private ["PSo30UIResponderStandardEditActions", "contentInset"]
 - !private ["PSo30UIResponderStandardEditActions", "contentView"]
 - !private ["PSo30UIResponderStandardEditActions", "data"]
 - !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
@@ -1153,6 +1214,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "view"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo12UIScrollView", "contentInset"]
 - !private ["CSo12UIScrollView", "dequeueReusableCell"]
 - !private ["CSo12UIScrollView", "indexPathForSelectedRow"]
 - !private ["PSo20UIScrollViewDelegate", "CGColor"]
@@ -1163,6 +1225,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "ChartsViewController"]
 - !private ["PSo20UIScrollViewDelegate", "NSTextAlignment"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
+- !private ["PSo20UIScrollViewDelegate", "UIEdgeInsetsMake"]
 - !private ["PSo20UIScrollViewDelegate", "UIFont"]
 - !private ["PSo20UIScrollViewDelegate", "UIView"]
 - ["PSo20UIScrollViewDelegate", "button"]
@@ -1187,6 +1250,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "ChartsViewController"]
 - !private ["PSo16UIStateRestoring", "NSTextAlignment"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
+- !private ["PSo16UIStateRestoring", "UIEdgeInsetsMake"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UIView"]
 - ["PSo16UIStateRestoring", "button"]
@@ -1208,6 +1272,7 @@ depends-member:
 - ["CSo17UIStoryboardSegue", "deinit"]
 - !private ["CSo17UIStoryboardSegue", "destination"]
 - !private ["CSo17UIStoryboardSegue", "identifier"]
+- !private ["CSo11UITableView", "contentInset"]
 - ["CSo11UITableView", "deinit"]
 - !private ["CSo11UITableView", "dequeueReusableCell"]
 - !private ["CSo11UITableView", "indexPathForSelectedRow"]
@@ -1228,6 +1293,7 @@ depends-member:
 - ["CSo21UITableViewController", "String"]
 - ["CSo21UITableViewController", "UIButton"]
 - !private ["CSo21UITableViewController", "UIColor"]
+- !private ["CSo21UITableViewController", "UIEdgeInsetsMake"]
 - !private ["CSo21UITableViewController", "UIFont"]
 - ["CSo21UITableViewController", "UIPickerView"]
 - ["CSo21UITableViewController", "UIStoryboardSegue"]
@@ -1257,6 +1323,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "ChartsViewController"]
 - !private ["PSo21UITableViewDataSource", "NSTextAlignment"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
+- !private ["PSo21UITableViewDataSource", "UIEdgeInsetsMake"]
 - !private ["PSo21UITableViewDataSource", "UIFont"]
 - !private ["PSo21UITableViewDataSource", "UIView"]
 - ["PSo21UITableViewDataSource", "button"]
@@ -1281,6 +1348,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "ChartsViewController"]
 - !private ["PSo19UITableViewDelegate", "NSTextAlignment"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
+- !private ["PSo19UITableViewDelegate", "UIEdgeInsetsMake"]
 - !private ["PSo19UITableViewDelegate", "UIFont"]
 - !private ["PSo19UITableViewDelegate", "UIView"]
 - ["PSo19UITableViewDelegate", "button"]
@@ -1306,11 +1374,13 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "ChartsViewController"]
 - !private ["PSo18UITraitEnvironment", "NSTextAlignment"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIEdgeInsetsMake"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - ["PSo18UITraitEnvironment", "button"]
+- !private ["PSo18UITraitEnvironment", "contentInset"]
 - !private ["PSo18UITraitEnvironment", "contentView"]
 - !private ["PSo18UITraitEnvironment", "data"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
@@ -1339,6 +1409,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "contentInset"]
 - !private ["CSo6UIView", "contentView"]
 - ["CSo6UIView", "deinit"]
 - !private ["CSo6UIView", "dequeueReusableCell"]
@@ -1365,6 +1436,7 @@ depends-member:
 - ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIButton"]
 - !private ["CSo16UIViewController", "UIColor"]
+- !private ["CSo16UIViewController", "UIEdgeInsetsMake"]
 - !private ["CSo16UIViewController", "UIFont"]
 - ["CSo16UIViewController", "UIPickerView"]
 - ["CSo16UIViewController", "UIStoryboardSegue"]
@@ -1401,6 +1473,7 @@ depends-member:
 - !private ["Ps22_CVarArgPassedAsDouble", "Stride"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "contentInset"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "contentView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "font"]
@@ -1442,6 +1515,7 @@ depends-member:
 - !private ["Ps9_Hashable", "NSTextAlignment"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "UIColor"]
+- !private ["Ps9_Hashable", "UIEdgeInsetsMake"]
 - !private ["Ps9_Hashable", "UIFont"]
 - !private ["Ps9_Hashable", "UIView"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
@@ -1450,6 +1524,7 @@ depends-member:
 - !private ["Ps9_Hashable", "backgroundColor"]
 - ["Ps9_Hashable", "button"]
 - !private ["Ps9_Hashable", "center"]
+- !private ["Ps9_Hashable", "contentInset"]
 - !private ["Ps9_Hashable", "contentView"]
 - !private ["Ps9_Hashable", "cornerRadius"]
 - !private ["Ps9_Hashable", "data"]
@@ -1472,6 +1547,8 @@ depends-member:
 - ["Ps9_Hashable", "promocodes"]
 - !private ["Ps9_Hashable", "row"]
 - !private ["Ps9_Hashable", "sendSubview"]
+- !private ["Ps9_Hashable", "shadowOffset"]
+- !private ["Ps9_Hashable", "shadowOpacity"]
 - ["Ps9_Hashable", "tableView"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "textAlignment"]
@@ -1560,6 +1637,7 @@ depends-nominal:
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Sf"
 - !private "Ps13FloatingPoint"
 - "Ps8Hashable"
 - "SQ"
@@ -1611,6 +1689,7 @@ depends-nominal:
 - !private "PSo30UIContentSizeCategoryAdjusting"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
+- "VSC12UIEdgeInsets"
 - "PSo18UIFocusEnvironment"
 - !private "PSo11UIFocusItem"
 - !private "CSo6UIFont"
