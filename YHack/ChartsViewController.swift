@@ -212,7 +212,7 @@ class ChartsViewController: UIViewController, ChartViewDelegate
         var planTypes:[String] = ["Gold", "Silver", "Regular", "Premium"]
         
         var request = ""
-        var planResults:[String : Int]? = [:]
+        var planResults:[String : Int] = [:]
         
         
         for (index, plan) in planTypes.enumerated()
@@ -229,15 +229,11 @@ class ChartsViewController: UIViewController, ChartViewDelegate
                 
                 guard let numberOfPeople = json["response"]["numFound"].int else { fatalError("couldn't parse number of people" ) }
                 
-                planResults?[insuranceType] = numberOfPeople
-                
+                planResults[insuranceType] = planResults[insuranceType]! + numberOfPeople
                 //Gold, Premium, Silver, Regular
                 if index == planTypes.count - 1
-                
                 {
-                    let crap = planTypes.sorted(by: { (first, second) -> Bool in  InsuranceTypes(rawValue: first)!.hashValue < InsuranceTypes(rawValue: second)!.hashValue
-                    })
-                    self.setChart(dates: crap, values: planResults!.map({Double($0.value)}), isInsurance: true)
+                    self.setChart(dates: planResults.map({$0.key}), values: planResults.map({Double($0.value)}), isInsurance: true)
                     self.activityview.stopAnimating()
                     self.activityview.snp.removeConstraints()
                     self.activityview.removeFromSuperview()
@@ -250,6 +246,8 @@ class ChartsViewController: UIViewController, ChartViewDelegate
     func setChart(dates: [String], values: [Double], isInsurance: Bool)
     {
         var dataEntries: [PieChartDataEntry] = []
+        
+        
         
         for i in 0...3
         {
