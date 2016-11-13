@@ -218,10 +218,10 @@ class ChartsViewController: UIViewController, ChartViewDelegate
                     guard let resultValue = response.result.value else { fatalError("couldn't parse JSON") }
                     let json = JSON(resultValue)
                     
-                    guard let numberOfPeople = json["response"]["numFound"].int else { fatalError("couldn't parse number of people" ) }
+                    //guard let insuranceType = json["insurance_plan"].string else { fatalError("couldn't parse number of people" ) }
                     print(json)
-                    guard let queryPlanType = json["responseHeader"]["params"].dictionary?["q"]?.string else { fatalError("Couldn't parse policy date") }
-                    print(queryPlanType)
+                    //guard let queryPlanType = json["responseHeader"]["params"].dictionary?["q"]?.string else { fatalError("Couldn't parse policy date") }
+                    //print(queryPlanType)
                     
                     
                 })
