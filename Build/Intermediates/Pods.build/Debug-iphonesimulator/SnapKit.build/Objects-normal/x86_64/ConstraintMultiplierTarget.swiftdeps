@@ -19,10 +19,10 @@ provides-dynamic-lookup:
 depends-top-level:
 - "Float"
 - "UInt"
-- "Int"
 - "ConstraintMultiplierTarget"
 - "Double"
 - "CGFloat"
+- "Int"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "CGFloat"]
 - ["Ps16AbsoluteValuable", "constraintMultiplierTargetValue"]

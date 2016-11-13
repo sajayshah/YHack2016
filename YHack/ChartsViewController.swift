@@ -14,6 +14,11 @@ import SwiftyJSON
 import NVActivityIndicatorView
 import FSInteractiveMap
 
+enum InsuranceTypes: String
+{
+    case regular = "Regular", silver = "Silver", gold = "Gold", premium = "Premium"
+}
+
 class ChartsViewController: UIViewController, ChartViewDelegate
 {
     @IBOutlet weak var pieChartView: PieChartView!
@@ -145,7 +150,7 @@ class ChartsViewController: UIViewController, ChartViewDelegate
                     dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
                     let df = self.genericdictionaryUsedToSaveJSONData.sorted(by: { dateFormatter.date(from: $0.0)! < dateFormatter.date(from: $1.0)! })
                     print(df)
-                    self.setChart(dates: df.map({$0.key}), values: df.map({Double($0.value)}))
+                    self.setChart(dates: df.map({$0.key}), values: df.map({Double($0.value)}), isInsurance: false)
                     self.activityview.stopAnimating()
                     self.activityview.snp.removeConstraints()
                     self.activityview.removeFromSuperview()
@@ -207,35 +212,48 @@ class ChartsViewController: UIViewController, ChartViewDelegate
         var planTypes:[String] = ["Gold", "Silver", "Regular", "Premium"]
         
         var request = ""
-        var planResults:NSMutableDictionary? = [:];
+        var planResults:[String : Int]? = [:]
+        
         
         for (index, plan) in planTypes.enumerated()
-            {
-                print(plan)
-                request = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=insurance_plan:\(planTypes[index])&wt=json"
-                print(request)
-                Alamofire.request(request).responseJSON(completionHandler: {response in
-                    guard let resultValue = response.result.value else { fatalError("couldn't parse JSON") }
-                    let json = JSON(resultValue)
-                    
-                    //guard let insuranceType = json["insurance_plan"].string else { fatalError("couldn't parse number of people" ) }
-                    print(json)
-                    //guard let queryPlanType = json["responseHeader"]["params"].dictionary?["q"]?.string else { fatalError("Couldn't parse policy date") }
-                    //print(queryPlanType)
-                    
-                    
-                })
+        {
+            print(plan)
+            request = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=insurance_plan:\(planTypes[index])&wt=json"
+            print(request)
+            Alamofire.request(request).responseJSON(completionHandler: {response in
+                guard let resultValue = response.result.value else { fatalError("couldn't parse JSON") }
+                let json = JSON(resultValue)
+                
+                guard let insuranceType = json["responseHeader"]["params"].dictionary?["q"]?.string else { fatalError("couldn't parse number of people" ) }
+                print(json)
+                
+                guard let numberOfPeople = json["response"]["numFound"].int else { fatalError("couldn't parse number of people" ) }
+                
+                planResults?[insuranceType] = numberOfPeople
+                
+                //Gold, Premium, Silver, Regular
+                if index == planTypes.count - 1
+                
+                {
+                    let crap = planTypes.sorted(by: { (first, second) -> Bool in  InsuranceTypes(rawValue: first)!.hashValue < InsuranceTypes(rawValue: second)!.hashValue
+                    })
+                    self.setChart(dates: crap, values: planResults!.map({Double($0.value)}), isInsurance: true)
+                    self.activityview.stopAnimating()
+                    self.activityview.snp.removeConstraints()
+                    self.activityview.removeFromSuperview()
+                }
+            })
         }
         
     }
     
-    func setChart(dates: [String], values: [Double])
+    func setChart(dates: [String], values: [Double], isInsurance: Bool)
     {
         var dataEntries: [PieChartDataEntry] = []
-
+        
         for i in 0...3
         {
-            let dataEntry = PieChartDataEntry(value: values[i] + values[i + 4], label: ["Winter", "Spring", "Summer", "Fall"][i])
+            let dataEntry = !isInsurance ? PieChartDataEntry(value: values[i] + values[i + 4], label: ["Winter", "Spring", "Summer", "Fall"][i]) : PieChartDataEntry(value: values[i], label: ["Regular", "Silver", "Gold", "Premium"][i])
             dataEntries.append(dataEntry)
         }
         

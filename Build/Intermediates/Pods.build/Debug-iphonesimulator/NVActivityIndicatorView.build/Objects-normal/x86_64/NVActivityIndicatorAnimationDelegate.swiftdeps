@@ -8,9 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "CGSize"
-- "CALayer"
-- "NVActivityIndicatorAnimationDelegate"
 - "UIColor"
+- "NVActivityIndicatorAnimationDelegate"
+- "CALayer"
 depends-member:
 - ["P23NVActivityIndicatorView36NVActivityIndicatorAnimationDelegate", "CALayer"]
 - ["P23NVActivityIndicatorView36NVActivityIndicatorAnimationDelegate", "CGSize"]

@@ -9,13 +9,13 @@ provides-dynamic-lookup:
 - "candleData"
 - "initialize"
 depends-top-level:
-- "BarLineChartViewBase"
 - !private "CandleStickChartRenderer"
 - "CandleChartData"
 - "CandleStickChartView"
-- "CandleChartDataProvider"
-- "CastingPrecedence"
 - "AssignmentPrecedence"
+- "CastingPrecedence"
+- "CandleChartDataProvider"
+- "BarLineChartViewBase"
 depends-member:
 - !private ["P6Charts16AnimatorDelegate", "CandleStickChartRenderer"]
 - !private ["P6Charts16AnimatorDelegate", "_animator"]

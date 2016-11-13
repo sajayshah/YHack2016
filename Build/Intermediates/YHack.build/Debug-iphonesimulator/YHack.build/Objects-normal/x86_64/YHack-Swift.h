@@ -176,7 +176,7 @@ SWIFT_CLASS("_TtC5YHack20ChartsViewController")
 - (void)getSeasonData;
 - (void)setChartWithDataPoints:(NSArray<NSNumber *> * _Nonnull)dataPoints values:(NSArray<NSNumber *> * _Nonnull)values;
 - (void)getPlanTypes;
-- (void)setChartWithDates:(NSArray<NSString *> * _Nonnull)dates values:(NSArray<NSNumber *> * _Nonnull)values;
+- (void)setChartWithDates:(NSArray<NSString *> * _Nonnull)dates values:(NSArray<NSNumber *> * _Nonnull)values isInsurance:(BOOL)isInsurance;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

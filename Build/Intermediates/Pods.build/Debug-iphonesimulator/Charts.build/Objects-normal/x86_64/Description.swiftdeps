@@ -8,18 +8,18 @@ provides-member:
 provides-dynamic-lookup:
 - "font"
 - "textAlign"
-- "text"
 - "textColor"
+- "text"
 depends-top-level:
 - "Description"
-- "ComponentBase"
-- "StringLiteralType"
-- "String"
-- "AssignmentPrecedence"
-- "NSUIColor"
-- "CGPoint"
-- "NSTextAlignment"
 - "NSUIFont"
+- "NSTextAlignment"
+- "StringLiteralType"
+- "NSUIColor"
+- "ComponentBase"
+- "AssignmentPrecedence"
+- "String"
+- "CGPoint"
 depends-member:
 - ["Ps9AnyObject", "NSTextAlignment"]
 - ["Ps9AnyObject", "NSUIColor"]

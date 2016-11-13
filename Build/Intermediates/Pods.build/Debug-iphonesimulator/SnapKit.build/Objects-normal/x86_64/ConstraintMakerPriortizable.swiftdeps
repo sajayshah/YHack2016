@@ -9,8 +9,8 @@ provides-dynamic-lookup:
 depends-top-level:
 - "ConstraintMakerPriortizable"
 - "AssignmentPrecedence"
-- "ConstraintMakerFinalizable"
 - "ConstraintPriorityTarget"
+- "ConstraintMakerFinalizable"
 depends-member:
 - !private ["Ps9AnyObject", "description"]
 - !private ["Ps9AnyObject", "init"]

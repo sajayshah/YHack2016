@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AnyObject"
-- "ConstraintLayoutGuide"
 - "ConstraintAttributesDSL"
+- "ConstraintLayoutGuide"
 - "AssignmentPrecedence"
 - "ConstraintLayoutGuideDSL"
 depends-member:

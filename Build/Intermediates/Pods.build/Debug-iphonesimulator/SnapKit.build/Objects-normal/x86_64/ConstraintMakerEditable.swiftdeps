@@ -8,12 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "ConstraintInsetTarget"
-- !private "/"
 - "ConstraintOffsetTarget"
-- "AssignmentPrecedence"
 - "ConstraintMultiplierTarget"
-- "ConstraintMakerEditable"
+- "AssignmentPrecedence"
 - "ConstraintMakerPriortizable"
+- !private "/"
+- "ConstraintMakerEditable"
 depends-member:
 - !private ["Ps9AnyObject", "constant"]
 - !private ["Ps9AnyObject", "description"]

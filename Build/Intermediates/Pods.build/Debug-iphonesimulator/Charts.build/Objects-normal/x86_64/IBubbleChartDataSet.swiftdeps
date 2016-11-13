@@ -6,9 +6,9 @@ provides-nominal:
 provides-member:
 - ["P6Charts19IBubbleChartDataSet", ""]
 provides-dynamic-lookup:
-- "highlightCircleWidth"
-- "maxSize"
 - "isNormalizeSizeEnabled"
+- "maxSize"
+- "highlightCircleWidth"
 depends-top-level:
 - "IBubbleChartDataSet"
 - "IBarLineScatterCandleBubbleChartDataSet"
