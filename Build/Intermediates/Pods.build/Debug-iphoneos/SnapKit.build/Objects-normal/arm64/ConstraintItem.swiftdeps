@@ -9,17 +9,17 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Bool"
-- !private "BooleanLiteralType"
 - "ConstraintView"
 - "ConstraintAttributes"
-- !private "==="
+- !private "BooleanLiteralType"
+- "ConstraintItem"
 - !private "!=="
+- !private "&&"
+- !private "==="
+- "AnyObject"
 - "=="
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- "AnyObject"
-- "ConstraintItem"
-- !private "&&"
 - "Equatable"
 depends-member:
 - !private ["Ps9AnyObject", "attributes"]

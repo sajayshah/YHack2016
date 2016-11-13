@@ -8,19 +8,19 @@ provides-member:
 provides-dynamic-lookup:
 - "formColor"
 - "label"
-- "form"
-- "formLineDashPhase"
 - "formSize"
+- "formLineDashPhase"
+- "form"
 - "formLineWidth"
 - "formLineDashLengths"
 depends-top-level:
-- "Legend"
-- "AssignmentPrecedence"
-- "NSObject"
-- "String"
-- "NSUIColor"
-- "CGFloat"
 - "LegendEntry"
+- "NSUIColor"
+- "AssignmentPrecedence"
+- "Legend"
+- "CGFloat"
+- "String"
+- "NSObject"
 depends-member:
 - ["Ps16AbsoluteValuable", "nan"]
 - ["Ps9AnyObject", "CGFloat"]

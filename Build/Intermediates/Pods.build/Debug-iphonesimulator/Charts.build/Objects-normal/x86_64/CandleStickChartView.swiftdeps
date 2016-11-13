@@ -10,10 +10,10 @@ provides-dynamic-lookup:
 - "initialize"
 depends-top-level:
 - "AssignmentPrecedence"
-- "CastingPrecedence"
 - "CandleChartData"
 - "BarLineChartViewBase"
 - !private "CandleStickChartRenderer"
+- "CastingPrecedence"
 - "CandleStickChartView"
 - "CandleChartDataProvider"
 depends-member:

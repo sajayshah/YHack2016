@@ -11,17 +11,17 @@ provides-member:
 - ["V7SnapKit20ConstraintAttributes", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "=="
-- "AssignmentPrecedence"
-- "NSLayoutAttribute"
-- "Bool"
-- "OptionSet"
-- "ConstraintAttributes"
 - "+="
 - "+"
-- "UInt"
 - "-="
+- "NSLayoutAttribute"
+- "OptionSet"
+- "=="
+- "AssignmentPrecedence"
 - !private "!="
+- "UInt"
+- "ConstraintAttributes"
+- "Bool"
 depends-member:
 - !private ["Sa", "Iterator"]
 - !private ["Sa", "_Element"]

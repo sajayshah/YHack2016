@@ -9,13 +9,13 @@ provides-dynamic-lookup:
 - "lineData"
 - "initialize"
 depends-top-level:
-- "BarLineChartViewBase"
+- "LineChartData"
 - "CastingPrecedence"
 - "AssignmentPrecedence"
-- "LineChartData"
-- !private "LineChartRenderer"
+- "BarLineChartViewBase"
 - "LineChartDataProvider"
 - "LineChartView"
+- !private "LineChartRenderer"
 depends-member:
 - !private ["P6Charts16AnimatorDelegate", "LineChartRenderer"]
 - !private ["P6Charts16AnimatorDelegate", "_animator"]

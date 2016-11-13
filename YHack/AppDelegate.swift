@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //print(verifyUrl(urlString: "www.google.com"))
+        
+//        let text = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_codes=FREESPOUSE%20AND%20%7B!join%20from=id%20to=participant_id%20fromIndex=participant%7Dstate:CA&wt=json"
+//        let types: NSTextCheckingResult.CheckingType = .link
+//        
+//        let detector = try? NSDataDetector(types: types.rawValue)
+//        
+//        let matches = detector?.matches(in: text, options: .reportCompletion, range: NSMakeRange(0, text.characters.count))
+//        
+//        for match in matches! {
+//            print(match.url!)
+//        }
         return true
+    }
+    
+    func verifyUrl (urlString: String?) -> Bool {
+        //Check for nil
+        if let urlString = urlString {
+            // create NSURL instance
+            if let url = NSURL(string: urlString) {
+                // check if your application can open the NSURL instance
+                return UIApplication.shared.canOpenURL(url as URL)
+            }
+        }
+        return false
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

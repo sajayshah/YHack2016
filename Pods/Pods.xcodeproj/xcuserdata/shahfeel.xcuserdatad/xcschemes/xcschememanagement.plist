@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>FSInteractiveMap.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>NVActivityIndicatorView.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -47,6 +52,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>11D875883B67114A919A696BC0CBFB32</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2D6BF64699CDA8F1ECDC2762633AA6D0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2E94AC8E1E2155A31DA0555DB3E90E29</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>3501A6B72968D4659FA8ED01F5CB8E54</key>
 		<dict>
 			<key>primary</key>
@@ -98,6 +118,11 @@
 			<true/>
 		</dict>
 		<key>BA2CA48311A8C5C13130B7AE585D30A1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D86B3397EA937C9BAD11C8269481FAB0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

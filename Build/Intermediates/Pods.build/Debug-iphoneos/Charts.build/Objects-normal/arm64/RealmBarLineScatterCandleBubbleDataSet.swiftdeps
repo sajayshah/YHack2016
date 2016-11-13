@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", ""]
 provides-dynamic-lookup:
-- "highlightLineDashPhase"
 - "highlightColor"
+- "highlightLineDashPhase"
 - "copyWithZone"
 - "highlightLineWidth"
 - "highlightLineDashLengths"
 depends-top-level:
-- "NSZone"
+- "NSUIColor"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- "RealmBarLineScatterCandleBubbleDataSet"
+- "RealmBaseDataSet"
 - "IBarLineScatterCandleBubbleChartDataSet"
-- "NSUIColor"
 - "/"
 - "CGFloat"
+- "RealmBarLineScatterCandleBubbleDataSet"
 - "AnyObject"
-- "RealmBaseDataSet"
+- "NSZone"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]

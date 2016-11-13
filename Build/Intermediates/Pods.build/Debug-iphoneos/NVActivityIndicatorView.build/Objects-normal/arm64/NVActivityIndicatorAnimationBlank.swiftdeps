@@ -7,11 +7,11 @@ provides-member:
 - ["C23NVActivityIndicatorView33NVActivityIndicatorAnimationBlank", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "CGSize"
+- "CALayer"
 - "NVActivityIndicatorAnimationDelegate"
 - "NVActivityIndicatorAnimationBlank"
 - "UIColor"
-- "CGSize"
-- "CALayer"
 depends-member:
 - ["Ps9AnyObject", "setUpAnimation"]
 - ["Ps9AnyObject", ""]

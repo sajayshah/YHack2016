@@ -6,20 +6,20 @@ provides-nominal:
 provides-member:
 - ["P6Charts18IRadarChartDataSet", ""]
 provides-dynamic-lookup:
-- "highlightCircleStrokeWidth"
-- "highlightCircleStrokeColor"
+- "highlightCircleOuterRadius"
 - "highlightCircleFillColor"
+- "highlightCircleStrokeAlpha"
+- "highlightCircleStrokeColor"
+- "drawHighlightCircleEnabled"
 - "highlightCircleInnerRadius"
 - "isDrawHighlightCircleEnabled"
-- "drawHighlightCircleEnabled"
-- "highlightCircleOuterRadius"
-- "highlightCircleStrokeAlpha"
+- "highlightCircleStrokeWidth"
 depends-top-level:
-- "NSUIColor"
+- "ILineRadarChartDataSet"
 - "CGFloat"
+- "NSUIColor"
 - "Bool"
 - "IRadarChartDataSet"
-- "ILineRadarChartDataSet"
 depends-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "Bool"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "CGFloat"]

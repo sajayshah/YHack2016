@@ -8,25 +8,25 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "<="
-- !private "&&"
-- !private "ConstraintItem"
 - !private "UnicodeScalarType"
+- "ConstraintDescription"
+- !private "&&"
+- "ConstraintRelatableTarget"
 - !private "ConstraintAttributes"
+- !private "ConstraintItem"
 - !private "StringLiteralType"
 - !private "ConstraintView"
-- "ConstraintRelatableTarget"
 - "AssignmentPrecedence"
 - !private "=="
 - "CastingPrecedence"
+- "ConstraintMakerRelatable"
 - "ConstraintRelation"
 - !private "||"
-- "ConstraintMakerRelatable"
 - "ConstraintMakerEditable"
-- "ConstraintDescription"
 - !private "fatalError"
-- "String"
 - !private "ConstraintConstantTarget"
 - "UInt"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "ConstraintAttributes"]
 - !private ["Ps9AnyObject", "ConstraintItem"]

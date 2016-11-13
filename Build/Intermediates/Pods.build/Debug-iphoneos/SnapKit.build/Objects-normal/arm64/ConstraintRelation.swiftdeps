@@ -7,9 +7,9 @@ provides-member:
 - ["O7SnapKit18ConstraintRelation", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "NSLayoutRelation"
 - "=="
 - !private "~="
-- "NSLayoutRelation"
 - "ConstraintRelation"
 - "Int"
 depends-member:

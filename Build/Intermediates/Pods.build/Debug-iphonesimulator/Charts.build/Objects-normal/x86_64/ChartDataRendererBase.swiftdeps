@@ -6,31 +6,31 @@ provides-nominal:
 provides-member:
 - ["C6Charts12DataRenderer", ""]
 provides-dynamic-lookup:
-- "drawHighlighted"
 - "isDrawingValuesAllowed"
+- "drawHighlighted"
 - "initBuffers"
-- "drawData"
 - "drawExtras"
-- "drawValues"
 - "animator"
+- "drawData"
+- "drawValues"
 depends-top-level:
 - "Bool"
 - "ViewPortHandler"
+- !private "<"
 - !private "BooleanLiteralType"
-- !private "*"
 - "Renderer"
 - !private "??"
-- "CGContext"
+- !private "*"
 - !private "StringLiteralType"
-- "DataRenderer"
-- !private "<"
-- "Highlight"
-- "AssignmentPrecedence"
 - !private "Int"
+- "DataRenderer"
+- "AssignmentPrecedence"
+- "Animator"
+- "Highlight"
+- "CGContext"
+- !private "CGFloat"
 - "ChartDataProvider"
 - !private "fatalError"
-- !private "CGFloat"
-- "Animator"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]

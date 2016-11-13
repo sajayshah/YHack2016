@@ -4,6 +4,7 @@ PODS:
   - Charts/Realm (3.0.0):
     - Charts/Core
     - RealmSwift (~> 1.1)
+  - FSInteractiveMap (0.1.0)
   - NVActivityIndicatorView (3.0)
   - Realm (1.1.0):
     - Realm/Headers (= 1.1.0)
@@ -16,6 +17,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - Charts/Realm
+  - FSInteractiveMap
   - NVActivityIndicatorView
   - SnapKit
   - SwiftyJSON
@@ -23,12 +25,13 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   Charts: beb341928d2135613b4325a6c6aff9f2f6de895e
+  FSInteractiveMap: 43a8d1388056b21da95194528fc37e222c7dad50
   NVActivityIndicatorView: 81953b5e65093ba79edf4fe7268e002039ca5268
   Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
   RealmSwift: 838058b2db95b12cb86bd0cf209df642c33fb60a
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
 
-PODFILE CHECKSUM: 3648d4a06a0e91570571206fc5f1909fbab6d327
+PODFILE CHECKSUM: a1a98c4e2ae8ddd3496ee2aecf73d465f43178fd
 
 COCOAPODS: 1.2.0.beta.1

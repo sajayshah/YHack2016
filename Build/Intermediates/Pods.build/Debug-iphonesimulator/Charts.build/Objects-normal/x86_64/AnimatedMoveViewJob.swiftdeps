@@ -8,19 +8,19 @@ provides-member:
 provides-dynamic-lookup:
 - "animationUpdate"
 depends-top-level:
-- "ChartViewBase"
-- "Transformer"
+- "Double"
+- "ViewPortHandler"
+- "CGFloat"
+- "AnimatedViewPortJob"
+- !private "*"
+- !private "+"
+- !private "-"
+- !private "CGPoint"
 - "AnimatedMoveViewJob"
 - "ChartEasingFunctionBlock"
 - "TimeInterval"
-- "AnimatedViewPortJob"
-- "ViewPortHandler"
-- "CGFloat"
-- !private "CGPoint"
-- "Double"
-- !private "-"
-- !private "*"
-- !private "+"
+- "ChartViewBase"
+- "Transformer"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - ["C6Charts19AnimatedMoveViewJob", "CGFloat"]
