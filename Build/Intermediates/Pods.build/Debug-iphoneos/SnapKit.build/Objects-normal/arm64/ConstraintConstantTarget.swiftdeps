@@ -14,22 +14,22 @@ provides-member:
 - ["P7SnapKit24ConstraintConstantTarget", "constraintConstantTargetValueFor"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "-"
-- !private "Double"
-- !private "Int"
-- "ConstraintInsets"
-- !private "+"
-- !private "UInt"
 - "NSLayoutAttribute"
-- "CGSize"
+- "CGPoint"
+- !private "Int"
+- !private "+"
+- !private "Double"
 - !private "ConstraintConfig"
 - !private "=="
+- "ConstraintInsets"
 - "CastingPrecedence"
-- "CGPoint"
-- "CGFloat"
-- "ConstraintConstantTarget"
+- !private "-"
 - !private "Float"
+- "CGFloat"
+- "CGSize"
+- !private "UInt"
 - "TernaryPrecedence"
+- "ConstraintConstantTarget"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps19BinaryFloatingPoint", "init"]

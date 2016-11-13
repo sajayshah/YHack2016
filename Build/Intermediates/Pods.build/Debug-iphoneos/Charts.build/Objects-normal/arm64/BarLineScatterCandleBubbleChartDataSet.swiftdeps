@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C6Charts38BarLineScatterCandleBubbleChartDataSet", ""]
 provides-dynamic-lookup:
+- "highlightLineDashPhase"
 - "highlightColor"
 - "copyWithZone"
 - "highlightLineDashLengths"
 - "highlightLineWidth"
-- "highlightLineDashPhase"
 depends-top-level:
-- "AnyObject"
-- "NSUIColor"
-- "NSZone"
 - "IBarLineScatterCandleBubbleChartDataSet"
+- "NSUIColor"
+- "BarLineScatterCandleBubbleChartDataSet"
+- "NSZone"
+- "ChartDataSet"
 - "/"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- "BarLineScatterCandleBubbleChartDataSet"
 - "CGFloat"
-- "ChartDataSet"
+- "AnyObject"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]

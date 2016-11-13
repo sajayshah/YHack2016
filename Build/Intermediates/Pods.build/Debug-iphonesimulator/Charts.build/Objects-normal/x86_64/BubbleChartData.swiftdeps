@@ -13,8 +13,8 @@ depends-top-level:
 - "BubbleChartData"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- "CGFloat"
 - !private "IBubbleChartDataSet"
+- "CGFloat"
 depends-member:
 - !private ["Ps9AnyObject", "_dataSets"]
 - ["Ps9AnyObject", "init"]

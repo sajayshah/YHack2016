@@ -12,6 +12,7 @@ import SnapKit
 import Alamofire
 import SwiftyJSON
 import NVActivityIndicatorView
+import FSInteractiveMap
 
 class ChartsViewController: UIViewController, ChartViewDelegate
 {
@@ -19,7 +20,7 @@ class ChartsViewController: UIViewController, ChartViewDelegate
     var data: [Int] = [Int](repeating: 0, count: 2)
     var promocode: String = ""
     var fromIndex = 0
-    var numberOfPeopleforStates: [Int] = [Int](repeating: 0, count: 50)
+    var numberOfPeopleforStates: [String : Int] = [String : Int]()
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -50,23 +51,7 @@ class ChartsViewController: UIViewController, ChartViewDelegate
         case 2:
             firstRequest = ""
             secondrequest = ""
-            let request = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_codes=FREESPOUSE%20AND%20{!join%20from=id%20to=participant_id%20fromIndex=participant}state:CA&wt=json"
-            print(request)
-            Alamofire.request(request).validate().responseJSON(completionHandler: { response in
-                
-                if response.result.isSuccess
-                {
-                    let json = JSON(response.result.value!)
-                    let numberOfPeople = json["response"]["numFound"].int!
-                    //self.numberOfPeopleforStates[index] = numberOfPeople
-                    print("\(numberOfPeople) in CA")
-                }
-                    
-                else
-                {
-                    print("sorry mate it failed. \(response.data)\n\(response.result)))")
-                }
-            })
+            getDataFor50States()
             return
         default: break
             
@@ -111,30 +96,29 @@ class ChartsViewController: UIViewController, ChartViewDelegate
         
         let statesArray = states.components(separatedBy: "\n").filter({$0 != ""})
         print("States: \(statesArray)")
-//        for (index, state) in statesArray.enumerated()
-//        {
-//            let request = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_codes=\(promocode)%20AND%20{!join%20from=id%20to=participant_id%20fromIndex=participant}state:\(state)&wt=json"
-//            print(request)
-//            Alamofire.request(request).responseJSON(completionHandler: { response in
-//                
-//                if response.result.isSuccess
-//                {
-//                    let json = JSON(response.result.value!)
-//                    let numberOfPeople = json["response"]["numFound"].int!
-//                    self.numberOfPeopleforStates[index] = numberOfPeople
-//                    print("\(numberOfPeople) in \(state)")
-//                }
-//                
-//                else
-//                {
-//                    print("sorry mate it failed. \(response.data)\n\(response.result)))")
-//                }
-//            })
-//        }
+        for (_, state) in statesArray.enumerated()
+        {
+            let request = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_codes=\(promocode)%20AND%20%7B!join%20from=id%20to=participant_id%20fromIndex=participant%7Dstate:\(state)&wt=json"
+            print(request)
+            Alamofire.request(request).responseJSON(completionHandler: { response in
+                
+                if response.result.isSuccess
+                {
+                    guard let resultValue = response.result.value else { fatalError("couldn't parse JSON") }
+                    let json = JSON(resultValue)
+                    guard let numberOfPeople = json["response"]["numFound"].int else { fatalError("couldn't parse number of people" ) }
+                    self.numberOfPeopleforStates[state] = numberOfPeople
+                    print("\(numberOfPeople) in \(state)")
+                }
+                
+                else
+                {
+                    print("sorry mate it failed. \(response.data)\n\(response.result)))")
+                }
+            })
+        }
         
-
         
-        //Alamofire.request()
     }
     
     func setChart(dataPoints: [Int], values: [Double]) {

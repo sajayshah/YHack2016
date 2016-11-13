@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C6Charts19RealmScatterDataSet", ""]
 provides-dynamic-lookup:
-- "scatterShapeHoleRadius"
-- "shapeRenderer"
-- "scatterShapeHoleColor"
 - "copyWithZone"
-- "initialize"
 - "scatterShapeSize"
+- "initialize"
+- "shapeRenderer"
 - "setScatterShape"
+- "scatterShapeHoleColor"
+- "scatterShapeHoleRadius"
 depends-top-level:
-- "ScatterChartDataSet"
-- "IScatterChartDataSet"
+- "RealmScatterDataSet"
 - "CastingPrecedence"
 - "AssignmentPrecedence"
-- "RealmScatterDataSet"
 - "CGFloat"
+- "IShapeRenderer"
+- "ScatterChartDataSet"
 - "NSZone"
 - "SquareShapeRenderer"
 - "RealmLineScatterCandleRadarDataSet"
+- "IScatterChartDataSet"
 - "NSUIColor"
-- "IShapeRenderer"
 - "AnyObject"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]

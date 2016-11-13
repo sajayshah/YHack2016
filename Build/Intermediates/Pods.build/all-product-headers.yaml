@@ -4,12 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers",
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Alamofire-Swift.h",
-          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
         },
         {
           'type': 'file',
@@ -20,23 +20,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules",
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/module.modulemap"
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphoneos/Alamofire.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Headers",
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Charts/Charts.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Charts-Swift.h",
-          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-Swift.h"
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Charts/Charts.framework/Headers/Charts-Swift.h"
         },
         {
           'type': 'file',
@@ -47,23 +47,70 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Modules",
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Charts/Charts.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphonesimulator/Charts.build/module.modulemap"
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphoneos/Charts.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers",
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/FSInteractiveMap/FSInteractiveMap.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FSInteractiveMap-Swift.h",
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/FSInteractiveMap/FSInteractiveMap.framework/Headers/FSInteractiveMap-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FSInteractiveMap-umbrella.h",
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Pods/Target Support Files/FSInteractiveMap/FSInteractiveMap-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FSInteractiveMapView.h",
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Pods/FSInteractiveMap/FSInteractiveMap/FSInteractiveMap/FSInteractiveMapView.h"
+        },
+        {
+          'type': 'file',
+          'name': "FSSVG.h",
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Pods/FSInteractiveMap/FSInteractiveMap/FSInteractiveMap/FSSVG/FSSVG.h"
+        },
+        {
+          'type': 'file',
+          'name': "FSSVGPathElement.h",
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Pods/FSInteractiveMap/FSInteractiveMap/FSInteractiveMap/FSSVG/FSSVGPathElement.h"
+        },
+        {
+          'type': 'file',
+          'name': "FSSVGUtils.h",
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Pods/FSInteractiveMap/FSInteractiveMap/FSInteractiveMap/FSSVG/FSSVGUtils.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/FSInteractiveMap/FSInteractiveMap.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphoneos/FSInteractiveMap.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "NVActivityIndicatorView-Swift.h",
-          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers/NVActivityIndicatorView-Swift.h"
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers/NVActivityIndicatorView-Swift.h"
         },
         {
           'type': 'file',
@@ -74,18 +121,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/NVActivityIndicatorView/NVActivityIndicatorView.framework/Modules",
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/NVActivityIndicatorView/NVActivityIndicatorView.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphonesimulator/NVActivityIndicatorView.build/module.modulemap"
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphoneos/NVActivityIndicatorView.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Pods_YHack.framework/Headers",
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Pods_YHack.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -95,51 +142,51 @@
         {
           'type': 'file',
           'name': "Pods_YHack-Swift.h",
-          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Pods_YHack.framework/Headers/Pods_YHack-Swift.h"
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Pods_YHack.framework/Headers/Pods_YHack-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Pods_YHack.framework/Modules",
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Pods_YHack.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-YHack.build/module.modulemap"
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-YHack.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers",
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Realm-Swift.h",
-          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/Realm-Swift.h"
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Modules",
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/Realm/Realm.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphonesimulator/Realm.build/module.modulemap"
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphoneos/Realm.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers",
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "RealmSwift-Swift.h",
-          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
         },
         {
           'type': 'file',
@@ -150,23 +197,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules",
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphonesimulator/RealmSwift.build/module.modulemap"
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphoneos/RealmSwift.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework/Headers",
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/SnapKit/SnapKit.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "SnapKit-Swift.h",
-          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework/Headers/SnapKit-Swift.h"
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/SnapKit/SnapKit.framework/Headers/SnapKit-Swift.h"
         },
         {
           'type': 'file',
@@ -177,23 +224,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework/Modules",
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/SnapKit/SnapKit.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphonesimulator/SnapKit.build/module.modulemap"
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphoneos/SnapKit.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers",
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "SwiftyJSON-Swift.h",
-          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
         },
         {
           'type': 'file',
@@ -204,12 +251,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules",
+      'name': "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphonesimulator/SwiftyJSON.build/module.modulemap"
+          'external-contents': "/Users/atharvavaidya/Developer/YHack/Build/Intermediates/Pods.build/Debug-iphoneos/SwiftyJSON.build/module.modulemap"
         }
       ]
     }

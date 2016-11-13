@@ -5,8 +5,8 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "UIEdgeInsets"
 - "ConstraintInsets"
+- "UIEdgeInsets"
 depends-member:
 depends-nominal:
 depends-dynamic-lookup:

@@ -6,32 +6,32 @@ provides-nominal:
 provides-member:
 - ["C6Charts14BarHighlighter", ""]
 provides-dynamic-lookup:
+- "getDistance"
 - "getStackedHighlight"
 - "data"
-- "getClosestStackIndex"
 - "getHighlight"
-- "getDistance"
+- "getClosestStackIndex"
 depends-top-level:
-- !private "BarLineScatterCandleBubbleChartDataProvider"
 - !private "max"
 - "Range"
 - !private "BarChartDataEntry"
 - !private "BarChartDataProvider"
+- !private "BarLineScatterCandleBubbleChartDataProvider"
 - "Highlight"
 - "ChartData"
 - "BarHighlighter"
 - "Double"
-- "IBarChartDataSet"
 - !private "=="
-- !private ">"
+- "IBarChartDataSet"
 - "CastingPrecedence"
+- !private ">"
 - !private "+="
-- !private "-"
 - "CGFloat"
-- "Int"
-- "ChartHighlighter"
-- "TernaryPrecedence"
+- !private "-"
 - !private "abs"
+- "TernaryPrecedence"
+- "ChartHighlighter"
+- "Int"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "Double"]

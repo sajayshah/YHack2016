@@ -9,13 +9,12 @@ provides-dynamic-lookup:
 - "calcMinMax"
 - "isNormalizeSizeEnabled"
 - "_maxSize"
-- "highlightCircleWidth"
 - "copyWithZone"
+- "highlightCircleWidth"
 - "normalizeSizeEnabled"
 - "maxSize"
 depends-top-level:
 - "Bool"
-- "BubbleChartDataSet"
 - "BooleanLiteralType"
 - !private ">"
 - !private "BubbleChartDataEntry"
@@ -23,10 +22,11 @@ depends-top-level:
 - "ChartDataEntry"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- "AnyObject"
-- "CGFloat"
-- "BarLineScatterCandleBubbleChartDataSet"
 - "NSZone"
+- "CGFloat"
+- "AnyObject"
+- "BubbleChartDataSet"
+- "BarLineScatterCandleBubbleChartDataSet"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]

@@ -34,7 +34,7 @@ NC
 ND
 OH
 OK
-OR
+%5COR
 PA
 RI
 SC

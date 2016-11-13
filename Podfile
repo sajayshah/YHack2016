@@ -10,6 +10,7 @@ target 'YHack' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'NVActivityIndicatorView'
+  pod 'FSInteractiveMap'
 
   # Pods for YHack
 

@@ -19,13 +19,13 @@ provides-dynamic-lookup:
 - "valueLineWidth"
 - "entryLabelColor"
 depends-top-level:
+- "NSUIColor"
+- "Bool"
 - "NSUIFont"
 - "IChartDataSet"
 - "CGFloat"
-- "Bool"
 - "IPieChartDataSet"
 - "PieChartDataSet"
-- "NSUIColor"
 depends-member:
 - ["Ps9AnyObject", "ValuePosition"]
 - ["Ps7CVarArg", "ValuePosition"]

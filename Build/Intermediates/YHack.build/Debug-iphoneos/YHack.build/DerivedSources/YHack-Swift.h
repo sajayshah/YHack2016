@@ -130,6 +130,7 @@ SWIFT_CLASS("_TtC5YHack11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions;
+- (BOOL)verifyUrlWithUrlString:(NSString * _Nullable)urlString;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
@@ -166,7 +167,7 @@ SWIFT_CLASS("_TtC5YHack20ChartsViewController")
 @property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull data;
 @property (nonatomic, copy) NSString * _Nonnull promocode;
 @property (nonatomic) NSInteger fromIndex;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull numberOfPeopleforStates;
+@property (nonatomic, copy) NSDictionary<NSString *, NSNumber *> * _Nonnull numberOfPeopleforStates;
 - (void)viewDidLoad;
 - (void)getDataFor50States;
 - (void)setChartWithDataPoints:(NSArray<NSNumber *> * _Nonnull)dataPoints values:(NSArray<NSNumber *> * _Nonnull)values;
