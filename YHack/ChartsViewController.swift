@@ -66,7 +66,10 @@ class ChartsViewController: UIViewController, ChartViewDelegate
             firstRequest = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=insurance_product:Dental&wt=json"
             secondrequest = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=insurance_product:Accident&wt=json"
         case 11:
-            break
+            firstRequest = ""
+            secondrequest = ""
+            getPlanTypes()
+            return
         case 12:
             firstRequest = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=insurance_coverage:Family&wt=json"
             secondrequest = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=insurance_coverage:Single&wt=json"
@@ -141,9 +144,9 @@ class ChartsViewController: UIViewController, ChartViewDelegate
                 {
                     let dateFormatter = DateFormatter()
                     dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-                    let crap = self.genericdictionaryUsedToSaveJSONData.sorted(by: { dateFormatter.date(from: $0.0)! < dateFormatter.date(from: $1.0)! })
-                    print(crap)
-                    self.setChart(dates: crap.map({$0.key}), values: crap.map({Double($0.value)}))
+                    let df = self.genericdictionaryUsedToSaveJSONData.sorted(by: { dateFormatter.date(from: $0.0)! < dateFormatter.date(from: $1.0)! })
+                    print(df)
+                    self.setChart(dates: df.map({$0.key}), values: df.map({Double($0.value)}))
                     self.activityview.stopAnimating()
                     self.activityview.snp.removeConstraints()
                     self.activityview.removeFromSuperview()
@@ -161,7 +164,7 @@ class ChartsViewController: UIViewController, ChartViewDelegate
         }
         catch
         {
-            print("Oh cock! couldn't get states.")
+            print("OOPS")
         }
         
         let statesArray = states.components(separatedBy: "\n").filter({$0 != ""})
@@ -195,7 +198,35 @@ class ChartsViewController: UIViewController, ChartViewDelegate
     {
         
         var dataEntries: [PieChartDataEntry] = []
-        var parameters: [String] = fromIndex == 0 ? ["Male", "Female"] : ["Single", "Married"]
+        
+        
+        var parameters: [String] = ["unhandled", "unhandled"]
+        
+        switch fromIndex {
+        case 0:
+            parameters = ["Male", "Female"]
+        case 1:
+            parameters = ["Married", "Single"]
+        case 4:
+            break
+        case 5:
+            break
+        case 10:
+            parameters = ["Dental", "Accident"]
+        case 11:
+            break
+        case 12:
+            parameters = ["Family", "Single"]
+        case 13:
+            parameters = ["Married", "Single"]
+        case 14:
+            parameters = ["Male", "Female"]
+        default:
+            break
+        }
+        
+//        parameters: [String] = fromIndex == 0 ? ["Male", "Female"] : ["Single", "Married"]
+//        parameters: [String] = fromIndex == 10 ? ["Dental", "Accident"]
         for i in 0..<dataPoints.count
         {
             let dataEntry = PieChartDataEntry(value: values[i], label: parameters[i])
@@ -208,6 +239,33 @@ class ChartsViewController: UIViewController, ChartViewDelegate
         
         
         pieChartDataSet.colors = ChartColorTemplates.pastel()
+    }
+    
+    func getPlanTypes() {
+        
+        var planTypes:[String] = ["Gold", "Silver", "Regular", "Premium"]
+        
+        var request = ""
+        var planResults:NSMutableDictionary? = [:];
+        
+        for (index, plan) in planTypes.enumerated()
+            {
+                print(plan)
+                request = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=insurance_plan:\(planTypes[index])&wt=json"
+                print(request)
+                Alamofire.request(request).responseJSON(completionHandler: {response in
+                    guard let resultValue = response.result.value else { fatalError("couldn't parse JSON") }
+                    let json = JSON(resultValue)
+                    
+                    guard let numberOfPeople = json["response"]["numFound"].int else { fatalError("couldn't parse number of people" ) }
+                    print(json)
+                    guard let queryPlanType = json["responseHeader"]["params"].dictionary?["q"]?.string else { fatalError("Couldn't parse policy date") }
+                    print(queryPlanType)
+                    
+                    
+                })
+        }
+        
     }
     
     func setChart(dates: [String], values: [Double])

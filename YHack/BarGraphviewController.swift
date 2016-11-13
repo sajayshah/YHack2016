@@ -76,7 +76,7 @@ class BarGraphViewController: UIViewController, ChartViewDelegate
             
             else
             {
-                print("You blithering idiot!")
+                print("uh oh")
             }
         })
         

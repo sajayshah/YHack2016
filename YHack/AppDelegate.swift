@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let matches = detector?.matches(in: text, options: .reportCompletion, range: NSMakeRange(0, text.characters.count))
         
         for match in matches! {
-            print(match.url!)
+//            print(match.url!)
         }
         return true
     }
