@@ -7,8 +7,8 @@ provides-member:
 - ["C7SnapKit27ConstraintMakerPriortizable", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "ConstraintMakerPriortizable"
 - "ConstraintMakerFinalizable"
+- "ConstraintMakerPriortizable"
 - "AssignmentPrecedence"
 - "ConstraintPriorityTarget"
 depends-member:

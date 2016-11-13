@@ -12,9 +12,9 @@ depends-top-level:
 - "Animator"
 - "ILineScatterCandleRadarChartDataSet"
 - "LineScatterCandleRadarRenderer"
-- "BarLineScatterCandleBubbleRenderer"
 - "CGContext"
 - "CGPoint"
+- "BarLineScatterCandleBubbleRenderer"
 depends-member:
 - !private ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "addLine"]

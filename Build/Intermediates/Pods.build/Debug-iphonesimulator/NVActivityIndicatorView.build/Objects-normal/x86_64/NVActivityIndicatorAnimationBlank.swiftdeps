@@ -8,10 +8,10 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "NVActivityIndicatorAnimationDelegate"
-- "CALayer"
 - "NVActivityIndicatorAnimationBlank"
-- "CGSize"
 - "UIColor"
+- "CGSize"
+- "CALayer"
 depends-member:
 - ["Ps9AnyObject", "setUpAnimation"]
 - ["Ps9AnyObject", ""]

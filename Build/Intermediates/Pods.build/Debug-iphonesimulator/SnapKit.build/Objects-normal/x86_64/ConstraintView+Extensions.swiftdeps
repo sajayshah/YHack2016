@@ -40,10 +40,10 @@ provides-dynamic-lookup:
 depends-top-level:
 - "Constraint"
 - "Void"
-- "ConstraintItem"
 - "ConstraintViewDSL"
-- "ConstraintMaker"
+- "ConstraintItem"
 - "ConstraintView"
+- "ConstraintMaker"
 depends-member:
 - !private ["Ps9AnyObject", "ConstraintViewDSL"]
 - ["Ps9AnyObject", "snp"]

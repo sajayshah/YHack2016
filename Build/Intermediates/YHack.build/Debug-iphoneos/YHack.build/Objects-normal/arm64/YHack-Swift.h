@@ -159,6 +159,7 @@ SWIFT_CLASS("_TtC5YHack22BarGraphViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NVActivityIndicatorView;
 @class PieChartView;
 
 SWIFT_CLASS("_TtC5YHack20ChartsViewController")
@@ -166,11 +167,15 @@ SWIFT_CLASS("_TtC5YHack20ChartsViewController")
 @property (nonatomic, weak) IBOutlet PieChartView * _Null_unspecified pieChartView;
 @property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull data;
 @property (nonatomic, copy) NSString * _Nonnull promocode;
+@property (nonatomic, copy) NSString * _Nonnull insuranceProduct;
 @property (nonatomic) NSInteger fromIndex;
-@property (nonatomic, copy) NSDictionary<NSString *, NSNumber *> * _Nonnull numberOfPeopleforStates;
+@property (nonatomic, copy) NSDictionary<NSString *, NSNumber *> * _Nonnull genericdictionaryUsedToSaveJSONData;
+@property (nonatomic, strong) NVActivityIndicatorView * _Nonnull activityview;
 - (void)viewDidLoad;
+- (void)getSeasonData;
 - (void)getDataFor50States;
 - (void)setChartWithDataPoints:(NSArray<NSNumber *> * _Nonnull)dataPoints values:(NSArray<NSNumber *> * _Nonnull)values;
+- (void)setChartWithDates:(NSArray<NSString *> * _Nonnull)dates values:(NSArray<NSNumber *> * _Nonnull)values;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -192,6 +197,23 @@ SWIFT_CLASS("_TtC5YHack19FirstViewController")
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (IBAction)detailButtonTapped:(UIButton * _Nonnull)sender;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5YHack35InsuranceProductTableViewController")
+@interface InsuranceProductTableViewController : UITableViewController
+@property (nonatomic) NSInteger fromIndex;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull insuranceProducts;
+- (void)viewDidLoad;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView willDisplayCell:(UITableViewCell * _Nonnull)cell forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

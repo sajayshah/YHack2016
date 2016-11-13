@@ -17,9 +17,9 @@ provides-member:
 - ["V12CoreGraphics7CGFloat", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "ConstraintPriorityTarget"
-- "Float"
 - "UInt"
+- "Float"
+- "ConstraintPriorityTarget"
 - "CGFloat"
 - "Int"
 - "Double"

@@ -7,21 +7,21 @@ provides-member:
 - ["V7SnapKit17ConstraintViewDSL", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UInt8"
-- !private "objc_setAssociatedObject"
-- "Void"
-- "Constraint"
-- !private "objc_getAssociatedObject"
-- "ConstraintView"
 - "ConstraintAttributesDSL"
-- "NSHashTable"
+- "AnyObject"
+- "ConstraintMaker"
 - !private "constraintsKey"
+- "Constraint"
+- "UInt8"
+- "ConstraintViewDSL"
+- !private "objc_getAssociatedObject"
+- "Void"
 - "AssignmentPrecedence"
 - !private "CastingPrecedence"
-- "AnyObject"
-- "ConstraintViewDSL"
-- "ConstraintMaker"
+- "ConstraintView"
+- !private "objc_setAssociatedObject"
 - "Float"
+- "NSHashTable"
 depends-member:
 - !private ["Ps9AnyObject", "add"]
 - !private ["Ps9AnyObject", "allObjects"]

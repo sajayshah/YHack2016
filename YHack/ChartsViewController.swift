@@ -21,13 +21,14 @@ class ChartsViewController: UIViewController, ChartViewDelegate
     var promocode: String = ""
     var insuranceProduct: String = ""
     var fromIndex = 0
-    var numberOfPeopleforStates: [String : Int] = [String : Int]()
+    var genericdictionaryUsedToSaveJSONData: [String : Int] = [String : Int]()
+    var activityview = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         //WARNING:- Unexpected query data
         pieChartView.noDataText = ""
-        let activityview = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         self.view.addSubview(activityview)
         activityview.snp.makeConstraints { (make) -> Void in
             make.center.equalTo(self.view)
@@ -72,9 +73,9 @@ class ChartsViewController: UIViewController, ChartViewDelegate
             let numfound = json["response"]["numFound"].int!
             print("numFound1: \(numfound)")
             self.data[0] = numfound
-            activityview.stopAnimating()
-            activityview.snp.removeConstraints()
-            activityview.removeFromSuperview()
+            self.activityview.stopAnimating()
+            self.activityview.snp.removeConstraints()
+            self.activityview.removeFromSuperview()
         })
         
         Alamofire.request(secondrequest).responseJSON(completionHandler: {response in
@@ -84,9 +85,9 @@ class ChartsViewController: UIViewController, ChartViewDelegate
             print("numFound2: \(numFemales)")
             self.data[1] = numFemales
             self.setChart(dataPoints: Array(0..<self.data.count), values: self.data.map({Double($0)}))
-            activityview.stopAnimating()
-            activityview.snp.removeConstraints()
-            activityview.removeFromSuperview()
+            self.activityview.stopAnimating()
+            self.activityview.snp.removeConstraints()
+            self.activityview.removeFromSuperview()
         })
         
     }
@@ -99,23 +100,41 @@ class ChartsViewController: UIViewController, ChartViewDelegate
             "2015-04-01T00:00:00Z%20TO%202015-06-30T00:00:00Z",
             "2015-07-01T00:09:30Z%20TO%202015-09-30T00:00:00Z",
             "2015-10-01T00:00:00Z%20TO%202015-12-31T00:00:00Z",
-            "2016-01-01T00:00:00Z%20TO%202015-03-31T00:00:00Z",
-            "2016-04-01T00:00:00Z%20TO%202015-06-30T00:00:00Z",
-            "2016-07-01T00:09:30Z%20TO%202015-09-30T00:00:00Z",
-            "2016-10-01T00:00:00Z%20TO%202015-12-31T00:00:00Z"]
+            "2016-01-01T00:00:00Z%20TO%202016-03-31T00:00:00Z",
+            "2016-04-01T00:00:00Z%20TO%202016-06-30T00:00:00Z",
+            "2016-07-01T00:09:30Z%20TO%202016-09-30T00:00:00Z",
+            "2016-10-01T00:00:00Z%20TO%202016-12-31T00:00:00Z"]
         
         var request = ""
         
         for (index, season) in querySeasonParameters.enumerated()
         {
             print(season)
-            request = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=policy_start_date:\(querySeasonParameters[index])AND{!join%20from=id%20to=id%20fromIndex=policy_info}insurance_product:\(insuranceProduct)&wt=json"
-            Alamofire.request(request).validate().responseJSON(completionHandler: {response in
-                let json = JSON(response.result.value!)
+            request = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=policy_start_date:%5B\(querySeasonParameters[index])%5DAND%7B!join%20from=id%20to=id%20fromIndex=policy_info%7Dinsurance_product:\(insuranceProduct)&wt=json"
+            print(request)
+            Alamofire.request(request).responseJSON(completionHandler: {response in
+                guard let resultValue = response.result.value else { fatalError("couldn't parse JSON") }
+                let json = JSON(resultValue)
+                
+                guard let numberOfPeople = json["response"]["numFound"].int else { fatalError("couldn't parse number of people" ) }
                 print(json)
+                guard let timeParameter = json["responseHeader"]["params"].dictionary?["q"]?.string else { fatalError("Couldn't parse policy date") }
+                self.genericdictionaryUsedToSaveJSONData["\(timeParameter.components(separatedBy: "TO")[0].components(separatedBy: "[")[1])"] = numberOfPeople
+                print("\(timeParameter.components(separatedBy: "TO")[0].components(separatedBy: "[")[1])")
+                
+                if season == querySeasonParameters.last!
+                {
+                    let dateFormatter = DateFormatter()
+                    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+                    let crap = self.genericdictionaryUsedToSaveJSONData.sorted(by: { dateFormatter.date(from: $0.0)! < dateFormatter.date(from: $1.0)! })
+                    print(crap)
+                    self.setChart(dates: crap.map({$0.key}), values: crap.map({Double($0.value)}))
+                    self.activityview.stopAnimating()
+                    self.activityview.snp.removeConstraints()
+                    self.activityview.removeFromSuperview()
+                }
             })
         }
-        
     }
     
     func getDataFor50States()
@@ -143,7 +162,7 @@ class ChartsViewController: UIViewController, ChartViewDelegate
                     guard let resultValue = response.result.value else { fatalError("couldn't parse JSON") }
                     let json = JSON(resultValue)
                     guard let numberOfPeople = json["response"]["numFound"].int else { fatalError("couldn't parse number of people" ) }
-                    self.numberOfPeopleforStates[state] = numberOfPeople
+                    self.genericdictionaryUsedToSaveJSONData[state] = numberOfPeople
                     print("\(numberOfPeople) in \(state)")
                 }
                 
@@ -157,13 +176,32 @@ class ChartsViewController: UIViewController, ChartViewDelegate
         
     }
     
-    func setChart(dataPoints: [Int], values: [Double]) {
+    func setChart(dataPoints: [Int], values: [Double])
+    {
         
         var dataEntries: [PieChartDataEntry] = []
         var parameters: [String] = fromIndex == 0 ? ["Male", "Female"] : ["Single", "Married"]
         for i in 0..<dataPoints.count
         {
             let dataEntry = PieChartDataEntry(value: values[i], label: parameters[i])
+            dataEntries.append(dataEntry)
+        }
+        
+        let pieChartDataSet = PieChartDataSet(values: dataEntries, label: "")
+        let pieChartData = PieChartData(dataSet: pieChartDataSet)
+        pieChartView.data = pieChartData
+        
+        
+        pieChartDataSet.colors = ChartColorTemplates.pastel()
+    }
+    
+    func setChart(dates: [String], values: [Double])
+    {
+        var dataEntries: [PieChartDataEntry] = []
+
+        for i in 0...3
+        {
+            let dataEntry = PieChartDataEntry(value: values[i] + values[i + 4], label: ["Winter", "Spring", "Summer", "Fall"][i])
             dataEntries.append(dataEntry)
         }
         

@@ -7,18 +7,18 @@ provides-member:
 - ["C7SnapKit21ConstraintDescription", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "ConstraintMultiplierTarget"
-- "ConstraintPriorityTarget"
-- "ConstraintDescription"
 - "ConstraintItem"
 - "Constraint"
-- "ConstraintAttributes"
-- "ConstraintView"
+- "ConstraintMultiplierTarget"
+- "ConstraintPriorityTarget"
 - "ConstraintConstantTarget"
 - "AssignmentPrecedence"
 - "ConstraintRelation"
-- "UInt"
+- "ConstraintAttributes"
 - "String"
+- "UInt"
+- "ConstraintDescription"
+- "ConstraintView"
 depends-member:
 - !private ["Ps9AnyObject", "Constraint"]
 - !private ["Ps9AnyObject", "ConstraintItem"]

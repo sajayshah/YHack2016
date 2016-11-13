@@ -6,24 +6,24 @@ provides-nominal:
 provides-member:
 - ["C5YHack24QueryTableViewController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "minTextfield"
 - "donePressed"
-- "maxTextField"
+- "minTextfield"
+- "tableView"
 - "viewDidLoad"
+- "maxTextField"
 depends-top-level:
-- !private "BooleanLiteralType"
-- !private "BarGraphViewController"
-- "Int"
-- "UIBarButtonItem"
-- !private "=="
-- "AssignmentPrecedence"
 - !private "||"
+- !private "BooleanLiteralType"
 - "UITextField"
+- "Int"
 - "UITableView"
-- !private "UIEdgeInsetsMake"
-- "QueryTableViewController"
+- !private "=="
+- !private "BarGraphViewController"
+- "AssignmentPrecedence"
 - "UITableViewController"
+- "QueryTableViewController"
+- "UIBarButtonItem"
+- !private "UIEdgeInsetsMake"
 depends-member:
 - !private ["Ps9AnyObject", "BarGraphViewController"]
 - !private ["Ps9AnyObject", "Int"]

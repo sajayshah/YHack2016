@@ -20,16 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //print(verifyUrl(urlString: "www.google.com"))
         
-//        let text = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_codes=FREESPOUSE%20AND%20%7B!join%20from=id%20to=participant_id%20fromIndex=participant%7Dstate:CA&wt=json"
-//        let types: NSTextCheckingResult.CheckingType = .link
-//        
-//        let detector = try? NSDataDetector(types: types.rawValue)
-//        
-//        let matches = detector?.matches(in: text, options: .reportCompletion, range: NSMakeRange(0, text.characters.count))
-//        
-//        for match in matches! {
-//            print(match.url!)
-//        }
+        let text = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=policy_start_date:[2016-02-01T00:00:00Z%20TO%202016-03-01T00:00:00Z]AND{!join%20from=id%20to=id%20fromIndex=policy_info}insurance_product:Accident&wt=json"
+        let types: NSTextCheckingResult.CheckingType = .link
+        
+        let detector = try? NSDataDetector(types: types.rawValue)
+        
+        let matches = detector?.matches(in: text, options: .reportCompletion, range: NSMakeRange(0, text.characters.count))
+        
+        for match in matches! {
+            print(match.url!)
+        }
         return true
     }
     

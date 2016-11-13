@@ -17,12 +17,7 @@ class InsuranceProductTableViewController: UITableViewController {
 
         self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -70,28 +65,10 @@ class InsuranceProductTableViewController: UITableViewController {
         if segue.identifier == "showChart2"
         {
             let destinationVC = segue.destination as! ChartsViewController
-            destinationVC.fromIndex = fromIndex
+            destinationVC.fromIndex = 3
             destinationVC.insuranceProduct = insuranceProducts[(self.tableView.indexPathForSelectedRow?.row)!]
         }
         
     }
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

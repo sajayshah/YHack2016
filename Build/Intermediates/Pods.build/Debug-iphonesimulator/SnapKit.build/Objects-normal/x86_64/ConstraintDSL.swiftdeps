@@ -40,14 +40,14 @@ provides-dynamic-lookup:
 depends-top-level:
 - "UInt8"
 - !private "objc_setAssociatedObject"
-- !private "labelKey"
 - !private "objc_getAssociatedObject"
-- "ConstraintAttributesDSL"
 - "ConstraintItem"
+- "ConstraintAttributesDSL"
+- "AnyObject"
 - "CastingPrecedence"
 - "ConstraintDSL"
 - "String"
-- "AnyObject"
+- !private "labelKey"
 - !private "ConstraintAttributes"
 depends-member:
 - !private ["Ps9AnyObject", "init"]

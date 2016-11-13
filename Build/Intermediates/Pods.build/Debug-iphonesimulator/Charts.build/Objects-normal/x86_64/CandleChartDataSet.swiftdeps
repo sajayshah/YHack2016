@@ -28,15 +28,15 @@ depends-top-level:
 - "BooleanLiteralType"
 - "ICandleChartDataSet"
 - !private "StringLiteralType"
-- "String"
 - "LineScatterCandleRadarChartDataSet"
-- !private "<"
 - !private "CandleChartDataEntry"
 - "ChartDataEntry"
 - "AssignmentPrecedence"
 - "NSUIColor"
 - "CastingPrecedence"
+- !private "<"
 - "CGFloat"
+- "String"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]

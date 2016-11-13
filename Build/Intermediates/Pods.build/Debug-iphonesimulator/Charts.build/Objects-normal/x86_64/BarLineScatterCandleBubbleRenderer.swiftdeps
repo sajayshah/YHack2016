@@ -8,31 +8,31 @@ provides-member:
 - ["C6Charts34BarLineScatterCandleBubbleRenderer", ""]
 - ["CC6Charts34BarLineScatterCandleBubbleRenderer7XBounds", ""]
 provides-dynamic-lookup:
-- "shouldDrawValues"
 - "isInBoundsX"
+- "shouldDrawValues"
 depends-top-level:
 - "IChartDataSet"
-- !private ">="
-- !private "ChartDataSetRounding"
-- "BarLineScatterCandleBubbleRenderer"
-- "Animator"
+- "DataRenderer"
 - "BarLineScatterCandleBubbleChartDataProvider"
+- "Animator"
+- "BarLineScatterCandleBubbleRenderer"
+- !private ">="
 - !private "BooleanLiteralType"
-- !private "Swift"
 - "ChartDataEntry"
-- !private "&&"
+- !private "Swift"
+- "Int"
 - "ViewPortHandler"
 - !private "=="
-- "AssignmentPrecedence"
 - !private "Double"
+- "AssignmentPrecedence"
 - "IBarLineScatterCandleBubbleChartDataSet"
 - "Bool"
 - !private "??"
 - !private "*"
 - !private "-"
 - "TernaryPrecedence"
-- "DataRenderer"
-- "Int"
+- !private "ChartDataSetRounding"
+- !private "&&"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps16AbsoluteValuable", "nan"]
