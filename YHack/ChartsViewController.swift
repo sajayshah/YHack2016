@@ -229,7 +229,7 @@ class ChartsViewController: UIViewController, ChartViewDelegate
                 
                 guard let numberOfPeople = json["response"]["numFound"].int else { fatalError("couldn't parse number of people" ) }
                 
-                planResults[insuranceType] = planResults[insuranceType]! + numberOfPeople
+                planResults[insuranceType] = planResults[insuranceType] == nil ? numberOfPeople : planResults[insuranceType]! + numberOfPeople
                 //Gold, Premium, Silver, Regular
                 if index == planTypes.count - 1
                 {
