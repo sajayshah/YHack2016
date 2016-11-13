@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		zReiVrETL9Sak3wzdMXrmVkeUSQ=
+		</data>
+		<key>AppIcon60x60@3x.png</key>
+		<data>
+		v+aIKg6fAdA91z5/DzVBlLFRAQ8=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
 		fOEzKBk7o9mHnYoAzupUwHMxsPc=
@@ -18,39 +26,39 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/Axz-e8-Fne-view-h8D-hT-WSU.nib</key>
 		<data>
-		PQ5DvRoz/nd+8mPp4MX32bYexGs=
+		Cnb+Iy2dmA8Qy4z6bQ/31pmx3+s=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		h4xcZKwy3ViaAoCqV+Y7tgdKvC0=
+		9Fw90ZSvhAgg2s+DuXX+LeGFj1E=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Tq7-aP-lRQ-view-21a-GN-kpH.nib</key>
 		<data>
-		SHkRhfi3/x887wTzZZYV2+akleo=
+		c2g9VL3L8t11GUsDtonPE0TJer4=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-khT-Bl-WJN.nib</key>
 		<data>
-		qWpNTvFHYyFzNK2rfhmKaSgva+4=
+		lykHVNJaszjbEH4/AAZ+ySV2/XQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITableViewController-Axz-e8-Fne.nib</key>
 		<data>
-		IkQCUz32AURHS4Jid3hz/yXWhj4=
+		tQepyHETIH+4/zlsCWa77QTQ8w0=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITableViewController-amm-KL-vId.nib</key>
 		<data>
-		Sw5cjGJVWgAJCWqI/bmF3UF+kiw=
+		aPrC6hqeLwmNf9z4LX9xVtd/48I=
 		</data>
 		<key>Base.lproj/Main.storyboardc/amm-KL-vId-view-YDe-O2-sSw.nib</key>
 		<data>
-		nl0x6N6UyPKAf+Dmg8ZS8V10Pqw=
+		d2x0WXv2GmwDKepAz/lNKCD8sDw=
 		</data>
 		<key>Base.lproj/Main.storyboardc/chartsVC.nib</key>
 		<data>
-		MyvP1FUwqi0FeeJ6uDzoVIMwQ2k=
+		PRXX7XEHe76LbzPLxvMU9lubz5E=
 		</data>
 		<key>Base.lproj/Main.storyboardc/dyL-FJ-doc-view-wwo-se-rea.nib</key>
 		<data>
-		cNysyRcX6t5um1BeQD5btC682J4=
+		CahjwWADnCp9N+3AfVPcTeSg7Mw=
 		</data>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<data>
@@ -178,7 +186,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DzUUVAjbM2DHDfCPKeF1I2cPkm4=
+		+mI2AhkT5CVNVLIHvE3OP8RNps4=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -188,9 +196,35 @@
 		<data>
 		Ny/fIySdsHLFV3uRgyoWc6RRFmI=
 		</data>
+		<key>states.txt</key>
+		<data>
+		4q4gxybF7f+dVcq4DxbywE13lxI=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppIcon60x60@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zReiVrETL9Sak3wzdMXrmVkeUSQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			AkpMTs8KtZUwb7O4DPx1/XnIlD18zkU85yQgq59q5x0=
+			</data>
+		</dict>
+		<key>AppIcon60x60@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v+aIKg6fAdA91z5/DzVBlLFRAQ8=
+			</data>
+			<key>hash2</key>
+			<data>
+			UYFgqSbluzON0C7GZ1wmltD3oEThzHaPjsQ5+KOaoWI=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
@@ -228,99 +262,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PQ5DvRoz/nd+8mPp4MX32bYexGs=
+			Cnb+Iy2dmA8Qy4z6bQ/31pmx3+s=
 			</data>
 			<key>hash2</key>
 			<data>
-			3iMfyVk/wDB5hIaywEDeHHO7TSBi4ST7IQr7rWNeBLw=
+			MKgBhxU9iAl+Ksi5vOLQFQUQ4ExAhS45trRyJa4MeOk=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			h4xcZKwy3ViaAoCqV+Y7tgdKvC0=
+			9Fw90ZSvhAgg2s+DuXX+LeGFj1E=
 			</data>
 			<key>hash2</key>
 			<data>
-			tM9aBCUbWOEDYV0UweZhMtgutg3RkHRIH+IaipcTjjY=
+			zPbZSKvIGV93Xv/u7xA8adzP8iJ5Gm1Uxj3Z4/ZWTlU=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Tq7-aP-lRQ-view-21a-GN-kpH.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SHkRhfi3/x887wTzZZYV2+akleo=
+			c2g9VL3L8t11GUsDtonPE0TJer4=
 			</data>
 			<key>hash2</key>
 			<data>
-			3/ShNTs4oOOLR8l8vWMrBh6Zn/cjfWrh5HADkpWeeIQ=
+			/j7ZQgBHzCQyWRUfJUKXxjKy9kqVUB18GYrofBqAiLg=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-khT-Bl-WJN.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qWpNTvFHYyFzNK2rfhmKaSgva+4=
+			lykHVNJaszjbEH4/AAZ+ySV2/XQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			fb/qPxaWdZ2iwFqKV7aHV8BmxTHdVzVr3aNRHKo1MsQ=
+			CuawWtIsbGLh36lBV07Swkcvwss47gdmMWAXCsnRaIo=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UITableViewController-Axz-e8-Fne.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IkQCUz32AURHS4Jid3hz/yXWhj4=
+			tQepyHETIH+4/zlsCWa77QTQ8w0=
 			</data>
 			<key>hash2</key>
 			<data>
-			x0edFeG5pikEBjNi1zbuFsiMIJlIl3LUslJo6B3v9I4=
+			kF90C9Z6Z1h5oArHTaPlLhfALgyhBSt7W+QhdQzM3T8=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UITableViewController-amm-KL-vId.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Sw5cjGJVWgAJCWqI/bmF3UF+kiw=
+			aPrC6hqeLwmNf9z4LX9xVtd/48I=
 			</data>
 			<key>hash2</key>
 			<data>
-			eWG/1JXlX6JvO2hANj82AoIf+P0yWr2HM5e1h5HvKQ8=
+			yEt3ZyjdAzerfWSzpiJkYHeY8HI/qF0CHtBer7bxSgg=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/amm-KL-vId-view-YDe-O2-sSw.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nl0x6N6UyPKAf+Dmg8ZS8V10Pqw=
+			d2x0WXv2GmwDKepAz/lNKCD8sDw=
 			</data>
 			<key>hash2</key>
 			<data>
-			6fBmYvOQUElnZ4SrQh5qQDCRgVy4GQCQOvBbCh9MeBo=
+			nVB+Q2eEMLZTJYXZ97l7aDAmqOV/aUxM/oS6aZrBH6I=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/chartsVC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MyvP1FUwqi0FeeJ6uDzoVIMwQ2k=
+			PRXX7XEHe76LbzPLxvMU9lubz5E=
 			</data>
 			<key>hash2</key>
 			<data>
-			5VMvD1EIGmeOyUPu/b+tDoMEKL/PGJrtqnr4iWwyKVA=
+			b23PswucMEJpbjIHEPZ+nxbOPLi1Kb6B+e7pLwF9Gls=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/dyL-FJ-doc-view-wwo-se-rea.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cNysyRcX6t5um1BeQD5btC682J4=
+			CahjwWADnCp9N+3AfVPcTeSg7Mw=
 			</data>
 			<key>hash2</key>
 			<data>
-			xaq6f5AmzEYK/Zay/+wz9Ta9yeRptR2QWvAZ558OYoE=
+			LQXsGJpOoRz1mQ1bEMeljPpqfglbFC+mz+pOYNUlhmA=
 			</data>
 		</dict>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
@@ -673,6 +707,17 @@
 			<key>hash2</key>
 			<data>
 			4hKq03lKhCBkzaHjduBVuK8RenMCbLx/VouId2Dl2Dw=
+			</data>
+		</dict>
+		<key>states.txt</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4q4gxybF7f+dVcq4DxbywE13lxI=
+			</data>
+			<key>hash2</key>
+			<data>
+			NjcwZG7MVBiWg1utrrQ/1ODS69evdng5ElsaMOk2JhA=
 			</data>
 		</dict>
 	</dict>

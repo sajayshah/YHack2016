@@ -166,7 +166,9 @@ SWIFT_CLASS("_TtC5YHack20ChartsViewController")
 @property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull data;
 @property (nonatomic, copy) NSString * _Nonnull promocode;
 @property (nonatomic) NSInteger fromIndex;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull numberOfPeopleforStates;
 - (void)viewDidLoad;
+- (void)getDataFor50States;
 - (void)setChartWithDataPoints:(NSArray<NSNumber *> * _Nonnull)dataPoints values:(NSArray<NSNumber *> * _Nonnull)values;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -175,17 +177,20 @@ SWIFT_CLASS("_TtC5YHack20ChartsViewController")
 @class UITableView;
 @class UITableViewCell;
 @class UIStoryboardSegue;
+@class UIButton;
 
 SWIFT_CLASS("_TtC5YHack19FirstViewController")
 @interface FirstViewController : UITableViewController
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull relations;
 - (void)viewDidLoad;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView willDisplayCell:(UITableViewCell * _Nonnull)cell forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (IBAction)detailButtonTapped:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -200,12 +205,12 @@ SWIFT_CLASS("_TtC5YHack24QueryTableViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified maxTextField;
 - (IBAction)donePressed:(UIBarButtonItem * _Nonnull)sender;
 - (void)viewDidLoad;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
 @class UIPickerView;
 
 SWIFT_CLASS("_TtC5YHack25SecondTableViewController")

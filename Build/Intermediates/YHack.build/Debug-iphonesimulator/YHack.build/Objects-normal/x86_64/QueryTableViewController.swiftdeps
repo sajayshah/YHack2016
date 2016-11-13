@@ -6,21 +6,23 @@ provides-nominal:
 provides-member:
 - ["C5YHack24QueryTableViewController", ""]
 provides-dynamic-lookup:
+- "donePressed"
+- "tableView"
 - "minTextfield"
 - "viewDidLoad"
-- "donePressed"
 - "maxTextField"
 depends-top-level:
-- !private "BarGraphViewController"
-- "UITableViewController"
-- "UIBarButtonItem"
-- !private "&&"
-- !private "BooleanLiteralType"
-- !private "Int"
-- "UITextField"
 - "QueryTableViewController"
+- !private "BooleanLiteralType"
+- "UITextField"
+- !private "&&"
 - !private "=="
 - "AssignmentPrecedence"
+- "Int"
+- "UIBarButtonItem"
+- "UITableView"
+- "UITableViewController"
+- !private "BarGraphViewController"
 depends-member:
 - !private ["Ps9AnyObject", "BarGraphViewController"]
 - !private ["Ps9AnyObject", "Int"]
@@ -32,6 +34,7 @@ depends-member:
 - ["Ps9AnyObject", "minTextfield"]
 - !private ["Ps9AnyObject", "navigationController"]
 - !private ["Ps9AnyObject", "pushViewController"]
+- ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
@@ -53,6 +56,7 @@ depends-member:
 - ["Ps7CVarArg", "minTextfield"]
 - !private ["Ps7CVarArg", "navigationController"]
 - !private ["Ps7CVarArg", "pushViewController"]
+- ["Ps7CVarArg", "tableView"]
 - !private ["Ps7CVarArg", "text"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
@@ -77,6 +81,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "minTextfield"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - !private ["Ps28CustomDebugStringConvertible", "pushViewController"]
+- ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
@@ -95,6 +100,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "minTextfield"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
 - !private ["Ps23CustomStringConvertible", "pushViewController"]
+- ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
@@ -109,6 +115,7 @@ depends-member:
 - ["Ps9Equatable", "minTextfield"]
 - !private ["Ps9Equatable", "navigationController"]
 - !private ["Ps9Equatable", "pushViewController"]
+- ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
@@ -125,6 +132,7 @@ depends-member:
 - ["Ps8Hashable", "minTextfield"]
 - !private ["Ps8Hashable", "navigationController"]
 - !private ["Ps8Hashable", "pushViewController"]
+- ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
@@ -147,6 +155,7 @@ depends-member:
 - ["PSo8NSCoding", "minTextfield"]
 - !private ["PSo8NSCoding", "navigationController"]
 - !private ["PSo8NSCoding", "pushViewController"]
+- ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
@@ -160,11 +169,13 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "minTextfield"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
+- ["PSo26NSExtensionRequestHandling", "tableView"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo8NSObject", "BarGraphViewController"]
-- !private ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "UIBarButtonItem"]
+- ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITextField"]
 - ["CSo8NSObject", "donePressed"]
 - ["CSo8NSObject", "init"]
@@ -174,6 +185,7 @@ depends-member:
 - ["CSo8NSObject", "minTextfield"]
 - !private ["CSo8NSObject", "navigationController"]
 - !private ["CSo8NSObject", "pushViewController"]
+- ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "BarGraphViewController"]
@@ -186,13 +198,15 @@ depends-member:
 - ["PSo16NSObjectProtocol", "minTextfield"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - !private ["PSo16NSObjectProtocol", "pushViewController"]
+- ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - ["Sq", "deinit"]
 - !private ["C5YHack24QueryTableViewController", "BarGraphViewController"]
-- !private ["C5YHack24QueryTableViewController", "Int"]
+- ["C5YHack24QueryTableViewController", "Int"]
 - ["C5YHack24QueryTableViewController", "UIBarButtonItem"]
+- ["C5YHack24QueryTableViewController", "UITableView"]
 - ["C5YHack24QueryTableViewController", "UITextField"]
 - ["C5YHack24QueryTableViewController", "deinit"]
 - ["C5YHack24QueryTableViewController", "donePressed"]
@@ -200,6 +214,7 @@ depends-member:
 - ["C5YHack24QueryTableViewController", "maxTextField"]
 - ["C5YHack24QueryTableViewController", "minTextfield"]
 - !private ["C5YHack24QueryTableViewController", "navigationController"]
+- ["C5YHack24QueryTableViewController", "tableView"]
 - ["C5YHack24QueryTableViewController", "viewDidLoad"]
 - !private ["Ps13SignedInteger", "init"]
 - !private ["Ps12SignedNumber", "init"]
@@ -217,6 +232,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "minTextfield"]
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - !private ["PSo21UIAppearanceContainer", "pushViewController"]
+- ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -230,6 +246,7 @@ depends-member:
 - ["PSo18UIContentContainer", "minTextfield"]
 - !private ["PSo18UIContentContainer", "navigationController"]
 - !private ["PSo18UIContentContainer", "pushViewController"]
+- ["PSo18UIContentContainer", "tableView"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
@@ -246,6 +263,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "minTextfield"]
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - !private ["PSo18UIFocusEnvironment", "pushViewController"]
+- ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -254,8 +272,9 @@ depends-member:
 - ["CSo22UINavigationController", "deinit"]
 - !private ["CSo22UINavigationController", "pushViewController"]
 - !private ["CSo11UIResponder", "BarGraphViewController"]
-- !private ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
+- ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITextField"]
 - ["CSo11UIResponder", "donePressed"]
 - ["CSo11UIResponder", "init"]
@@ -265,6 +284,7 @@ depends-member:
 - ["CSo11UIResponder", "minTextfield"]
 - !private ["CSo11UIResponder", "navigationController"]
 - !private ["CSo11UIResponder", "pushViewController"]
+- ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "BarGraphViewController"]
@@ -277,6 +297,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "minTextfield"]
 - !private ["PSo30UIResponderStandardEditActions", "navigationController"]
 - !private ["PSo30UIResponderStandardEditActions", "pushViewController"]
+- ["PSo30UIResponderStandardEditActions", "tableView"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
@@ -287,6 +308,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "maxTextField"]
 - ["PSo20UIScrollViewDelegate", "minTextfield"]
 - !private ["PSo20UIScrollViewDelegate", "navigationController"]
+- ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", "viewDidLoad"]
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo16UIStateRestoring", "BarGraphViewController"]
@@ -299,11 +321,13 @@ depends-member:
 - ["PSo16UIStateRestoring", "minTextfield"]
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - !private ["PSo16UIStateRestoring", "pushViewController"]
+- ["PSo16UIStateRestoring", "tableView"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo21UITableViewController", "BarGraphViewController"]
-- !private ["CSo21UITableViewController", "Int"]
+- ["CSo21UITableViewController", "Int"]
 - ["CSo21UITableViewController", "UIBarButtonItem"]
+- ["CSo21UITableViewController", "UITableView"]
 - ["CSo21UITableViewController", "UITextField"]
 - ["CSo21UITableViewController", "deinit"]
 - ["CSo21UITableViewController", "donePressed"]
@@ -311,6 +335,7 @@ depends-member:
 - ["CSo21UITableViewController", "maxTextField"]
 - ["CSo21UITableViewController", "minTextfield"]
 - !private ["CSo21UITableViewController", "navigationController"]
+- ["CSo21UITableViewController", "tableView"]
 - ["CSo21UITableViewController", "viewDidLoad"]
 - ["CSo21UITableViewController", ""]
 - !private ["PSo21UITableViewDataSource", "BarGraphViewController"]
@@ -320,6 +345,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "maxTextField"]
 - ["PSo21UITableViewDataSource", "minTextfield"]
 - !private ["PSo21UITableViewDataSource", "navigationController"]
+- ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "viewDidLoad"]
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "BarGraphViewController"]
@@ -329,6 +355,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "maxTextField"]
 - ["PSo19UITableViewDelegate", "minTextfield"]
 - !private ["PSo19UITableViewDelegate", "navigationController"]
+- ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", "viewDidLoad"]
 - ["PSo19UITableViewDelegate", ""]
 - ["OSC16UITableViewStyle", "deinit"]
@@ -345,13 +372,15 @@ depends-member:
 - ["PSo18UITraitEnvironment", "minTextfield"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - !private ["PSo18UITraitEnvironment", "pushViewController"]
+- ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo16UIViewController", "BarGraphViewController"]
-- !private ["CSo16UIViewController", "Int"]
+- ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
+- ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITextField"]
 - ["CSo16UIViewController", "donePressed"]
 - ["CSo16UIViewController", "init"]
@@ -361,6 +390,7 @@ depends-member:
 - ["CSo16UIViewController", "minTextfield"]
 - !private ["CSo16UIViewController", "navigationController"]
 - !private ["CSo16UIViewController", "pushViewController"]
+- ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
@@ -376,6 +406,7 @@ depends-member:
 - ["Ps9_Hashable", "minTextfield"]
 - !private ["Ps9_Hashable", "navigationController"]
 - !private ["Ps9_Hashable", "pushViewController"]
+- ["Ps9_Hashable", "tableView"]
 - !private ["Ps9_Hashable", "text"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
@@ -526,4 +557,4 @@ depends-external:
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers/NVActivityIndicatorView-Swift.h"
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers/NVActivityIndicatorView-umbrella.h"
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/NVActivityIndicatorView/NVActivityIndicatorView.framework/Modules/module.modulemap"
-interface-hash: "25f1d4784c5a7703eaa431027dc90191"
+interface-hash: "179ef048dc76b1e60eafe5edfdb4e2f5"

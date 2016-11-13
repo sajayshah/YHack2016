@@ -35,5 +35,7 @@ class QueryTableViewController: UITableViewController
         super.viewDidLoad()
     }
     
-    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
 }
