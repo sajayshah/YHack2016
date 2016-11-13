@@ -52,7 +52,7 @@ class ChartsViewController: UIViewController, ChartViewDelegate
             secondrequest = ""
             let request = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_codes=FREESPOUSE%20AND%20{!join%20from=id%20to=participant_id%20fromIndex=participant}state:CA&wt=json"
             print(request)
-            Alamofire.request(request).responseJSON(completionHandler: { response in
+            Alamofire.request(request).validate().responseJSON(completionHandler: { response in
                 
                 if response.result.isSuccess
                 {
