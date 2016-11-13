@@ -246,10 +246,8 @@ class ChartsViewController: UIViewController, ChartViewDelegate
     func setChart(dates: [String], values: [Double], isInsurance: Bool)
     {
         var dataEntries: [PieChartDataEntry] = []
-        
-        
-        
-        for i in 0...3
+
+        for i in 0...dates.count - 1
         {
             let dataEntry = !isInsurance ? PieChartDataEntry(value: values[i] + values[i + 4], label: ["Winter", "Spring", "Summer", "Fall"][i]) : PieChartDataEntry(value: values[i], label: ["Regular", "Silver", "Gold", "Premium"][i])
             dataEntries.append(dataEntry)
