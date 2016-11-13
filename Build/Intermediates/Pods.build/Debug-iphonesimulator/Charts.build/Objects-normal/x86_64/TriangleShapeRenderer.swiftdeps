@@ -8,21 +8,21 @@ provides-member:
 provides-dynamic-lookup:
 - "renderShape"
 depends-top-level:
-- !private "-"
+- "NSUIColor"
+- !private "!="
+- !private "/"
 - "TriangleShapeRenderer"
-- !private "&&"
-- "NSObject"
-- !private ">"
-- !private "*"
 - "CGContext"
+- "NSObject"
+- "IScatterChartDataSet"
+- "ViewPortHandler"
+- !private ">"
+- "CGPoint"
+- !private "*"
+- !private "-"
 - !private "+"
 - "IShapeRenderer"
-- "CGPoint"
-- !private "!="
-- "NSUIColor"
-- !private "/"
-- "ViewPortHandler"
-- "IScatterChartDataSet"
+- !private "&&"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps9AnyObject", "CGPoint"]

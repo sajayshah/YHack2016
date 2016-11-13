@@ -19,14 +19,14 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Float"
-- "ConstraintOffsetTarget"
 - "UInt"
-- "Double"
+- "ConstraintOffsetTarget"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- "CGFloat"
-- "Int"
 - "ConstraintConstantTarget"
+- "Int"
+- "CGFloat"
+- "Double"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps19BinaryFloatingPoint", "init"]

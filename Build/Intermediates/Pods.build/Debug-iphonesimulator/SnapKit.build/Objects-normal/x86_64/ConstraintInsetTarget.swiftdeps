@@ -20,14 +20,14 @@ provides-member:
 - ["P7SnapKit21ConstraintInsetTarget", "constraintInsetTargetValue"]
 provides-dynamic-lookup:
 depends-top-level:
+- "Int"
+- "ConstraintConstantTarget"
 - "UInt"
+- "CastingPrecedence"
 - "ConstraintInsets"
 - "Float"
-- "Double"
-- "ConstraintConstantTarget"
-- "Int"
 - "ConstraintInsetTarget"
-- "CastingPrecedence"
+- "Double"
 - "CGFloat"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]

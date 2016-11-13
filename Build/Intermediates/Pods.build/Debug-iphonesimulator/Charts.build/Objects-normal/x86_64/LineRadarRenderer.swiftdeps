@@ -11,13 +11,13 @@ provides-dynamic-lookup:
 depends-top-level:
 - "CGPath"
 - "Animator"
-- "CGContext"
-- "LineRadarRenderer"
+- "NSUIColor"
 - "Fill"
 - "ViewPortHandler"
-- "NSUIColor"
 - "LineScatterCandleRadarRenderer"
 - "CGFloat"
+- "LineRadarRenderer"
+- "CGContext"
 depends-member:
 - !private ["Ps9AnyObject", "addPath"]
 - !private ["Ps9AnyObject", "beginPath"]

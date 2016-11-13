@@ -7,13 +7,13 @@ provides-member:
 - ["C7SnapKit23ConstraintMakerEditable", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "ConstraintMakerEditable"
-- "ConstraintOffsetTarget"
-- "ConstraintMakerPriortizable"
-- "ConstraintMultiplierTarget"
-- "AssignmentPrecedence"
 - "ConstraintInsetTarget"
 - !private "/"
+- "ConstraintOffsetTarget"
+- "AssignmentPrecedence"
+- "ConstraintMultiplierTarget"
+- "ConstraintMakerEditable"
+- "ConstraintMakerPriortizable"
 depends-member:
 - !private ["Ps9AnyObject", "constant"]
 - !private ["Ps9AnyObject", "description"]

@@ -6,47 +6,48 @@ provides-nominal:
 provides-member:
 - ["C5YHack19FirstViewController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "detailButtonTapped"
-- "relations"
 - "viewDidLoad"
 - "numberOfSections"
+- "relations"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 - "prepare"
+- "detailButtonTapped"
 depends-top-level:
-- "Int"
-- !private "UIFont"
-- !private "CGColorSpaceCreateDeviceRGB"
-- !private "UIView"
-- !private "BooleanLiteralType"
-- "UITableViewController"
-- !private "QueryTableViewController"
-- "StringLiteralType"
-- "UIButton"
-- !private "UIColor"
 - !private "||"
-- !private "SecondTableViewController"
-- "UITableViewCell"
-- !private "UIEdgeInsetsMake"
-- "AssignmentPrecedence"
 - !private "CGSize"
 - "UITableView"
-- !private "=="
-- !private "Array"
-- "String"
-- "UIStoryboardSegue"
+- "UITableViewController"
+- !private "print"
+- !private "UIEdgeInsetsMake"
+- !private "QueryTableViewController"
 - "CastingPrecedence"
-- !private "NSTextAlignment"
-- "FirstViewController"
+- "AssignmentPrecedence"
+- !private "=="
+- "CGFloat"
 - "IndexPath"
 - !private "CGPoint"
+- !private "SecondTableViewController"
 - !private "-"
-- "CGFloat"
 - !private "CGRect"
 - !private "CGColor"
+- !private "UIFont"
+- !private "CGColorSpaceCreateDeviceRGB"
+- !private "BooleanLiteralType"
+- !private "UIView"
+- !private "Array"
+- "UIButton"
+- "String"
+- "UIStoryboardSegue"
+- "Int"
+- "FirstViewController"
+- !private "UIColor"
+- "StringLiteralType"
+- "UITableViewCell"
+- !private "NSTextAlignment"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps9AnyObject", "CGColor"]
@@ -78,6 +79,7 @@ depends-member:
 - ["Ps9AnyObject", "numberOfSections"]
 - !private ["Ps9AnyObject", "performSegue"]
 - ["Ps9AnyObject", "prepare"]
+- !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "relations"]
 - !private ["Ps9AnyObject", "sendSubview"]
 - !private ["Ps9AnyObject", "shadowOffset"]
@@ -208,6 +210,7 @@ depends-member:
 - ["Ps7CVarArg", "numberOfSections"]
 - !private ["Ps7CVarArg", "performSegue"]
 - ["Ps7CVarArg", "prepare"]
+- !private ["Ps7CVarArg", "print"]
 - ["Ps7CVarArg", "relations"]
 - !private ["Ps7CVarArg", "sendSubview"]
 - !private ["Ps7CVarArg", "shadowOffset"]
@@ -311,6 +314,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - !private ["Ps28CustomDebugStringConvertible", "performSegue"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "relations"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - !private ["Ps28CustomDebugStringConvertible", "sendSubview"]
@@ -390,6 +394,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - !private ["Ps23CustomStringConvertible", "performSegue"]
 - ["Ps23CustomStringConvertible", "prepare"]
+- !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "relations"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - !private ["Ps23CustomStringConvertible", "sendSubview"]
@@ -452,6 +457,7 @@ depends-member:
 - ["Ps9Equatable", "numberOfSections"]
 - !private ["Ps9Equatable", "performSegue"]
 - ["Ps9Equatable", "prepare"]
+- !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "relations"]
 - !private ["Ps9Equatable", "row"]
 - !private ["Ps9Equatable", "sendSubview"]
@@ -511,6 +517,7 @@ depends-member:
 - ["C5YHack19FirstViewController", "numberOfSections"]
 - !private ["C5YHack19FirstViewController", "performSegue"]
 - ["C5YHack19FirstViewController", "prepare"]
+- !private ["C5YHack19FirstViewController", "print"]
 - ["C5YHack19FirstViewController", "relations"]
 - ["C5YHack19FirstViewController", "tableView"]
 - !private ["C5YHack19FirstViewController", "view"]
@@ -552,6 +559,7 @@ depends-member:
 - ["Ps8Hashable", "numberOfSections"]
 - !private ["Ps8Hashable", "performSegue"]
 - ["Ps8Hashable", "prepare"]
+- !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "relations"]
 - !private ["Ps8Hashable", "row"]
 - !private ["Ps8Hashable", "sendSubview"]
@@ -655,6 +663,7 @@ depends-member:
 - ["PSo8NSCoding", "numberOfSections"]
 - !private ["PSo8NSCoding", "performSegue"]
 - ["PSo8NSCoding", "prepare"]
+- !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "relations"]
 - !private ["PSo8NSCoding", "sendSubview"]
 - !private ["PSo8NSCoding", "shadowOffset"]
@@ -685,6 +694,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegue"]
 - ["PSo26NSExtensionRequestHandling", "prepare"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "relations"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
@@ -730,6 +740,7 @@ depends-member:
 - ["CSo8NSObject", "numberOfSections"]
 - !private ["CSo8NSObject", "performSegue"]
 - ["CSo8NSObject", "prepare"]
+- !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "relations"]
 - !private ["CSo8NSObject", "sendSubview"]
 - !private ["CSo8NSObject", "shadowOffset"]
@@ -771,6 +782,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - !private ["PSo16NSObjectProtocol", "performSegue"]
 - ["PSo16NSObjectProtocol", "prepare"]
+- !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "relations"]
 - !private ["PSo16NSObjectProtocol", "sendSubview"]
 - !private ["PSo16NSObjectProtocol", "shadowOffset"]
@@ -920,6 +932,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - !private ["PSo21UIAppearanceContainer", "performSegue"]
 - ["PSo21UIAppearanceContainer", "prepare"]
+- !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "relations"]
 - !private ["PSo21UIAppearanceContainer", "sendSubview"]
 - ["PSo21UIAppearanceContainer", "tableView"]
@@ -951,6 +964,7 @@ depends-member:
 - ["PSo18UIContentContainer", "numberOfSections"]
 - !private ["PSo18UIContentContainer", "performSegue"]
 - ["PSo18UIContentContainer", "prepare"]
+- !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "relations"]
 - ["PSo18UIContentContainer", "tableView"]
 - !private ["PSo18UIContentContainer", "view"]
@@ -1019,6 +1033,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - !private ["PSo18UIFocusEnvironment", "performSegue"]
 - ["PSo18UIFocusEnvironment", "prepare"]
+- !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "relations"]
 - !private ["PSo18UIFocusEnvironment", "sendSubview"]
 - ["PSo18UIFocusEnvironment", "tableView"]
@@ -1090,6 +1105,7 @@ depends-member:
 - ["CSo11UIResponder", "numberOfSections"]
 - !private ["CSo11UIResponder", "performSegue"]
 - ["CSo11UIResponder", "prepare"]
+- !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "relations"]
 - !private ["CSo11UIResponder", "sendSubview"]
 - ["CSo11UIResponder", "tableView"]
@@ -1125,6 +1141,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - !private ["PSo30UIResponderStandardEditActions", "performSegue"]
 - ["PSo30UIResponderStandardEditActions", "prepare"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
 - ["PSo30UIResponderStandardEditActions", "relations"]
 - !private ["PSo30UIResponderStandardEditActions", "sendSubview"]
 - ["PSo30UIResponderStandardEditActions", "tableView"]
@@ -1155,6 +1172,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
 - !private ["PSo20UIScrollViewDelegate", "performSegue"]
 - ["PSo20UIScrollViewDelegate", "prepare"]
+- !private ["PSo20UIScrollViewDelegate", "print"]
 - ["PSo20UIScrollViewDelegate", "relations"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - !private ["PSo20UIScrollViewDelegate", "view"]
@@ -1176,6 +1194,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "numberOfSections"]
 - !private ["PSo16UIStateRestoring", "performSegue"]
 - ["PSo16UIStateRestoring", "prepare"]
+- !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "relations"]
 - ["PSo16UIStateRestoring", "tableView"]
 - !private ["PSo16UIStateRestoring", "view"]
@@ -1219,6 +1238,7 @@ depends-member:
 - ["CSo21UITableViewController", "numberOfSections"]
 - !private ["CSo21UITableViewController", "performSegue"]
 - ["CSo21UITableViewController", "prepare"]
+- !private ["CSo21UITableViewController", "print"]
 - ["CSo21UITableViewController", "relations"]
 - ["CSo21UITableViewController", "tableView"]
 - !private ["CSo21UITableViewController", "view"]
@@ -1240,6 +1260,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "numberOfSections"]
 - !private ["PSo21UITableViewDataSource", "performSegue"]
 - ["PSo21UITableViewDataSource", "prepare"]
+- !private ["PSo21UITableViewDataSource", "print"]
 - ["PSo21UITableViewDataSource", "relations"]
 - ["PSo21UITableViewDataSource", "tableView"]
 - !private ["PSo21UITableViewDataSource", "view"]
@@ -1261,6 +1282,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "numberOfSections"]
 - !private ["PSo19UITableViewDelegate", "performSegue"]
 - ["PSo19UITableViewDelegate", "prepare"]
+- !private ["PSo19UITableViewDelegate", "print"]
 - ["PSo19UITableViewDelegate", "relations"]
 - ["PSo19UITableViewDelegate", "tableView"]
 - !private ["PSo19UITableViewDelegate", "view"]
@@ -1292,6 +1314,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - !private ["PSo18UITraitEnvironment", "performSegue"]
 - ["PSo18UITraitEnvironment", "prepare"]
+- !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "relations"]
 - !private ["PSo18UITraitEnvironment", "sendSubview"]
 - ["PSo18UITraitEnvironment", "tableView"]
@@ -1347,6 +1370,7 @@ depends-member:
 - ["CSo16UIViewController", "numberOfSections"]
 - !private ["CSo16UIViewController", "performSegue"]
 - ["CSo16UIViewController", "prepare"]
+- !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "relations"]
 - ["CSo16UIViewController", "tableView"]
 - !private ["CSo16UIViewController", "view"]
@@ -1432,6 +1456,7 @@ depends-member:
 - ["Ps9_Hashable", "numberOfSections"]
 - !private ["Ps9_Hashable", "performSegue"]
 - ["Ps9_Hashable", "prepare"]
+- !private ["Ps9_Hashable", "print"]
 - ["Ps9_Hashable", "relations"]
 - !private ["Ps9_Hashable", "row"]
 - !private ["Ps9_Hashable", "sendSubview"]

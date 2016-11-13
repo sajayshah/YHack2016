@@ -9,9 +9,9 @@ provides-dynamic-lookup:
 depends-top-level:
 - "String"
 - "AssignmentPrecedence"
-- "ConstraintDescription"
-- "ConstraintMakerFinalizable"
 - "Constraint"
+- "ConstraintMakerFinalizable"
+- "ConstraintDescription"
 depends-member:
 - !private ["Ps9AnyObject", "constraint"]
 - !private ["Ps9AnyObject", "description"]

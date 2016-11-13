@@ -7,26 +7,26 @@ provides-member:
 - ["C23NVActivityIndicatorView43NVActivityIndicatorAnimationBallScaleRipple", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "BooleanLiteralType"
-- !private "Array"
-- !private "CAAnimationGroup"
-- !private "CGRect"
 - !private "CAKeyframeAnimation"
-- "NVActivityIndicatorAnimationBallScaleRipple"
-- !private "/"
-- "CALayer"
-- "CGSize"
-- !private "CAMediaTimingFunction"
 - !private "HUGE"
+- !private "BooleanLiteralType"
+- "NVActivityIndicatorAnimationBallScaleRipple"
+- !private "CGRect"
+- "CALayer"
 - !private "StringLiteralType"
+- !private "CAMediaTimingFunction"
+- !private "CAAnimationGroup"
+- !private "/"
+- "CGSize"
+- "AssignmentPrecedence"
 - !private "-"
 - !private "NVActivityIndicatorShape"
 - !private "CFTimeInterval"
-- "AssignmentPrecedence"
+- !private "Array"
 - "NVActivityIndicatorAnimationDelegate"
-- "UIColor"
-- !private "IntegerLiteralType"
 - !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "UIColor"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps9AnyObject", "CAAnimationGroup"]

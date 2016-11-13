@@ -38,11 +38,11 @@ provides-member:
 provides-dynamic-lookup:
 - "snp_removeConstraints"
 depends-top-level:
+- "ConstraintItem"
 - "Constraint"
 - "Void"
-- "ConstraintViewDSL"
-- "ConstraintItem"
 - "ConstraintView"
+- "ConstraintViewDSL"
 - "ConstraintMaker"
 depends-member:
 - !private ["Ps9AnyObject", "ConstraintViewDSL"]

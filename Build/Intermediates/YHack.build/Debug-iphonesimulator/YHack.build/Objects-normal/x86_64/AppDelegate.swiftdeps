@@ -6,31 +6,30 @@ provides-nominal:
 provides-member:
 - ["C5YHack11AppDelegate", ""]
 provides-dynamic-lookup:
-- "verifyUrl"
-- "window"
 - "applicationWillEnterForeground"
-- "applicationDidEnterBackground"
-- "applicationWillResignActive"
 - "application"
+- "applicationWillResignActive"
+- "window"
+- "applicationDidEnterBackground"
 - "applicationWillTerminate"
 - "applicationDidBecomeActive"
+- "verifyUrl"
 depends-top-level:
-- "UIResponder"
-- !private "NSMakeRange"
 - "UIApplication"
-- !private "print"
-- "UIApplicationDelegate"
-- "CastingPrecedence"
+- !private "URL"
 - "String"
-- !private "NSURL"
-- "AppDelegate"
-- "UIApplicationLaunchOptionsKey"
+- !private "BooleanLiteralType"
+- "UIResponder"
 - !private "StringLiteralType"
+- "UIApplicationLaunchOptionsKey"
+- !private "NSTextCheckingResult"
 - !private "NSDataDetector"
 - "UIWindow"
-- !private "BooleanLiteralType"
-- !private "NSTextCheckingResult"
-- !private "URL"
+- "AppDelegate"
+- !private "NSMakeRange"
+- !private "NSURL"
+- "CastingPrecedence"
+- "UIApplicationDelegate"
 - "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "CheckingType"]
@@ -54,9 +53,7 @@ depends-member:
 - !private ["Ps9AnyObject", "characters"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "matches"]
-- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "shared"]
-- !private ["Ps9AnyObject", "url"]
 - ["Ps9AnyObject", "verifyUrl"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
@@ -84,7 +81,6 @@ depends-member:
 - ["C5YHack11AppDelegate", "applicationWillTerminate"]
 - ["C5YHack11AppDelegate", "deinit"]
 - ["C5YHack11AppDelegate", "init"]
-- !private ["C5YHack11AppDelegate", "print"]
 - ["C5YHack11AppDelegate", "verifyUrl"]
 - ["C5YHack11AppDelegate", "window"]
 - !private ["Sa", "Iterator"]
@@ -122,9 +118,7 @@ depends-member:
 - !private ["Ps7CVarArg", "characters"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "matches"]
-- !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "shared"]
-- !private ["Ps7CVarArg", "url"]
 - ["Ps7CVarArg", "verifyUrl"]
 - ["Ps7CVarArg", "window"]
 - ["Ps7CVarArg", ""]
@@ -163,9 +157,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "characters"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "matches"]
-- !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
-- !private ["Ps28CustomDebugStringConvertible", "url"]
 - ["Ps28CustomDebugStringConvertible", "verifyUrl"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
@@ -198,9 +190,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "characters"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "matches"]
-- !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "shared"]
-- !private ["Ps23CustomStringConvertible", "url"]
 - ["Ps23CustomStringConvertible", "verifyUrl"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
@@ -226,11 +216,9 @@ depends-member:
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "link"]
 - !private ["Ps9Equatable", "matches"]
-- !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "rawValue"]
 - !private ["Ps9Equatable", "reportCompletion"]
 - !private ["Ps9Equatable", "shared"]
-- !private ["Ps9Equatable", "url"]
 - ["Ps9Equatable", "verifyUrl"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
@@ -268,9 +256,7 @@ depends-member:
 - !private ["Ps8Hashable", "characters"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "matches"]
-- !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "shared"]
-- !private ["Ps8Hashable", "url"]
 - ["Ps8Hashable", "verifyUrl"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
@@ -301,12 +287,10 @@ depends-member:
 - !private ["PSo8NSCoding", "characters"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "matches"]
-- !private ["PSo8NSCoding", "url"]
 - !private ["PSo9NSCopying", "CheckingType"]
 - !private ["PSo9NSCopying", "characters"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "matches"]
-- !private ["PSo9NSCopying", "url"]
 - ["CSo14NSDataDetector", "deinit"]
 - !private ["CSo14NSDataDetector", "init"]
 - !private ["CSo14NSDataDetector", "matches"]
@@ -339,9 +323,7 @@ depends-member:
 - !private ["CSo8NSObject", "characters"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "matches"]
-- !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "shared"]
-- !private ["CSo8NSObject", "url"]
 - ["CSo8NSObject", "verifyUrl"]
 - ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "CheckingType"]
@@ -365,9 +347,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "characters"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "matches"]
-- !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "shared"]
-- !private ["PSo16NSObjectProtocol", "url"]
 - ["PSo16NSObjectProtocol", "verifyUrl"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
@@ -377,12 +357,9 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "characters"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "matches"]
-- !private ["PSo14NSSecureCoding", "url"]
 - !private ["CSo8NSString", "characters"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo20NSTextCheckingResult", "CheckingType"]
-- ["CSo20NSTextCheckingResult", "deinit"]
-- !private ["CSo20NSTextCheckingResult", "url"]
 - ["CSo5NSURL", "deinit"]
 - !private ["CSo5NSURL", "init"]
 - !private ["Ps9OptionSet", "link"]
@@ -438,7 +415,6 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
 - ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
-- !private ["PSo21UIApplicationDelegate", "print"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "Bool"]
@@ -466,7 +442,6 @@ depends-member:
 - !private ["CSo11UIResponder", "canOpenURL"]
 - ["CSo11UIResponder", "deinit"]
 - ["CSo11UIResponder", "init"]
-- !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "shared"]
 - ["CSo11UIResponder", "verifyUrl"]
 - ["CSo11UIResponder", "window"]
@@ -489,7 +464,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "applicationWillTerminate"]
 - !private ["PSo30UIResponderStandardEditActions", "canOpenURL"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
-- !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "shared"]
 - ["PSo30UIResponderStandardEditActions", "verifyUrl"]
 - ["PSo30UIResponderStandardEditActions", "window"]
@@ -533,9 +507,7 @@ depends-member:
 - !private ["Ps9_Hashable", "characters"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "matches"]
-- !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "shared"]
-- !private ["Ps9_Hashable", "url"]
 - ["Ps9_Hashable", "verifyUrl"]
 - ["Ps9_Hashable", "window"]
 - ["Ps9_Hashable", ""]
@@ -587,7 +559,7 @@ depends-nominal:
 - !private "CSo19NSRegularExpression"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- "CSo20NSTextCheckingResult"
+- !private "CSo20NSTextCheckingResult"
 - "CSo5NSURL"
 - !private "Ps9OptionSet"
 - "Sq"

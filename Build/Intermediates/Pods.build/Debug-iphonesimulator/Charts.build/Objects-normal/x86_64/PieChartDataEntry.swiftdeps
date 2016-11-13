@@ -18,8 +18,8 @@ depends-top-level:
 - "NSZone"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- "PieChartDataEntry"
 - "AnyObject"
+- "PieChartDataEntry"
 - "ChartDataEntry"
 depends-member:
 - ["Ps9AnyObject", "copyWithZone"]

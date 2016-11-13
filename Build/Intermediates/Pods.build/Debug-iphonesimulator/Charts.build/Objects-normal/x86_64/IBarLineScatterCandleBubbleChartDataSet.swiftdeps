@@ -13,8 +13,8 @@ provides-dynamic-lookup:
 depends-top-level:
 - "IChartDataSet"
 - "IBarLineScatterCandleBubbleChartDataSet"
-- "CGFloat"
 - "NSUIColor"
+- "CGFloat"
 depends-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "CGFloat"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "NSUIColor"]

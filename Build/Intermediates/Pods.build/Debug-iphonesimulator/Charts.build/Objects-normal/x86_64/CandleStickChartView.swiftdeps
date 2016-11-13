@@ -13,9 +13,9 @@ depends-top-level:
 - !private "CandleStickChartRenderer"
 - "CandleChartData"
 - "CandleStickChartView"
-- "AssignmentPrecedence"
-- "CastingPrecedence"
 - "CandleChartDataProvider"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
 depends-member:
 - !private ["P6Charts16AnimatorDelegate", "CandleStickChartRenderer"]
 - !private ["P6Charts16AnimatorDelegate", "_animator"]

@@ -6,20 +6,20 @@ provides-nominal:
 provides-member:
 - ["C6Charts11Description", ""]
 provides-dynamic-lookup:
-- "text"
 - "font"
-- "textColor"
 - "textAlign"
+- "text"
+- "textColor"
 depends-top-level:
-- "String"
-- "NSTextAlignment"
-- "NSUIColor"
-- "StringLiteralType"
 - "Description"
-- "CGPoint"
-- "NSUIFont"
-- "AssignmentPrecedence"
 - "ComponentBase"
+- "StringLiteralType"
+- "String"
+- "AssignmentPrecedence"
+- "NSUIColor"
+- "CGPoint"
+- "NSTextAlignment"
+- "NSUIFont"
 depends-member:
 - ["Ps9AnyObject", "NSTextAlignment"]
 - ["Ps9AnyObject", "NSUIColor"]

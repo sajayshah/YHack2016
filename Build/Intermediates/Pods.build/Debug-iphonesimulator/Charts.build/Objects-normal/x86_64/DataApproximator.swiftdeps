@@ -8,25 +8,25 @@ provides-member:
 provides-dynamic-lookup:
 - "reduceWithDouglasPeuker"
 depends-top-level:
-- !private "abs"
 - !private "/"
 - !private "BooleanLiteralType"
-- !private "sqrt"
-- "Bool"
 - "NSObject"
+- "DataApproximator"
+- !private ">"
 - "AssignmentPrecedence"
 - !private "<"
-- !private ">"
 - !private "..<"
-- "DataApproximator"
+- !private "sqrt"
+- "Bool"
 - "CGPoint"
 - "CGFloat"
 - !private "*"
+- !private "abs"
 - !private "||"
-- "Int"
 - !private "-"
-- !private "<="
 - !private "+"
+- !private "<="
+- "Int"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "Bool"]

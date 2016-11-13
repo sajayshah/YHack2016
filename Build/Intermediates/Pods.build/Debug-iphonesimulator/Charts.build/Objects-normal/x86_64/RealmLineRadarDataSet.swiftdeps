@@ -6,29 +6,29 @@ provides-nominal:
 provides-member:
 - ["C6Charts21RealmLineRadarDataSet", ""]
 provides-dynamic-lookup:
-- "isDrawFilledEnabled"
 - "fillAlpha"
-- "lineWidth"
-- "copyWithZone"
 - "drawFilledEnabled"
 - "fillColor"
 - "fill"
+- "isDrawFilledEnabled"
+- "lineWidth"
+- "copyWithZone"
 depends-top-level:
+- !private "<"
+- !private ">"
+- "BooleanLiteralType"
+- "Bool"
+- "ILineRadarChartDataSet"
 - "NSUIColor"
+- "RealmLineScatterCandleRadarDataSet"
 - "/"
 - "NSZone"
-- "RealmLineRadarDataSet"
-- "BooleanLiteralType"
-- "Fill"
-- !private ">"
 - "AssignmentPrecedence"
-- !private "<"
 - "CastingPrecedence"
+- "RealmLineRadarDataSet"
 - "AnyObject"
-- "Bool"
 - "CGFloat"
-- "ILineRadarChartDataSet"
-- "RealmLineScatterCandleRadarDataSet"
+- "Fill"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]

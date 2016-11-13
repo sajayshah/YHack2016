@@ -6,49 +6,51 @@ provides-nominal:
 provides-member:
 - ["C5YHack20ChartsViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "activityview"
-- "pieChartView"
-- "setChart"
-- "setChart"
 - "data"
-- "genericdictionaryUsedToSaveJSONData"
-- "getSeasonData"
-- "promocode"
+- "setChart"
+- "setChart"
 - "insuranceProduct"
 - "fromIndex"
+- "genericdictionaryUsedToSaveJSONData"
+- "promocode"
+- "viewDidLoad"
+- "pieChartView"
+- "getSeasonData"
+- "getPlanTypes"
 depends-top-level:
-- "UIViewController"
-- "Int"
-- "CGRect"
-- !private "PieChartData"
+- !private "fatalError"
+- "ChartViewDelegate"
+- !private "Void"
+- "Double"
+- !private "UIColor"
 - !private "JSON"
-- "UnicodeScalarType"
 - !private "~="
 - "AssignmentPrecedence"
 - !private "=="
-- !private "+"
+- "UnicodeScalarType"
+- "ChartsViewController"
+- !private "DateFormatter"
+- !private "PieChartData"
+- !private "NSMutableDictionary"
 - !private "PieChartDataSet"
-- !private "..<"
-- !private "Void"
-- "TernaryPrecedence"
-- "ChartViewDelegate"
-- !private "Alamofire"
+- "UIViewController"
+- !private "Dictionary"
+- "String"
+- "NVActivityIndicatorView"
 - !private "<"
-- !private "print"
-- !private "fatalError"
-- !private "UIColor"
-- "Double"
+- "Int"
+- !private "PieChartDataEntry"
+- !private "..<"
+- "PieChartView"
+- !private "ChartColorTemplates"
 - !private "..."
 - !private "Array"
-- "NVActivityIndicatorView"
-- "PieChartView"
-- "String"
-- !private "DateFormatter"
-- !private "ChartColorTemplates"
+- !private "print"
+- !private "Alamofire"
+- "CGRect"
 - "StringLiteralType"
-- !private "PieChartDataEntry"
-- "ChartsViewController"
+- !private "+"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -62,12 +64,14 @@ depends-member:
 - !private ["Ps9AnyObject", "Double"]
 - ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "JSON"]
+- !private ["Ps9AnyObject", "Key"]
 - ["Ps9AnyObject", "NVActivityIndicatorView"]
 - !private ["Ps9AnyObject", "PieChartData"]
 - !private ["Ps9AnyObject", "PieChartDataEntry"]
 - !private ["Ps9AnyObject", "PieChartDataSet"]
 - ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "Value"]
 - ["Ps9AnyObject", "activityview"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "animating"]
@@ -87,6 +91,7 @@ depends-member:
 - !private ["Ps9AnyObject", "fatalError"]
 - ["Ps9AnyObject", "fromIndex"]
 - ["Ps9AnyObject", "genericdictionaryUsedToSaveJSONData"]
+- ["Ps9AnyObject", "getPlanTypes"]
 - ["Ps9AnyObject", "getSeasonData"]
 - !private ["Ps9AnyObject", "height"]
 - ["Ps9AnyObject", "init"]
@@ -192,6 +197,7 @@ depends-member:
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
 - ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "JSON"]
+- !private ["Ps7CVarArg", "Key"]
 - ["Ps7CVarArg", "NVActivityIndicatorView"]
 - !private ["Ps7CVarArg", "PieChartData"]
 - !private ["Ps7CVarArg", "PieChartDataEntry"]
@@ -200,6 +206,7 @@ depends-member:
 - ["Ps7CVarArg", "String"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "UIColor"]
+- !private ["Ps7CVarArg", "Value"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - ["Ps7CVarArg", "_Element"]
 - ["Ps7CVarArg", "activityview"]
@@ -222,6 +229,7 @@ depends-member:
 - !private ["Ps7CVarArg", "fatalError"]
 - ["Ps7CVarArg", "fromIndex"]
 - ["Ps7CVarArg", "genericdictionaryUsedToSaveJSONData"]
+- ["Ps7CVarArg", "getPlanTypes"]
 - ["Ps7CVarArg", "getSeasonData"]
 - ["Ps7CVarArg", "init"]
 - ["Ps7CVarArg", "insuranceProduct"]
@@ -275,6 +283,7 @@ depends-member:
 - !private ["P6Charts17ChartViewDelegate", "fatalError"]
 - !private ["P6Charts17ChartViewDelegate", "fromIndex"]
 - !private ["P6Charts17ChartViewDelegate", "genericdictionaryUsedToSaveJSONData"]
+- !private ["P6Charts17ChartViewDelegate", "getPlanTypes"]
 - !private ["P6Charts17ChartViewDelegate", "getSeasonData"]
 - !private ["P6Charts17ChartViewDelegate", "insuranceProduct"]
 - !private ["P6Charts17ChartViewDelegate", "pieChartView"]
@@ -291,6 +300,7 @@ depends-member:
 - ["C5YHack20ChartsViewController", "Double"]
 - ["C5YHack20ChartsViewController", "Int"]
 - !private ["C5YHack20ChartsViewController", "JSON"]
+- !private ["C5YHack20ChartsViewController", "NSMutableDictionary"]
 - ["C5YHack20ChartsViewController", "NVActivityIndicatorView"]
 - !private ["C5YHack20ChartsViewController", "PieChartData"]
 - !private ["C5YHack20ChartsViewController", "PieChartDataEntry"]
@@ -309,6 +319,7 @@ depends-member:
 - !private ["C5YHack20ChartsViewController", "fatalError"]
 - ["C5YHack20ChartsViewController", "fromIndex"]
 - ["C5YHack20ChartsViewController", "genericdictionaryUsedToSaveJSONData"]
+- ["C5YHack20ChartsViewController", "getPlanTypes"]
 - ["C5YHack20ChartsViewController", "getSeasonData"]
 - ["C5YHack20ChartsViewController", "init"]
 - ["C5YHack20ChartsViewController", "insuranceProduct"]
@@ -418,6 +429,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "Int"]
 - ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "JSON"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
 - ["Ps28CustomDebugStringConvertible", "NVActivityIndicatorView"]
 - !private ["Ps28CustomDebugStringConvertible", "PieChartData"]
 - !private ["Ps28CustomDebugStringConvertible", "PieChartDataEntry"]
@@ -426,6 +438,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "String"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
 - ["Ps28CustomDebugStringConvertible", "_Element"]
 - ["Ps28CustomDebugStringConvertible", "activityview"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
@@ -448,6 +461,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "fatalError"]
 - ["Ps28CustomDebugStringConvertible", "fromIndex"]
 - ["Ps28CustomDebugStringConvertible", "genericdictionaryUsedToSaveJSONData"]
+- ["Ps28CustomDebugStringConvertible", "getPlanTypes"]
 - ["Ps28CustomDebugStringConvertible", "getSeasonData"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "insuranceProduct"]
@@ -484,8 +498,10 @@ depends-member:
 - !private ["Ps17CustomReflectable", "IndexDistance"]
 - !private ["Ps17CustomReflectable", "IntegerLiteralType"]
 - ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "Key"]
 - !private ["Ps17CustomReflectable", "Stride"]
 - !private ["Ps17CustomReflectable", "SubSequence"]
+- !private ["Ps17CustomReflectable", "Value"]
 - !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
 - ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
@@ -511,6 +527,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "JSON"]
+- !private ["Ps23CustomStringConvertible", "Key"]
 - ["Ps23CustomStringConvertible", "NVActivityIndicatorView"]
 - !private ["Ps23CustomStringConvertible", "PieChartData"]
 - !private ["Ps23CustomStringConvertible", "PieChartDataEntry"]
@@ -519,6 +536,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "String"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -543,6 +561,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "fatalError"]
 - ["Ps23CustomStringConvertible", "fromIndex"]
 - ["Ps23CustomStringConvertible", "genericdictionaryUsedToSaveJSONData"]
+- ["Ps23CustomStringConvertible", "getPlanTypes"]
 - ["Ps23CustomStringConvertible", "getSeasonData"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "insuranceProduct"]
@@ -616,6 +635,7 @@ depends-member:
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "Iterator"]
 - !private ["Ps9Equatable", "JSON"]
+- !private ["Ps9Equatable", "Key"]
 - ["Ps9Equatable", "NVActivityIndicatorView"]
 - !private ["Ps9Equatable", "PieChartData"]
 - !private ["Ps9Equatable", "PieChartDataEntry"]
@@ -624,6 +644,7 @@ depends-member:
 - ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "SubSequence"]
 - !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "Value"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_Element"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
@@ -645,6 +666,7 @@ depends-member:
 - !private ["Ps9Equatable", "fatalError"]
 - ["Ps9Equatable", "fromIndex"]
 - ["Ps9Equatable", "genericdictionaryUsedToSaveJSONData"]
+- ["Ps9Equatable", "getPlanTypes"]
 - ["Ps9Equatable", "getSeasonData"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "insuranceProduct"]
@@ -694,7 +716,9 @@ depends-member:
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Index"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "IndexDistance"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Iterator"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "SubSequence"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "_Element"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "dictionary"]
 - ["Ps30ExpressibleByDictionaryLiteral", "init"]
@@ -780,6 +804,7 @@ depends-member:
 - ["Ps8Hashable", "Int"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "JSON"]
+- !private ["Ps8Hashable", "Key"]
 - ["Ps8Hashable", "NVActivityIndicatorView"]
 - !private ["Ps8Hashable", "PieChartData"]
 - !private ["Ps8Hashable", "PieChartDataEntry"]
@@ -787,6 +812,7 @@ depends-member:
 - !private ["Ps8Hashable", "Stride"]
 - ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "Value"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "activityview"]
@@ -806,6 +832,7 @@ depends-member:
 - !private ["Ps8Hashable", "fatalError"]
 - ["Ps8Hashable", "fromIndex"]
 - ["Ps8Hashable", "genericdictionaryUsedToSaveJSONData"]
+- ["Ps8Hashable", "getPlanTypes"]
 - ["Ps8Hashable", "getSeasonData"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "insuranceProduct"]
@@ -946,12 +973,14 @@ depends-member:
 - !private ["PSo8NSCoding", "Double"]
 - ["PSo8NSCoding", "Int"]
 - !private ["PSo8NSCoding", "JSON"]
+- !private ["PSo8NSCoding", "Key"]
 - ["PSo8NSCoding", "NVActivityIndicatorView"]
 - !private ["PSo8NSCoding", "PieChartData"]
 - !private ["PSo8NSCoding", "PieChartDataEntry"]
 - !private ["PSo8NSCoding", "PieChartDataSet"]
 - ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "Value"]
 - ["PSo8NSCoding", "activityview"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "animating"]
@@ -968,6 +997,7 @@ depends-member:
 - !private ["PSo8NSCoding", "fatalError"]
 - ["PSo8NSCoding", "fromIndex"]
 - ["PSo8NSCoding", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo8NSCoding", "getPlanTypes"]
 - ["PSo8NSCoding", "getSeasonData"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "insuranceProduct"]
@@ -983,11 +1013,15 @@ depends-member:
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "Key"]
+- !private ["PSo9NSCopying", "Value"]
 - !private ["PSo9NSCopying", "black"]
 - !private ["PSo9NSCopying", "components"]
 - !private ["PSo9NSCopying", "date"]
 - !private ["PSo9NSCopying", "dateFormat"]
 - ["PSo9NSCopying", "init"]
+- !private ["CSo12NSDictionary", "Key"]
+- !private ["CSo12NSDictionary", "Value"]
 - !private ["PSo26NSExtensionRequestHandling", "Alamofire"]
 - !private ["PSo26NSExtensionRequestHandling", "Array"]
 - ["PSo26NSExtensionRequestHandling", "CGRect"]
@@ -1011,6 +1045,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "fatalError"]
 - ["PSo26NSExtensionRequestHandling", "fromIndex"]
 - ["PSo26NSExtensionRequestHandling", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo26NSExtensionRequestHandling", "getPlanTypes"]
 - ["PSo26NSExtensionRequestHandling", "getSeasonData"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "insuranceProduct"]
@@ -1021,8 +1056,15 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo17NSFastEnumeration", "Key"]
+- !private ["PSo17NSFastEnumeration", "Value"]
+- !private ["PSo16NSMutableCopying", "Key"]
+- !private ["PSo16NSMutableCopying", "Value"]
 - !private ["PSo16NSMutableCopying", "components"]
 - ["PSo16NSMutableCopying", "init"]
+- !private ["CSo19NSMutableDictionary", "Key"]
+- !private ["CSo19NSMutableDictionary", "Value"]
+- ["CSo19NSMutableDictionary", "deinit"]
 - !private ["CSo8NSObject", "Alamofire"]
 - !private ["CSo8NSObject", "Array"]
 - ["CSo8NSObject", "CGRect"]
@@ -1031,6 +1073,8 @@ depends-member:
 - ["CSo8NSObject", "Double"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "JSON"]
+- !private ["CSo8NSObject", "Key"]
+- !private ["CSo8NSObject", "NSMutableDictionary"]
 - ["CSo8NSObject", "NVActivityIndicatorView"]
 - !private ["CSo8NSObject", "PieChartData"]
 - !private ["CSo8NSObject", "PieChartDataEntry"]
@@ -1038,6 +1082,7 @@ depends-member:
 - ["CSo8NSObject", "PieChartView"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "Value"]
 - !private ["CSo8NSObject", "Void"]
 - ["CSo8NSObject", "activityview"]
 - !private ["CSo8NSObject", "addSubview"]
@@ -1056,6 +1101,7 @@ depends-member:
 - !private ["CSo8NSObject", "fatalError"]
 - ["CSo8NSObject", "fromIndex"]
 - ["CSo8NSObject", "genericdictionaryUsedToSaveJSONData"]
+- ["CSo8NSObject", "getPlanTypes"]
 - ["CSo8NSObject", "getSeasonData"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "insuranceProduct"]
@@ -1079,12 +1125,14 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "Double"]
 - ["PSo16NSObjectProtocol", "Int"]
 - !private ["PSo16NSObjectProtocol", "JSON"]
+- !private ["PSo16NSObjectProtocol", "Key"]
 - ["PSo16NSObjectProtocol", "NVActivityIndicatorView"]
 - !private ["PSo16NSObjectProtocol", "PieChartData"]
 - !private ["PSo16NSObjectProtocol", "PieChartDataEntry"]
 - !private ["PSo16NSObjectProtocol", "PieChartDataSet"]
 - ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "Value"]
 - ["PSo16NSObjectProtocol", "activityview"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "animating"]
@@ -1102,6 +1150,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "fatalError"]
 - ["PSo16NSObjectProtocol", "fromIndex"]
 - ["PSo16NSObjectProtocol", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo16NSObjectProtocol", "getPlanTypes"]
 - ["PSo16NSObjectProtocol", "getSeasonData"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "insuranceProduct"]
@@ -1118,6 +1167,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "Key"]
+- !private ["PSo14NSSecureCoding", "Value"]
 - !private ["PSo14NSSecureCoding", "black"]
 - !private ["PSo14NSSecureCoding", "components"]
 - ["PSo14NSSecureCoding", "init"]
@@ -1230,7 +1281,9 @@ depends-member:
 - !private ["Ps8Sequence", "IndexDistance"]
 - !private ["Ps8Sequence", "Indices"]
 - ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "Key"]
 - !private ["Ps8Sequence", "SubSequence"]
+- !private ["Ps8Sequence", "Value"]
 - ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "components"]
@@ -1317,6 +1370,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "fatalError"]
 - ["PSo21UIAppearanceContainer", "fromIndex"]
 - ["PSo21UIAppearanceContainer", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo21UIAppearanceContainer", "getPlanTypes"]
 - ["PSo21UIAppearanceContainer", "getSeasonData"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "insuranceProduct"]
@@ -1357,6 +1411,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "fatalError"]
 - ["PSo18UIContentContainer", "fromIndex"]
 - ["PSo18UIContentContainer", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo18UIContentContainer", "getPlanTypes"]
 - ["PSo18UIContentContainer", "getSeasonData"]
 - !private ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "insuranceProduct"]
@@ -1413,6 +1468,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "fatalError"]
 - ["PSo18UIFocusEnvironment", "fromIndex"]
 - ["PSo18UIFocusEnvironment", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo18UIFocusEnvironment", "getPlanTypes"]
 - ["PSo18UIFocusEnvironment", "getSeasonData"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "insuranceProduct"]
@@ -1446,6 +1502,7 @@ depends-member:
 - ["CSo11UIResponder", "Double"]
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "JSON"]
+- !private ["CSo11UIResponder", "NSMutableDictionary"]
 - ["CSo11UIResponder", "NVActivityIndicatorView"]
 - !private ["CSo11UIResponder", "PieChartData"]
 - !private ["CSo11UIResponder", "PieChartDataEntry"]
@@ -1466,6 +1523,7 @@ depends-member:
 - !private ["CSo11UIResponder", "fatalError"]
 - ["CSo11UIResponder", "fromIndex"]
 - ["CSo11UIResponder", "genericdictionaryUsedToSaveJSONData"]
+- ["CSo11UIResponder", "getPlanTypes"]
 - ["CSo11UIResponder", "getSeasonData"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "insuranceProduct"]
@@ -1506,6 +1564,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "fatalError"]
 - ["PSo30UIResponderStandardEditActions", "fromIndex"]
 - ["PSo30UIResponderStandardEditActions", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo30UIResponderStandardEditActions", "getPlanTypes"]
 - ["PSo30UIResponderStandardEditActions", "getSeasonData"]
 - ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "insuranceProduct"]
@@ -1544,6 +1603,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "fatalError"]
 - ["PSo16UIStateRestoring", "fromIndex"]
 - ["PSo16UIStateRestoring", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo16UIStateRestoring", "getPlanTypes"]
 - ["PSo16UIStateRestoring", "getSeasonData"]
 - !private ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "insuranceProduct"]
@@ -1580,6 +1640,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "fatalError"]
 - ["PSo18UITraitEnvironment", "fromIndex"]
 - ["PSo18UITraitEnvironment", "genericdictionaryUsedToSaveJSONData"]
+- ["PSo18UITraitEnvironment", "getPlanTypes"]
 - ["PSo18UITraitEnvironment", "getSeasonData"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "insuranceProduct"]
@@ -1612,6 +1673,7 @@ depends-member:
 - ["CSo16UIViewController", "Double"]
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "JSON"]
+- !private ["CSo16UIViewController", "NSMutableDictionary"]
 - ["CSo16UIViewController", "NVActivityIndicatorView"]
 - !private ["CSo16UIViewController", "PieChartData"]
 - !private ["CSo16UIViewController", "PieChartDataEntry"]
@@ -1630,6 +1692,7 @@ depends-member:
 - !private ["CSo16UIViewController", "fatalError"]
 - ["CSo16UIViewController", "fromIndex"]
 - ["CSo16UIViewController", "genericdictionaryUsedToSaveJSONData"]
+- ["CSo16UIViewController", "getPlanTypes"]
 - ["CSo16UIViewController", "getSeasonData"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "insuranceProduct"]
@@ -1717,6 +1780,7 @@ depends-member:
 - ["Ps9_Hashable", "Int"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "JSON"]
+- !private ["Ps9_Hashable", "Key"]
 - ["Ps9_Hashable", "NVActivityIndicatorView"]
 - !private ["Ps9_Hashable", "PieChartData"]
 - !private ["Ps9_Hashable", "PieChartDataEntry"]
@@ -1724,6 +1788,7 @@ depends-member:
 - !private ["Ps9_Hashable", "Stride"]
 - ["Ps9_Hashable", "String"]
 - !private ["Ps9_Hashable", "UIColor"]
+- !private ["Ps9_Hashable", "Value"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "activityview"]
@@ -1743,6 +1808,7 @@ depends-member:
 - !private ["Ps9_Hashable", "fatalError"]
 - ["Ps9_Hashable", "fromIndex"]
 - ["Ps9_Hashable", "genericdictionaryUsedToSaveJSONData"]
+- ["Ps9_Hashable", "getPlanTypes"]
 - ["Ps9_Hashable", "getSeasonData"]
 - ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "insuranceProduct"]
@@ -1895,8 +1961,11 @@ depends-nominal:
 - "CSo7NSCoder"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
+- !private "CSo12NSDictionary"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo17NSFastEnumeration"
 - "PSo16NSMutableCopying"
+- "CSo19NSMutableDictionary"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
@@ -2040,4 +2109,4 @@ depends-external:
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/FSInteractiveMap/FSInteractiveMap.framework/Headers/FSInteractiveMapView.h"
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/FSInteractiveMap/FSInteractiveMap.framework/Headers/FSInteractiveMap-umbrella.h"
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/FSInteractiveMap/FSInteractiveMap.framework/Modules/module.modulemap"
-interface-hash: "54a87f773d664b5a7e6fa67ec72c0391"
+interface-hash: "b509eb09ef66ac7da7fb2f66471f46bb"

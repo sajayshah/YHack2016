@@ -65,7 +65,7 @@ class SecondTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        if fromIndex == 5
+        if fromIndex == 6
         {
             let usmapVC = USMapviewController()
             usmapVC.promocode = promocodes[indexPath.row]
