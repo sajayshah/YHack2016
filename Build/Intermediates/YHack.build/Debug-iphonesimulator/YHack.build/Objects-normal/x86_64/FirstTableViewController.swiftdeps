@@ -6,45 +6,47 @@ provides-nominal:
 provides-member:
 - ["C5YHack19FirstViewController", ""]
 provides-dynamic-lookup:
-- "numberOfSections"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 - "detailButtonTapped"
-- "prepare"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "viewDidLoad"
 - "relations"
+- "viewDidLoad"
+- "numberOfSections"
+- "prepare"
 depends-top-level:
-- "IndexPath"
-- !private "-"
-- "StringLiteralType"
-- !private "UIView"
-- !private "UIColor"
-- !private "SecondTableViewController"
-- !private "CGColorSpaceCreateDeviceRGB"
-- "String"
-- "UIButton"
-- !private "CGRect"
-- !private "CGColor"
-- !private "CGPoint"
-- "UIStoryboardSegue"
-- "FirstViewController"
-- "UITableView"
-- !private "BooleanLiteralType"
-- "CGFloat"
-- "UITableViewController"
-- !private "CGSize"
 - "Int"
-- "AssignmentPrecedence"
-- !private "=="
-- "CastingPrecedence"
-- !private "Array"
 - !private "UIFont"
-- !private "NSTextAlignment"
+- !private "CGColorSpaceCreateDeviceRGB"
+- !private "UIView"
+- !private "BooleanLiteralType"
+- "UITableViewController"
+- !private "QueryTableViewController"
+- "StringLiteralType"
+- "UIButton"
+- !private "UIColor"
+- !private "||"
+- !private "SecondTableViewController"
 - "UITableViewCell"
 - !private "UIEdgeInsetsMake"
+- "AssignmentPrecedence"
+- !private "CGSize"
+- "UITableView"
+- !private "=="
+- !private "Array"
+- "String"
+- "UIStoryboardSegue"
+- "CastingPrecedence"
+- !private "NSTextAlignment"
+- "FirstViewController"
+- "IndexPath"
+- !private "CGPoint"
+- !private "-"
+- "CGFloat"
+- !private "CGRect"
+- !private "CGColor"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps9AnyObject", "CGColor"]
@@ -492,6 +494,7 @@ depends-member:
 - ["C5YHack19FirstViewController", "IndexPath"]
 - ["C5YHack19FirstViewController", "Int"]
 - !private ["C5YHack19FirstViewController", "NSTextAlignment"]
+- !private ["C5YHack19FirstViewController", "QueryTableViewController"]
 - !private ["C5YHack19FirstViewController", "SecondTableViewController"]
 - ["C5YHack19FirstViewController", "String"]
 - ["C5YHack19FirstViewController", "UIButton"]
@@ -697,6 +700,7 @@ depends-member:
 - ["CSo8NSObject", "IndexPath"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "NSTextAlignment"]
+- !private ["CSo8NSObject", "QueryTableViewController"]
 - !private ["CSo8NSObject", "SecondTableViewController"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIButton"]
@@ -785,6 +789,8 @@ depends-member:
 - !private ["OSC15NSTextAlignment", "center"]
 - ["OSC15NSTextAlignment", "deinit"]
 - ["Sq", "deinit"]
+- ["C5YHack24QueryTableViewController", "deinit"]
+- !private ["C5YHack24QueryTableViewController", "fromIndex"]
 - !private ["Ps22RandomAccessCollection", "Element"]
 - !private ["Ps22RandomAccessCollection", "Index"]
 - !private ["Ps22RandomAccessCollection", "IndexDistance"]
@@ -1058,6 +1064,7 @@ depends-member:
 - ["CSo11UIResponder", "IndexPath"]
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "NSTextAlignment"]
+- !private ["CSo11UIResponder", "QueryTableViewController"]
 - !private ["CSo11UIResponder", "SecondTableViewController"]
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIButton"]
@@ -1194,6 +1201,7 @@ depends-member:
 - ["CSo21UITableViewController", "IndexPath"]
 - ["CSo21UITableViewController", "Int"]
 - !private ["CSo21UITableViewController", "NSTextAlignment"]
+- !private ["CSo21UITableViewController", "QueryTableViewController"]
 - !private ["CSo21UITableViewController", "SecondTableViewController"]
 - ["CSo21UITableViewController", "String"]
 - ["CSo21UITableViewController", "UIButton"]
@@ -1321,6 +1329,7 @@ depends-member:
 - ["CSo16UIViewController", "IndexPath"]
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "NSTextAlignment"]
+- !private ["CSo16UIViewController", "QueryTableViewController"]
 - !private ["CSo16UIViewController", "SecondTableViewController"]
 - ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIButton"]
@@ -1542,6 +1551,7 @@ depends-nominal:
 - "CSo8NSString"
 - "OSC15NSTextAlignment"
 - "Sq"
+- "C5YHack24QueryTableViewController"
 - !private "Ps22RandomAccessCollection"
 - !private "Ps21RandomAccessIndexable"
 - !private "Vs17RandomAccessSlice"
@@ -1681,4 +1691,4 @@ depends-external:
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/FSInteractiveMap/FSInteractiveMap.framework/Headers/FSInteractiveMapView.h"
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/FSInteractiveMap/FSInteractiveMap.framework/Headers/FSInteractiveMap-umbrella.h"
 - "/Users/atharvavaidya/Developer/YHack/Build/Products/Debug-iphonesimulator/FSInteractiveMap/FSInteractiveMap.framework/Modules/module.modulemap"
-interface-hash: "e328161b61ffb7efa744b9426dedec44"
+interface-hash: "6ff51a841a385790747e254685dff49a"

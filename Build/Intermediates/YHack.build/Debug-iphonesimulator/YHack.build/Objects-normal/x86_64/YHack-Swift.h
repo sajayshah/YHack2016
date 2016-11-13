@@ -152,6 +152,7 @@ SWIFT_CLASS("_TtC5YHack22BarGraphViewController")
 @property (nonatomic) NSInteger minAge;
 @property (nonatomic) NSInteger maxAge;
 @property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull numberofPeopleSignedUp;
+@property (nonatomic) NSInteger fromIndex;
 - (void)viewDidLoad;
 - (void)setChartWithData:(NSArray<NSNumber *> * _Nonnull)data values:(NSArray<NSNumber *> * _Nonnull)values;
 - (void)chartValueSelectedWithChartView:(ChartViewBase * _Nonnull)chartView entry:(ChartDataEntry * _Nonnull)entry dataSetIndex:(NSInteger)dataSetIndex highlight:(ChartHighlight * _Nonnull)highlight;
@@ -223,6 +224,7 @@ SWIFT_CLASS("_TtC5YHack35InsuranceProductTableViewController")
 
 SWIFT_CLASS("_TtC5YHack24QueryTableViewController")
 @interface QueryTableViewController : UITableViewController
+@property (nonatomic) NSInteger fromIndex;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified minTextfield;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified maxTextField;
 - (IBAction)donePressed:(UIBarButtonItem * _Nonnull)sender;
@@ -257,12 +259,16 @@ SWIFT_CLASS("_TtC5YHack25SecondTableViewController")
 @end
 
 @class FSInteractiveMapView;
+@class CAShapeLayer;
+@class UILabel;
 
 SWIFT_CLASS("_TtC5YHack19USMapviewController")
 @interface USMapviewController : UIViewController
 @property (nonatomic, copy) NSString * _Nonnull promocode;
 @property (nonatomic, copy) NSDictionary<NSString *, NSNumber *> * _Nonnull genericDictionaryToSaveJSONData;
 @property (nonatomic, strong) FSInteractiveMapView * _Nonnull map;
+@property (nonatomic, strong) CAShapeLayer * _Nullable oldClickedLayer;
+@property (nonatomic, strong) UILabel * _Nonnull labelForStates;
 - (void)viewDidLoad;
 - (void)getDataFor50States;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
