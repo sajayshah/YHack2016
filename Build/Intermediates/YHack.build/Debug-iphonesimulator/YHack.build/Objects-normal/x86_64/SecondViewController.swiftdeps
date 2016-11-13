@@ -6,50 +6,51 @@ provides-nominal:
 provides-member:
 - ["C5YHack25SecondTableViewController", ""]
 provides-dynamic-lookup:
-- "numWomen"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "picker"
-- "promocodes"
-- "viewDidLoad"
-- "total"
-- "button"
-- "numMen"
 - "prepare"
 - "fromIndex"
+- "picker"
+- "numMen"
+- "total"
+- "button"
+- "promocodes"
+- "viewDidLoad"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "numWomen"
 depends-top-level:
-- "UITableViewCell"
-- "UIStoryboardSegue"
-- !private "BooleanLiteralType"
-- "Int"
-- !private "ChartsViewController"
-- "UITableViewController"
-- !private "CGPoint"
-- "StringLiteralType"
+- !private "UIColor"
 - !private "CGRect"
-- !private "UIEdgeInsetsMake"
 - !private "NSTextAlignment"
-- "SecondTableViewController"
-- !private "-"
 - !private "UIView"
-- !private "Array"
-- "UIButton"
+- !private "-"
+- !private "BooleanLiteralType"
+- !private "ChartsViewController"
+- !private "USMapviewController"
+- "IndexPath"
 - !private "UIFont"
+- "UITableView"
+- "StringLiteralType"
+- "String"
+- !private "Array"
+- "Int"
+- !private "CGColor"
+- !private "CGPoint"
+- !private "CGColorSpaceCreateDeviceRGB"
 - "AssignmentPrecedence"
 - !private "=="
-- "String"
-- "UIPickerView"
-- "CastingPrecedence"
-- "UITableView"
-- !private "CGColor"
-- !private "UIColor"
-- !private "CGColorSpaceCreateDeviceRGB"
+- !private "UIEdgeInsetsMake"
 - !private "CGSize"
-- "IndexPath"
+- "SecondTableViewController"
+- "CastingPrecedence"
+- "UIButton"
+- "UITableViewCell"
+- "UIStoryboardSegue"
 - "CGFloat"
+- "UITableViewController"
+- "UIPickerView"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps9AnyObject", "CGColor"]
@@ -63,6 +64,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIEdgeInsetsMake"]
 - !private ["Ps9AnyObject", "UIFont"]
 - !private ["Ps9AnyObject", "UIView"]
+- !private ["Ps9AnyObject", "USMapviewController"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "backgroundColor"]
 - ["Ps9AnyObject", "button"]
@@ -80,6 +82,7 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "layer"]
 - !private ["Ps9AnyObject", "masksToBounds"]
+- !private ["Ps9AnyObject", "navigationController"]
 - ["Ps9AnyObject", "numMen"]
 - ["Ps9AnyObject", "numWomen"]
 - !private ["Ps9AnyObject", "performSegue"]
@@ -87,6 +90,7 @@ depends-member:
 - ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "promocode"]
 - ["Ps9AnyObject", "promocodes"]
+- !private ["Ps9AnyObject", "pushViewController"]
 - !private ["Ps9AnyObject", "sendSubview"]
 - !private ["Ps9AnyObject", "shadowOffset"]
 - !private ["Ps9AnyObject", "shadowOpacity"]
@@ -194,6 +198,7 @@ depends-member:
 - !private ["Ps7CVarArg", "UIEdgeInsetsMake"]
 - !private ["Ps7CVarArg", "UIFont"]
 - !private ["Ps7CVarArg", "UIView"]
+- !private ["Ps7CVarArg", "USMapviewController"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "addSubview"]
@@ -214,6 +219,7 @@ depends-member:
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "layer"]
 - !private ["Ps7CVarArg", "masksToBounds"]
+- !private ["Ps7CVarArg", "navigationController"]
 - ["Ps7CVarArg", "numMen"]
 - ["Ps7CVarArg", "numWomen"]
 - !private ["Ps7CVarArg", "performSegue"]
@@ -221,6 +227,7 @@ depends-member:
 - ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "promocode"]
 - ["Ps7CVarArg", "promocodes"]
+- !private ["Ps7CVarArg", "pushViewController"]
 - !private ["Ps7CVarArg", "sendSubview"]
 - !private ["Ps7CVarArg", "shadowOffset"]
 - !private ["Ps7CVarArg", "shadowOpacity"]
@@ -311,6 +318,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIEdgeInsetsMake"]
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
+- !private ["Ps28CustomDebugStringConvertible", "USMapviewController"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
@@ -330,6 +338,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
 - !private ["Ps28CustomDebugStringConvertible", "masksToBounds"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - ["Ps28CustomDebugStringConvertible", "numMen"]
 - ["Ps28CustomDebugStringConvertible", "numWomen"]
 - !private ["Ps28CustomDebugStringConvertible", "performSegue"]
@@ -337,6 +346,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "promocode"]
 - ["Ps28CustomDebugStringConvertible", "promocodes"]
+- !private ["Ps28CustomDebugStringConvertible", "pushViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - !private ["Ps28CustomDebugStringConvertible", "sendSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "shadowOffset"]
@@ -393,6 +403,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIEdgeInsetsMake"]
 - !private ["Ps23CustomStringConvertible", "UIFont"]
 - !private ["Ps23CustomStringConvertible", "UIView"]
+- !private ["Ps23CustomStringConvertible", "USMapviewController"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -414,6 +425,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "layer"]
 - !private ["Ps23CustomStringConvertible", "masksToBounds"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
 - ["Ps23CustomStringConvertible", "numMen"]
 - ["Ps23CustomStringConvertible", "numWomen"]
 - !private ["Ps23CustomStringConvertible", "performSegue"]
@@ -421,6 +433,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "promocode"]
 - ["Ps23CustomStringConvertible", "promocodes"]
+- !private ["Ps23CustomStringConvertible", "pushViewController"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - !private ["Ps23CustomStringConvertible", "sendSubview"]
 - !private ["Ps23CustomStringConvertible", "shadowOffset"]
@@ -461,6 +474,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIEdgeInsetsMake"]
 - !private ["Ps9Equatable", "UIFont"]
 - !private ["Ps9Equatable", "UIView"]
+- !private ["Ps9Equatable", "USMapviewController"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addSubview"]
@@ -481,6 +495,7 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "layer"]
 - !private ["Ps9Equatable", "masksToBounds"]
+- !private ["Ps9Equatable", "navigationController"]
 - ["Ps9Equatable", "numMen"]
 - ["Ps9Equatable", "numWomen"]
 - !private ["Ps9Equatable", "performSegue"]
@@ -488,6 +503,7 @@ depends-member:
 - ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "promocode"]
 - ["Ps9Equatable", "promocodes"]
+- !private ["Ps9Equatable", "pushViewController"]
 - !private ["Ps9Equatable", "row"]
 - !private ["Ps9Equatable", "sendSubview"]
 - !private ["Ps9Equatable", "shadowOffset"]
@@ -536,6 +552,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIEdgeInsetsMake"]
 - !private ["Ps8Hashable", "UIFont"]
 - !private ["Ps8Hashable", "UIView"]
+- !private ["Ps8Hashable", "USMapviewController"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addSubview"]
@@ -556,6 +573,7 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "layer"]
 - !private ["Ps8Hashable", "masksToBounds"]
+- !private ["Ps8Hashable", "navigationController"]
 - ["Ps8Hashable", "numMen"]
 - ["Ps8Hashable", "numWomen"]
 - !private ["Ps8Hashable", "performSegue"]
@@ -563,6 +581,7 @@ depends-member:
 - ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "promocode"]
 - ["Ps8Hashable", "promocodes"]
+- !private ["Ps8Hashable", "pushViewController"]
 - !private ["Ps8Hashable", "row"]
 - !private ["Ps8Hashable", "sendSubview"]
 - !private ["Ps8Hashable", "shadowOffset"]
@@ -650,6 +669,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIEdgeInsetsMake"]
 - !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIView"]
+- !private ["PSo8NSCoding", "USMapviewController"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - ["PSo8NSCoding", "button"]
@@ -665,6 +685,7 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "layer"]
 - !private ["PSo8NSCoding", "masksToBounds"]
+- !private ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "numMen"]
 - ["PSo8NSCoding", "numWomen"]
 - !private ["PSo8NSCoding", "performSegue"]
@@ -672,6 +693,7 @@ depends-member:
 - ["PSo8NSCoding", "prepare"]
 - !private ["PSo8NSCoding", "promocode"]
 - ["PSo8NSCoding", "promocodes"]
+- !private ["PSo8NSCoding", "pushViewController"]
 - !private ["PSo8NSCoding", "sendSubview"]
 - !private ["PSo8NSCoding", "shadowOffset"]
 - !private ["PSo8NSCoding", "shadowOpacity"]
@@ -696,10 +718,12 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIEdgeInsetsMake"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
+- !private ["PSo26NSExtensionRequestHandling", "USMapviewController"]
 - ["PSo26NSExtensionRequestHandling", "button"]
 - !private ["PSo26NSExtensionRequestHandling", "data"]
 - ["PSo26NSExtensionRequestHandling", "fromIndex"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "numMen"]
 - ["PSo26NSExtensionRequestHandling", "numWomen"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegue"]
@@ -707,6 +731,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "prepare"]
 - !private ["PSo26NSExtensionRequestHandling", "promocode"]
 - ["PSo26NSExtensionRequestHandling", "promocodes"]
+- !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - ["PSo26NSExtensionRequestHandling", "total"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
@@ -733,6 +758,7 @@ depends-member:
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
 - !private ["CSo8NSObject", "UIView"]
+- !private ["CSo8NSObject", "USMapviewController"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - ["CSo8NSObject", "button"]
@@ -750,6 +776,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "masksToBounds"]
+- !private ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "numMen"]
 - ["CSo8NSObject", "numWomen"]
 - !private ["CSo8NSObject", "performSegue"]
@@ -757,6 +784,7 @@ depends-member:
 - ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "promocode"]
 - ["CSo8NSObject", "promocodes"]
+- !private ["CSo8NSObject", "pushViewController"]
 - !private ["CSo8NSObject", "sendSubview"]
 - !private ["CSo8NSObject", "shadowOffset"]
 - !private ["CSo8NSObject", "shadowOpacity"]
@@ -779,6 +807,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIEdgeInsetsMake"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
+- !private ["PSo16NSObjectProtocol", "USMapviewController"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - ["PSo16NSObjectProtocol", "button"]
@@ -796,6 +825,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "masksToBounds"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "numMen"]
 - ["PSo16NSObjectProtocol", "numWomen"]
 - !private ["PSo16NSObjectProtocol", "performSegue"]
@@ -803,6 +833,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "promocode"]
 - ["PSo16NSObjectProtocol", "promocodes"]
+- !private ["PSo16NSObjectProtocol", "pushViewController"]
 - !private ["PSo16NSObjectProtocol", "sendSubview"]
 - !private ["PSo16NSObjectProtocol", "shadowOffset"]
 - !private ["PSo16NSObjectProtocol", "shadowOpacity"]
@@ -882,10 +913,12 @@ depends-member:
 - ["C5YHack25SecondTableViewController", "UITableView"]
 - ["C5YHack25SecondTableViewController", "UITableViewCell"]
 - !private ["C5YHack25SecondTableViewController", "UIView"]
+- !private ["C5YHack25SecondTableViewController", "USMapviewController"]
 - ["C5YHack25SecondTableViewController", "button"]
 - ["C5YHack25SecondTableViewController", "deinit"]
 - ["C5YHack25SecondTableViewController", "fromIndex"]
 - ["C5YHack25SecondTableViewController", "init"]
+- !private ["C5YHack25SecondTableViewController", "navigationController"]
 - ["C5YHack25SecondTableViewController", "numMen"]
 - ["C5YHack25SecondTableViewController", "numWomen"]
 - !private ["C5YHack25SecondTableViewController", "performSegue"]
@@ -965,6 +998,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIEdgeInsetsMake"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
+- !private ["PSo21UIAppearanceContainer", "USMapviewController"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - ["PSo21UIAppearanceContainer", "button"]
@@ -978,6 +1012,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "indexPathForSelectedRow"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "numMen"]
 - ["PSo21UIAppearanceContainer", "numWomen"]
 - !private ["PSo21UIAppearanceContainer", "performSegue"]
@@ -985,6 +1020,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "prepare"]
 - !private ["PSo21UIAppearanceContainer", "promocode"]
 - ["PSo21UIAppearanceContainer", "promocodes"]
+- !private ["PSo21UIAppearanceContainer", "pushViewController"]
 - !private ["PSo21UIAppearanceContainer", "sendSubview"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
@@ -1008,10 +1044,12 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIEdgeInsetsMake"]
 - !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UIView"]
+- !private ["PSo18UIContentContainer", "USMapviewController"]
 - ["PSo18UIContentContainer", "button"]
 - !private ["PSo18UIContentContainer", "data"]
 - ["PSo18UIContentContainer", "fromIndex"]
 - !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "numMen"]
 - ["PSo18UIContentContainer", "numWomen"]
 - !private ["PSo18UIContentContainer", "performSegue"]
@@ -1019,6 +1057,7 @@ depends-member:
 - ["PSo18UIContentContainer", "prepare"]
 - !private ["PSo18UIContentContainer", "promocode"]
 - ["PSo18UIContentContainer", "promocodes"]
+- !private ["PSo18UIContentContainer", "pushViewController"]
 - ["PSo18UIContentContainer", "tableView"]
 - ["PSo18UIContentContainer", "total"]
 - !private ["PSo18UIContentContainer", "view"]
@@ -1070,6 +1109,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIEdgeInsetsMake"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
+- !private ["PSo18UIFocusEnvironment", "USMapviewController"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - ["PSo18UIFocusEnvironment", "button"]
@@ -1083,6 +1123,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "indexPathForSelectedRow"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "numMen"]
 - ["PSo18UIFocusEnvironment", "numWomen"]
 - !private ["PSo18UIFocusEnvironment", "performSegue"]
@@ -1090,6 +1131,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "prepare"]
 - !private ["PSo18UIFocusEnvironment", "promocode"]
 - ["PSo18UIFocusEnvironment", "promocodes"]
+- !private ["PSo18UIFocusEnvironment", "pushViewController"]
 - !private ["PSo18UIFocusEnvironment", "sendSubview"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
@@ -1124,6 +1166,8 @@ depends-member:
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textAlignment"]
 - !private ["CSo7UILabel", "textColor"]
+- ["CSo22UINavigationController", "deinit"]
+- !private ["CSo22UINavigationController", "pushViewController"]
 - !private ["CSo11UIResponder", "CGColor"]
 - !private ["CSo11UIResponder", "CGColorSpaceCreateDeviceRGB"]
 - ["CSo11UIResponder", "CGFloat"]
@@ -1144,6 +1188,7 @@ depends-member:
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
 - !private ["CSo11UIResponder", "UIView"]
+- !private ["CSo11UIResponder", "USMapviewController"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "button"]
@@ -1157,6 +1202,7 @@ depends-member:
 - !private ["CSo11UIResponder", "indexPathForSelectedRow"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "layer"]
+- !private ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "numMen"]
 - ["CSo11UIResponder", "numWomen"]
 - !private ["CSo11UIResponder", "performSegue"]
@@ -1164,6 +1210,7 @@ depends-member:
 - ["CSo11UIResponder", "prepare"]
 - !private ["CSo11UIResponder", "promocode"]
 - ["CSo11UIResponder", "promocodes"]
+- !private ["CSo11UIResponder", "pushViewController"]
 - !private ["CSo11UIResponder", "sendSubview"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
@@ -1184,6 +1231,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIEdgeInsetsMake"]
 - !private ["PSo30UIResponderStandardEditActions", "UIFont"]
 - !private ["PSo30UIResponderStandardEditActions", "UIView"]
+- !private ["PSo30UIResponderStandardEditActions", "USMapviewController"]
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
 - ["PSo30UIResponderStandardEditActions", "button"]
@@ -1197,6 +1245,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "indexPathForSelectedRow"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationController"]
 - ["PSo30UIResponderStandardEditActions", "numMen"]
 - ["PSo30UIResponderStandardEditActions", "numWomen"]
 - !private ["PSo30UIResponderStandardEditActions", "performSegue"]
@@ -1204,6 +1253,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "prepare"]
 - !private ["PSo30UIResponderStandardEditActions", "promocode"]
 - ["PSo30UIResponderStandardEditActions", "promocodes"]
+- !private ["PSo30UIResponderStandardEditActions", "pushViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "sendSubview"]
 - ["PSo30UIResponderStandardEditActions", "tableView"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
@@ -1228,9 +1278,11 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UIEdgeInsetsMake"]
 - !private ["PSo20UIScrollViewDelegate", "UIFont"]
 - !private ["PSo20UIScrollViewDelegate", "UIView"]
+- !private ["PSo20UIScrollViewDelegate", "USMapviewController"]
 - ["PSo20UIScrollViewDelegate", "button"]
 - ["PSo20UIScrollViewDelegate", "fromIndex"]
 - !private ["PSo20UIScrollViewDelegate", "init"]
+- !private ["PSo20UIScrollViewDelegate", "navigationController"]
 - ["PSo20UIScrollViewDelegate", "numMen"]
 - ["PSo20UIScrollViewDelegate", "numWomen"]
 - !private ["PSo20UIScrollViewDelegate", "performSegue"]
@@ -1253,10 +1305,12 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIEdgeInsetsMake"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UIView"]
+- !private ["PSo16UIStateRestoring", "USMapviewController"]
 - ["PSo16UIStateRestoring", "button"]
 - !private ["PSo16UIStateRestoring", "data"]
 - ["PSo16UIStateRestoring", "fromIndex"]
 - !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "numMen"]
 - ["PSo16UIStateRestoring", "numWomen"]
 - !private ["PSo16UIStateRestoring", "performSegue"]
@@ -1264,6 +1318,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "prepare"]
 - !private ["PSo16UIStateRestoring", "promocode"]
 - ["PSo16UIStateRestoring", "promocodes"]
+- !private ["PSo16UIStateRestoring", "pushViewController"]
 - ["PSo16UIStateRestoring", "tableView"]
 - ["PSo16UIStateRestoring", "total"]
 - !private ["PSo16UIStateRestoring", "view"]
@@ -1300,10 +1355,12 @@ depends-member:
 - ["CSo21UITableViewController", "UITableView"]
 - ["CSo21UITableViewController", "UITableViewCell"]
 - !private ["CSo21UITableViewController", "UIView"]
+- !private ["CSo21UITableViewController", "USMapviewController"]
 - ["CSo21UITableViewController", "button"]
 - ["CSo21UITableViewController", "deinit"]
 - ["CSo21UITableViewController", "fromIndex"]
 - ["CSo21UITableViewController", "init"]
+- !private ["CSo21UITableViewController", "navigationController"]
 - ["CSo21UITableViewController", "numMen"]
 - ["CSo21UITableViewController", "numWomen"]
 - !private ["CSo21UITableViewController", "performSegue"]
@@ -1326,9 +1383,11 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UIEdgeInsetsMake"]
 - !private ["PSo21UITableViewDataSource", "UIFont"]
 - !private ["PSo21UITableViewDataSource", "UIView"]
+- !private ["PSo21UITableViewDataSource", "USMapviewController"]
 - ["PSo21UITableViewDataSource", "button"]
 - ["PSo21UITableViewDataSource", "fromIndex"]
 - !private ["PSo21UITableViewDataSource", "init"]
+- !private ["PSo21UITableViewDataSource", "navigationController"]
 - ["PSo21UITableViewDataSource", "numMen"]
 - ["PSo21UITableViewDataSource", "numWomen"]
 - !private ["PSo21UITableViewDataSource", "performSegue"]
@@ -1351,9 +1410,11 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UIEdgeInsetsMake"]
 - !private ["PSo19UITableViewDelegate", "UIFont"]
 - !private ["PSo19UITableViewDelegate", "UIView"]
+- !private ["PSo19UITableViewDelegate", "USMapviewController"]
 - ["PSo19UITableViewDelegate", "button"]
 - ["PSo19UITableViewDelegate", "fromIndex"]
 - !private ["PSo19UITableViewDelegate", "init"]
+- !private ["PSo19UITableViewDelegate", "navigationController"]
 - ["PSo19UITableViewDelegate", "numMen"]
 - ["PSo19UITableViewDelegate", "numWomen"]
 - !private ["PSo19UITableViewDelegate", "performSegue"]
@@ -1377,6 +1438,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIEdgeInsetsMake"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
+- !private ["PSo18UITraitEnvironment", "USMapviewController"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - ["PSo18UITraitEnvironment", "button"]
@@ -1390,6 +1452,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "indexPathForSelectedRow"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "layer"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "numMen"]
 - ["PSo18UITraitEnvironment", "numWomen"]
 - !private ["PSo18UITraitEnvironment", "performSegue"]
@@ -1397,6 +1460,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "prepare"]
 - !private ["PSo18UITraitEnvironment", "promocode"]
 - ["PSo18UITraitEnvironment", "promocodes"]
+- !private ["PSo18UITraitEnvironment", "pushViewController"]
 - !private ["PSo18UITraitEnvironment", "sendSubview"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
@@ -1443,11 +1507,13 @@ depends-member:
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - !private ["CSo16UIViewController", "UIView"]
+- !private ["CSo16UIViewController", "USMapviewController"]
 - ["CSo16UIViewController", "button"]
 - !private ["CSo16UIViewController", "data"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "fromIndex"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "numMen"]
 - ["CSo16UIViewController", "numWomen"]
 - !private ["CSo16UIViewController", "performSegue"]
@@ -1455,11 +1521,15 @@ depends-member:
 - ["CSo16UIViewController", "prepare"]
 - !private ["CSo16UIViewController", "promocode"]
 - ["CSo16UIViewController", "promocodes"]
+- !private ["CSo16UIViewController", "pushViewController"]
 - ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "total"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["P9Alamofire14URLConvertible", "init"]
+- ["C5YHack19USMapviewController", "deinit"]
+- !private ["C5YHack19USMapviewController", "init"]
+- !private ["C5YHack19USMapviewController", "promocode"]
 - !private ["SP", "Element"]
 - !private ["SP", "deinit"]
 - !private ["Ps14_ArrayProtocol", "Element"]
@@ -1518,6 +1588,7 @@ depends-member:
 - !private ["Ps9_Hashable", "UIEdgeInsetsMake"]
 - !private ["Ps9_Hashable", "UIFont"]
 - !private ["Ps9_Hashable", "UIView"]
+- !private ["Ps9_Hashable", "USMapviewController"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "addSubview"]
@@ -1538,6 +1609,7 @@ depends-member:
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "layer"]
 - !private ["Ps9_Hashable", "masksToBounds"]
+- !private ["Ps9_Hashable", "navigationController"]
 - ["Ps9_Hashable", "numMen"]
 - ["Ps9_Hashable", "numWomen"]
 - !private ["Ps9_Hashable", "performSegue"]
@@ -1545,6 +1617,7 @@ depends-member:
 - ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "promocode"]
 - ["Ps9_Hashable", "promocodes"]
+- !private ["Ps9_Hashable", "pushViewController"]
 - !private ["Ps9_Hashable", "row"]
 - !private ["Ps9_Hashable", "sendSubview"]
 - !private ["Ps9_Hashable", "shadowOffset"]
@@ -1695,6 +1768,7 @@ depends-nominal:
 - !private "CSo6UIFont"
 - !private "PSo27UIGestureRecognizerDelegate"
 - "CSo7UILabel"
+- "CSo22UINavigationController"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - !private "CSo12UIScrollView"
@@ -1711,6 +1785,7 @@ depends-nominal:
 - "CSo6UIView"
 - "CSo16UIViewController"
 - "P9Alamofire14URLConvertible"
+- "C5YHack19USMapviewController"
 - !private "SP"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps15_CVarArgAligned"

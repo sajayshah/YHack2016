@@ -53,7 +53,6 @@ class ChartsViewController: UIViewController, ChartViewDelegate
         case 2:
             firstRequest = ""
             secondrequest = ""
-            getDataFor50States()
             return
         case 3:
             firstRequest = ""
@@ -137,44 +136,6 @@ class ChartsViewController: UIViewController, ChartViewDelegate
         }
     }
     
-    func getDataFor50States()
-    {
-        var states = ""
-        do
-        {
-            states = try String(contentsOf: Bundle.main.url(forResource: "states", withExtension: ".txt")!)
-        }
-        catch
-        {
-            print("Oh cock! couldn't get states.")
-        }
-        
-        let statesArray = states.components(separatedBy: "\n").filter({$0 != ""})
-        print("States: \(statesArray)")
-        for (_, state) in statesArray.enumerated()
-        {
-            let request = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=promo_codes=\(promocode)%20AND%20%7B!join%20from=id%20to=participant_id%20fromIndex=participant%7Dstate:\(state)&wt=json"
-            print(request)
-            Alamofire.request(request).responseJSON(completionHandler: { response in
-                
-                if response.result.isSuccess
-                {
-                    guard let resultValue = response.result.value else { fatalError("couldn't parse JSON") }
-                    let json = JSON(resultValue)
-                    guard let numberOfPeople = json["response"]["numFound"].int else { fatalError("couldn't parse number of people" ) }
-                    self.genericdictionaryUsedToSaveJSONData[state] = numberOfPeople
-                    print("\(numberOfPeople) in \(state)")
-                }
-                
-                else
-                {
-                    print("sorry mate it failed. \(response.data)\n\(response.result)))")
-                }
-            })
-        }
-        
-        
-    }
     
     func setChart(dataPoints: [Int], values: [Double])
     {

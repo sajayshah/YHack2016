@@ -52,7 +52,6 @@ class FirstViewController: UITableViewController
         
         cell.contentView.addSubview(whiteRoundedView)
         cell.contentView.sendSubview(toBack: whiteRoundedView)
-        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

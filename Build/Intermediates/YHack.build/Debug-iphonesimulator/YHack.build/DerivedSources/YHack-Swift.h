@@ -173,7 +173,6 @@ SWIFT_CLASS("_TtC5YHack20ChartsViewController")
 @property (nonatomic, strong) NVActivityIndicatorView * _Nonnull activityview;
 - (void)viewDidLoad;
 - (void)getSeasonData;
-- (void)getDataFor50States;
 - (void)setChartWithDataPoints:(NSArray<NSNumber *> * _Nonnull)dataPoints values:(NSArray<NSNumber *> * _Nonnull)values;
 - (void)setChartWithDates:(NSArray<NSString *> * _Nonnull)dates values:(NSArray<NSNumber *> * _Nonnull)values;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -253,6 +252,19 @@ SWIFT_CLASS("_TtC5YHack25SecondTableViewController")
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class FSInteractiveMapView;
+
+SWIFT_CLASS("_TtC5YHack19USMapviewController")
+@interface USMapviewController : UIViewController
+@property (nonatomic, copy) NSString * _Nonnull promocode;
+@property (nonatomic, copy) NSDictionary<NSString *, NSNumber *> * _Nonnull genericDictionaryToSaveJSONData;
+@property (nonatomic, strong) FSInteractiveMapView * _Nonnull map;
+- (void)viewDidLoad;
+- (void)getDataFor50States;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
