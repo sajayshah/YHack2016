@@ -62,6 +62,21 @@ class ChartsViewController: UIViewController, ChartViewDelegate
             getSeasonData()
             return
             
+        case 10:
+            firstRequest = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=insurance_product:Dental&wt=json"
+            secondrequest = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=insurance_product:Accident&wt=json"
+        case 11:
+            break
+        case 12:
+            firstRequest = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=insurance_coverage:Family&wt=json"
+            secondrequest = "https://v3v10.vitechinc.com/solr/policy_info/select?indent=on&q=insurance_coverage:Single&wt=json"
+        case 13:
+            firstRequest = "https://v3v10.vitechinc.com/solr/participant/select?indent=on&q=marital_status:M&wt=json"
+            secondrequest = "https://v3v10.vitechinc.com/solr/participant/select?indent=on&q=marital_status:S&wt=json"
+        case 14:
+            firstRequest = "https://v3v10.vitechinc.com/solr/participant/select?indent=on&q=gender:F&wt=json"
+            secondrequest = "https://v3v10.vitechinc.com/solr/participant/select?indent=on&q=gender:M&wt=json"
+            
             
         default: break
             

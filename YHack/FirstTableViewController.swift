@@ -14,7 +14,7 @@ class FirstViewController: UITableViewController
 {
     //@IBOutlet weak var detailButton: UIButton!
     //
-    let relations: [String] = ["Promocode vs Gender", "Promocode vs Marital Status", "Age vs Insurance Coverage", "Season vs Insurance Product", "Age vs. Insurance Product"]
+    let relations: [String] = ["Promocode vs Gender", "Promocode vs Marital Status", "Age vs Insurance Coverage", "Season vs Insurance Product", "Age vs. Insurance Product", "General Comparisons"]
 
     override func viewDidLoad()
     {
@@ -66,6 +66,10 @@ class FirstViewController: UITableViewController
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 4 || indexPath.row == 2 { self.performSegue(withIdentifier: "toBarGraph", sender: self) }
         else if indexPath.row == 3 { self.performSegue(withIdentifier: "toSeasonVC", sender: self)}
+        else if indexPath.row == 5 {
+            print("HELLO")
+            self.performSegue(withIdentifier: "toComparisonVC", sender: self)
+        }
         else { self.performSegue(withIdentifier: "toSecondVC", sender: self)}
     }
     

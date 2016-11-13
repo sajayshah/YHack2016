@@ -37,11 +37,12 @@
                         <segue destination="Axz-e8-Fne" kind="show" identifier="toSecondVC" id="rOG-ZY-2nc"/>
                         <segue destination="amm-KL-vId" kind="show" identifier="toBarGraph" id="xTn-rO-9m1"/>
                         <segue destination="s0z-1H-fY6" kind="show" identifier="toSeasonVC" id="Pqu-qG-oJQ"/>
+                        <segue destination="1MF-At-1q9" kind="show" identifier="toComparisonVC" id="8QN-My-Tf6"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7D-jv-wiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="614"/>
+            <point key="canvasLocation" x="-47" y="462"/>
         </scene>
         <!--Select Promotion-->
         <scene sceneID="nob-At-5Ne">
@@ -73,7 +74,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5W-Tj-lfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="175"/>
+            <point key="canvasLocation" x="857" y="237"/>
         </scene>
         <!--Query Table View Controller-->
         <scene sceneID="D5U-gu-r3u">
@@ -211,7 +212,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qe8-Fx-0zj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98" y="-22"/>
+            <point key="canvasLocation" x="-778" y="-78"/>
         </scene>
         <!--Select Insurance Product-->
         <scene sceneID="bbh-sX-zvn">
@@ -245,8 +246,40 @@
             </objects>
             <point key="canvasLocation" x="2756" y="950"/>
         </scene>
+        <!--General Comparisons-->
+        <scene sceneID="tH4-ip-v8D">
+            <objects>
+                <tableViewController id="1MF-At-1q9" customClass="GeneralComparisonsViewController" customModule="YHack" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jDz-QN-1nV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="generalComparisonCells" rowHeight="90" id="5iB-0z-cg8">
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5iB-0z-cg8" id="FPG-cs-Sgn">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1MF-At-1q9" id="zao-eN-2L9"/>
+                            <outlet property="delegate" destination="1MF-At-1q9" id="v1U-1G-hCF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="General Comparisons" id="itC-t6-TV7"/>
+                    <connections>
+                        <segue destination="dyL-FJ-doc" kind="show" identifier="generalComp" id="Ixs-UF-CeP"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qd9-et-A6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="-725"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LkY-UK-ebx"/>
+        <segue reference="Ixs-UF-CeP"/>
     </inferredMetricsTieBreakers>
 </document>
